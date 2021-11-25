@@ -1,6 +1,0 @@
-[
-    "DataRaptor/DRTGetAccountByQuoteId",
-    "DataRaptor/DRTGetContentVersionFile",
-    "IntegrationProcedure/OSFMX_SendElectricityQuoteToContacts",
-    "IntegrationProcedure/OSFMX_UpdateDataQuoteOpportunity"
-]

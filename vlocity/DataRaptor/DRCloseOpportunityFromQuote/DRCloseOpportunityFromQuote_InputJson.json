@@ -1,8 +1,0 @@
-{
-    "OpportunityUpdate": {
-        "Id": "006c000000UQHLGAA5",
-        "OSFMX_ClosedComments__c": "test imposible",
-        "OSFMX_LossReason__c": "Proceso cancelado",
-        "StageName": "Cerrada Perdida"
-    }
-}

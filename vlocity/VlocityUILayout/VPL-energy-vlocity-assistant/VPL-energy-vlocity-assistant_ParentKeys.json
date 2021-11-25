@@ -1,9 +1,0 @@
-[
-    "DataRaptor/VPL-GetAccountLastStatement",
-    "VlocityCard/vpl-energy-assistant--billing-actions",
-    "VlocityCard/vpl-energy-assistant--icon",
-    "VlocityCard/vpl-energy-assistant--outage",
-    "VlocityCard/vpl-energy-assistant--profile-actions",
-    "VlocityCard/vpl-energy-assistant--usage-actions",
-    "VlocityUITemplate/vpl-energy-canvas--assistant"
-]

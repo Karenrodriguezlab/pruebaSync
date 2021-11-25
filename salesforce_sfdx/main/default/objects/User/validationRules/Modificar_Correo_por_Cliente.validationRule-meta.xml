@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>Modificar_Correo_por_Cliente</fullName>
-    <active>false</active>
-    <errorConditionFormula>AND(  Profile.Name  = &quot;Perfil de Clientes&quot; ,  ISCHANGED(Email))</errorConditionFormula>
-    <errorMessage>No puedes modificar tu correo electrónico, consulta con tu administrador para realizar el cambio.</errorMessage>
-</ValidationRule>

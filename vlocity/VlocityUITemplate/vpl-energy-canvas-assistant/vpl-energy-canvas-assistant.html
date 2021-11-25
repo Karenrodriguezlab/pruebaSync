@@ -1,8 +1,0 @@
-<section ng-controller="vlocityAssistantCtrl">
-  <div class="slds-grid slds-p-around_small slds-wrap slds-theme--shade" vloc-sticky-top>
-    <div class="via-slds-story-cards--header-title">
-      <div class="slds-text-heading--medium">Vlocity Assistant</div>
-    </div>
-  </div>
-  <vloc-card ng-repeat="card in cards | orderBy:order" ctrl="{{accountCtrl}}" ng-model="card" data="card" records="records" index="{{$index}}" session-id="{{sessionId}}" class="slds-p-horizontal_small slds-m-top_large"></vloc-card>
-</section>

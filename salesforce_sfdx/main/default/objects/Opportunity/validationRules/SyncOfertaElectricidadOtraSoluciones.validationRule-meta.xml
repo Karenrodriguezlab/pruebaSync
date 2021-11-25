@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>SyncOfertaElectricidadOtraSoluciones</fullName>
-    <active>true</active>
-    <errorConditionFormula>AND(OR(RecordType.DeveloperName=&quot;OSFMX_Electricidad&quot;,RecordType.DeveloperName=&quot;Otras_Soluciones&quot;),OSFMX_NumberAssociatedOffers__c = 0,OR(ISPICKVAL(StageName,&quot;Cerrada ganada&quot;),ISPICKVAL(StageName,&quot;Oferta Presentada&quot;)),$Profile.Name &lt;&gt; &quot;Administrador del sistema&quot;,$Profile.Name &lt;&gt; &quot;System Administrator&quot;)</errorConditionFormula>
-    <errorDisplayField>StageName</errorDisplayField>
-    <errorMessage>Debe sincronizar una oferta.</errorMessage>
-</ValidationRule>

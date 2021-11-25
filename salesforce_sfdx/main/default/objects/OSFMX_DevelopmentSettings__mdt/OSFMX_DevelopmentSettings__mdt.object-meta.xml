@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
-    <description>Almacena parámetros de configuración utilizados por desarrollos del proyecto One Salesforce.</description>
-    <label>Configuración De Desarrollos</label>
-    <pluralLabel>Configuraciones De Desarrollos</pluralLabel>
-    <visibility>Public</visibility>
-</CustomObject>

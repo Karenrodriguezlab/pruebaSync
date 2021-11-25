@@ -7,74 +7,66 @@
         <label>Information</label>
         <layoutColumns>
             <layoutItems>
-                <behavior>Required</behavior>
-                <field>MasterLabel</field>
+                <behavior>Readonly</behavior>
+                <field>Name</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Required</behavior>
-                <field>DeveloperName</field>
+                <field>OSFMX_Referencia_Factura__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Required</behavior>
-                <field>OSFMX_UrlToDownloadInvoices__c</field>
+                <field>OSFMX_CuentaContrato__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>PBookEntryGasId__c</field>
+                <field>OSFMX_IsMultipagosSuccessfulResponse__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>PBookEntryGasDitribId__c</field>
+                <field>OSFMX_IsMultipagosErrorResponse__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>PBookEntryDistribSimpleId__c</field>
+                <field>OSFMX_LastEvent__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>PBookEntryDistComerId__c</field>
+                <field>OSFMX_MpAmount__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>OSFMX_PriceListForQuoteId__c</field>
+                <field>OSFMX_MpResponse__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>OSFMX_IsHttpsOnGHitss__c</field>
+                <field>OSFMX_MpResponsemsg__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>TasaIvaFrontera__c</field>
+                <field>OSFMX_MpAuthorization__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>OSFMX_PrivateKeyMultipagos__c</field>
+                <field>OSFMX_MpSignature__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>OSFMX_MpAccountMultipagos__c</field>
+                <field>OSFMX_MpPaymentMethod__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>OSFMX_MpUrlSuccessMultipagos__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>OSFMX_MpUrlFailureMultipagos__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>PBookEntryRenovableId__c</field>
+                <field>OSFMX_IsValidMpSignature__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>IsProtected</field>
+                <field>OwnerId</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Required</behavior>
-                <field>NamespacePrefix</field>
+                <behavior>Edit</behavior>
+                <field>CurrencyIsoCode</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsTopToBottom</style>
@@ -101,7 +93,9 @@
     <layoutSections>
         <customLabel>false</customLabel>
         <detailHeading>false</detailHeading>
-        <editHeading>false</editHeading>
+        <editHeading>true</editHeading>
+        <layoutColumns/>
+        <layoutColumns/>
         <layoutColumns/>
         <style>CustomLinks</style>
     </layoutSections>

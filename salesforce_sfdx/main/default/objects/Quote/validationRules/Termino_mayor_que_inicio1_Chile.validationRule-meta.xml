@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>Termino_mayor_que_inicio1_Chile</fullName>
-    <active>true</active>
-    <errorConditionFormula>OR(RecordType.DeveloperName=&apos;Oferta_Energia_Chile&apos;,RecordType.DeveloperName=&apos;Oferta_Gas_Chile&apos;,RecordType.DeveloperName=&apos;Oferta_Soluciones_Chile&apos;)&amp;&amp;$Profile.Name &lt;&gt; &quot;System Administrator&quot;
-&amp;&amp; OSFCL_Fecha_Termino_Suministro_1__c &lt; OSFCL_Fecha_Inicio_Suministro_1__c</errorConditionFormula>
-    <errorMessage>Fecha de término debe ser posterior a la fecha de inicio</errorMessage>
-</ValidationRule>

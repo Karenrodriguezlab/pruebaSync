@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>OfertaVinculanteFechaVto</fullName>
-    <active>true</active>
-    <description>Para cerrar ganada una oportunidad la fecha de la oferta debe ser mayor al dia de hoy, no tiene que estar vencida</description>
-    <errorConditionFormula>AND(ISPICKVAL(StageName, &quot;Cerrada ganada&quot;),
-aiesync__Easy_Sync_Quote__r.vlocity_cmt__ValidationDate__c  &lt;=   DATETIMEVALUE( TODAY()),$Profile.Name &lt;&gt; &quot;Administrador del sistema&quot;,$Profile.Name &lt;&gt; &quot;System Administrator&quot;)</errorConditionFormula>
-    <errorMessage>No se puede cerrar una Oportunidad como Ganada si la Oferta está vencida</errorMessage>
-</ValidationRule>
