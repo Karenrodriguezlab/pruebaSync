@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Oferta Actualizada</name>
+    <style>none</style>
+    <subject>{!Quote.OSFMX_BusinessName__c} | Oferta Actualizada</subject>
+    <textOnly>Oferta Actualizada
+Estimada: {!Quote.OSFMX_Assignedto__c}
+
+Le notificamos que tiene un registro de solicitud actualizado con las siguientes características:
+
+a) Propietario: {!Quote.OwnerFullName}
+
+b) Razón Social: {!Quote.OSFMX_BusinessName__c}
+
+c) RFC: {!Quote.OSFMX_AccountRFC__c}
+
+d) Tipo de oferta: {!Quote.OSFMX_OfferType__c}
+
+e) Sector: {!Quote.OSFMX_AccountSector__c}
+
+f) Especificaciones: {!Quote.OSFMX_ParticularSpecifications__c}
+
+Para ir directamente al registro haga clic:
+
+{!Quote.Link}
+Engie México</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

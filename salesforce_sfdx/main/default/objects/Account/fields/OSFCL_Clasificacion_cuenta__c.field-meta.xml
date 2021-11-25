@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OSFCL_Clasificacion_cuenta__c</fullName>
+    <externalId>false</externalId>
+    <label>Clasificación cuenta</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>One ENGIE</fullName>
+                <default>false</default>
+                <label>One ENGIE</label>
+            </value>
+            <value>
+                <fullName>Coordinación Comercial</fullName>
+                <default>false</default>
+                <label>Coordinación Comercial</label>
+            </value>
+            <value>
+                <fullName>División Comercial</fullName>
+                <default>false</default>
+                <label>División Comercial</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

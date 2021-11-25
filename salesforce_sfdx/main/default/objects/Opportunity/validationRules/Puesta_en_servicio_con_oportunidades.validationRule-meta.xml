@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Puesta_en_servicio_con_oportunidades</fullName>
+    <active>false</active>
+    <description>La casilla Puesta en servicio sólo se puede marcar cuando la oportunidad está CERRADA GANADA y las Opciones del cliente son &quot;1. Cliente en zona Engie&quot; o &quot;2. Cliente en zona no Engie&quot;.</description>
+    <errorConditionFormula>and(
+RecordType.Name = &apos;Gas&apos;,
+OSFMX_StartUp__c=TRUE,
+OR(
+IsWon = FALSE,
+OSFMX_NumberAssociatedOffers__c &lt; 1,
+ISBLANK(TEXT( OSFMX_CustomerOptions__c ))))</errorConditionFormula>
+    <errorMessage>La casilla Puesta en servicio sólo se puede marcar cuando la oportunidad está CERRADA GANADA, tiene una OFERTA sincronizada y las OPCIONES DE CLIENTE son &quot;1. Cliente en zona Engie&quot;, &quot;2. Cliente en zona no Engie&quot; o &quot;3. Cliente directo a transporte&quot;.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,27 @@
+<div ng-controller="itemController">
+    <section class="slds-container_small card-usage-tips" ng-if="showCard">
+        <header class="slds-text-title_bold slds-m-bottom_x-small">{{session.subTitle || 'Some Tips'}}</header>
+        <article class="slds-card">
+            <div class="slds-grid slds-p-around_medium" ng-repeat="item in obj.items | limitTo: itemsShown" ng-class="{'slds-border_top': !$first}">
+                <div class="slds-col slds-size_2-of-12">
+                    <span class="slds-icon_container" title="Description of icon when needed">
+                        <svg class="vlc-svg-icon">
+                            <use xlink:href="{{'/resource/customSvg#' + item.icon}}"></use>
+                        </svg>
+                        <!-- <vloc-card-icon icon="item.icon" sprite="item.sprite" size="'medium'" extra-classes="'big ut-icon'"></vloc-card-icon> -->
+                    </span>     
+                </div>
+                <div class="slds-col slds-size_10-of-12">
+                    <div class="slds-grid slds-grid_align-spread" ng-if="item.cost">
+                        <div><strong>{{item.title}}</strong></div>
+                        <div>{{item.cost}}</div>
+                    </div>
+                    <div>{{item.description}}</div>
+                </div>
+            </div>
+            <div class="slds-p-around_medium slds-p-top_none" ng-if="hasMore">
+                <a ng-click="showHideTips()">View {{itemsShown == itemsLimit ? 'more' : 'less'}}</a>
+            </div>
+        </article>
+    </section>
+</div>

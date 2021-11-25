@@ -1,0 +1,81 @@
+<messaging:emailTemplate subject="{!relatedTo.OSFMX_BusinessName__c} | Solicitud Aprobación Oferta Multipunto" recipientType="User" relatedToType="Quote" >
+<messaging:htmlEmailBody >
+
+<p><img src="https://engielatam--devmexico--c.documentforce.com/servlet/servlet.ImageServer?id=015c00000013ime&oid=00Dc0000003wiic&lastMod=1636574010000" alt="Mexcom_Ok nuevo 2" /></p>
+<div style="text-align: center;"><span style="font-size: medium;"><span style="color: #000000;"><span style="font-family: 'Times New Roman';"><span style="font-style: normal;"><span style="font-variant-ligatures: normal;"><span style="font-weight: 400;"><span style="white-space: normal;"><span style="text-decoration-thickness: initial;"><span style="text-decoration-style: initial;"><span style="text-decoration-color: initial;"><span style="font-family: Arial, Helvetica, sans-serif;"><em><strong><span style="font-size: 16px;"><span style="color: #000000;"><span style="font-style: normal;"><span style="font-variant-ligatures: normal;"><span style="font-weight: 400;"><span style="white-space: normal;"><span style="text-decoration-thickness: initial;"><span style="text-decoration-style: initial;"><span style="text-decoration-color: initial;"><span style="color: #000000; font-family: arial; font-size: 12pt;"><span style="font-size: 12pt;"><strong>Notificaci&oacute;n de aprobaci&oacute;n de oferta</strong></span></span></span></span></span></span></span></span></span></span></span></strong></em></span></span></span></span></span></span></span></span></span></span></span></div>
+<p>&nbsp;</p>
+<div style="text-align: start;"><span style="font-size: medium;"><span style="color: #000000;"><span style="font-family: 'Times New Roman';"><span style="font-style: normal;"><span style="font-variant-ligatures: normal;"><span style="font-weight: 400;"><span style="white-space: normal;"><span style="text-decoration-thickness: initial;"><span style="text-decoration-style: initial;"><span style="text-decoration-color: initial;"><span style="font-family: Arial, Helvetica, sans-serif;"><span style="font-size: 16px;"><span style="color: #000000;"><span style="font-style: normal;"><span style="font-variant-ligatures: normal;"><span style="font-weight: 400;"><span style="white-space: normal;"><span style="text-decoration-thickness: initial;"><span style="text-decoration-style: initial;"><span style="text-decoration-color: initial;"><span style="color: #000000; font-family: arial; font-size: 12pt;"><span style="font-size: 12pt;">Estimado aprobador, tiene una oferta de&nbsp;<strong>{!relatedTo.Owner.Name}</strong>&nbsp;pendiente de aprobaci&oacute;n.&nbsp;&nbsp;&nbsp;</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></div>
+<div style="text-align: start;"><span style="font-size: medium;"><span style="color: #000000;"><span style="font-family: 'Times New Roman';"><span style="font-style: normal;"><span style="font-variant-ligatures: normal;"><span style="font-weight: 400;"><span style="white-space: normal;"><span style="text-decoration-thickness: initial;"><span style="text-decoration-style: initial;"><span style="text-decoration-color: initial;">&nbsp;</span></span></span></span></span></span></span></span></span></span></div>
+<div style="text-align: start;"><span style="font-size: medium;"><span style="color: #000000;"><span style="font-family: 'Times New Roman';"><span style="font-style: normal;"><span style="font-variant-ligatures: normal;"><span style="font-weight: 400;"><span style="white-space: normal;"><span style="text-decoration-thickness: initial;"><span style="text-decoration-style: initial;"><span style="text-decoration-color: initial;"><span style="font-family: Arial, Helvetica, sans-serif;"><span style="font-size: 16px;"><span style="color: #000000;"><span style="font-style: normal;"><span style="font-variant-ligatures: normal;"><span style="font-weight: 400;"><span style="white-space: normal;"><span style="text-decoration-thickness: initial;"><span style="text-decoration-style: initial;"><span style="text-decoration-color: initial;"><span style="color: #000000; font-family: arial; font-size: 12pt;"><span style="font-size: 12pt;">Puede contestar este correo poniendo en la primera l&iacute;nea las palabras&nbsp;<strong>APROBAR&nbsp;</strong>o&nbsp;<strong>RECHAZAR</strong>, y en la segunda l&iacute;nea, sin espacio, los comentarios u observaciones que tenga.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></div>
+<div style="text-align: start;"><br /> <span style="font-size: medium;"><span style="color: #000000;"><span style="font-family: 'Times New Roman';"><span style="font-style: normal;"><span style="font-variant-ligatures: normal;"><span style="font-weight: 400;"><span style="white-space: normal;"><span style="text-decoration-thickness: initial;"><span style="text-decoration-style: initial;"><span style="text-decoration-color: initial;"><span style="font-family: Arial, Helvetica, sans-serif;"><span style="font-size: 16px;">N&uacute;mero de Oferta:&nbsp;<strong>{!relatedTo.QuoteNumber}</strong></span></span></span></span></span></span></span></span></span></span></span></span><br /> &nbsp;</div>
+<div>&nbsp;
+<table style="border-collapse: collapse;"><colgroup width="499"> </colgroup> <colgroup width="476"> </colgroup>
+<tbody>
+<tr style="height: 19px;">
+<td style="background-color: #00aef0; height: 19px; text-align: center; border: 1px solid #dddddd;" colspan="2" valign="middle" bgcolor="#00AEF0"><span style="font-size: 16px;"><span style="font-family: Arial,Helvetica,sans-serif;"><strong><span style="color: #ffffff;">OFERTA MULTIPUNTO  {!relatedTo.Name}  "{!relatedTo.OSFMX_CountTotalQuotes__c}" PUNTOS DE SUMINISTRO<br /> RFC: {!relatedTo.OSFMX_AccountRFC__c}</span></strong></span></span></td>
+</tr>
+<tr style="height: 30px;">
+<td style="background-color: #00aef0; height: 30px; text-align: center; border: 1px solid #dddddd;" valign="middle" bgcolor="#00AEF0"><span style="font-size: 16px;"><span style="font-family: Arial,Helvetica,sans-serif;"><strong><span style="color: #ffffff;">NIVEL DE APROBACI&Oacute;N</span></strong></span></span></td>
+<td style="background-color: #ffffff; text-align: center; border: 1px solid #dddddd; height: 30px;" valign="middle" bgcolor="#FFFFFF"><span style="font-size: 16px;"><span style="font-family: Arial,Helvetica,sans-serif;"><apex:outputField value="{!relatedTo.OSFMX_MasterNivelApro__c}"/></span></span></td>
+</tr>
+<tr style="height: 16px;">
+<td style="background-color: #00aef0; height: 16px; text-align: center; border: 1px solid #dddddd;" valign="middle" bgcolor="#00AEF0"><span style="font-size: 16px;"><span style="font-family: Arial,Helvetica,sans-serif;"><strong><span style="color: #ffffff;">TIPO DE OFERTA</span></strong></span></span></td>
+<td style="background-color: #ffffff; text-align: center; border: 1px solid #dddddd; height: 16px;" valign="middle" bgcolor="#FFFFFF"><span style="font-size: 16px;"><span style="font-family: Arial,Helvetica,sans-serif;"><apex:outputField value="{!relatedTo.OSFMX_OfferType__c}"/></span></span></td>
+</tr>
+<tr style="height: 44px;">
+<td style="background-color: #00aef0; height: 44px; text-align: center; border: 1px solid #dddddd;" valign="middle" bgcolor="#00AEF0"><span style="font-size: 16px;"><span style="font-family: Arial,Helvetica,sans-serif;"><strong><span style="color: #ffffff;">SUMA DE LOS VOL&Uacute;MENES SOLICITADOS (GJ/Plazo suministro)</span></strong></span></span></td>
+<td style="background-color: #ffffff; text-align: center; border: 1px solid #dddddd; height: 44px;" valign="middle" bgcolor="#FFFFFF"><span style="font-size: 16px;"><span style="font-family: Arial,Helvetica,sans-serif;"><apex:outputField value="{!relatedTo.OSFMX_MasterConsumoPlazoSTR__c}"/></span></span></td>
+</tr>
+<tr style="height: 18px;">
+<td style="background-color: #00aef0; height: 18px; text-align: center; border: 1px solid #dddddd;" valign="middle" bgcolor="#00AEF0"><span style="font-size: 16px;"><span style="font-family: Arial,Helvetica,sans-serif;"><strong><span style="color: #ffffff;">SUMA DEL VOLUMEN POR D&Iacute;A (GJ/D&Iacute;A)</span></strong></span></span></td>
+<td style="background-color: #ffffff; text-align: center; border: 1px solid #dddddd; height: 18px;" valign="middle" bgcolor="#FFFFFF"><span style="font-size: 16px;"><span style="font-family: Arial,Helvetica,sans-serif;"><apex:outputField value="{!relatedTo.OSFMX_MasterDailyVolume__c}"/></span></span></td>
+</tr>
+<tr style="height: 27px;">
+<td style="background-color: #00aef0; height: 27px; text-align: center; border: 1px solid #dddddd;" valign="middle" bgcolor="#00AEF0"><span style="font-size: 16px;"><span style="font-family: Arial,Helvetica,sans-serif;"><strong><span style="color: #ffffff;">SUMA GWh/Plazo suministro</span></strong></span></span></td>
+<td style="background-color: #ffffff; text-align: center; border: 1px solid #dddddd; height: 27px;" valign="middle" bgcolor="#FFFFFF"><span style="font-size: 16px;"><span style="font-family: Arial,Helvetica,sans-serif;"><apex:outputField value="{!relatedTo.OSFMX_MasterGwhYear__c}"/></span></span></td>
+</tr>
+<tr style="height: 12px;">
+<td style="background-color: #00aef0; height: 12px; text-align: center; border: 1px solid #dddddd;" valign="middle" bgcolor="#00AEF0"><span style="font-size: 16px;"><span style="font-family: Arial,Helvetica,sans-serif;"><strong><span style="color: #ffffff;">PLAZO DE SUMINISTRO (MESES)</span></strong></span></span></td>
+<td style="background-color: #ffffff; text-align: center; border: 1px solid #dddddd; height: 12px;" valign="middle" bgcolor="#FFFFFF"><span style="font-size: 16px;"><span style="font-family: Arial,Helvetica,sans-serif;"><apex:outputField value="{!relatedTo.OSFMX_Plazo_suministro_Gas__c}"/></span></span></td>
+</tr>
+<tr style="height: 18px;">
+<td style="background-color: #00aef0; height: 18px; text-align: center; border: 1px solid #dddddd;" valign="middle" bgcolor="#00AEF0"><span style="font-size: 16px;"><span style="font-family: Arial,Helvetica,sans-serif;"><strong><span style="color: #ffffff;">CUADRANTE</span></strong></span></span></td>
+<td style="background-color: #ffffff; text-align: center; border: 1px solid #dddddd; height: 18px;" valign="middle" bgcolor="#FFFFFF"><span style="font-size: 16px;"><span style="font-family: Arial,Helvetica,sans-serif;"><apex:outputField value="{!relatedTo.OSFMX_MasterCuadrante__c}"/></span></span></td>
+</tr>
+<tr style="height: 42px;">
+<td style="background-color: #00aef0; height: 42px; text-align: center; border: 1px solid #dddddd;" valign="middle" bgcolor="#00AEF0"><span style="font-size: 16px;"><span style="font-family: Arial,Helvetica,sans-serif;"><strong><span style="color: #ffffff;">MARGEN ESTIMADO MOL&Eacute;CULA USD<br /> (Por encima del precio medio de compra)</span></strong></span></span></td>
+<td style="background-color: #ffffff; text-align: center; border: 1px solid #dddddd; height: 42px;" valign="middle" bgcolor="#FFFFFF"><span style="font-size: 16px;"><span style="font-family: Arial,Helvetica,sans-serif;">USD &nbsp;<apex:outputField value="{!relatedTo.OSFMX_Master_MargenEstimadoMoleculaUSD__c}"/></span></span></td>
+</tr>
+<tr style="height: 18px;">
+<td style="background-color: #00aef0; height: 18px; text-align: center; border: 1px solid #dddddd;" valign="middle" bgcolor="#00AEF0"><span style="font-size: 16px;"><span style="font-family: Arial,Helvetica,sans-serif;"><strong><span style="color: #ffffff;">COMERCIALIZACI&Oacute;N</span></strong></span></span></td>
+<td style="background-color: #ffffff; text-align: center; border: 1px solid #dddddd; height: 18px;" valign="middle" bgcolor="#FFFFFF"><span style="font-size: 16px;"><span style="font-family: Arial,Helvetica,sans-serif;"><apex:outputField value="{!relatedTo.OSFMX_Rango_comercializaci_n__c}"/></span></span></td>
+</tr>
+<tr style="height: 14px;">
+<td style="background-color: #00aef0; height: 14px; text-align: center; border: 1px solid #dddddd;" valign="middle" bgcolor="#00AEF0"><span style="font-size: 16px;"><span style="font-family: Arial,Helvetica,sans-serif;"><strong><span style="color: #ffffff;">MARGEN DE COMERCIALIZACI&Oacute;N (USD)</span></strong></span></span></td>
+<td style="background-color: #ffffff; text-align: center; border: 1px solid #dddddd; height: 14px;" valign="middle" bgcolor="#FFFFFF"><span style="font-size: 16px;"><span style="font-family: Arial,Helvetica,sans-serif;">USD &nbsp;<apex:outputField value="{!relatedTo.OSFMX_Margen_comercializacion_usd__c}"/></span></span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="" style="left: 588.182px; top: 693.153px;"><br /> <br /><br />
+
+<span style="font-size: 16px;">
+<span style="font-family: Arial,Helvetica,sans-serif;">
+<a href="{!LEFT($Api.Partner_Server_URL_140,FIND('.com',$Api.Partner_Server_URL_140)+4)+relatedTo.Id}">Si requiere consultar la oferta en SalesForce de click AQU&Iacute;</a>
+</span></span>
+<br /> <br /> <br /> <img style="max-width: 895.1177276611328px;" title="Engie_jpg1" src="https://engielatam--devmexico--c.documentforce.com/file-asset-public/Engie_jpg1?oid=00Dc0000003wiic" alt="Engie_jpg1" /><br /> <br /> &nbsp;
+</div>
+
+
+
+</messaging:htmlEmailBody>
+
+<messaging:attachment renderAs="PDF" filename="detalle cuadro de autorización.pdf">
+    <c:OSFMX_MultiSiteComponent tempMasterQuoteId="{!relatedTo.Id}" >
+    </c:OSFMX_MultiSiteComponent>
+</messaging:attachment>
+
+<messaging:plainTextEmailBody >
+
+</messaging:plainTextEmailBody>
+</messaging:emailTemplate>

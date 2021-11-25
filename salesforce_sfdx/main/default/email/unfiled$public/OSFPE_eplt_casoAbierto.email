@@ -1,0 +1,6 @@
+Se ha creado el nuevo caso para: {!Case.Account}
+Asunto: {!Case.Subject}
+Descripción: {!Case.Description}
+Propietario del caso: {!Case.OwnerFullName}
+Estado: {!Case.Status}
+Creado por: {!Case.LastModifiedBy}

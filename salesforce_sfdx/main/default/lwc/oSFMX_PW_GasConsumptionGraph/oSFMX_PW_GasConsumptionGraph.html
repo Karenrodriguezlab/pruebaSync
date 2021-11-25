@@ -1,0 +1,98 @@
+<template>
+    <lightning-card title="Gráfica consumos" icon-name="custom:custom19">
+        <div class="slds-grid slds-gutters">
+            <div class="slds-col slds-size_6-of-12">
+                <div class="slds-form-element" style="padding-left:20pt">
+                    <label class="slds-form-element__label" for="estados">Estados: </label>
+                    <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                        <select id="consumos" class="slds-select" name="valueState" onchange={cambiarFiltro}>
+                            <option value="Todos">Todos</option>
+                            <template for:each={states} for:item="state">
+                                <option key={state}>
+                                    {state}
+                                </option>
+                            </template>                    
+                        </select>                
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slds-col slds-size_6-of-12">
+                <div class="slds-form-element" style="padding-right:20pt">
+                    <label class="slds-form-element__label" for="puntossuministro">Punto de suministro: </label>
+                    <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                        <select id="puntossuministro" class="slds-select" name="valueSuministros" onchange={cambiarFiltro}>
+                            <option value="Todos">Todos</option>
+                            <template for:each={p_suministros} for:item="p_suministro">
+                                <option key={p_suministro}>
+                                    {p_suministro}
+                                </option>
+                            </template>                    
+                        </select>                
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slds-grid slds-gutters">
+            <div class="slds-col slds-size_6-of-12">
+                <div class="slds-form-element" style="padding-left:20pt">
+                    <label class="slds-form-element__label" for="tiposolucion">Tipo de solución:</label>
+                    <div class="slds-form-element__control">
+                        <div class="slds-select_container">
+                            <select class="slds-select" id="tiposolucion" name="valueSolutions" onchange={cambiarFiltro}>
+                                <option value="Todos">Todos</option>
+                                <template for:each={t_solutions} for:item="t_solution">
+                                    <option key={t_solution}>
+                                        {t_solution}
+                                    </option>
+                                </template> 
+                            </select>
+                        </div>
+                    </div>
+                </div>                                             
+            </div>
+            <div class="slds-col slds-size_6-of-12">
+                <div class="slds-form-element" style="padding-right:20pt">
+                    <label class="slds-form-element__label" for="periodos">Periodo:</label>
+                    <div class="slds-form-element__control">
+                        <div class="slds-select_container">
+                            <select class="slds-select" id="periodos" name="valuePeriods" onchange={cambiarFiltro}>
+                                <option value="Todos">Todos</option>
+                                <template for:each={periods} for:item="period">
+                                    <option key={period}>
+                                        {period}
+                                    </option>
+                                </template>
+                            </select>
+                        </div>
+                    </div>
+                </div>                               
+            </div>
+        </div>
+
+        <div class="chart slds-var-m-around_medium" lwc:dom="manual"></div>
+
+        <div class="slds-var-p-around_medium lgc-bg-inverse">
+            <p>
+                <lightning-button icon-name="utility:download" 
+                              label="Exportar Consumos" 
+                              onclick={downloadCSVFileJS} variant="brand">
+                </lightning-button>
+            </p>
+        </div>
+
+    <div style="height: 300px;">
+		<lightning-datatable
+			key-field="id"
+			data={consumosFiltrados}
+			columns={columns}
+			hide-checkbox-column
+		>
+		</lightning-datatable>
+	</div>
+    </lightning-card>
+</template>

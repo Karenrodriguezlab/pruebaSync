@@ -1,0 +1,17 @@
+<div><img style="max-width: 481.597px; width: 178.993px; height: 90px;" title="Engie jpg" src="https://engielatam--devmexico--c.documentforce.com/file-asset-public/Engie_jpg1?oid=00Dc0000003wiic" alt="Engie jpg" /></div>
+<div style="text-align: center;">&nbsp;</div>
+<div><span style="font-family: arial;"><span style="font-family: arial;"><span style="font-family: arial;"><span style="font-size: 12pt;">Estimad@ <strong>{!Quote.OSFMX_OwnerQuote__c}</strong>, tu oferta&nbsp;<strong>{!Quote.Name}</strong>&nbsp;est&aacute; pr&oacute;xima a expirar. Si desea continuar con el proceso deber&aacute; solicitar una nueva oferta antes de la fecha de vencimiento&nbsp;<strong>{!Quote.vlocity_cmt__ValidationDate__c}</strong>.</span></span></span></span></div>
+<div>&nbsp;</div>
+<div><span style="font-family: arial;"><span style="font-family: arial;"><span style="font-family: arial;"><span style="font-size: 12pt;">Detalle de la oferta.&nbsp;</span></span></span></span></div>
+<div>&nbsp;</div>
+<div><span style="font-family: arial;"><span style="font-family: arial;"><span style="font-family: arial;"><span style="font-size: 12pt;">Nombre de la Oferta:&nbsp;<strong>{!Quote.Name}</strong></div>
+<div><span style="font-family: arial;"><span style="font-family: arial;"><span style="font-family: arial;"><span style="font-size: 12pt;">N&uacute;mero de la Oferta:&nbsp;<strong>{!Quote.QuoteNumber}</strong></div>
+<div><span style="font-family: arial;"><span style="font-family: arial;"><span style="font-family: arial;"><span style="font-size: 12pt;">Soluci&oacute;n:&nbsp;<strong>{!Quote.OSFMX_OppSolution__c}</strong></div>
+<div><span style="font-family: arial;"><span style="font-family: arial;"><span style="font-family: arial;"><span style="font-size: 12pt;">Raz&oacute;n Social:&nbsp;<strong>{!Quote.OSFMX_BusinessName__c}</strong></div>
+<div><span style="font-family: arial;"><span style="font-family: arial;"><span style="font-family: arial;"><span style="font-size: 12pt;">Fecha de Vencimiento:&nbsp;<strong>{!Quote.vlocity_cmt__ValidationDate__c}</strong></div>
+<div><span style="font-family: arial;"><span style="font-family: arial;"><span style="font-family: arial;"><span style="font-size: 12pt;">Fecha de Oferta Presentada:&nbsp;<strong>{!Quote.OSFMX_OfferDeliveryDate__c}</strong></div>
+<div>&nbsp;</div>
+<div><span style="font-family: arial;"><span style="font-family: arial;"><span style="font-family: arial;"><span style="font-size: 12pt;">Para mayor detalle de la oferta de clic: <a href="{!Quote.Link}">Aqu&iacute;</a></div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div><span style="font-family: arial;"><span style="font-family: arial;"><span style="font-family: arial;"><span style="font-size: 12pt;"><span style="font-family: arial;"><span style="font-size: 12pt;"><img style="max-width: 481.597px; width: 178.993px; height: 90px;" title="Engie jpg" src="https://engielatam--devmexico--c.documentforce.com/file-asset-public/Engie_jpg1?oid=00Dc0000003wiic" alt="Engie jpg" /></span></span></div>

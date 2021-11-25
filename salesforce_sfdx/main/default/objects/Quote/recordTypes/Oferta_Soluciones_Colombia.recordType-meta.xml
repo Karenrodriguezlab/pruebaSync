@@ -1,0 +1,847 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Oferta_Soluciones_Colombia</fullName>
+    <active>true</active>
+    <label>Oferta Soluciones Colombia</label>
+    <picklistValues>
+        <picklist>Indice__c</picklist>
+        <values>
+            <fullName>HH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HSCH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VPM</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Modalidad_de_contrato__c</picklist>
+        <values>
+            <fullName>Pago lo contratado</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pago lo demandado</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pago lo generado %2B c%2Fs neteo de energía</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Nivel_de_tension__c</picklist>
+        <values>
+            <fullName>1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STN</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OSFCL_Base_referencia_precio__c</picklist>
+        <values>
+            <fullName>Brent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sustituto</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OSFCL_Indexacion_ESSCL__c</picklist>
+        <values>
+            <fullName>Brent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Precio Paridad Diesel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Precio Paridad Fuel Oil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Precio Paridad GLP</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OSFMX_AdditionalServices__c</picklist>
+        <values>
+            <fullName>Autotransporte</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coberturas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Distribución</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GNC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Infraestructura</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Aplica</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Usos propios</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OSFMX_ApplicableTransportRate__c</picklist>
+        <values>
+            <fullName>Zona 3  Zona 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Zona 3  Zona 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Zona 3  Zona 3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Zona 3  Zona 4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Zona 3  Zona 5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Zona 3  Zona 6</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Zona 3  Zona 7</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OSFMX_Assignedto__c</picklist>
+        <values>
+            <fullName>Mónica Huesca Reyes</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OSFMX_AuthorizationVPComercial__c</picklist>
+        <values>
+            <fullName>Autorizada</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>En Aprobación</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Revisión Necesaria</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OSFMX_AuthorizationVPSupply__c</picklist>
+        <values>
+            <fullName>Autorizada</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>En Aprobación</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Revisión Necesaria</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OSFMX_BusinessLine__c</picklist>
+        <values>
+            <fullName>Test1%2C</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Test2</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OSFMX_ConnectionPipeline__c</picklist>
+        <values>
+            <fullName>Autotransportista</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Directo al ducto de Transportista</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Distribución Regulada</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Distribución convencional</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GNC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Usos propios</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OSFMX_ConnectionType__c</picklist>
+        <values>
+            <fullName>Conexion Estandar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Conexion Estandar %2B No Estandar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ninguno</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OSFMX_ContractType__c</picklist>
+        <values>
+            <fullName>Nuevo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Renovación</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OSFMX_CurrentGasConsumer__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Si</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OSFMX_CustomerType__c</picklist>
+        <values>
+            <fullName>Cliente Final</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Comercializador</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OSFMX_DistributorOrCarrier__c</picklist>
+        <values>
+            <fullName>Autotransporte Marabis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DGJ-Bajio</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Distribución CMG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Distribución DGJ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Distribución DGQ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Distribución GNP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Distribución GNP-Mérida</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Distribución Gas Natural del Noroeste</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Distribución Metrogas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Distribución NGM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Distribución Naturgy Bajio</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Distribución Naturgy Norte</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Distribución Naturgy Toluca</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Distribución TMG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gas Natural Comprimido</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transporte Cenagas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transporte Mayakan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Usos propios</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OSFMX_IndexReference__c</picklist>
+        <values>
+            <fullName>HH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HSC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>San J</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VPM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WAHA</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OSFMX_MoleculeAvailability__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Si</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OSFMX_OfferType__c</picklist>
+        <values>
+            <fullName>No Vinculante</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vinculante</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OSFMX_OffersDeadline__c</picklist>
+        <values>
+            <fullName>45 dias</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Otro</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OSFMX_OwnCapacity__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Si</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OSFMX_ParticularSpecifications__c</picklist>
+        <values>
+            <fullName>Cliente Existente%2C con condiciones Especiales</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cliente Existente%2C sin condición particular</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cte nuevo%2C  con condiciones especiales</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cte nuevo%2C  sin condicion particular</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OSFMX_PriceStructure__c</picklist>
+        <values>
+            <fullName>100%25 Volumétrico</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Firme%2FInterrumpible</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Otro</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OSFMX_QuoteType__c</picklist>
+        <values>
+            <fullName>OSFMX_OfertaElectricidad</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OSFMX_OfertaGas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OSFMX_Soluciones</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OSFMX_RequestWithObservationsGas__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Si</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OSFMX_RequestWithObservationsMolecule__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Si</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OSFMX_RequestWithObservationsTransport__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Si</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OSFMX_SolutionType__c</picklist>
+        <values>
+            <fullName>Comercialización de Gas Natural</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Corporate PPA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Distribución de Gas Natural</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ducto Dedicado</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Eficiencia Energética</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GNC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GNV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Generación Onsite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Instalación</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mantenimiento</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MexCom</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Movilidad Eléctrica</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OSFMX_Solution__c</picklist>
+        <values>
+            <fullName>All in%3A Compresión%2C transporte y descompresión</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Auditoría de Eficiencia Energética</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cogeneración %28on site%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Comercialización %2B Conducción</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Comercialización a través de un tercero</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Compresión molécula</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Conducción</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Conexiones Gas Natural</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Corporate PPA Renovable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Corporate PPA Térmico</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Distribución %2B Comercialización</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Distribución Simple</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ducto Dedicado</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ESCO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EV Chargers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EV Chargers %2B Flotas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Excedentes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Flotas de Vehículos Eléctricos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Flotas de Vehículos GNV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HVAC Retrofit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hard Facility Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Instalación estación GNV onsite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Integrated Facility Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MEM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Molécula pura</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>O%26M Industrial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>O%26M Plantas Fotovoltaicas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PPA Renovable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PPA Térmico</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rooftop PV %28on site%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Soft Facility Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Subastas</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OSFMX_SubEstatus__c</picklist>
+        <values>
+            <fullName>Aprobación</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Autorización</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Factibilidad Mexcom</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Factibilidad distribución</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Factibilidad ducto dedicado</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Factibilidad eléctrica</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Factibilidad imposible</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Factibilidad otras soluciones</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Producto</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Producto %28Oferta con observaciones%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Producto imposible</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solicitud</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OSFMX_TransportAvailability__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Si</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OSFMX_TypeGuaranteeRequested__c</picklist>
+        <values>
+            <fullName>Carta de crédito</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Efectivo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fianza</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Garantía corporativa</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OSFMX_UserTransport__c</picklist>
+        <values>
+            <fullName>Usuario de Transporte</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OSFPE_fld_Aprobaciones_Politica_Comerc__c</picklist>
+        <values>
+            <fullName>Director Ejecutivo más un %281%29 Apoderado Clase A o dos %282%29 Apoderados Clase A</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Directorio de EEP y Grupo Engie</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Directorio de EEP y a decisión del Director Ejecutivo la BU CC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vicepresidente Comercial y Gerente de Ventas y Gestión de Clientes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OSFPE_fld_Tipo_de_proceso__c</picklist>
+        <values>
+            <fullName>Fast track</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Normal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ágil</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OSFPE_fld_Unidades_Precio_Energia__c</picklist>
+        <values>
+            <fullName>S%2F%2E%2FMWh</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>USD%2FMWh</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ctm PEN%2FkWh</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OSFPE_fld_Unidades_Precio_Potencia__c</picklist>
+        <values>
+            <fullName>PEN%2FkW-mes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>USD%2FkW-mes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status</picklist>
+        <values>
+            <fullName>Borrador</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Ganada</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Presentada</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rechazada</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

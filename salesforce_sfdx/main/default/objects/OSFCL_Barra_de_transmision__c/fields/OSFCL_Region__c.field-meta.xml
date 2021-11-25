@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OSFCL_Region__c</fullName>
+    <externalId>false</externalId>
+    <label>Región</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>I REGION DE TARAPACA</fullName>
+                <default>false</default>
+                <label>I REGION DE TARAPACA</label>
+            </value>
+            <value>
+                <fullName>II REGION DE ANTOFAGASTA</fullName>
+                <default>false</default>
+                <label>II REGION DE ANTOFAGASTA</label>
+            </value>
+            <value>
+                <fullName>III REGION DE ATACAMA</fullName>
+                <default>false</default>
+                <label>III REGION DE ATACAMA</label>
+            </value>
+            <value>
+                <fullName>IV REGION DE COQUIMBO</fullName>
+                <default>false</default>
+                <label>IV REGION DE COQUIMBO</label>
+            </value>
+            <value>
+                <fullName>V REGION DE VALPARAISO</fullName>
+                <default>false</default>
+                <label>V REGION DE VALPARAISO</label>
+            </value>
+            <value>
+                <fullName>VI REGION DE O´HIGGINS</fullName>
+                <default>false</default>
+                <label>VI REGION DE O´HIGGINS</label>
+            </value>
+            <value>
+                <fullName>VII REGION DEL MAULE</fullName>
+                <default>false</default>
+                <label>VII REGION DEL MAULE</label>
+            </value>
+            <value>
+                <fullName>VIII REGION DEL BIOBIO</fullName>
+                <default>false</default>
+                <label>VIII REGION DEL BIOBIO</label>
+            </value>
+            <value>
+                <fullName>IX REGION DE LA ARAUCANIA</fullName>
+                <default>false</default>
+                <label>IX REGION DE LA ARAUCANIA</label>
+            </value>
+            <value>
+                <fullName>X REGION DE LOS LAGOS</fullName>
+                <default>false</default>
+                <label>X REGION DE LOS LAGOS</label>
+            </value>
+            <value>
+                <fullName>XI REGION DE AISEN</fullName>
+                <default>false</default>
+                <label>XI REGION DE AISEN</label>
+            </value>
+            <value>
+                <fullName>XII REGION DE MAGALLANES</fullName>
+                <default>false</default>
+                <label>XII REGION DE MAGALLANES</label>
+            </value>
+            <value>
+                <fullName>XIII REGION METROPOLITANA</fullName>
+                <default>false</default>
+                <label>XIII REGION METROPOLITANA</label>
+            </value>
+            <value>
+                <fullName>XIV REGION DE LOS RIOS</fullName>
+                <default>false</default>
+                <label>XIV REGION DE LOS RIOS</label>
+            </value>
+            <value>
+                <fullName>XV REGION DE ARICA Y PARINACOTA</fullName>
+                <default>false</default>
+                <label>XV REGION DE ARICA Y PARINACOTA</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

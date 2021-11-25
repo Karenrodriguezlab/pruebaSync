@@ -1,0 +1,923 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OSFMX_EngieSupplier__c</fullName>
+    <externalId>false</externalId>
+    <label>Proveedor Engie</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>OSFMX_SolutionType__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ENLIGHT</fullName>
+                <default>false</default>
+                <label>ENLIGHT</label>
+            </value>
+            <value>
+                <fullName>MEM</fullName>
+                <default>false</default>
+                <label>MEM</label>
+            </value>
+            <value>
+                <fullName>MX01-Country Template MX</fullName>
+                <default>false</default>
+                <label>MX01-Country Template MX</label>
+            </value>
+            <value>
+                <fullName>MX02-Consorcio Mexi Gas SA</fullName>
+                <default>false</default>
+                <label>MX02-Consorcio Mexi Gas SA</label>
+            </value>
+            <value>
+                <fullName>MX03-Cofely España SA</fullName>
+                <default>false</default>
+                <label>MX03-Cofely España SA</label>
+            </value>
+            <value>
+                <fullName>MX04-ENGIE México Servicios</fullName>
+                <default>false</default>
+                <label>MX04-ENGIE México Servicios</label>
+            </value>
+            <value>
+                <fullName>MX05-Tractebel DGJ SA DE CV</fullName>
+                <default>false</default>
+                <label>MX05-Tractebel DGJ SA DE CV</label>
+            </value>
+            <value>
+                <fullName>MX06-Tractebel Digaqro</fullName>
+                <default>false</default>
+                <label>MX06-Tractebel Digaqro</label>
+            </value>
+            <value>
+                <fullName>MX07-Engie Eólica Tres Mesas 3</fullName>
+                <default>false</default>
+                <label>MX07-Engie Eólica Tres Mesas 3</label>
+            </value>
+            <value>
+                <fullName>MX08-México Renovables</fullName>
+                <default>false</default>
+                <label>MX08-México Renovables</label>
+            </value>
+            <value>
+                <fullName>MX09-Engie Mex Consultores SA</fullName>
+                <default>false</default>
+                <label>MX09-Engie Mex Consultores SA</label>
+            </value>
+            <value>
+                <fullName>MX10-Energía Mayakan, S de RL</fullName>
+                <default>false</default>
+                <label>MX10-Energía Mayakan, S de RL</label>
+            </value>
+            <value>
+                <fullName>MX11-Engie México SA de CV</fullName>
+                <default>false</default>
+                <label>MX11-Engie México SA de CV</label>
+            </value>
+            <value>
+                <fullName>MX12-Tractebel GNP SA DE CV</fullName>
+                <default>false</default>
+                <label>MX12-Tractebel GNP SA DE CV</label>
+            </value>
+            <value>
+                <fullName>MX13-Gasoductos del Bajío</fullName>
+                <default>false</default>
+                <label>MX13-Gasoductos del Bajío</label>
+            </value>
+            <value>
+                <fullName>MX14-Cogeneración Eficiente NL</fullName>
+                <default>false</default>
+                <label>MX14-Cogeneración Eficiente NL</label>
+            </value>
+            <value>
+                <fullName>MX15-Tractebel Energía de Mont</fullName>
+                <default>false</default>
+                <label>MX15-Tractebel Energía de Mont</label>
+            </value>
+            <value>
+                <fullName>MX16-Natgasmex SA de CV</fullName>
+                <default>false</default>
+                <label>MX16-Natgasmex SA de CV</label>
+            </value>
+            <value>
+                <fullName>MX17-Tractebel Energia de Panu</fullName>
+                <default>false</default>
+                <label>MX17-Tractebel Energia de Panu</label>
+            </value>
+            <value>
+                <fullName>MX18-Servicios  Especializados</fullName>
+                <default>false</default>
+                <label>MX18-Servicios  Especializados</label>
+            </value>
+            <value>
+                <fullName>MX19-Engie México Plataforma</fullName>
+                <default>false</default>
+                <label>MX19-Engie México Plataforma</label>
+            </value>
+            <value>
+                <fullName>MX20-Engie México Renovables</fullName>
+                <default>false</default>
+                <label>MX20-Engie México Renovables</label>
+            </value>
+            <value>
+                <fullName>MX21-Energia Natural Peninsula</fullName>
+                <default>false</default>
+                <label>MX21-Energia Natural Peninsula</label>
+            </value>
+            <value>
+                <fullName>MX22-ENGIE México Generación</fullName>
+                <default>false</default>
+                <label>MX22-ENGIE México Generación</label>
+            </value>
+            <value>
+                <fullName>MX23-Engie México Operación</fullName>
+                <default>false</default>
+                <label>MX23-Engie México Operación</label>
+            </value>
+            <value>
+                <fullName>MX24-Tamauligas SA de CV</fullName>
+                <default>false</default>
+                <label>MX24-Tamauligas SA de CV</label>
+            </value>
+            <value>
+                <fullName>MX25-GDF Suez México Comercial</fullName>
+                <default>false</default>
+                <label>MX25-GDF Suez México Comercial</label>
+            </value>
+            <value>
+                <fullName>MX26-Engie Factory México</fullName>
+                <default>false</default>
+                <label>MX26-Engie Factory México</label>
+            </value>
+            <value>
+                <fullName>MX27-Solairedirect de México</fullName>
+                <default>false</default>
+                <label>MX27-Solairedirect de México</label>
+            </value>
+            <value>
+                <fullName>MX28-Geotérmica Cerro Pinto</fullName>
+                <default>false</default>
+                <label>MX28-Geotérmica Cerro Pinto</label>
+            </value>
+            <value>
+                <fullName>MX29-Geotérmica Derrumbabas</fullName>
+                <default>false</default>
+                <label>MX29-Geotérmica Derrumbabas</label>
+            </value>
+            <value>
+                <fullName>MX30-Geotérmica Sanganguey</fullName>
+                <default>false</default>
+                <label>MX30-Geotérmica Sanganguey</label>
+            </value>
+            <value>
+                <fullName>MX31-Thermion Solar PV Holding</fullName>
+                <default>false</default>
+                <label>MX31-Thermion Solar PV Holding</label>
+            </value>
+            <value>
+                <fullName>MX32-Solaire PV Holding México</fullName>
+                <default>false</default>
+                <label>MX32-Solaire PV Holding México</label>
+            </value>
+            <value>
+                <fullName>MX33-Recursos Solares PV de</fullName>
+                <default>false</default>
+                <label>MX33-Recursos Solares PV de</label>
+            </value>
+            <value>
+                <fullName>MX34-Energia Villa de Arriaga</fullName>
+                <default>false</default>
+                <label>MX34-Energia Villa de Arriaga</label>
+            </value>
+            <value>
+                <fullName>MX35-Tractebel Engineering LTD</fullName>
+                <default>false</default>
+                <label>MX35-Tractebel Engineering LTD</label>
+            </value>
+            <value>
+                <fullName>MX36-Sol de Insurgentes</fullName>
+                <default>false</default>
+                <label>MX36-Sol de Insurgentes</label>
+            </value>
+            <value>
+                <fullName>MX37-Sol de Insurgentes 1</fullName>
+                <default>false</default>
+                <label>MX37-Sol de Insurgentes 1</label>
+            </value>
+            <value>
+                <fullName>MX38-TAG Pipelines Sur</fullName>
+                <default>false</default>
+                <label>MX38-TAG Pipelines Sur</label>
+            </value>
+            <value>
+                <fullName>MX39-Servicios y Energía México</fullName>
+                <default>false</default>
+                <label>MX39-Servicios y Energía México</label>
+            </value>
+            <value>
+                <fullName>MX40-Engie México Transporte</fullName>
+                <default>false</default>
+                <label>MX40-Engie México Transporte</label>
+            </value>
+            <value>
+                <fullName>MX41-Engie México Eólica SAPI</fullName>
+                <default>false</default>
+                <label>MX41-Engie México Eólica SAPI</label>
+            </value>
+            <value>
+                <fullName>MX42-Engie Marketplace</fullName>
+                <default>false</default>
+                <label>MX42-Engie Marketplace</label>
+            </value>
+            <value>
+                <fullName>MX43-Eólica Tres Mesas 4</fullName>
+                <default>false</default>
+                <label>MX43-Eólica Tres Mesas 4</label>
+            </value>
+            <value>
+                <fullName>MX44-Akin Solar</fullName>
+                <default>false</default>
+                <label>MX44-Akin Solar</label>
+            </value>
+            <value>
+                <fullName>MX45-Engie Villa Ahumada PV</fullName>
+                <default>false</default>
+                <label>MX45-Engie Villa Ahumada PV</label>
+            </value>
+            <value>
+                <fullName>MX46-Engie Abril PV</fullName>
+                <default>false</default>
+                <label>MX46-Engie Abril PV</label>
+            </value>
+            <value>
+                <fullName>MX47-Engie Calpulalpan PV</fullName>
+                <default>false</default>
+                <label>MX47-Engie Calpulalpan PV</label>
+            </value>
+            <value>
+                <fullName>MX48-BNB Villa Ahumada Solar</fullName>
+                <default>false</default>
+                <label>MX48-BNB Villa Ahumada Solar</label>
+            </value>
+            <value>
+                <fullName>MX49-Buenos Días Energía</fullName>
+                <default>false</default>
+                <label>MX49-Buenos Días Energía</label>
+            </value>
+            <value>
+                <fullName>MX50-Solar PV Holdings México</fullName>
+                <default>false</default>
+                <label>MX50-Solar PV Holdings México</label>
+            </value>
+            <value>
+                <fullName>MX51-Recursos Solares PV de</fullName>
+                <default>false</default>
+                <label>MX51-Recursos Solares PV de</label>
+            </value>
+            <value>
+                <fullName>MX52-Grupo Enerclima SA PI</fullName>
+                <default>false</default>
+                <label>MX52-Grupo Enerclima SA PI</label>
+            </value>
+            <value>
+                <fullName>MX53-SEN Sistemas Solares</fullName>
+                <default>false</default>
+                <label>MX53-SEN Sistemas Solares</label>
+            </value>
+            <value>
+                <fullName>MX54-Enerclima S de RL de CV</fullName>
+                <default>false</default>
+                <label>MX54-Enerclima S de RL de CV</label>
+            </value>
+            <value>
+                <fullName>MX55-Membresía Enerclima</fullName>
+                <default>false</default>
+                <label>MX55-Membresía Enerclima</label>
+            </value>
+            <value>
+                <fullName>MX56-Engie GBS LATAM SA</fullName>
+                <default>false</default>
+                <label>MX56-Engie GBS LATAM SA</label>
+            </value>
+            <value>
+                <fullName>MX57-Engie Mex Servicios Admin</fullName>
+                <default>false</default>
+                <label>MX57-Engie Mex Servicios Admin</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Movilidad Eléctrica</controllingFieldValue>
+            <controllingFieldValue>Eficiencia Energética</controllingFieldValue>
+            <controllingFieldValue>Generación Onsite</controllingFieldValue>
+            <controllingFieldValue>GNV</controllingFieldValue>
+            <controllingFieldValue>GNC</controllingFieldValue>
+            <controllingFieldValue>Instalación</controllingFieldValue>
+            <controllingFieldValue>Mantenimiento</controllingFieldValue>
+            <valueName>ENLIGHT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Movilidad Eléctrica</controllingFieldValue>
+            <controllingFieldValue>Suministro Eléctrico MX</controllingFieldValue>
+            <controllingFieldValue>Corporate PPA</controllingFieldValue>
+            <controllingFieldValue>Eficiencia Energética</controllingFieldValue>
+            <controllingFieldValue>Generación Onsite</controllingFieldValue>
+            <controllingFieldValue>GNV</controllingFieldValue>
+            <controllingFieldValue>GNC</controllingFieldValue>
+            <controllingFieldValue>Instalación</controllingFieldValue>
+            <controllingFieldValue>Mantenimiento</controllingFieldValue>
+            <valueName>MEM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Movilidad Eléctrica</controllingFieldValue>
+            <controllingFieldValue>Eficiencia Energética</controllingFieldValue>
+            <controllingFieldValue>Generación Onsite</controllingFieldValue>
+            <controllingFieldValue>GNV</controllingFieldValue>
+            <controllingFieldValue>GNC</controllingFieldValue>
+            <controllingFieldValue>Instalación</controllingFieldValue>
+            <controllingFieldValue>Mantenimiento</controllingFieldValue>
+            <valueName>MX01-Country Template MX</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Movilidad Eléctrica</controllingFieldValue>
+            <controllingFieldValue>Distribución de Gas Natural</controllingFieldValue>
+            <controllingFieldValue>Ducto Dedicado</controllingFieldValue>
+            <controllingFieldValue>Eficiencia Energética</controllingFieldValue>
+            <controllingFieldValue>Generación Onsite</controllingFieldValue>
+            <controllingFieldValue>GNV</controllingFieldValue>
+            <controllingFieldValue>GNC</controllingFieldValue>
+            <controllingFieldValue>Instalación</controllingFieldValue>
+            <controllingFieldValue>Mantenimiento</controllingFieldValue>
+            <valueName>MX02-Consorcio Mexi Gas SA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Movilidad Eléctrica</controllingFieldValue>
+            <controllingFieldValue>Eficiencia Energética</controllingFieldValue>
+            <controllingFieldValue>Generación Onsite</controllingFieldValue>
+            <controllingFieldValue>GNV</controllingFieldValue>
+            <controllingFieldValue>GNC</controllingFieldValue>
+            <controllingFieldValue>Instalación</controllingFieldValue>
+            <controllingFieldValue>Mantenimiento</controllingFieldValue>
+            <valueName>MX03-Cofely España SA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Movilidad Eléctrica</controllingFieldValue>
+            <controllingFieldValue>Eficiencia Energética</controllingFieldValue>
+            <controllingFieldValue>Generación Onsite</controllingFieldValue>
+            <controllingFieldValue>GNV</controllingFieldValue>
+            <controllingFieldValue>GNC</controllingFieldValue>
+            <controllingFieldValue>Instalación</controllingFieldValue>
+            <controllingFieldValue>Mantenimiento</controllingFieldValue>
+            <valueName>MX04-ENGIE México Servicios</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Movilidad Eléctrica</controllingFieldValue>
+            <controllingFieldValue>Distribución de Gas Natural</controllingFieldValue>
+            <controllingFieldValue>Ducto Dedicado</controllingFieldValue>
+            <controllingFieldValue>Eficiencia Energética</controllingFieldValue>
+            <controllingFieldValue>Generación Onsite</controllingFieldValue>
+            <controllingFieldValue>GNV</controllingFieldValue>
+            <controllingFieldValue>GNC</controllingFieldValue>
+            <controllingFieldValue>Instalación</controllingFieldValue>
+            <controllingFieldValue>Mantenimiento</controllingFieldValue>
+            <valueName>MX05-Tractebel DGJ SA DE CV</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Movilidad Eléctrica</controllingFieldValue>
+            <controllingFieldValue>Distribución de Gas Natural</controllingFieldValue>
+            <controllingFieldValue>Ducto Dedicado</controllingFieldValue>
+            <controllingFieldValue>Eficiencia Energética</controllingFieldValue>
+            <controllingFieldValue>Generación Onsite</controllingFieldValue>
+            <controllingFieldValue>GNV</controllingFieldValue>
+            <controllingFieldValue>GNC</controllingFieldValue>
+            <controllingFieldValue>Instalación</controllingFieldValue>
+            <controllingFieldValue>Mantenimiento</controllingFieldValue>
+            <valueName>MX06-Tractebel Digaqro</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Movilidad Eléctrica</controllingFieldValue>
+            <controllingFieldValue>Eficiencia Energética</controllingFieldValue>
+            <controllingFieldValue>Generación Onsite</controllingFieldValue>
+            <controllingFieldValue>GNV</controllingFieldValue>
+            <controllingFieldValue>GNC</controllingFieldValue>
+            <controllingFieldValue>Instalación</controllingFieldValue>
+            <controllingFieldValue>Mantenimiento</controllingFieldValue>
+            <valueName>MX07-Engie Eólica Tres Mesas 3</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Movilidad Eléctrica</controllingFieldValue>
+            <controllingFieldValue>Eficiencia Energética</controllingFieldValue>
+            <controllingFieldValue>Generación Onsite</controllingFieldValue>
+            <controllingFieldValue>GNV</controllingFieldValue>
+            <controllingFieldValue>GNC</controllingFieldValue>
+            <controllingFieldValue>Instalación</controllingFieldValue>
+            <controllingFieldValue>Mantenimiento</controllingFieldValue>
+            <valueName>MX08-México Renovables</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Movilidad Eléctrica</controllingFieldValue>
+            <controllingFieldValue>Eficiencia Energética</controllingFieldValue>
+            <controllingFieldValue>Generación Onsite</controllingFieldValue>
+            <controllingFieldValue>GNV</controllingFieldValue>
+            <controllingFieldValue>GNC</controllingFieldValue>
+            <controllingFieldValue>Instalación</controllingFieldValue>
+            <controllingFieldValue>Mantenimiento</controllingFieldValue>
+            <valueName>MX09-Engie Mex Consultores SA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Movilidad Eléctrica</controllingFieldValue>
+            <controllingFieldValue>Eficiencia Energética</controllingFieldValue>
+            <controllingFieldValue>Generación Onsite</controllingFieldValue>
+            <controllingFieldValue>GNV</controllingFieldValue>
+            <controllingFieldValue>GNC</controllingFieldValue>
+            <controllingFieldValue>Instalación</controllingFieldValue>
+            <controllingFieldValue>Mantenimiento</controllingFieldValue>
+            <valueName>MX10-Energía Mayakan, S de RL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Movilidad Eléctrica</controllingFieldValue>
+            <controllingFieldValue>Eficiencia Energética</controllingFieldValue>
+            <controllingFieldValue>Generación Onsite</controllingFieldValue>
+            <controllingFieldValue>GNV</controllingFieldValue>
+            <controllingFieldValue>GNC</controllingFieldValue>
+            <controllingFieldValue>Instalación</controllingFieldValue>
+            <controllingFieldValue>Mantenimiento</controllingFieldValue>
+            <valueName>MX11-Engie México SA de CV</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Movilidad Eléctrica</controllingFieldValue>
+            <controllingFieldValue>Distribución de Gas Natural</controllingFieldValue>
+            <controllingFieldValue>Ducto Dedicado</controllingFieldValue>
+            <controllingFieldValue>Eficiencia Energética</controllingFieldValue>
+            <controllingFieldValue>Generación Onsite</controllingFieldValue>
+            <controllingFieldValue>GNV</controllingFieldValue>
+            <controllingFieldValue>GNC</controllingFieldValue>
+            <controllingFieldValue>Instalación</controllingFieldValue>
+            <controllingFieldValue>Mantenimiento</controllingFieldValue>
+            <valueName>MX12-Tractebel GNP SA DE CV</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Movilidad Eléctrica</controllingFieldValue>
+            <controllingFieldValue>Eficiencia Energética</controllingFieldValue>
+            <controllingFieldValue>Generación Onsite</controllingFieldValue>
+            <controllingFieldValue>GNV</controllingFieldValue>
+            <controllingFieldValue>GNC</controllingFieldValue>
+            <controllingFieldValue>Instalación</controllingFieldValue>
+            <controllingFieldValue>Mantenimiento</controllingFieldValue>
+            <valueName>MX13-Gasoductos del Bajío</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Movilidad Eléctrica</controllingFieldValue>
+            <controllingFieldValue>Eficiencia Energética</controllingFieldValue>
+            <controllingFieldValue>Generación Onsite</controllingFieldValue>
+            <controllingFieldValue>GNV</controllingFieldValue>
+            <controllingFieldValue>GNC</controllingFieldValue>
+            <controllingFieldValue>Instalación</controllingFieldValue>
+            <controllingFieldValue>Mantenimiento</controllingFieldValue>
+            <valueName>MX14-Cogeneración Eficiente NL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Movilidad Eléctrica</controllingFieldValue>
+            <controllingFieldValue>Suministro Eléctrico MX</controllingFieldValue>
+            <controllingFieldValue>Corporate PPA</controllingFieldValue>
+            <controllingFieldValue>Eficiencia Energética</controllingFieldValue>
+            <controllingFieldValue>Generación Onsite</controllingFieldValue>
+            <controllingFieldValue>GNV</controllingFieldValue>
+            <controllingFieldValue>GNC</controllingFieldValue>
+            <controllingFieldValue>Instalación</controllingFieldValue>
+            <controllingFieldValue>Mantenimiento</controllingFieldValue>
+            <valueName>MX15-Tractebel Energía de Mont</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Movilidad Eléctrica</controllingFieldValue>
+            <controllingFieldValue>Distribución de Gas Natural</controllingFieldValue>
+            <controllingFieldValue>Ducto Dedicado</controllingFieldValue>
+            <controllingFieldValue>Eficiencia Energética</controllingFieldValue>
+            <controllingFieldValue>Generación Onsite</controllingFieldValue>
+            <controllingFieldValue>GNV</controllingFieldValue>
+            <controllingFieldValue>GNC</controllingFieldValue>
+            <controllingFieldValue>Instalación</controllingFieldValue>
+            <controllingFieldValue>Mantenimiento</controllingFieldValue>
+            <valueName>MX16-Natgasmex SA de CV</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Movilidad Eléctrica</controllingFieldValue>
+            <controllingFieldValue>Suministro Eléctrico MX</controllingFieldValue>
+            <controllingFieldValue>Corporate PPA</controllingFieldValue>
+            <controllingFieldValue>Eficiencia Energética</controllingFieldValue>
+            <controllingFieldValue>Generación Onsite</controllingFieldValue>
+            <controllingFieldValue>GNV</controllingFieldValue>
+            <controllingFieldValue>GNC</controllingFieldValue>
+            <controllingFieldValue>Instalación</controllingFieldValue>
+            <controllingFieldValue>Mantenimiento</controllingFieldValue>
+            <valueName>MX17-Tractebel Energia de Panu</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Movilidad Eléctrica</controllingFieldValue>
+            <controllingFieldValue>Eficiencia Energética</controllingFieldValue>
+            <controllingFieldValue>Generación Onsite</controllingFieldValue>
+            <controllingFieldValue>GNV</controllingFieldValue>
+            <controllingFieldValue>GNC</controllingFieldValue>
+            <controllingFieldValue>Instalación</controllingFieldValue>
+            <controllingFieldValue>Mantenimiento</controllingFieldValue>
+            <valueName>MX18-Servicios  Especializados</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Movilidad Eléctrica</controllingFieldValue>
+            <controllingFieldValue>Eficiencia Energética</controllingFieldValue>
+            <controllingFieldValue>Generación Onsite</controllingFieldValue>
+            <controllingFieldValue>GNV</controllingFieldValue>
+            <controllingFieldValue>GNC</controllingFieldValue>
+            <controllingFieldValue>Instalación</controllingFieldValue>
+            <controllingFieldValue>Mantenimiento</controllingFieldValue>
+            <valueName>MX19-Engie México Plataforma</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Movilidad Eléctrica</controllingFieldValue>
+            <controllingFieldValue>Eficiencia Energética</controllingFieldValue>
+            <controllingFieldValue>Generación Onsite</controllingFieldValue>
+            <controllingFieldValue>GNV</controllingFieldValue>
+            <controllingFieldValue>GNC</controllingFieldValue>
+            <controllingFieldValue>Instalación</controllingFieldValue>
+            <controllingFieldValue>Mantenimiento</controllingFieldValue>
+            <valueName>MX20-Engie México Renovables</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Movilidad Eléctrica</controllingFieldValue>
+            <controllingFieldValue>Eficiencia Energética</controllingFieldValue>
+            <controllingFieldValue>Generación Onsite</controllingFieldValue>
+            <controllingFieldValue>GNV</controllingFieldValue>
+            <controllingFieldValue>GNC</controllingFieldValue>
+            <controllingFieldValue>Instalación</controllingFieldValue>
+            <controllingFieldValue>Mantenimiento</controllingFieldValue>
+            <valueName>MX21-Energia Natural Peninsula</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Movilidad Eléctrica</controllingFieldValue>
+            <controllingFieldValue>Eficiencia Energética</controllingFieldValue>
+            <controllingFieldValue>Generación Onsite</controllingFieldValue>
+            <controllingFieldValue>GNV</controllingFieldValue>
+            <controllingFieldValue>GNC</controllingFieldValue>
+            <controllingFieldValue>Instalación</controllingFieldValue>
+            <controllingFieldValue>Mantenimiento</controllingFieldValue>
+            <valueName>MX22-ENGIE México Generación</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Movilidad Eléctrica</controllingFieldValue>
+            <controllingFieldValue>Eficiencia Energética</controllingFieldValue>
+            <controllingFieldValue>Generación Onsite</controllingFieldValue>
+            <controllingFieldValue>GNV</controllingFieldValue>
+            <controllingFieldValue>GNC</controllingFieldValue>
+            <controllingFieldValue>Instalación</controllingFieldValue>
+            <controllingFieldValue>Mantenimiento</controllingFieldValue>
+            <valueName>MX23-Engie México Operación</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Movilidad Eléctrica</controllingFieldValue>
+            <controllingFieldValue>Distribución de Gas Natural</controllingFieldValue>
+            <controllingFieldValue>Ducto Dedicado</controllingFieldValue>
+            <controllingFieldValue>Eficiencia Energética</controllingFieldValue>
+            <controllingFieldValue>Generación Onsite</controllingFieldValue>
+            <controllingFieldValue>GNV</controllingFieldValue>
+            <controllingFieldValue>GNC</controllingFieldValue>
+            <controllingFieldValue>Instalación</controllingFieldValue>
+            <controllingFieldValue>Mantenimiento</controllingFieldValue>
+            <valueName>MX24-Tamauligas SA de CV</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Movilidad Eléctrica</controllingFieldValue>
+            <controllingFieldValue>Comercialización de Gas Natural</controllingFieldValue>
+            <controllingFieldValue>Ducto Dedicado</controllingFieldValue>
+            <controllingFieldValue>Eficiencia Energética</controllingFieldValue>
+            <controllingFieldValue>Generación Onsite</controllingFieldValue>
+            <controllingFieldValue>GNV</controllingFieldValue>
+            <controllingFieldValue>GNC</controllingFieldValue>
+            <controllingFieldValue>Instalación</controllingFieldValue>
+            <controllingFieldValue>Mantenimiento</controllingFieldValue>
+            <valueName>MX25-GDF Suez México Comercial</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Movilidad Eléctrica</controllingFieldValue>
+            <controllingFieldValue>Eficiencia Energética</controllingFieldValue>
+            <controllingFieldValue>Generación Onsite</controllingFieldValue>
+            <controllingFieldValue>GNV</controllingFieldValue>
+            <controllingFieldValue>GNC</controllingFieldValue>
+            <controllingFieldValue>Instalación</controllingFieldValue>
+            <controllingFieldValue>Mantenimiento</controllingFieldValue>
+            <valueName>MX26-Engie Factory México</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Movilidad Eléctrica</controllingFieldValue>
+            <controllingFieldValue>Eficiencia Energética</controllingFieldValue>
+            <controllingFieldValue>Generación Onsite</controllingFieldValue>
+            <controllingFieldValue>GNV</controllingFieldValue>
+            <controllingFieldValue>GNC</controllingFieldValue>
+            <controllingFieldValue>Instalación</controllingFieldValue>
+            <controllingFieldValue>Mantenimiento</controllingFieldValue>
+            <valueName>MX27-Solairedirect de México</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Movilidad Eléctrica</controllingFieldValue>
+            <controllingFieldValue>Eficiencia Energética</controllingFieldValue>
+            <controllingFieldValue>Generación Onsite</controllingFieldValue>
+            <controllingFieldValue>GNV</controllingFieldValue>
+            <controllingFieldValue>GNC</controllingFieldValue>
+            <controllingFieldValue>Instalación</controllingFieldValue>
+            <controllingFieldValue>Mantenimiento</controllingFieldValue>
+            <valueName>MX28-Geotérmica Cerro Pinto</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Movilidad Eléctrica</controllingFieldValue>
+            <controllingFieldValue>Eficiencia Energética</controllingFieldValue>
+            <controllingFieldValue>Generación Onsite</controllingFieldValue>
+            <controllingFieldValue>GNV</controllingFieldValue>
+            <controllingFieldValue>GNC</controllingFieldValue>
+            <controllingFieldValue>Instalación</controllingFieldValue>
+            <controllingFieldValue>Mantenimiento</controllingFieldValue>
+            <valueName>MX29-Geotérmica Derrumbabas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Movilidad Eléctrica</controllingFieldValue>
+            <controllingFieldValue>Eficiencia Energética</controllingFieldValue>
+            <controllingFieldValue>Generación Onsite</controllingFieldValue>
+            <controllingFieldValue>GNV</controllingFieldValue>
+            <controllingFieldValue>GNC</controllingFieldValue>
+            <controllingFieldValue>Instalación</controllingFieldValue>
+            <controllingFieldValue>Mantenimiento</controllingFieldValue>
+            <valueName>MX30-Geotérmica Sanganguey</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Movilidad Eléctrica</controllingFieldValue>
+            <controllingFieldValue>Eficiencia Energética</controllingFieldValue>
+            <controllingFieldValue>Generación Onsite</controllingFieldValue>
+            <controllingFieldValue>GNV</controllingFieldValue>
+            <controllingFieldValue>GNC</controllingFieldValue>
+            <controllingFieldValue>Instalación</controllingFieldValue>
+            <controllingFieldValue>Mantenimiento</controllingFieldValue>
+            <valueName>MX31-Thermion Solar PV Holding</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Movilidad Eléctrica</controllingFieldValue>
+            <controllingFieldValue>Eficiencia Energética</controllingFieldValue>
+            <controllingFieldValue>Generación Onsite</controllingFieldValue>
+            <controllingFieldValue>GNV</controllingFieldValue>
+            <controllingFieldValue>GNC</controllingFieldValue>
+            <controllingFieldValue>Instalación</controllingFieldValue>
+            <controllingFieldValue>Mantenimiento</controllingFieldValue>
+            <valueName>MX32-Solaire PV Holding México</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Movilidad Eléctrica</controllingFieldValue>
+            <controllingFieldValue>Eficiencia Energética</controllingFieldValue>
+            <controllingFieldValue>Generación Onsite</controllingFieldValue>
+            <controllingFieldValue>GNV</controllingFieldValue>
+            <controllingFieldValue>GNC</controllingFieldValue>
+            <controllingFieldValue>Instalación</controllingFieldValue>
+            <controllingFieldValue>Mantenimiento</controllingFieldValue>
+            <valueName>MX33-Recursos Solares PV de</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Movilidad Eléctrica</controllingFieldValue>
+            <controllingFieldValue>Eficiencia Energética</controllingFieldValue>
+            <controllingFieldValue>Generación Onsite</controllingFieldValue>
+            <controllingFieldValue>GNV</controllingFieldValue>
+            <controllingFieldValue>GNC</controllingFieldValue>
+            <controllingFieldValue>Instalación</controllingFieldValue>
+            <controllingFieldValue>Mantenimiento</controllingFieldValue>
+            <valueName>MX34-Energia Villa de Arriaga</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Movilidad Eléctrica</controllingFieldValue>
+            <controllingFieldValue>Eficiencia Energética</controllingFieldValue>
+            <controllingFieldValue>Generación Onsite</controllingFieldValue>
+            <controllingFieldValue>GNV</controllingFieldValue>
+            <controllingFieldValue>GNC</controllingFieldValue>
+            <controllingFieldValue>Instalación</controllingFieldValue>
+            <controllingFieldValue>Mantenimiento</controllingFieldValue>
+            <valueName>MX35-Tractebel Engineering LTD</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Movilidad Eléctrica</controllingFieldValue>
+            <controllingFieldValue>Eficiencia Energética</controllingFieldValue>
+            <controllingFieldValue>Generación Onsite</controllingFieldValue>
+            <controllingFieldValue>GNV</controllingFieldValue>
+            <controllingFieldValue>GNC</controllingFieldValue>
+            <controllingFieldValue>Instalación</controllingFieldValue>
+            <controllingFieldValue>Mantenimiento</controllingFieldValue>
+            <valueName>MX36-Sol de Insurgentes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Movilidad Eléctrica</controllingFieldValue>
+            <controllingFieldValue>Eficiencia Energética</controllingFieldValue>
+            <controllingFieldValue>Generación Onsite</controllingFieldValue>
+            <controllingFieldValue>GNV</controllingFieldValue>
+            <controllingFieldValue>GNC</controllingFieldValue>
+            <controllingFieldValue>Instalación</controllingFieldValue>
+            <controllingFieldValue>Mantenimiento</controllingFieldValue>
+            <valueName>MX37-Sol de Insurgentes 1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Movilidad Eléctrica</controllingFieldValue>
+            <controllingFieldValue>Eficiencia Energética</controllingFieldValue>
+            <controllingFieldValue>Generación Onsite</controllingFieldValue>
+            <controllingFieldValue>GNV</controllingFieldValue>
+            <controllingFieldValue>GNC</controllingFieldValue>
+            <controllingFieldValue>Instalación</controllingFieldValue>
+            <controllingFieldValue>Mantenimiento</controllingFieldValue>
+            <valueName>MX38-TAG Pipelines Sur</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Movilidad Eléctrica</controllingFieldValue>
+            <controllingFieldValue>Suministro Eléctrico MX</controllingFieldValue>
+            <controllingFieldValue>Corporate PPA</controllingFieldValue>
+            <controllingFieldValue>Eficiencia Energética</controllingFieldValue>
+            <controllingFieldValue>Generación Onsite</controllingFieldValue>
+            <controllingFieldValue>GNV</controllingFieldValue>
+            <controllingFieldValue>GNC</controllingFieldValue>
+            <controllingFieldValue>Instalación</controllingFieldValue>
+            <controllingFieldValue>Mantenimiento</controllingFieldValue>
+            <valueName>MX39-Servicios y Energía México</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Movilidad Eléctrica</controllingFieldValue>
+            <controllingFieldValue>Eficiencia Energética</controllingFieldValue>
+            <controllingFieldValue>Generación Onsite</controllingFieldValue>
+            <controllingFieldValue>GNV</controllingFieldValue>
+            <controllingFieldValue>GNC</controllingFieldValue>
+            <controllingFieldValue>Instalación</controllingFieldValue>
+            <controllingFieldValue>Mantenimiento</controllingFieldValue>
+            <valueName>MX40-Engie México Transporte</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Movilidad Eléctrica</controllingFieldValue>
+            <controllingFieldValue>Eficiencia Energética</controllingFieldValue>
+            <controllingFieldValue>Generación Onsite</controllingFieldValue>
+            <controllingFieldValue>GNV</controllingFieldValue>
+            <controllingFieldValue>GNC</controllingFieldValue>
+            <controllingFieldValue>Instalación</controllingFieldValue>
+            <controllingFieldValue>Mantenimiento</controllingFieldValue>
+            <valueName>MX41-Engie México Eólica SAPI</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Movilidad Eléctrica</controllingFieldValue>
+            <controllingFieldValue>Eficiencia Energética</controllingFieldValue>
+            <controllingFieldValue>Generación Onsite</controllingFieldValue>
+            <controllingFieldValue>GNV</controllingFieldValue>
+            <controllingFieldValue>GNC</controllingFieldValue>
+            <controllingFieldValue>Instalación</controllingFieldValue>
+            <controllingFieldValue>Mantenimiento</controllingFieldValue>
+            <valueName>MX42-Engie Marketplace</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Movilidad Eléctrica</controllingFieldValue>
+            <controllingFieldValue>Eficiencia Energética</controllingFieldValue>
+            <controllingFieldValue>Generación Onsite</controllingFieldValue>
+            <controllingFieldValue>GNV</controllingFieldValue>
+            <controllingFieldValue>GNC</controllingFieldValue>
+            <controllingFieldValue>Instalación</controllingFieldValue>
+            <controllingFieldValue>Mantenimiento</controllingFieldValue>
+            <valueName>MX43-Eólica Tres Mesas 4</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Movilidad Eléctrica</controllingFieldValue>
+            <controllingFieldValue>Eficiencia Energética</controllingFieldValue>
+            <controllingFieldValue>Generación Onsite</controllingFieldValue>
+            <controllingFieldValue>GNV</controllingFieldValue>
+            <controllingFieldValue>GNC</controllingFieldValue>
+            <controllingFieldValue>Instalación</controllingFieldValue>
+            <controllingFieldValue>Mantenimiento</controllingFieldValue>
+            <valueName>MX44-Akin Solar</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Movilidad Eléctrica</controllingFieldValue>
+            <controllingFieldValue>Eficiencia Energética</controllingFieldValue>
+            <controllingFieldValue>Generación Onsite</controllingFieldValue>
+            <controllingFieldValue>GNV</controllingFieldValue>
+            <controllingFieldValue>GNC</controllingFieldValue>
+            <controllingFieldValue>Instalación</controllingFieldValue>
+            <controllingFieldValue>Mantenimiento</controllingFieldValue>
+            <valueName>MX45-Engie Villa Ahumada PV</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Movilidad Eléctrica</controllingFieldValue>
+            <controllingFieldValue>Eficiencia Energética</controllingFieldValue>
+            <controllingFieldValue>Generación Onsite</controllingFieldValue>
+            <controllingFieldValue>GNV</controllingFieldValue>
+            <controllingFieldValue>GNC</controllingFieldValue>
+            <controllingFieldValue>Instalación</controllingFieldValue>
+            <controllingFieldValue>Mantenimiento</controllingFieldValue>
+            <valueName>MX46-Engie Abril PV</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Movilidad Eléctrica</controllingFieldValue>
+            <controllingFieldValue>Eficiencia Energética</controllingFieldValue>
+            <controllingFieldValue>Generación Onsite</controllingFieldValue>
+            <controllingFieldValue>GNV</controllingFieldValue>
+            <controllingFieldValue>GNC</controllingFieldValue>
+            <controllingFieldValue>Instalación</controllingFieldValue>
+            <controllingFieldValue>Mantenimiento</controllingFieldValue>
+            <valueName>MX47-Engie Calpulalpan PV</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Movilidad Eléctrica</controllingFieldValue>
+            <controllingFieldValue>Eficiencia Energética</controllingFieldValue>
+            <controllingFieldValue>Generación Onsite</controllingFieldValue>
+            <controllingFieldValue>GNV</controllingFieldValue>
+            <controllingFieldValue>GNC</controllingFieldValue>
+            <controllingFieldValue>Instalación</controllingFieldValue>
+            <controllingFieldValue>Mantenimiento</controllingFieldValue>
+            <valueName>MX48-BNB Villa Ahumada Solar</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Movilidad Eléctrica</controllingFieldValue>
+            <controllingFieldValue>Eficiencia Energética</controllingFieldValue>
+            <controllingFieldValue>Generación Onsite</controllingFieldValue>
+            <controllingFieldValue>GNV</controllingFieldValue>
+            <controllingFieldValue>GNC</controllingFieldValue>
+            <controllingFieldValue>Instalación</controllingFieldValue>
+            <controllingFieldValue>Mantenimiento</controllingFieldValue>
+            <valueName>MX49-Buenos Días Energía</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Movilidad Eléctrica</controllingFieldValue>
+            <controllingFieldValue>Eficiencia Energética</controllingFieldValue>
+            <controllingFieldValue>Generación Onsite</controllingFieldValue>
+            <controllingFieldValue>GNV</controllingFieldValue>
+            <controllingFieldValue>GNC</controllingFieldValue>
+            <controllingFieldValue>Instalación</controllingFieldValue>
+            <controllingFieldValue>Mantenimiento</controllingFieldValue>
+            <valueName>MX50-Solar PV Holdings México</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Movilidad Eléctrica</controllingFieldValue>
+            <controllingFieldValue>Eficiencia Energética</controllingFieldValue>
+            <controllingFieldValue>Generación Onsite</controllingFieldValue>
+            <controllingFieldValue>GNV</controllingFieldValue>
+            <controllingFieldValue>GNC</controllingFieldValue>
+            <controllingFieldValue>Instalación</controllingFieldValue>
+            <controllingFieldValue>Mantenimiento</controllingFieldValue>
+            <valueName>MX51-Recursos Solares PV de</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Movilidad Eléctrica</controllingFieldValue>
+            <controllingFieldValue>Eficiencia Energética</controllingFieldValue>
+            <controllingFieldValue>Generación Onsite</controllingFieldValue>
+            <controllingFieldValue>GNV</controllingFieldValue>
+            <controllingFieldValue>GNC</controllingFieldValue>
+            <controllingFieldValue>Instalación</controllingFieldValue>
+            <controllingFieldValue>Mantenimiento</controllingFieldValue>
+            <valueName>MX52-Grupo Enerclima SA PI</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Movilidad Eléctrica</controllingFieldValue>
+            <controllingFieldValue>Eficiencia Energética</controllingFieldValue>
+            <controllingFieldValue>Generación Onsite</controllingFieldValue>
+            <controllingFieldValue>GNV</controllingFieldValue>
+            <controllingFieldValue>GNC</controllingFieldValue>
+            <controllingFieldValue>Instalación</controllingFieldValue>
+            <controllingFieldValue>Mantenimiento</controllingFieldValue>
+            <valueName>MX53-SEN Sistemas Solares</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Movilidad Eléctrica</controllingFieldValue>
+            <controllingFieldValue>Eficiencia Energética</controllingFieldValue>
+            <controllingFieldValue>Generación Onsite</controllingFieldValue>
+            <controllingFieldValue>GNV</controllingFieldValue>
+            <controllingFieldValue>GNC</controllingFieldValue>
+            <controllingFieldValue>Instalación</controllingFieldValue>
+            <controllingFieldValue>Mantenimiento</controllingFieldValue>
+            <valueName>MX54-Enerclima S de RL de CV</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Movilidad Eléctrica</controllingFieldValue>
+            <controllingFieldValue>Eficiencia Energética</controllingFieldValue>
+            <controllingFieldValue>Generación Onsite</controllingFieldValue>
+            <controllingFieldValue>GNV</controllingFieldValue>
+            <controllingFieldValue>GNC</controllingFieldValue>
+            <controllingFieldValue>Instalación</controllingFieldValue>
+            <controllingFieldValue>Mantenimiento</controllingFieldValue>
+            <valueName>MX55-Membresía Enerclima</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Movilidad Eléctrica</controllingFieldValue>
+            <controllingFieldValue>Eficiencia Energética</controllingFieldValue>
+            <controllingFieldValue>Generación Onsite</controllingFieldValue>
+            <controllingFieldValue>GNV</controllingFieldValue>
+            <controllingFieldValue>GNC</controllingFieldValue>
+            <controllingFieldValue>Instalación</controllingFieldValue>
+            <controllingFieldValue>Mantenimiento</controllingFieldValue>
+            <valueName>MX56-Engie GBS LATAM SA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Movilidad Eléctrica</controllingFieldValue>
+            <controllingFieldValue>Eficiencia Energética</controllingFieldValue>
+            <controllingFieldValue>Generación Onsite</controllingFieldValue>
+            <controllingFieldValue>GNV</controllingFieldValue>
+            <controllingFieldValue>GNC</controllingFieldValue>
+            <controllingFieldValue>Instalación</controllingFieldValue>
+            <controllingFieldValue>Mantenimiento</controllingFieldValue>
+            <valueName>MX57-Engie Mex Servicios Admin</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

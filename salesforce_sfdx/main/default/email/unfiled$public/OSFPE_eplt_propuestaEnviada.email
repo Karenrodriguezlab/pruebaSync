@@ -1,0 +1,9 @@
+La siguiente propuesta ha sido enviada:
+
+Nombre: {!Opportunity.Name}
+Tipo de Propuesta: {!Opportunity.OSFCL_Tipo_de_oferta__c}
+Empresa: {!Opportunity.Account}
+Potencia contratada HP(MW): {!Opportunity.OSFPE_fld_Potencia_Maxima_Contratada_HP__c}
+Potencia contratada HFP(MW): {!Opportunity.OSFPE_fld_Potencia_Maxima_Contratada_HFP__c}
+Fecha de inicio de suministro: {!Opportunity.OSFMX_SupplyStartDate__c}
+Fecha de fin de suministro: {!Opportunity.OSFPE_fld_Fecha_de_fin_del_suministro__c}

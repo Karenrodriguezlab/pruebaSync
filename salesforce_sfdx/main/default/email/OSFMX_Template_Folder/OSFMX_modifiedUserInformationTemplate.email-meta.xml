@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Este correo se envía al propietario de la cuenta cuando el usuario modifica su información en el portal</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Usuario modificó su información en el portal Engie</name>
+    <style>none</style>
+    <subject>Portal Engie - Información de Usuario Modificada</subject>
+    <textOnly>Estimad@ {!Account.OwnerFullName},
+
+Le informamos que su contacto {!User.Name} de la cuenta {!User.CompanyName} ha modificado su información de contacto desde el Portal Web de clientes B2B.
+
+
+
+Engie México.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

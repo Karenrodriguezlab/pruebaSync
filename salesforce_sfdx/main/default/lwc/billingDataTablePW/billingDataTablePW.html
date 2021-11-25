@@ -1,0 +1,45 @@
+<template>
+      <div>
+        <div class="slds-grid slds-gutters">
+            <div class="slds-col slds-size_4-of-12">
+                <div class="slds-form-element">
+                    <label class="slds-form-element__label" for="tipoDocumento">Tipo De Documento: </label>
+                    <div class="slds-form-element__control">
+                        <div class="slds-select_container">
+                            <select id="selectTipoDocumento" class="slds-select" name="valueTipoDoc" onchange={cambiarFiltro}>
+                                <option value="Todos">Todos</option>
+                                <template for:each={tiposDocumento} for:item="tipoDoc">
+                                    <option key={tipoDoc}>
+                                        {tipoDoc}
+                                    </option>
+                                </template>                   
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slds-grid slds-gutters">
+            <div class="slds-col slds-size_4-of-12">
+                <div class="slds-form-element">
+                    <div class="slds-var-p-around_medium lgc-bg-inverse">
+                        <p>
+                            <lightning-button icon-name="utility:download" 
+                                        label="Exportar Tabla" 
+                                        onclick={downloadCSVFileJS} variant="brand">
+                            </lightning-button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <lightning-datatable
+                key-field="id"
+                column-widths-mode="fixed"
+                data={facturasFiltradas}
+                columns={columns}
+                hide-checkbox-column
+                onrowaction={handleRowAction}>
+        </lightning-datatable>
+    </div>
+</template>

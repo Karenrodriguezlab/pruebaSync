@@ -1,0 +1,97 @@
+{
+    "contactoCargo": "Ventas",
+    "contactoNombre": "Arm",
+    "contactoNombreOportunidad": "Arm Gomez",
+    "fechaOferta": "10 de Noviembre de 2021",
+    "listaBaseCompromiso": {
+        "bcexcedente": 0.7,
+        "cuadroPrecioVolumetrico": 0.8
+    },
+    "listaGarantia": [
+        {
+            "distribucion": "Distribución CMG",
+            "solucion": "Comercialización + Conducción",
+            "tipoAnexo": "anexoB",
+            "tipoOferta": "Vinculante"
+        },
+        {
+            "distribucion": "Gas Natural Comprimido",
+            "solucion": "Comercialización + Conducción",
+            "tipoAnexo": "anexoA",
+            "tipoOferta": "Vinculante"
+        }
+    ],
+    "listaGarantiaA": {
+        "cargoPorCapacidad": 0,
+        "cargoPorComercializacion": 0,
+        "cargoPorServicio": 0,
+        "cargoPorUso": 0,
+        "consumoMensualPrevisto": 4166.6667,
+        "costoMoleculaEstimado": 14.91,
+        "costoTransporteEstimado": 15,
+        "importeCostoConexion": "No Aplica",
+        "importeGarantia": 578260,
+        "ivaConexion": 16,
+        "ivaConsumo": 16,
+        "mesesMayorConsumo": 2,
+        "puntosuministro": "PS#000089-Servicio Release 1.5-Gas Natural",
+        "subtotalConsumo": 249250,
+        "totalConexion": 0,
+        "totalConsumo": 289130
+    },
+    "listaGarantiaB": {
+        "cargoPorCapacidad": 8.33,
+        "cargoPorComercializacion": 0,
+        "cargoPorServicio": 8052.47,
+        "cargoPorUso": 7.7,
+        "clasificacionTarifaria": "GCG 3",
+        "consumoAnual2": 50000,
+        "consumoMensualPrevisto": 4166.6667,
+        "costoMoleculaEstimado": 111.1647,
+        "costoTransporteEstimado": 20,
+        "importeCostoConexion": "No Aplica",
+        "importeGarantia": 2862244.04,
+        "ivaConexion": 16,
+        "ivaConsumo": 16,
+        "mesesMayorConsumo": 2,
+        "puntosuministro": "PS#000088-Servicio Release 1.5-Gas Natural",
+        "subtotalConsumo": 1093039.17,
+        "totalConexion": 0,
+        "totalConsumo": 1431122.02
+    },
+    "listaObservaciones": [
+        {
+            "observacionesTransporte": "ok"
+        },
+        {
+            "observacionesTransporte": "ok"
+        }
+    ],
+    "listaVolumetrico": {
+        "cuadroPrecioVolumetrico": 0.7
+    },
+    "listadoPlantas": [
+        {
+            "comercializacion": "Rango 2 $2.9242",
+            "consumoAnual": 50000,
+            "distribucion": "Distribución CMG",
+            "molecula": "HSC  +  0.80",
+            "nombreCuentaServicio": "Servicio Release 1.5",
+            "transporteEstimado": 20
+        },
+        {
+            "comercializacion": "Rango 2 $2.9242",
+            "consumoAnual": 50000,
+            "distribucion": "Gas Natural Comprimido",
+            "molecula": "VPM  +  0.70",
+            "nombreCuentaServicio": "Servicio Release 1.5",
+            "transporteEstimado": 15
+        }
+    ],
+    "logoEmpresa": "<img src=\"https://engielatam--qa.my.salesforce.com/sfc/servlet.shepherd/version/download/06819000001dwiUAAQ\" alt=\"Logotipo\" style=\"height:120px; width:120px;\" border=\"0\"/>",
+    "nombreCliente": "Neg1.5",
+    "ofertaValidez": 45,
+    "plazoSuministro": 12,
+    "tipoOferta": "Vinculante",
+    "vinculante": true
+}

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BusinessProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Facturación</fullName>
+    <isActive>true</isActive>
+    <values>
+        <fullName>Caso creado por error - Cerrado</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Cierre Satisfactorio KAM</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Cierre Satisfactorio-Crédito</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>En espera de asignación mensual</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>No Asignado</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Nuevo</fullName>
+        <default>true</default>
+    </values>
+    <values>
+        <fullName>Pendiente Cerrar por Crédito</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Revalidación Alta de caso por KAM</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Revalidación Cobranza</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Revalidación Crédito y Riesgo</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Revalidación Especialista Facturación</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Revalidación de cierre por KAM</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Validación Alta de caso por KAM</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Validación Crédito y Riesgo</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Validación Especialista Facturación</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Validación de cierre por KAM</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Validación por Cobranza</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Validación-Comité</fullName>
+        <default>false</default>
+    </values>
+</BusinessProcess>

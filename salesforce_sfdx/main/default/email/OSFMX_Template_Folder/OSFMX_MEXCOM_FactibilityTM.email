@@ -1,0 +1,40 @@
+<html style="overflow-y: hidden;">
+<head>
+	<title></title>
+</head>
+<body style="height: auto; min-height: auto;">
+<div><img alt="Mexcom Ok" src="https://engielatam--devmexico--c.documentforce.com/sfc/dist/version/renditionDownload?rendition=ORIGINAL_Png&versionId=068c0000001hKcj&operationContext=DELIVERY&contentId=05Tc0000007S8rM&page=0&d=/a/c0000000AHr0/QDsg.TdUffCDXJTPitacftWuACVw6FKAJaD.sHanapE&oid=00Dc0000003wiic&dpt=null&viewId=" style="max-width: 600px; width: 180px; height: 87px;" title="Mexcom Ok" /></div>
+
+<div style="text-align: center;"><i><b><span style="font-size:16px"><span style="color:#000000"><span style="font-family:arial"><span style="font-style:normal"><span style="font-variant-ligatures:normal"><span style="font-weight:400"><span style="white-space:normal"><span style="text-decoration-thickness:initial"><span style="text-decoration-style:initial"><span style="text-decoration-color:initial"><font face="arial"><font style="color:#000000; font-family:arial; font-size:12pt"><span style="font-size:12pt"><b>Factibilidad de Transporte &amp; Mol&eacute;cula</b></span></font></font></span></span></span></span></span></span></span></span></span></span></b></i><br />
+&nbsp;</div>
+
+<div><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Estimad@ <b>Usuario Factibilidad & Compra de Gas</b>, tiene una oferta&nbsp;pendiente de revisi&oacute;n para factibilidad de Transporte &amp; Mol&eacute;cula con el siguiente detalle:<br />
+<br />
+<a href="{!Quote.Link}">Para revisar la oferta haga click AQU&Iacute;</a>&nbsp;<br />
+<br /><br />
+<span style="color:#000000"><span style="font-style:normal"><span style="font-variant-ligatures:normal"><span style="font-weight:400"><span style="white-space:normal"><span style="text-decoration-thickness:initial"><span style="text-decoration-style:initial"><span style="text-decoration-color:initial"><b>Nombre de Oferta:&nbsp;</b>{!Quote.Name}<br /><br /><b>Número de Oferta:&nbsp;</b>{!Quote.QuoteNumber}<br /><br /><b>Tipo de Oferta:&nbsp;</b>{!Quote.OSFMX_OfferType__c}</span></span></span></span></span></span></span></span></span></span><br />
+&nbsp;
+<div style="text-align:start">
+<div style="text-align:start"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><span style="color:#000000"><span style="font-style:normal"><span style="font-variant-ligatures:normal"><span style="font-weight:400"><span style="white-space:normal"><span style="text-decoration-thickness:initial"><span style="text-decoration-style:initial"><span style="text-decoration-color:initial"><b>Raz&oacute;n Social:</b>&nbsp;{!Quote.OSFMX_BusinessName__c}</span></span></span></span></span></span></span></span></span></span></div>
+
+<div style="text-align:start"><br />
+<span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><span style="color:#000000"><span style="font-style:normal"><span style="font-variant-ligatures:normal"><span style="font-weight:400"><span style="white-space:normal"><span style="text-decoration-thickness:initial"><span style="text-decoration-style:initial"><span style="text-decoration-color:initial"><b>Coordenadas:</b>&nbsp;{!Quote.OSFMX_Coordinates__c}<br /><br /><b>¿Actualmente consume Gas?:</b>&nbsp;{!Quote.OSFMX_CurrentGasConsumer__c}<br /><br /><b>Ducto de conexión:</b>&nbsp;{!Quote.OSFMX_ConnectionPipeline__c}<br /><br /><b>Distribuidor:</b>&nbsp;{!Quote.OSFMX_DistributorOrCarrier__c}<br /><br /><b>Número de caseta:</b>&nbsp;{!Quote.OSFMX_BoxNumber__c}<br /><br /><b>¿Tiene capacidad propia?:</b>&nbsp;{!Quote.OSFMX_OwnCapacity__c}<br /><br /></span></span></span></span></span></span></span></span>
+<b style="font-family: Arial, Helvetica, sans-serif; font-size: 14px;">Nodo Recepción 1 - Nodo Entrega 1 - CMD 1:&nbsp;</b>{!Quote.OSFMX_ReceptionNode1__c}<br />
+<br /><b>Nodo Recepción 2 - Nodo Entrega 2 - CMD 2:</b>&nbsp;{!Quote.OSFMX_ReceptionNode2__c}<br /><br /><b>Nodo Recepción 3 - Nodo Entrega 3 - CMD 3:</b>&nbsp;{!Quote.OSFMX_ReceptionNode3__c}<br /><br />
+<span style="color:#000000"><span style="font-style:normal"><span style="font-variant-ligatures:normal"><span style="font-weight:400"><span style="white-space:normal"><span style="text-decoration-thickness:initial"><span style="text-decoration-style:initial"><span style="text-decoration-color:initial"><b>Propietario:</b><b style="font-size:12pt; font-family:arial">&nbsp;</b>{!Quote.OwnerFullName}<br /><br /><b>Vigencia de oferta:</b>&nbsp;{!Quote.OSFMX_OffersDeadline__c}</span></span></span></span></span></span></span></span></span></span><br />
+&nbsp;</div>
+<div style="text-align:start">&nbsp;</div>
+<div style="text-align:start">&nbsp;</div>
+</div>
+<div><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"></span></span>
+<img alt="Engie jpg" src="https://engielatam--devmexico--c.documentforce.com/file-asset-public/Engie_jpg1?oid=00Dc0000003wiic" style="max-width: 1122.5338928222657px" title="Engie jpg" /></div>
+
+<div id="" style="left: 588.182px; top: 693.153px;"><font face="arial">&nbsp;</font></div>
+
+<div id="" style="left: 588.182px; top: 693.153px;"><font face="arial">&nbsp;</font></div>
+
+<div id="" style="left: 127.778px; top: 422.378px;"><font face="arial">&nbsp;</font></div>
+
+<div id="" style="left: 127.778px; top: 422.378px;"><font face="arial">&nbsp;</font></div>
+</body>
+</html>

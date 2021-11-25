@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Plantilla de notificación de rechazo a usuarios que autorizaron la oferta</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>MEXCOM Oferta Rechazada (No Aprobada)</name>
+    <style>none</style>
+    <subject>{!Quote.OSFMX_BusinessName__c} | Notificación Oferta Rechazada (No Aprobada)</subject>
+    <textOnly>Notificación de Oferta Rechazada
+Estimado {!Quote.Owner}, su oferta {!Quote.Name} se encuentra aprobada y lista para enviar al cliente en SalesForce.
+
+Los comentarios del aprobador 1 son:
+{!ApprovalRequest.Comments}
+
+Los comentarios del aprobador 2 son:
+{!ApprovalRequest.Comments}
+
+
+Si requiere consultar la oferta en SalesForce de click AQUÍ
+
+
+Engie México</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

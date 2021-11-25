@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Notificación interna de asignación de caso</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>OSFMX_Membrete_Engie_Casos</letterhead>
+    <name>OSFMX Notificación de asignación de caso</name>
+    <style>freeForm</style>
+    <subject>CASO# {!Case.CaseNumber} - Notificación de asignación</subject>
+    <textOnly>*** NOTIFICACIÓN DE ASIGNACIÓN DE CASO ***
+
+El siguiente caso le ha sido asignado.
+
+Cuenta:...................................{!Case.Account}
+Contacto:................................{!Case.Contact}
+Caso #:...................................{!Case.CaseNumber}
+Tipo de caso:..........................{!Case.RecordType}
+Tipo de incidencia:...............{!Case.Tipo_de_Incidencia__c}
+
+Este link lo lleva al registro del caso asignado: {!Case.Link}
+
+Saludos!
+Engie.
+Mensaje automatizado.</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

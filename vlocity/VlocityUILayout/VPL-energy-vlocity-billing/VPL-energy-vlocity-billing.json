@@ -1,0 +1,54 @@
+{
+    "Cards": [
+    ],
+    "componentName": "cfVPLenergyVlocityBilling",
+    "dataSource": {
+        "type": null
+    },
+    "previewType": "runTime",
+    "sessionVars": [
+        {
+            "name": "Tab",
+            "val": "\"Billing\""
+        }
+    ],
+    "templates": {
+        "0": {
+            "templateUrl": "vpl-energy-canvas--zones-assistant"
+        }
+    },
+    "zones": {
+        "Body": {
+            "cardNames": [
+            ],
+            "label": "Body",
+            "layouts": [
+                {
+                    "id": "engie/BillingData",
+                    "name": "engie/BillingData"
+                },
+                {
+                    "id": "VPL/energy-billing--balance-table",
+                    "name": "VPL/energy-billing--balance-table"
+                }
+            ],
+            "name": "Body",
+            "zoneCards": [
+            ]
+        },
+        "Sidebar": {
+            "cardNames": [
+            ],
+            "label": "Vlocity Assistant",
+            "layouts": [
+                {
+                    "id": "VPL/energy-vlocity-assistant",
+                    "name": "VPL/energy-vlocity-assistant"
+                }
+            ],
+            "name": "Sidebar",
+            "zoneCards": [
+            ]
+        }
+    }
+}

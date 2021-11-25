@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OSFMX_FuelUsage__c</fullName>
+    <externalId>false</externalId>
+    <label>Uso de combustible</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Calderas</fullName>
+                <default>false</default>
+                <label>Calderas</label>
+            </value>
+            <value>
+                <fullName>Calefacción</fullName>
+                <default>false</default>
+                <label>Calefacción</label>
+            </value>
+            <value>
+                <fullName>Generación eléctrica</fullName>
+                <default>false</default>
+                <label>Generación eléctrica</label>
+            </value>
+            <value>
+                <fullName>Hornos</fullName>
+                <default>false</default>
+                <label>Hornos</label>
+            </value>
+            <value>
+                <fullName>Quemadores</fullName>
+                <default>false</default>
+                <label>Quemadores</label>
+            </value>
+            <value>
+                <fullName>Secado</fullName>
+                <default>false</default>
+                <label>Secado</label>
+            </value>
+            <value>
+                <fullName>Vapor</fullName>
+                <default>false</default>
+                <label>Vapor</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

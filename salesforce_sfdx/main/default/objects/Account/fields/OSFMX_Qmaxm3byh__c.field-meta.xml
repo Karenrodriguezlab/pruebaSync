@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OSFMX_Qmaxm3byh__c</fullName>
+    <externalId>false</externalId>
+    <label>Qmax(m3/h)</label>
+    <summarizedField>OSFMX_GasConsumption__c.OSFMX_Qmaxm3byh__c</summarizedField>
+    <summaryForeignKey>OSFMX_GasConsumption__c.OSFMX_Account__c</summaryForeignKey>
+    <summaryOperation>max</summaryOperation>
+    <type>Summary</type>
+</CustomField>

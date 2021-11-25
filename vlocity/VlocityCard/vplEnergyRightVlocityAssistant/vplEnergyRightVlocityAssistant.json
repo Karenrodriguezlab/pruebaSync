@@ -1,0 +1,40 @@
+{
+    "GlobalKey__c": "vplEnergyRightVlocityAssistant/Accenture India/1/1592978936162",
+    "dataSource": {
+        "type": null
+    },
+    "enableLwc": true,
+    "filter": {
+    },
+    "states": [
+        {
+            "conditions": {
+                "group": [
+                    {
+                        "field": "$scope.data.status",
+                        "operator": "===",
+                        "type": "system",
+                        "value": "'active'"
+                    }
+                ]
+            },
+            "definedActions": {
+                "actions": [
+                ]
+            },
+            "fields": [
+            ],
+            "isSmartAction": false,
+            "lwc": {
+                "DeveloperName": "veeEnergyRightVlocityAssistant",
+                "Id": "0Rb3h000000YB3fCAG",
+                "MasterLabel": "veeEnergyRightVlocityAssistantLWC",
+                "name": "veeEnergyRightVlocityAssistant"
+            },
+            "name": "Active",
+            "smartAction": {
+            }
+        }
+    ],
+    "title": "Vlocity Assistant"
+}

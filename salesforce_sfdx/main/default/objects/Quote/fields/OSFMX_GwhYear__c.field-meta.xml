@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OSFMX_GwhYear__c</fullName>
+    <externalId>false</externalId>
+    <formula>OSMXConsumo_Plazo__c / 3597</formula>
+    <label>GWh/año</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

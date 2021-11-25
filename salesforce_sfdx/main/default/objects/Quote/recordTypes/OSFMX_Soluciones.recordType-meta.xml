@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OSFMX_Soluciones</fullName>
+    <active>true</active>
+    <label>Otras Soluciones</label>
+    <picklistValues>
+        <picklist>Status</picklist>
+        <values>
+            <fullName>Aprobada</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Borrador</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Expirada</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ganada</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Imposible</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Presentada</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Proceso</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rechazada</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Sprint 6</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>MEXCOM Solicitud de Oferta para Supply Gas</name>
+    <style>none</style>
+    <subject>{!Quote.OSFMX_BusinessName__c} | Solicitud de Oferta para Supply Gas</subject>
+    <textOnly>Notificación de aprobación de oferta
+Estimad@ {!Quote.OSFMX_B2BApprover__c} tiene una oferta de {!Quote.OwnerFullName} pendiente de aprobación.
+
+Razón Social: {!Quote.OSFMX_BusinessName__c}
+Nombre de la Oferta: {!Quote.Name}
+Número de Oferta: {!Quote.QuoteNumber}
+Solución: {!Quote.OSFMX_Solution__c}
+Consumo anual esperado GJ/año: {!Quote.OSFMX_GJ__c}
+KAM: {!Quote.OwnerFullName}
+
+Si requiere aprobar la oferta directamente en SalesForce de click AQUÍ
+
+Si requiere consultar la oferta en SalesForce de click AQUÍ
+
+Engie México</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

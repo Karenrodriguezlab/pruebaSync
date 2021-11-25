@@ -1,0 +1,71 @@
+{
+    "dataSource": {
+        "type": null,
+        "value": {
+        }
+    },
+    "filter": {
+    },
+    "states": [
+        {
+            "conditions": {
+                "group": [
+                    {
+                        "field": "$scope.data.status",
+                        "operator": "===",
+                        "type": "system",
+                        "value": "'active'"
+                    }
+                ]
+            },
+            "definedActions": {
+                "actions": [
+                ]
+            },
+            "fields": [
+                {
+                    "collapse": true,
+                    "displayLabel": "['Name']",
+                    "fieldType": "standard",
+                    "group": "Custom Properties",
+                    "label": "Name",
+                    "name": "['Name']",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "['Industry']",
+                    "fieldType": "standard",
+                    "group": "Custom Properties",
+                    "label": "Industry",
+                    "name": "['Industry']",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": ".09",
+                    "name": "Miles",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "['%vlocity_namespace%__CalculatedAddress__c']",
+                    "fieldType": "standard",
+                    "group": "Custom Properties",
+                    "label": "CalculatedAddress",
+                    "name": "['%vlocity_namespace%__CalculatedAddress__c']",
+                    "type": "string"
+                }
+            ],
+            "isSmartAction": false,
+            "name": "Active",
+            "smartAction": {
+            },
+            "templateUrl": "vpl-energy-card--sidebar-profile"
+        }
+    ],
+    "title": "Profile"
+}

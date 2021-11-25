@@ -1,0 +1,26 @@
+{
+    "%vlocity_namespace%__CustomJavaScript__c": "{\n   {\n    \"omnidesignerChannelId\": \"omni-designer-channel-id-1619706875818\",\n    \"timeStamp\": \"2021-04-29T14:34:28.275Z\",\n    \"userProfile\": \"Administrador del sistema\",\n    \"userTimeZone\": \"-300\",\n    \"userCurrencyCode\": \"MXN\",\n    \"userName\": \"omar.mata@globant.com.latam.devmexico\",\n    \"userId\": \"005c0000007TBCzAAO\",\n    \"ParentId\": \"\",\n    \"GeneralInformation\": {\n        \"TASearchAccount-Block\": {\n            \"TASearchAccount\": \"Allegro\",\n            \"AccountName\": \"Allegro\",\n            \"ParentAccountId\": \"001c000003BhA8WAAV\"\n        },\n        \"Treatmen\": \"Cp.\",\n        \"FirstName\": \"dawa\",\n        \"LastName\": \"wdad\",\n        \"Rol\": \"Comprador\",\n        \"Position\": \"dwada\",\n        \"Status\": \"Activo\",\n        \"Department\": \"dwawd\",\n        \"TASerchContact-Block\": {\n            \"TASerchContact\": \"Alejandro Torres\",\n            \"ContactName\": \"Alejandro Torres\"\n        }\n    },\n    \"parentIdOK\": \"001c000003BhA8WAAV\",\n    \"ContactInformation\": {\n        \"Lng\": -99.13822258421789,\n        \"Lat\": 19.487460160485707,\n        \"Country\": \"Mexico\",\n        \"PC\": \"07730\",\n        \"State\": \"CDMX\",\n        \"Locality\": \"Ciudad de México\",\n        \"Street\": \"561 Natal\",\n        \"Email\": \"dwad@gmail.com\",\n        \"Telephone\": \"1111111111\",\n        \"Movil\": \"2222222222\",\n        \"Extencion\": 123\n    },\n    \"Statues\": \"ok\",\n    \"Message\": \"Actualizacion Exitosa\"\n}\n}",
+    "%vlocity_namespace%__DisableMetadataCache__c": false,
+    "%vlocity_namespace%__ElementTypeToHTMLTemplateList__c": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "%vlocity_namespace%__Element__c": [
+        "OSFMX_CreatNewContact_Element_SetValues1.json",
+        "OSFMX_CreatNewContact_Element_DRPostNewContact.json",
+        "OSFMX_CreatNewContact_Element_SVResponse.json",
+        "OSFMX_CreatNewContact_Element_ResponseAction1.json"
+    ],
+    "%vlocity_namespace%__IsLwcEnabled__c": false,
+    "%vlocity_namespace%__IsProcedure__c": true,
+    "%vlocity_namespace%__IsReusable__c": false,
+    "%vlocity_namespace%__IsTest__c": false,
+    "%vlocity_namespace%__Language__c": "Procedure",
+    "%vlocity_namespace%__OmniProcessType__c": "Integration Procedure",
+    "%vlocity_namespace%__ProcedureKey__c": "OSFMX_CreatNewContact",
+    "%vlocity_namespace%__PropertySet__c": "OSFMX_CreatNewContact_PropertySet.json",
+    "%vlocity_namespace%__SubType__c": "CreatNewContact",
+    "%vlocity_namespace%__Type__c": "OSFMX",
+    "CurrencyIsoCode": "MXN",
+    "Name": "CreatNewContact",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__OmniScript__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__OmniScript__c/OSFMX/CreatNewContact/Procedure"
+}

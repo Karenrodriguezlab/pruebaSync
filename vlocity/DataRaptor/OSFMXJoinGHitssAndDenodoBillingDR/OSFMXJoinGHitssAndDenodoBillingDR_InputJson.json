@@ -1,0 +1,68 @@
+{
+    "PayloadFacturasDenodo": {
+        "business_partner": "?",
+        "cuenta_contrato": "005000865484",
+        "facturas_denodo": [
+            {
+                "contrato_suministro": "00000000000000504971",
+                "estado_factura": "Pagado",
+                "id_documento": "refFac_idDoc01"
+            },
+            {
+                "contrato_suministro": "00000000000000504971",
+                "estado_factura": "Pagado",
+                "id_documento": "refFac_idDoc02"
+            },
+            {
+                "contrato_suministro": "00000000000000505044",
+                "estado_factura": "Pagado",
+                "id_documento": "refFac_idDoc03"
+            },
+            {
+                "contrato_suministro": "00000000000000505044",
+                "estado_factura": "Pagado",
+                "id_documento": "refFac_idDoc04"
+            },
+            {
+                "contrato_suministro": "00000000000000505044",
+                "estado_factura": "Vencido",
+                "id_documento": "refFac_idDoc05"
+            },
+            {
+                "contrato_suministro": "00000000000000505044",
+                "estado_factura": "Vencido",
+                "id_documento": "refFac_idDoc06"
+            },
+            {
+                "contrato_suministro": "00000000000000505044",
+                "estado_factura": "No vencido",
+                "id_documento": "refFac_idDoc07"
+            }
+        ],
+        "saldo_cliente": -1216424.68,
+        "sociedad": "Natgasmex SA de CV",
+        "tipo_servicio": "gas"
+    },
+    "PayloadGHitss": {
+        "b_partner": "600000062",
+        "cuenta_contrato": "005000865484",
+        "facturas": [
+            {
+                "conceptos_facturados": [
+                ],
+                "fecha_emision": "2020-01-31",
+                "fecha_envio": "2020-01-31",
+                "fecha_fin_periodo_consumo": "2020-01-31",
+                "fecha_inicio_periodo_consumo": "2020-01-01",
+                "fecha_vencimiento": "2020-02-29",
+                "id_factura": "idFactura01",
+                "moneda_del_cfdi": "Pesos",
+                "monto_factura": 45000,
+                "num_de_factura": "1",
+                "referencia_factura": "refFac_idDoc01",
+                "tipo_documento": "Factura"
+            }
+        ],
+        "sociedad": "Natgasmex SA de CV"
+    }
+}

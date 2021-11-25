@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>OSFPE_fld_empresa__c</columns>
+    <columns>OSFPE_fld_BRG__c</columns>
+    <columns>OSFPE_fld_tensionSuministro__c</columns>
+    <columns>OSFPE_fld_plantaUbicacion__c</columns>
+    <columns>OSFPE_fld_puntoSuministroMedicion__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>Todos</label>
+</ListView>

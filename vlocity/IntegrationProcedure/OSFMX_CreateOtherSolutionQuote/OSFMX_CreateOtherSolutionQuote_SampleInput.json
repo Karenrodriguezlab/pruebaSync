@@ -1,0 +1,28 @@
+{
+    "Quote": {
+        "%vlocity_namespace%__DefaultServiceAccountId__c": "001c0000038mVzIAAU",
+        "AccountId": "001c0000038mVzCAAU",
+        "Description": "",
+        "Id": "",
+        "Name": "oferta otras soluciones 7 mayo",
+        "OSFMX_Amount__c": 50000,
+        "OSFMX_OfferValidity__c": 45,
+        "OSFMX_ServiceEndDate__c": "2022-05-06T05:00:00.000Z",
+        "OSFMX_ServiceStartDate__c": "2021-05-06",
+        "OSFMX_SolutionType__c": "GNV",
+        "OSFMX_Solution__c": "Flotas de Vehículos GNV",
+        "OSFMX_SubEstatus__c": null,
+        "OpportunityId": "006c000000UcVyXAAV",
+        "Plazo_de_contrato_meses__c": 12,
+        "Status": "Borrador"
+    },
+    "UpdateOpportunity": {
+        "CloseDate": "2021-06-01",
+        "CurrentStatus": "test",
+        "CurrentStatusDate": "2021-05-07T16:16:00.000Z",
+        "Id": "006c000000UcVyXAAV",
+        "NextActivity": "test",
+        "NextActivityDate": "2021-05-07",
+        "Stage": "En proceso"
+    }
+}

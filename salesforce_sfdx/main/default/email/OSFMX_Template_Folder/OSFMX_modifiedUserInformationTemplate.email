@@ -1,0 +1,28 @@
+<html style="overflow-y: hidden;">
+<head>
+	<title></title>
+</head>
+<body style="height: auto; min-height: auto;">
+<div><img alt="Engie jpg" src="https://engielatam--devmexico--c.documentforce.com/file-asset-public/Engie_jpg1?oid=00Dc0000003wiic" style="max-width: 481.597px; width: 178.993px; height: 90px;" title="Engie jpg" /></div>
+
+<div style="text-align: center;"><i><b><span style="font-size:16px"><span style="font-family:arial"><span style="font-style:normal"><span style="font-variant-ligatures:normal"><span style="font-weight:400"><span style="white-space:normal"><span style="text-decoration-thickness:initial"><span style="text-decoration-style:initial"><span style="text-decoration-color:initial"><font face="arial"><font style="color:#000000; font-family:arial; font-size:12pt"><span style="font-size:12pt"><b><span style="color:#c0392b;"></span></b></span></font></font></span></span></span></span></span></span></span></span></span></b></i></div>
+&nbsp;
+<br />
+<br />
+<div><font face="arial"><span style="font-size:12pt"><br />Estimad@&nbsp;<b>{!User.OSFMX_AccountOwnername__c}&nbsp;{!User.OSFMX_Accountownerlastname__c}</b>
+<br />
+<br />
+<br />
+Le informamos que su contacto<b>&nbsp;{!User.Name}</b>&nbsp; de la cuenta <b>{!User.OSFMX_AccountBussinesName__c}</b> ha modificado su información de contacto desde el Portal Web de clientes B2B.<br />
+<br />
+<br />
+<a href="https://engielatam--devmexico.lightning.force.com/lightning/r/Report/00Oc0000000uLEEEA2/view?queryScope=userFolders">Para consultar la información modificada haga click AQUÍ</a>
+<br />
+<br />
+<br />
+<br />
+<br />
+<div><img alt="Engie jpg" src="https://engielatam--devmexico--c.documentforce.com/file-asset-public/Engie_jpg1?oid=00Dc0000003wiic" style="max-width: 481.597px; width: 178.993px; height: 90px;" title="Engie jpg" /></div><br />
+</font></div>
+</body>
+</htm

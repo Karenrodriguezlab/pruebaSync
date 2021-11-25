@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>vlocity_cmt__Business</fullName>
+    <active>true</active>
+    <description>Use business accounts for customers that are businesses, organizations or other public or private agencies.</description>
+    <label>Business</label>
+    <picklistValues>
+        <picklist>AccountSource</picklist>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Purchased List</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Industry</picklist>
+        <values>
+            <fullName>Aeropuertos y puertos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Agricultura</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Alimentos y bebidas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Automotriz y autopartes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bancos e instituciones financieras</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bienes de consumo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cemento</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Centros Comerciales %2F Usos Mixtos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cerámicos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Constructora %2F Ingeniería</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Data Center</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Educación privada</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Educación pública</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Empresas de Telecomunicación</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Entretenimientos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Generación eléctrica</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gestión inmobiliaria</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gobiernos %28Defensa%2C etc%2E%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hoteles</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Materiales y herramientas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Metalurgia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Minería</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Municipalidades</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Parques Industriales</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Petróleo y gas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Planta %2F Distribución de agua</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pulpa y papel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Química farmacéutica</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Química y Petroquímica</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail %28tiendas%2C etc%2E%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Salud privada</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Salud pública</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Servicios</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Textil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transporte %28Tren%2C Metro%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transporte %2F Distribución de electricidad</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transporte %2F Distribución de gas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vidrios</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OSFCL_CountryISOCode__c</picklist>
+        <values>
+            <fullName>MX</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Ownership</picklist>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Private</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Subsidiary</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Rating</picklist>
+        <values>
+            <fullName>Cold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hot</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Warm</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prospect</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

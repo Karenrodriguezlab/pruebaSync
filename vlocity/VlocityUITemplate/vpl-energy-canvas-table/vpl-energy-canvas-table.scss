@@ -1,0 +1,53 @@
+/*** STYLES ***/
+.via-slds {
+    .container-table-canvas .slds-grid .slds-form-element__control{
+        display: inline-block;
+        padding: 10px;
+    }   
+    .container-table-canvas .overflowAuto{
+        overflow: auto;
+    }
+    .slds-table thead th {
+        background-color: #ffffff;
+    }
+    .slds-text-heading--label {
+        height: 3rem;
+    }
+    .slds-table--bordered, .via-slds .slds-table_bordered {
+        border-top: 0px;
+    }    
+    table tr {
+        line-height: 2rem;
+    }    
+}
+.via-slds .slds-text-link--reset, .via-slds .slds-text-link--reset:active, .via-slds .slds-text-link--reset:focus, .via-slds .slds-text-link--reset:hover {
+    text-decoration:underline;
+    color: rgb(0, 112, 210);
+}
+
+/*Added to fix height issue*/
+body{
+    position: relative;
+}
+.cfp-hotkeys, .cfp-hotkeys-container {
+  width: auto;
+  height: auto;
+}
+.cfp-hotkeys-container {
+  display: block !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  color: #333;
+  font-size: 1em;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.cfp-content, .cfp-hotkeys {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+}

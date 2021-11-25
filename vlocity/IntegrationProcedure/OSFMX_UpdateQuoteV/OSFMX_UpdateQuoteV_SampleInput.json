@@ -1,0 +1,18 @@
+{
+    "QuoteV": {
+        "Conexion": "",
+        "ConsumidorGas": false,
+        "DistributorOrCarrier": "",
+        "Id": "0Q0c0000000iFLDCA2",
+        "NoCaseta": "",
+        "Nombre": "HU 132 Cerrada Ganada I",
+        "NombreOportunidad": "HU 132 Cerrada Ganada",
+        "OwnCapacity": false,
+        "QuoteType": "Vinculante",
+        "ReceptionNode1": "",
+        "ReceptionNode2": "",
+        "ReceptionNode3": "",
+        "Status": "Proceso",
+        "SubStatus": "Factibilidad Mexcom"
+    }
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cuenta_negocio_asocia_grupo</fullName>
+    <active>true</active>
+    <description>Se apago por la us 562/Una cuenta de negocio SOLO se puede asociar a una cuenta grupo economico y NO es obligatorio tener una cuenta asociada en el parentid</description>
+    <errorConditionFormula>AND($Profile.Name &lt;&gt; &quot;Administrador del sistema&quot;,
+    $Profile.Name &lt;&gt; &quot;System Administrator&quot;,	
+	OR( 
+		AND( NOT(ISBLANK(ParentId)), AND ( RecordType.Name = &quot;Business&quot;, Parent.RecordType.Name &lt;&gt; &quot;Grupo Económico&quot;)
+		)
+	   )
+	)</errorConditionFormula>
+    <errorDisplayField>ParentId</errorDisplayField>
+    <errorMessage>Debes escoger una cuenta principal de tipo Grupo Económico</errorMessage>
+</ValidationRule>

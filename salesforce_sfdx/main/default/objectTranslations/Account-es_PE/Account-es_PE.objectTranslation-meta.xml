@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <layouts>
+        <layout>OSFPE_pl_Cuenta_de_Negocio</layout>
+        <sections>
+            <label></label>
+            <section>Información de Contacto</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Información de dirección</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label></label>
+        <name>OSFPE_rt_Cuenta_de_Negocio</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>OSFPE_rt_Grupo_Economico</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>OSFPE_vr_Direccion_obligatorio</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>OSFPE_vr_Formato_RUC</name>
+    </validationRules>
+</CustomObjectTranslation>

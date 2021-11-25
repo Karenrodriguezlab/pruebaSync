@@ -1,0 +1,1127 @@
+{
+    "dataSource": {
+        "contextVariables": [
+            {
+                "id": 2,
+                "name": "recordId",
+                "val": "005c0000007UGoR"
+            }
+        ],
+        "orderBy": {
+            "isReverse": false,
+            "name": ""
+        },
+        "type": "DataRaptor",
+        "value": {
+            "bundle": "DRGetCurrentUserInfo",
+            "inputMap": {
+                "userId": "{recordId}"
+            },
+            "resultVar": ""
+        }
+    },
+    "enableLwc": true,
+    "isFlex": true,
+    "lwc": {
+        "DeveloperName": "cfOSFMX_PWModifiedCurrentUser_2_Engie_Latam_HQ",
+        "Id": "0Rbc0000000DOKGCA4",
+        "ManageableState": "unmanaged",
+        "MasterLabel": "cfOSFMX_PWModifiedCurrentUser_2_Engie_Latam_HQ",
+        "NamespacePrefix": "c"
+    },
+    "states": [
+        {
+            "actions": [
+            ],
+            "childCards": [
+            ],
+            "components": {
+                "layer-0": {
+                    "children": [
+                        {
+                            "class": "nds-col ",
+                            "element": "outputField",
+                            "elementLabel": "Text-0",
+                            "name": "Text",
+                            "property": {
+                                "card": "{card}",
+                                "mergeField": "%3Cdiv%3E%3Cstrong%3E%3Cspan%20style=%22font-size:%2012pt;%22%3EDetalle%20del%20usuario%3C/span%3E%3C/strong%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E",
+                                "record": "{record}"
+                            },
+                            "size": {
+                                "default": "10",
+                                "isResponsive": false
+                            },
+                            "stateIndex": 0,
+                            "styleObject": {
+                                "size": {
+                                    "default": "10",
+                                    "isResponsive": false
+                                },
+                                "sizeClass": "nds-size_10-of-12 "
+                            },
+                            "type": "text"
+                        },
+                        {
+                            "class": "nds-col ",
+                            "element": "action",
+                            "elementLabel": "Action-1",
+                            "name": "Action",
+                            "property": {
+                                "buttonVariant": "neutral",
+                                "card": "{card}",
+                                "contextId": "\\{recordId}",
+                                "displayAsButton": true,
+                                "record": "{record}",
+                                "stateAction": {
+                                    "Community Named Page": {
+                                        "targetName": "user_modified_profile__c"
+                                    },
+                                    "displayName": "Modificar",
+                                    "id": "flex-action-1623266918548",
+                                    "openUrlIn": "Current Window",
+                                    "targetType": "Community Named Page",
+                                    "type": "Custom",
+                                    "vlocityIcon": "utility:adduser"
+                                },
+                                "stateObj": "{record}"
+                            },
+                            "size": {
+                                "default": "2",
+                                "isResponsive": false
+                            },
+                            "stateIndex": 0,
+                            "styleObject": {
+                                "size": {
+                                    "default": "2",
+                                    "isResponsive": false
+                                },
+                                "sizeClass": "nds-size_2-of-12 "
+                            },
+                            "type": "element"
+                        },
+                        {
+                            "class": "nds-col ",
+                            "element": "outputField",
+                            "elementLabel": "Name-2",
+                            "name": "Name",
+                            "property": {
+                                "card": "{card}",
+                                "fieldName": "Name",
+                                "label": "Nombre",
+                                "placeholder": "",
+                                "record": "{record}",
+                                "styles": {
+                                    "label": {
+                                        "fontSize": "12pt"
+                                    },
+                                    "value": {
+                                        "fontSize": "12pt"
+                                    }
+                                },
+                                "type": "text"
+                            },
+                            "size": {
+                                "default": "6",
+                                "isResponsive": false
+                            },
+                            "stateIndex": 0,
+                            "styleObject": {
+                                "background": {
+                                    "color": "",
+                                    "image": "",
+                                    "position": "",
+                                    "repeat": "",
+                                    "size": ""
+                                },
+                                "border": {
+                                    "color": "",
+                                    "radius": "",
+                                    "style": "",
+                                    "type": "",
+                                    "width": ""
+                                },
+                                "container": {
+                                    "class": ""
+                                },
+                                "elementStyleProperties": {
+                                    "styles": {
+                                        "label": {
+                                            "fontSize": "12pt"
+                                        },
+                                        "value": {
+                                            "fontSize": "12pt"
+                                        }
+                                    }
+                                },
+                                "inlineStyle": "",
+                                "margin": [
+                                ],
+                                "padding": [
+                                ],
+                                "size": {
+                                    "default": "6",
+                                    "isResponsive": false
+                                },
+                                "sizeClass": "nds-size_6-of-12 ",
+                                "text": {
+                                    "align": "",
+                                    "color": ""
+                                }
+                            },
+                            "type": "field"
+                        },
+                        {
+                            "class": "nds-col ",
+                            "element": "outputField",
+                            "elementLabel": "Telephone-3",
+                            "name": "Telephone",
+                            "property": {
+                                "card": "{card}",
+                                "fieldName": "Telephone",
+                                "label": "Teléfono",
+                                "mask": "$number.format('00 00 00 00',${phone})",
+                                "placeholder": "",
+                                "record": "{record}",
+                                "styles": {
+                                    "label": {
+                                        "fontSize": "12pt"
+                                    },
+                                    "value": {
+                                        "fontSize": "12pt"
+                                    }
+                                },
+                                "type": "number"
+                            },
+                            "size": {
+                                "default": "6",
+                                "isResponsive": false
+                            },
+                            "stateIndex": 0,
+                            "styleObject": {
+                                "background": {
+                                    "color": "",
+                                    "image": "",
+                                    "position": "",
+                                    "repeat": "",
+                                    "size": ""
+                                },
+                                "border": {
+                                    "color": "",
+                                    "radius": "",
+                                    "style": "",
+                                    "type": "",
+                                    "width": ""
+                                },
+                                "container": {
+                                    "class": ""
+                                },
+                                "elementStyleProperties": {
+                                    "styles": {
+                                        "label": {
+                                            "fontSize": "12pt"
+                                        },
+                                        "value": {
+                                            "fontSize": "12pt"
+                                        }
+                                    }
+                                },
+                                "inlineStyle": "",
+                                "margin": [
+                                ],
+                                "padding": [
+                                ],
+                                "size": {
+                                    "default": "6",
+                                    "isResponsive": false
+                                },
+                                "sizeClass": "nds-size_6-of-12 ",
+                                "text": {
+                                    "align": "",
+                                    "color": ""
+                                }
+                            },
+                            "type": "field"
+                        },
+                        {
+                            "class": "nds-col ",
+                            "element": "outputField",
+                            "elementLabel": "LastName-4",
+                            "name": "LastName",
+                            "property": {
+                                "card": "{card}",
+                                "fieldName": "LastName",
+                                "label": "Apellido",
+                                "placeholder": "",
+                                "record": "{record}",
+                                "styles": {
+                                    "label": {
+                                        "fontSize": "12pt"
+                                    },
+                                    "value": {
+                                        "fontSize": "12pt"
+                                    }
+                                },
+                                "type": "text"
+                            },
+                            "size": {
+                                "default": "6",
+                                "isResponsive": false
+                            },
+                            "stateIndex": 0,
+                            "styleObject": {
+                                "background": {
+                                    "color": "",
+                                    "image": "",
+                                    "position": "",
+                                    "repeat": "",
+                                    "size": ""
+                                },
+                                "border": {
+                                    "color": "",
+                                    "radius": "",
+                                    "style": "",
+                                    "type": "",
+                                    "width": ""
+                                },
+                                "container": {
+                                    "class": ""
+                                },
+                                "elementStyleProperties": {
+                                    "styles": {
+                                        "label": {
+                                            "fontSize": "12pt"
+                                        },
+                                        "value": {
+                                            "fontSize": "12pt"
+                                        }
+                                    }
+                                },
+                                "inlineStyle": "",
+                                "margin": [
+                                ],
+                                "padding": [
+                                ],
+                                "size": {
+                                    "default": "6",
+                                    "isResponsive": false
+                                },
+                                "sizeClass": "nds-size_6-of-12 ",
+                                "text": {
+                                    "align": "",
+                                    "color": ""
+                                }
+                            },
+                            "type": "field"
+                        },
+                        {
+                            "class": "nds-col ",
+                            "element": "outputField",
+                            "elementLabel": "Extencion-5",
+                            "name": "Extencion",
+                            "property": {
+                                "card": "{card}",
+                                "fieldName": "Extencion",
+                                "label": "Extensión",
+                                "mask": "$number.format('00 00 00 00',${phone})",
+                                "placeholder": "",
+                                "record": "{record}",
+                                "styles": {
+                                    "label": {
+                                        "fontSize": "12pt"
+                                    },
+                                    "value": {
+                                        "fontSize": "12pt"
+                                    }
+                                },
+                                "type": "number"
+                            },
+                            "size": {
+                                "default": "6",
+                                "isResponsive": false
+                            },
+                            "stateIndex": 0,
+                            "styleObject": {
+                                "background": {
+                                    "color": "",
+                                    "image": "",
+                                    "position": "",
+                                    "repeat": "",
+                                    "size": ""
+                                },
+                                "border": {
+                                    "color": "",
+                                    "radius": "",
+                                    "style": "",
+                                    "type": "",
+                                    "width": ""
+                                },
+                                "container": {
+                                    "class": ""
+                                },
+                                "elementStyleProperties": {
+                                    "styles": {
+                                        "label": {
+                                            "fontSize": "12pt"
+                                        },
+                                        "value": {
+                                            "fontSize": "12pt"
+                                        }
+                                    }
+                                },
+                                "inlineStyle": "",
+                                "margin": [
+                                ],
+                                "padding": [
+                                ],
+                                "size": {
+                                    "default": "6",
+                                    "isResponsive": false
+                                },
+                                "sizeClass": "nds-size_6-of-12 ",
+                                "text": {
+                                    "align": "",
+                                    "color": ""
+                                }
+                            },
+                            "type": "field"
+                        },
+                        {
+                            "class": "nds-col ",
+                            "element": "outputField",
+                            "elementLabel": "Title-6",
+                            "name": "Title",
+                            "property": {
+                                "card": "{card}",
+                                "fieldName": "Title",
+                                "label": "Cargo",
+                                "placeholder": "",
+                                "record": "{record}",
+                                "styles": {
+                                    "label": {
+                                        "fontSize": "12pt"
+                                    },
+                                    "value": {
+                                        "fontSize": "12pt"
+                                    }
+                                },
+                                "type": "text"
+                            },
+                            "size": {
+                                "default": "6",
+                                "isResponsive": false
+                            },
+                            "stateIndex": 0,
+                            "styleObject": {
+                                "background": {
+                                    "color": "",
+                                    "image": "",
+                                    "position": "",
+                                    "repeat": "",
+                                    "size": ""
+                                },
+                                "border": {
+                                    "color": "",
+                                    "radius": "",
+                                    "style": "",
+                                    "type": "",
+                                    "width": ""
+                                },
+                                "container": {
+                                    "class": ""
+                                },
+                                "elementStyleProperties": {
+                                    "styles": {
+                                        "label": {
+                                            "fontSize": "12pt"
+                                        },
+                                        "value": {
+                                            "fontSize": "12pt"
+                                        }
+                                    }
+                                },
+                                "inlineStyle": "",
+                                "margin": [
+                                ],
+                                "padding": [
+                                ],
+                                "size": {
+                                    "default": "6",
+                                    "isResponsive": false
+                                },
+                                "sizeClass": "nds-size_6-of-12 ",
+                                "text": {
+                                    "align": "",
+                                    "color": ""
+                                }
+                            },
+                            "type": "field"
+                        },
+                        {
+                            "class": "nds-col ",
+                            "element": "outputField",
+                            "elementLabel": "Movil-7",
+                            "name": "Movil",
+                            "property": {
+                                "card": "{card}",
+                                "fieldName": "Movil",
+                                "label": "Móvil",
+                                "mask": "$number.format('00 00 00 00',${phone})",
+                                "placeholder": "",
+                                "record": "{record}",
+                                "styles": {
+                                    "label": {
+                                        "fontSize": "12pt"
+                                    },
+                                    "value": {
+                                        "fontSize": "12pt"
+                                    }
+                                },
+                                "type": "number"
+                            },
+                            "size": {
+                                "default": 6,
+                                "isResponsive": false
+                            },
+                            "stateIndex": 0,
+                            "styleObject": {
+                                "background": {
+                                    "color": "",
+                                    "image": "",
+                                    "position": "",
+                                    "repeat": "",
+                                    "size": ""
+                                },
+                                "border": {
+                                    "color": "",
+                                    "radius": "",
+                                    "style": "",
+                                    "type": "",
+                                    "width": ""
+                                },
+                                "container": {
+                                    "class": ""
+                                },
+                                "elementStyleProperties": {
+                                    "styles": {
+                                        "label": {
+                                            "fontSize": "12pt"
+                                        },
+                                        "value": {
+                                            "fontSize": "12pt"
+                                        }
+                                    }
+                                },
+                                "inlineStyle": "",
+                                "margin": [
+                                ],
+                                "padding": [
+                                ],
+                                "size": {
+                                    "default": 6,
+                                    "isResponsive": false
+                                },
+                                "sizeClass": "nds-size_6-of-12",
+                                "text": {
+                                    "align": "",
+                                    "color": ""
+                                }
+                            },
+                            "type": "field"
+                        },
+                        {
+                            "class": "nds-col ",
+                            "element": "outputField",
+                            "elementLabel": "Email-8",
+                            "name": "Email",
+                            "property": {
+                                "card": "{card}",
+                                "fieldName": "Email",
+                                "label": "Email",
+                                "placeholder": "",
+                                "record": "{record}",
+                                "styles": {
+                                    "label": {
+                                        "fontSize": "12pt"
+                                    },
+                                    "value": {
+                                        "fontSize": "12pt"
+                                    }
+                                },
+                                "type": "text"
+                            },
+                            "size": {
+                                "default": "6",
+                                "isResponsive": false
+                            },
+                            "stateIndex": 0,
+                            "styleObject": {
+                                "background": {
+                                    "color": "",
+                                    "image": "",
+                                    "position": "",
+                                    "repeat": "",
+                                    "size": ""
+                                },
+                                "border": {
+                                    "color": "",
+                                    "radius": "",
+                                    "style": "",
+                                    "type": "",
+                                    "width": ""
+                                },
+                                "container": {
+                                    "class": ""
+                                },
+                                "elementStyleProperties": {
+                                    "styles": {
+                                        "label": {
+                                            "fontSize": "12pt"
+                                        },
+                                        "value": {
+                                            "fontSize": "12pt"
+                                        }
+                                    }
+                                },
+                                "inlineStyle": "",
+                                "margin": [
+                                ],
+                                "padding": [
+                                ],
+                                "size": {
+                                    "default": "6",
+                                    "isResponsive": false
+                                },
+                                "sizeClass": "nds-size_6-of-12 ",
+                                "text": {
+                                    "align": "",
+                                    "color": ""
+                                }
+                            },
+                            "type": "field"
+                        },
+                        {
+                            "class": "nds-col ",
+                            "element": "outputField",
+                            "elementLabel": "BusinessName-9",
+                            "name": "BusinessName",
+                            "property": {
+                                "card": "{card}",
+                                "fieldName": "BusinessName",
+                                "label": "Razón Social",
+                                "placeholder": "",
+                                "record": "{record}",
+                                "styles": {
+                                    "label": {
+                                        "fontSize": "12pt"
+                                    },
+                                    "value": {
+                                        "fontSize": "12pt"
+                                    }
+                                },
+                                "type": "text"
+                            },
+                            "size": {
+                                "default": "12",
+                                "isResponsive": false
+                            },
+                            "stateIndex": 0,
+                            "styleObject": {
+                                "background": {
+                                    "color": "",
+                                    "image": "",
+                                    "position": "",
+                                    "repeat": "",
+                                    "size": ""
+                                },
+                                "border": {
+                                    "color": "",
+                                    "radius": "",
+                                    "style": "",
+                                    "type": "",
+                                    "width": ""
+                                },
+                                "class": "",
+                                "container": {
+                                    "class": ""
+                                },
+                                "elementStyleProperties": {
+                                    "styles": {
+                                        "label": {
+                                            "fontSize": "12pt"
+                                        },
+                                        "value": {
+                                            "fontSize": "12pt"
+                                        }
+                                    }
+                                },
+                                "inlineStyle": "",
+                                "margin": [
+                                ],
+                                "padding": [
+                                ],
+                                "size": {
+                                    "default": "12",
+                                    "isResponsive": false
+                                },
+                                "sizeClass": "nds-size_12-of-12 ",
+                                "style": "             ",
+                                "text": {
+                                    "align": "",
+                                    "color": ""
+                                }
+                            },
+                            "type": "field"
+                        },
+                        {
+                            "class": "nds-col ",
+                            "element": "outputField",
+                            "elementLabel": "Text-10",
+                            "name": "Text",
+                            "property": {
+                                "card": "{card}",
+                                "mergeField": "%3Cdiv%3E&nbsp;%3C/div%3E%0A%3Cdiv%3E%3Cstrong%3E%3Cspan%20style=%22font-size:%2012pt;%22%3EDirecci&oacute;n%3C/span%3E%3C/strong%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E",
+                                "record": "{record}"
+                            },
+                            "size": {
+                                "default": "12",
+                                "isResponsive": false
+                            },
+                            "stateIndex": 0,
+                            "styleObject": {
+                                "sizeClass": "nds-size_12-of-12"
+                            },
+                            "type": "text"
+                        },
+                        {
+                            "class": "nds-col ",
+                            "element": "outputField",
+                            "elementLabel": "Street-11",
+                            "name": "Street",
+                            "property": {
+                                "card": "{card}",
+                                "fieldName": "Street",
+                                "format": "DD/MM/YYYY",
+                                "label": "Calle",
+                                "placeholder": "",
+                                "record": "{record}",
+                                "styles": {
+                                    "label": {
+                                        "fontSize": "12pt"
+                                    },
+                                    "value": {
+                                        "fontSize": "12pt"
+                                    }
+                                },
+                                "type": "text"
+                            },
+                            "size": {
+                                "default": "12",
+                                "isResponsive": false
+                            },
+                            "stateIndex": 0,
+                            "styleObject": {
+                                "background": {
+                                    "color": "",
+                                    "image": "",
+                                    "position": "",
+                                    "repeat": "",
+                                    "size": ""
+                                },
+                                "border": {
+                                    "color": "",
+                                    "radius": "",
+                                    "style": "",
+                                    "type": "",
+                                    "width": ""
+                                },
+                                "container": {
+                                    "class": ""
+                                },
+                                "elementStyleProperties": {
+                                    "styles": {
+                                        "label": {
+                                            "fontSize": "12pt"
+                                        },
+                                        "value": {
+                                            "fontSize": "12pt"
+                                        }
+                                    }
+                                },
+                                "inlineStyle": "",
+                                "margin": [
+                                ],
+                                "padding": [
+                                ],
+                                "size": {
+                                    "default": "12",
+                                    "isResponsive": false
+                                },
+                                "sizeClass": "nds-size_12-of-12 ",
+                                "text": {
+                                    "align": "",
+                                    "color": ""
+                                }
+                            },
+                            "type": "field"
+                        },
+                        {
+                            "class": "nds-col ",
+                            "element": "outputField",
+                            "elementLabel": "PostalCode-12",
+                            "name": "PostalCode",
+                            "property": {
+                                "card": "{card}",
+                                "fieldName": "PostalCode",
+                                "label": "Código Postal",
+                                "mask": "$number.format('00 00 00 00',${phone})",
+                                "placeholder": "",
+                                "record": "{record}",
+                                "styles": {
+                                    "label": {
+                                        "fontSize": "12pt"
+                                    },
+                                    "value": {
+                                        "fontSize": "12pt"
+                                    }
+                                },
+                                "type": "number"
+                            },
+                            "size": {
+                                "default": "6",
+                                "isResponsive": false
+                            },
+                            "stateIndex": 0,
+                            "styleObject": {
+                                "background": {
+                                    "color": "",
+                                    "image": "",
+                                    "position": "",
+                                    "repeat": "",
+                                    "size": ""
+                                },
+                                "border": {
+                                    "color": "",
+                                    "radius": "",
+                                    "style": "",
+                                    "type": "",
+                                    "width": ""
+                                },
+                                "container": {
+                                    "class": ""
+                                },
+                                "elementStyleProperties": {
+                                    "styles": {
+                                        "label": {
+                                            "fontSize": "12pt"
+                                        },
+                                        "value": {
+                                            "fontSize": "12pt"
+                                        }
+                                    }
+                                },
+                                "inlineStyle": "",
+                                "margin": [
+                                ],
+                                "padding": [
+                                ],
+                                "size": {
+                                    "default": "6",
+                                    "isResponsive": false
+                                },
+                                "sizeClass": "nds-size_6-of-12 ",
+                                "text": {
+                                    "align": "",
+                                    "color": ""
+                                }
+                            },
+                            "type": "field"
+                        },
+                        {
+                            "class": "nds-col ",
+                            "element": "outputField",
+                            "elementLabel": "City-13",
+                            "name": "City",
+                            "property": {
+                                "card": "{card}",
+                                "fieldName": "City",
+                                "label": "Ciudad",
+                                "placeholder": "",
+                                "record": "{record}",
+                                "styles": {
+                                    "label": {
+                                        "fontSize": "12pt"
+                                    },
+                                    "value": {
+                                        "fontSize": "12pt"
+                                    }
+                                },
+                                "type": "text"
+                            },
+                            "size": {
+                                "default": "6",
+                                "isResponsive": false
+                            },
+                            "stateIndex": 0,
+                            "styleObject": {
+                                "background": {
+                                    "color": "",
+                                    "image": "",
+                                    "position": "",
+                                    "repeat": "",
+                                    "size": ""
+                                },
+                                "border": {
+                                    "color": "",
+                                    "radius": "",
+                                    "style": "",
+                                    "type": "",
+                                    "width": ""
+                                },
+                                "container": {
+                                    "class": ""
+                                },
+                                "elementStyleProperties": {
+                                    "styles": {
+                                        "label": {
+                                            "fontSize": "12pt"
+                                        },
+                                        "value": {
+                                            "fontSize": "12pt"
+                                        }
+                                    }
+                                },
+                                "inlineStyle": "",
+                                "margin": [
+                                ],
+                                "padding": [
+                                ],
+                                "size": {
+                                    "default": "6",
+                                    "isResponsive": false
+                                },
+                                "sizeClass": "nds-size_6-of-12 ",
+                                "text": {
+                                    "align": "",
+                                    "color": ""
+                                }
+                            },
+                            "type": "field"
+                        },
+                        {
+                            "class": "nds-col ",
+                            "element": "outputField",
+                            "elementLabel": "State-14",
+                            "name": "State",
+                            "property": {
+                                "card": "{card}",
+                                "fieldName": "State",
+                                "label": "Estado/Provincia",
+                                "placeholder": "",
+                                "record": "{record}",
+                                "styles": {
+                                    "label": {
+                                        "fontSize": "12pt"
+                                    },
+                                    "value": {
+                                        "fontSize": "12pt"
+                                    }
+                                },
+                                "type": "text"
+                            },
+                            "size": {
+                                "default": "6",
+                                "isResponsive": false
+                            },
+                            "stateIndex": 0,
+                            "styleObject": {
+                                "background": {
+                                    "color": "",
+                                    "image": "",
+                                    "position": "",
+                                    "repeat": "",
+                                    "size": ""
+                                },
+                                "border": {
+                                    "color": "",
+                                    "radius": "",
+                                    "style": "",
+                                    "type": "",
+                                    "width": ""
+                                },
+                                "container": {
+                                    "class": ""
+                                },
+                                "elementStyleProperties": {
+                                    "styles": {
+                                        "label": {
+                                            "fontSize": "12pt"
+                                        },
+                                        "value": {
+                                            "fontSize": "12pt"
+                                        }
+                                    }
+                                },
+                                "inlineStyle": "",
+                                "margin": [
+                                ],
+                                "padding": [
+                                ],
+                                "size": {
+                                    "default": "6",
+                                    "isResponsive": false
+                                },
+                                "sizeClass": "nds-size_6-of-12 ",
+                                "text": {
+                                    "align": "",
+                                    "color": ""
+                                }
+                            },
+                            "type": "field"
+                        },
+                        {
+                            "class": "nds-col ",
+                            "element": "outputField",
+                            "elementLabel": "Country-15",
+                            "name": "Country",
+                            "property": {
+                                "card": "{card}",
+                                "fieldName": "Country",
+                                "label": "Pais",
+                                "placeholder": "",
+                                "record": "{record}",
+                                "styles": {
+                                    "label": {
+                                        "fontSize": "12pt"
+                                    },
+                                    "value": {
+                                        "fontSize": "12pt"
+                                    }
+                                },
+                                "type": "text"
+                            },
+                            "size": {
+                                "default": "6",
+                                "isResponsive": false
+                            },
+                            "stateIndex": 0,
+                            "styleObject": {
+                                "background": {
+                                    "color": "",
+                                    "image": "",
+                                    "position": "",
+                                    "repeat": "",
+                                    "size": ""
+                                },
+                                "border": {
+                                    "color": "",
+                                    "radius": "",
+                                    "style": "",
+                                    "type": "",
+                                    "width": ""
+                                },
+                                "container": {
+                                    "class": ""
+                                },
+                                "elementStyleProperties": {
+                                    "styles": {
+                                        "label": {
+                                            "fontSize": "12pt"
+                                        },
+                                        "value": {
+                                            "fontSize": "12pt"
+                                        }
+                                    }
+                                },
+                                "inlineStyle": "",
+                                "margin": [
+                                ],
+                                "padding": [
+                                ],
+                                "size": {
+                                    "default": "6",
+                                    "isResponsive": false
+                                },
+                                "sizeClass": "nds-size_6-of-12 ",
+                                "text": {
+                                    "align": "",
+                                    "color": ""
+                                }
+                            },
+                            "type": "field"
+                        }
+                    ]
+                }
+            },
+            "conditions": {
+                "group": [
+                ],
+                "id": "state-condition-object",
+                "isParent": true
+            },
+            "definedActions": {
+                "actions": [
+                ]
+            },
+            "documents": [
+            ],
+            "fields": [
+            ],
+            "isSmartAction": false,
+            "name": "Active",
+            "omniscripts": [
+            ],
+            "smartAction": {
+            },
+            "styleObject": {
+                "background": {
+                    "color": "#fff",
+                    "image": "",
+                    "position": "",
+                    "repeat": "",
+                    "size": ""
+                },
+                "border": {
+                    "color": "",
+                    "radius": "",
+                    "style": "",
+                    "type": "",
+                    "width": ""
+                },
+                "class": "nds-card nds-p-around_x-small nds-m-bottom_x-small ",
+                "container": {
+                    "class": "nds-card"
+                },
+                "elementStyleProperties": {
+                },
+                "inlineStyle": "",
+                "margin": [
+                    {
+                        "label": "bottom:x-small",
+                        "size": "x-small",
+                        "type": "bottom"
+                    }
+                ],
+                "padding": [
+                    {
+                        "label": "around:x-small",
+                        "size": "x-small",
+                        "type": "around"
+                    }
+                ],
+                "size": {
+                    "default": "12",
+                    "isResponsive": false
+                },
+                "sizeClass": "nds-size_12-of-12 ",
+                "style": "background-color:#fff;             ",
+                "text": {
+                    "align": "",
+                    "color": ""
+                }
+            }
+        }
+    ],
+    "theme": "nds",
+    "title": "OSFMX_PWModifiedCurrentUser"
+}

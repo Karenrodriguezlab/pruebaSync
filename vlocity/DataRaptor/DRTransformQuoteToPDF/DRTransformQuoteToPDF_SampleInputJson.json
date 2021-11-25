@@ -1,0 +1,22 @@
+{
+    "IFbasecompromiso": false,
+    "IFbaseinterrumpible": true,
+    "IFvinculante": false,
+    "IFvolumetrico": false,
+    "baseFirme": 70,
+    "baseInterrumpible": 30,
+    "capacidadMaximaDiaria": 10,
+    "consumoAnual": 0,
+    "consumoAnual2": 4500,
+    "consumoMensualPrevisto": 375,
+    "direcccionCuentaServicio": "567 Natal<br>Ciudad de México CDMX 07730",
+    "estructuraPrecio": "Firme/Interrumpible",
+    "fechaOferta": "9 de Noviembre de 2021",
+    "logoEmpresa": "<img src=\"https://engielatam--qa.my.salesforce.com/sfc/servlet.shepherd/version/download/06819000001dDWxAAM\" alt=\"Logotipo\" style=\"height:120px; width:120px;\" border=\"0\"/>",
+    "molecula": "  +  ",
+    "nombreCliente": "wawwuk",
+    "nombreCuentaServicio": "Capacitacion Cuenta Servicio Toks",
+    "ofertaValidez": 45,
+    "solucion": "Comercialización + Conducción",
+    "tipoOferta": "No Vinculante"
+}

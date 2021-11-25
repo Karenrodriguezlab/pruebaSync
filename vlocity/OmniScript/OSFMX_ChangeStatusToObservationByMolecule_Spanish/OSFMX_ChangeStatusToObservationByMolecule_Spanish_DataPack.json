@@ -1,0 +1,32 @@
+{
+    "%vlocity_namespace%__AdditionalInformation__c": "Cambiar de estado a observaciones entre usuario de oferta de gas y disponibilidad molecula",
+    "%vlocity_namespace%__DisableMetadataCache__c": false,
+    "%vlocity_namespace%__ElementTypeToHTMLTemplateList__c": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "%vlocity_namespace%__Element__c": [
+        "OSFMX_ChangeStatusToObservationByMolecule_Spanish_Element_DRTGetQuoteOwnerById.json",
+        "OSFMX_ChangeStatusToObservationByMolecule_Spanish_Element_SVDRTGetQuoteOwnerById.json",
+        "OSFMX_ChangeStatusToObservationByMolecule_Spanish_Element_StepComments.json",
+        "OSFMX_ChangeStatusToObservationByMolecule_Spanish_Element_Comments.json",
+        "OSFMX_ChangeStatusToObservationByMolecule_Spanish_Element_State.json",
+        "OSFMX_ChangeStatusToObservationByMolecule_Spanish_Element_SubStatus.json",
+        "OSFMX_ChangeStatusToObservationByMolecule_Spanish_Element_SVMessage.json",
+        "OSFMX_ChangeStatusToObservationByMolecule_Spanish_Element_SVUpdateQuote.json",
+        "OSFMX_ChangeStatusToObservationByMolecule_Spanish_Element_IPChangeStatusToObservationByMolecule.json",
+        "OSFMX_ChangeStatusToObservationByMolecule_Spanish_Element_DRPostInsertFeedItemChatter.json",
+        "OSFMX_ChangeStatusToObservationByMolecule_Spanish_Element_NavigateAction.json"
+    ],
+    "%vlocity_namespace%__IsLwcEnabled__c": true,
+    "%vlocity_namespace%__IsProcedure__c": false,
+    "%vlocity_namespace%__IsReusable__c": false,
+    "%vlocity_namespace%__IsTest__c": false,
+    "%vlocity_namespace%__Language__c": "Spanish",
+    "%vlocity_namespace%__OmniProcessType__c": "OmniScript",
+    "%vlocity_namespace%__PropertySet__c": "OSFMX_ChangeStatusToObservationByMolecule_Spanish_PropertySet.json",
+    "%vlocity_namespace%__SubType__c": "ChangeStatusToObservationByMolecule",
+    "%vlocity_namespace%__Type__c": "OSFMX",
+    "CurrencyIsoCode": "MXN",
+    "Name": "ChangeStatusToObservationByMolecule",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__OmniScript__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__OmniScript__c/OSFMX/ChangeStatusToObservationByMolecule/Spanish"
+}

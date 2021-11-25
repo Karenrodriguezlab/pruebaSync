@@ -1,0 +1,11 @@
+<template>
+    <lightning-checkbox-group name="Selección de contactos"
+                              label="Selección de contactos"
+                              options={optionsContacts}
+                              value={selectedContacts}
+                              onchange={handleChange}                              
+                              >
+    </lightning-checkbox-group>
+    <p class="validation-message" style="color:red"
+       if:true={showValidation}>Debe seleccionar al menos un contacto</p>
+</template>

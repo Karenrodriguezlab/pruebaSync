@@ -1,0 +1,25 @@
+{
+    "AccountBusiness": {
+        "City": "Ciudad de México",
+        "Country": "Mexico",
+        "CuentaClave": "",
+        "CuentaGlobalEngie": true,
+        "Descripcion": "Prueba",
+        "Estado": "Activo",
+        "Industria": "Aeropuertos y puertos",
+        "Latitud": 19.4876519,
+        "Longitud": -99.1381459,
+        "Name": "Hestia",
+        "ParentId": "001c000003BhA8RAAV",
+        "PersonaContactoEngie": "Alejandro Torres",
+        "PostalCode": "07730",
+        "PrioridadCliente": "Cuenta Premium",
+        "RFC": "hkhukhkh",
+        "RazonSocial": "jygjgyjg",
+        "RecordTypeId": "012c0000000E7mwAAC",
+        "SitioWeb": "dwaawdad",
+        "State": "CDMX",
+        "Street": "567 Natal",
+        "Telefono": "1231312313"
+    }
+}

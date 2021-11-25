@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+  <apiVersion>48.0</apiVersion>
+  <runtimeNamespace>vlocity_cmt</runtimeNamespace>
+  <isExposed>true</isExposed>
+  <masterLabel>vlcTestCmmData</masterLabel>
+  <targets>
+    <target xmlns="">lightningCommunity__Page</target>
+    <target xmlns="">lightningCommunity__Default</target>
+  </targets>
+  <targetConfigs>
+    <targetConfig targets="lightningCommunity__Default">
+      <property name="recordId" type="String" default="{!recordId}" label="Record ID"></property>
+      <property name="debug" type="Boolean" default="true"/>
+    </targetConfig>
+  </targetConfigs>
+</LightningComponentBundle>

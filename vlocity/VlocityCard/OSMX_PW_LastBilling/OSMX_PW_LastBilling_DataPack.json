@@ -1,0 +1,40 @@
+{
+    "%vlocity_namespace%__Author__c": "Engie_Latam_HQ",
+    "%vlocity_namespace%__CardType__c": "flex",
+    "%vlocity_namespace%__Datasource__c": {
+        "contextVariables": [
+            {
+                "id": 3,
+                "name": "Parent.cuentaContrato",
+                "val": "005000826190"
+            }
+        ],
+        "orderBy": {
+            "isReverse": false,
+            "name": ""
+        },
+        "type": "IntegrationProcedures",
+        "value": {
+            "inputMap": {
+                "AccountId": "{Parent.cuentaContrato}"
+            },
+            "ipMethod": "OSFMX_GetBillingLastInformation",
+            "resultVar": "",
+            "vlocityAsync": false
+        }
+    },
+    "%vlocity_namespace%__Definition__c": "OSMX_PW_LastBilling.json",
+    "%vlocity_namespace%__Description__c": "",
+    "%vlocity_namespace%__GlobalKey__c": "OSMX_PW_LastBilling/Engie_Latam_HQ/1/1618256389088",
+    "%vlocity_namespace%__IsChildCard__c": true,
+    "%vlocity_namespace%__ParentID__c": "",
+    "%vlocity_namespace%__SampleData__c": "{\"TipoServicio\":\"Cargo venta de gas\",\"PeriodoInicio\":\"2020-09-01\",\"PeriodoFin\":\"2020-09-30\",\"Monto\":59337.62,\"FechaVencimiento\":\"2021-02-11\",\"FechaEmision\":\"2021-01-27\",\"Estado\":\"Vencido\",\"Documento\":\"FACTURA\",\"Sociedad\":\"GDF Suez México Comercial\",\"SaldoCliente\":845102.11,\"Id\":\"a69c0000000Hj7XAAS\"}",
+    "%vlocity_namespace%__Styles__c": "",
+    "%vlocity_namespace%__Type__c": "",
+    "%vlocity_namespace%__Version__c": 1,
+    "CurrencyIsoCode": "MXN",
+    "Name": "OSMX_PW_LastBilling",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__VlocityCard__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__VlocityCard__c/OSMX_PW_LastBilling"
+}

@@ -1,0 +1,7 @@
+Mensaje de Recordatorio
+
+Tarea: {!Task.Subject}
+Propietario: {!Task.CreatedBy}
+Vencimiento: {!Task.ActivityDate}
+
+Link de Tarea: {!Task.Link}

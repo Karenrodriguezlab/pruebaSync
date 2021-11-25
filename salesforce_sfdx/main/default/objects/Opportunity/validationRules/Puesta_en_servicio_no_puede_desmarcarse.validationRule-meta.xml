@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Puesta_en_servicio_no_puede_desmarcarse</fullName>
+    <active>true</active>
+    <description>Una vez la casilla &quot;Puesta en servicio&quot; es seleccionada, NO se puede desmarcar.</description>
+    <errorConditionFormula>AND( 
+PRIORVALUE( OSFMX_StartUp__c ) = TRUE, 
+ISCHANGED( OSFMX_StartUp__c ),$Profile.Name &lt;&gt; &quot;Administrador del sistema&quot;,$Profile.Name &lt;&gt; &quot;System Administrator&quot;)</errorConditionFormula>
+    <errorMessage>Una vez la casilla &quot;Puesta en servicio&quot; es seleccionada, NO se puede desmarcar.</errorMessage>
+</ValidationRule>

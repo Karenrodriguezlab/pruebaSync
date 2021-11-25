@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OSFPE_fld_detalle_solucion_caso__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Luego de cerrar el caso, indique cuál fue la solución del caso, puede adjuntar el correo y conformidad del cliente.</inlineHelpText>
+    <label>Detalle de la solución del caso</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Html</type>
+    <visibleLines>25</visibleLines>
+</CustomField>

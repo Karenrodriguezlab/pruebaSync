@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OSFPE_vr_Valida_precios</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ ISBLANK(OSFPE_fld_Precio_de_potencia__c ) ,
+ ISBLANK(OSFPE_fld_Precio_de_energia_HP__c ) ,
+ ISBLANK(OSFPE_fld_Precio_de_energia_HFP__c ) 
+)</errorConditionFormula>
+    <errorMessage>Debe ingresar por lo menos un precio</errorMessage>
+</ValidationRule>

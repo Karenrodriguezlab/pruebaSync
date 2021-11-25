@@ -1,0 +1,345 @@
+{
+    "GlobalKey__c": "vplEnergyActionsCard/Accenture India/1/1597215402193",
+    "dataSource": {
+        "type": null
+    },
+    "enableLwc": true,
+    "filter": {
+    },
+    "sessionVars": [
+        {
+            "name": "cardHeaderIcon",
+            "val": "utility:fallback"
+        }
+    ],
+    "states": [
+        {
+            "conditions": {
+                "group": [
+                    {
+                        "field": "$scope.data.status",
+                        "operator": "===",
+                        "type": "system",
+                        "value": "'active'"
+                    }
+                ]
+            },
+            "definedActions": {
+                "actions": [
+                    {
+                        "collapse": true,
+                        "conditions": {
+                            "group": [
+                            ]
+                        },
+                        "displayName": "Add Account",
+                        "extraParams": {
+                            "c__ContextAccountName": "['ContextAccountName']",
+                            "c__ContextId": "['AccountId']",
+                            "c__DefaultParentAccount": "['AccountId']",
+                            "c__tabIcon": "standard:account",
+                            "c__tabLabel": "Add Account"
+                        },
+                        "hasExtraParams": true,
+                        "id": "AddAccount",
+                        "isCustomAction": true,
+                        "isLwcOS": true,
+                        "layoutType": "lightning",
+                        "omniLang": "",
+                        "omniSubType": "",
+                        "omniType": {
+                            "Id": "a2j3h000000wpPIAAY",
+                            "Language": "English",
+                            "Name": "vplEnergy/AddAccount/English",
+                            "SubType": "AddAccount",
+                            "Type": "vplEnergy",
+                            "isLwc": true
+                        },
+                        "openUrlIn": "New Tab / Window",
+                        "type": "OmniScript"
+                    },
+                    {
+                        "collapse": true,
+                        "conditions": {
+                            "group": [
+                            ]
+                        },
+                        "displayName": "Update Account",
+                        "extraParams": {
+                            "c__ContextId": "['AccountId']",
+                            "c__tabIcon": "standard:account",
+                            "c__tabLabel": "Account"
+                        },
+                        "hasExtraParams": true,
+                        "id": "UpdateAccount",
+                        "isCustomAction": true,
+                        "isLwcOS": true,
+                        "layoutType": "lightning",
+                        "omniLang": "",
+                        "omniSubType": "",
+                        "omniType": {
+                            "Id": "a2j3h000000TkCjAAK",
+                            "Language": "English",
+                            "Name": "vplEnergy/UpdateAccount/English",
+                            "SubType": "UpdateAccount",
+                            "Type": "vplEnergy",
+                            "isLwc": true
+                        },
+                        "openUrlIn": "New Tab / Window",
+                        "type": "OmniScript"
+                    },
+                    {
+                        "collapse": true,
+                        "conditions": {
+                            "group": [
+                            ]
+                        },
+                        "displayName": "Update Account Shipping Address",
+                        "extraParams": {
+                            "c__ContextId": "['AccountId']",
+                            "c__tabIcon": "standard:account",
+                            "c__tabLabel": "Update Account Shipping Address"
+                        },
+                        "hasExtraParams": true,
+                        "id": "UpdateAccountShippingAddress",
+                        "isCustomAction": true,
+                        "isLwcOS": true,
+                        "layoutType": "lightning",
+                        "omniLang": "",
+                        "omniSubType": "",
+                        "omniType": {
+                            "Id": "a2j3h000000wpOtAAI",
+                            "Language": "English",
+                            "Name": "vplEnergy/UpdateAccountShippingAddress/English",
+                            "SubType": "UpdateAccountShippingAddress",
+                            "Type": "vplEnergy",
+                            "isLwc": true
+                        },
+                        "openUrlIn": "New Tab / Window",
+                        "type": "OmniScript"
+                    },
+                    {
+                        "collapse": true,
+                        "conditions": {
+                            "group": [
+                            ]
+                        },
+                        "displayName": "Add/Update Contact",
+                        "extraParams": {
+                            "c__ContextId": "['AccountId']",
+                            "c__tabIcon": "standard:contact",
+                            "c__tabLabel": "Add/Update Contact"
+                        },
+                        "hasExtraParams": true,
+                        "id": "AddUpdateContact",
+                        "isCustomAction": true,
+                        "isLwcOS": true,
+                        "layoutType": "lightning",
+                        "omniLang": "",
+                        "omniSubType": "",
+                        "omniType": {
+                            "Id": "a2j3h000000wpOPAAY",
+                            "Language": "English",
+                            "Name": "vplEnergy/AddUpdateContact/English",
+                            "SubType": "AddUpdateContact",
+                            "Type": "vplEnergy",
+                            "isLwc": true
+                        },
+                        "openUrlIn": "New Tab / Window",
+                        "type": "OmniScript"
+                    },
+                    {
+                        "collapse": true,
+                        "conditions": {
+                            "group": [
+                            ]
+                        },
+                        "displayName": "Make a Complaint",
+                        "extraParams": {
+                            "c__ContextId": "['AccountId']",
+                            "c__tabIcon": "standard:case",
+                            "c__tabLabel": "Make a Complaint"
+                        },
+                        "hasExtraParams": true,
+                        "id": "MakeComplaint",
+                        "isCustomAction": true,
+                        "isLwcOS": true,
+                        "layoutType": "lightning",
+                        "omniLang": "",
+                        "omniSubType": "",
+                        "omniType": {
+                            "Id": "a2j3h000000wpOeAAI",
+                            "Language": "English",
+                            "Name": "vplEnergy/MakeComplaint/English",
+                            "SubType": "MakeComplaint",
+                            "Type": "vplEnergy",
+                            "isLwc": true
+                        },
+                        "openUrlIn": "New Tab / Window",
+                        "type": "OmniScript"
+                    },
+                    {
+                        "collapse": true,
+                        "conditions": {
+                            "group": [
+                            ]
+                        },
+                        "displayName": "Update Case",
+                        "extraParams": {
+                            "c__ContextId": "['AccountId']",
+                            "c__tabIcon": "standard:case",
+                            "c__tabLabel": "Update Case"
+                        },
+                        "hasExtraParams": true,
+                        "id": "UpdateCase",
+                        "isCustomAction": true,
+                        "isLwcOS": true,
+                        "layoutType": "lightning",
+                        "omniLang": "",
+                        "omniSubType": "",
+                        "omniType": {
+                            "Id": "a2j3h000000wpQLAAY",
+                            "Language": "English",
+                            "Name": "vplEnergy/UpdateCase/English",
+                            "SubType": "UpdateCase",
+                            "Type": "vplEnergy",
+                            "isLwc": true
+                        },
+                        "openUrlIn": "New Tab / Window",
+                        "type": "OmniScript"
+                    },
+                    {
+                        "collapse": true,
+                        "conditions": {
+                            "group": [
+                            ]
+                        },
+                        "displayName": "Create Payment Plan",
+                        "extraParams": {
+                            "c__ContextId": "['AccountId']",
+                            "c__tabLabel": "Create/Update Payment Plan"
+                        },
+                        "hasExtraParams": true,
+                        "id": "CreatePaymentPlan",
+                        "isCustomAction": true,
+                        "isLwcOS": true,
+                        "layoutType": "lightning",
+                        "omniLang": "",
+                        "omniSubType": "",
+                        "omniType": {
+                            "Id": "a2j3h000000wpSCAAY",
+                            "Language": "English",
+                            "Name": "vplEnergy/CreatePaymentPlan/English",
+                            "SubType": "CreatePaymentPlan",
+                            "Type": "vplEnergy",
+                            "isLwc": true
+                        },
+                        "openUrlIn": "New Tab / Window",
+                        "type": "OmniScript"
+                    },
+                    {
+                        "collapse": true,
+                        "conditions": {
+                            "group": [
+                            ]
+                        },
+                        "displayName": "Move Out",
+                        "extraParams": {
+                            "c__ContextId": "['AccountId']",
+                            "c__resetData": true,
+                            "c__tabLabel": "Move Out"
+                        },
+                        "hasExtraParams": true,
+                        "id": "Moveout",
+                        "isCustomAction": true,
+                        "isLwcOS": true,
+                        "layoutType": "lightning",
+                        "omniLang": "",
+                        "omniSubType": "",
+                        "omniType": {
+                            "Id": "a2j3h000000wpTKAAY",
+                            "Language": "English",
+                            "Name": "vplEnergy/MoveOut/English",
+                            "SubType": "MoveOut",
+                            "Type": "vplEnergy",
+                            "isLwc": true
+                        },
+                        "openUrlIn": "New Tab / Window",
+                        "type": "OmniScript"
+                    },
+                    {
+                        "collapse": true,
+                        "conditions": {
+                            "group": [
+                            ]
+                        },
+                        "displayName": "Move In",
+                        "extraParams": {
+                            "c__tabLabel": "Move In"
+                        },
+                        "hasExtraParams": true,
+                        "id": "MoveIn",
+                        "isCustomAction": true,
+                        "isLwcOS": true,
+                        "layoutType": "lightning",
+                        "omniLang": "",
+                        "omniSubType": "",
+                        "omniType": {
+                            "Id": "a2j3h000001FN8uAAG",
+                            "Language": "English",
+                            "Name": "vplEnergy/MoveIn/English",
+                            "SubType": "MoveIn",
+                            "Type": "vplEnergy",
+                            "isLwc": true
+                        },
+                        "openUrlIn": "New Tab / Window",
+                        "type": "OmniScript"
+                    },
+                    {
+                        "collapse": true,
+                        "conditions": {
+                            "group": [
+                            ]
+                        },
+                        "displayName": "Add Meter Read",
+                        "extraParams": {
+                            "c__ContextId": "['AccountId']",
+                            "c__tabLabel": "Add Meter Read"
+                        },
+                        "hasExtraParams": true,
+                        "id": "ManualMeterRead",
+                        "isCustomAction": true,
+                        "isLwcOS": true,
+                        "layoutType": "lightning",
+                        "omniLang": "",
+                        "omniSubType": "",
+                        "omniType": {
+                            "Id": "a2j3h000001EVS5AAO",
+                            "Language": "English",
+                            "Name": "vplEnergy/ManualMeterRead/English",
+                            "SubType": "ManualMeterRead",
+                            "Type": "vplEnergy",
+                            "isLwc": true
+                        },
+                        "openUrlIn": "New Tab / Window",
+                        "type": "OmniScript"
+                    }
+                ]
+            },
+            "fields": [
+            ],
+            "isSmartAction": false,
+            "lwc": {
+                "DeveloperName": "veeEnergyActions",
+                "Id": "0Rb5g0000004GBvCAM",
+                "MasterLabel": "veeEnergyActionsLWC",
+                "NamespacePrefix": "%vlocity_namespace%",
+                "name": "veeEnergyActions"
+            },
+            "name": "Active",
+            "smartAction": {
+            }
+        }
+    ],
+    "title": "Actions"
+}

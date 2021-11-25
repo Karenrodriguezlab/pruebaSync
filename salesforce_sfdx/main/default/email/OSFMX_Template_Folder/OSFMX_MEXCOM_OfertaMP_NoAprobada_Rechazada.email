@@ -1,0 +1,62 @@
+<p>&nbsp;</p>
+<div><img style="max-width: 607.377px; width: 177px; height: 87px;" title="Mexcom Ok" src="https://engielatam--devmexico--c.documentforce.com/sfc/dist/version/renditionDownload?rendition=ORIGINAL_Png&amp;versionId=068c0000001hKcj&amp;operationContext=DELIVERY&amp;contentId=05Tc0000007S8rM&amp;page=0&amp;d=/a/c0000000AHr0/QDsg.TdUffCDXJTPitacftWuACVw6FKAJaD.sHanapE&amp;oid=00Dc0000003wiic&amp;dpt=null&amp;viewId=" alt="Mexcom Ok" /></div>
+<div>&nbsp;</div>
+<div style="text-align: center;"><span style="color: #c0392b;"><span style="font-family: Arial, Helvetica, sans-serif;"><em><strong><span style="font-size: 16px;"><span style="font-style: normal;"><span style="font-variant-ligatures: normal;"><span style="font-weight: 400;"><span style="white-space: normal;"><span style="text-decoration-thickness: initial;"><span style="text-decoration-style: initial;"><span style="text-decoration-color: initial;"><span style="font-family: arial; font-size: 12pt;"><span style="font-size: 12pt;"><strong>Notificaci&oacute;n de Oferta Rechazada</strong></span></span></span></span></span></span></span></span></span></span></strong></em></span></span></div>
+<div style="text-align: center;">&nbsp;</div>
+<div>
+<p><a style="font-size: 12pt; font-family: Arial, Helvetica, sans-serif;">Estimad@ Aprobador, la oferta&nbsp;<strong>{!Quote.Name}</strong>&nbsp;fue rechazada. Por favor revise los comentarios del aprobador.&nbsp;</a></p>
+<p><br /><a style="font-size: 12pt; font-family: Arial, Helvetica, sans-serif;">Los comentarios del aprobador&nbsp;<strong>{!ApprovalRequest.Process_Approver}</strong>&nbsp;son:&nbsp;</a><br /><a style="font-size: 12pt; font-family: Arial, Helvetica, sans-serif;"><strong>{!ApprovalRequest.Comments}</strong></a></p>
+</div>
+<div>&nbsp;
+<table style="border-collapse: collapse;"><colgroup width="499"> </colgroup> <colgroup width="476"> </colgroup>
+<tbody>
+<tr style="height: 19px;">
+<td style="background-color: #00aef0; height: 19px; text-align: center; border: 1px solid #dddddd;" colspan="2" valign="middle" bgcolor="#00AEF0"><span style="font-size: 16px;"><span style="font-family: Arial,Helvetica,sans-serif;"><strong><span style="color: #ffffff;">OFERTA MULTIPUNTO {!Quote.Name} "{!Quote.OSFMX_CountTotalQuotes__c}" PUNTOS DE SUMINISTRO<br /> RFC: {!Quote.OSFMX_AccountRFC__c}</span></strong></span></span></td>
+</tr>
+<tr style="height: 30px;">
+<td style="background-color: #00aef0; height: 30px; text-align: center; border: 1px solid #dddddd;" valign="middle" bgcolor="#00AEF0"><span style="font-size: 16px;"><span style="font-family: Arial,Helvetica,sans-serif;"><strong><span style="color: #ffffff;">NIVEL DE APROBACI&Oacute;N</span></strong></span></span></td>
+<td style="background-color: #ffffff; text-align: center; border: 1px solid #dddddd; height: 30px;" valign="middle" bgcolor="#FFFFFF"><span style="font-size: 16px;"><span style="font-family: Arial,Helvetica,sans-serif;">{!Quote.OSFMX_MasterNivelApro__c}</span></span></td>
+</tr>
+<tr style="height: 16px;">
+<td style="background-color: #00aef0; height: 16px; text-align: center; border: 1px solid #dddddd;" valign="middle" bgcolor="#00AEF0"><span style="font-size: 16px;"><span style="font-family: Arial,Helvetica,sans-serif;"><strong><span style="color: #ffffff;">TIPO DE OFERTA</span></strong></span></span></td>
+<td style="background-color: #ffffff; text-align: center; border: 1px solid #dddddd; height: 16px;" valign="middle" bgcolor="#FFFFFF"><span style="font-size: 16px;"><span style="font-family: Arial,Helvetica,sans-serif;">{!Quote.OSFMX_OfferType__c}</span></span></td>
+</tr>
+<tr style="height: 44px;">
+<td style="background-color: #00aef0; height: 44px; text-align: center; border: 1px solid #dddddd;" valign="middle" bgcolor="#00AEF0"><span style="font-size: 16px;"><span style="font-family: Arial,Helvetica,sans-serif;"><strong><span style="color: #ffffff;">SUMA DE LOS VOL&Uacute;MENES SOLICITADOS (GJ/Plazo suministro)</span></strong></span></span></td>
+<td style="background-color: #ffffff; text-align: center; border: 1px solid #dddddd; height: 44px;" valign="middle" bgcolor="#FFFFFF"><span style="font-size: 16px;"><span style="font-family: Arial,Helvetica,sans-serif;">{!Quote.OSFMX_RequestedVolumeGjYear__c}</span></span></td>
+</tr>
+<tr style="height: 18px;">
+<td style="background-color: #00aef0; height: 18px; text-align: center; border: 1px solid #dddddd;" valign="middle" bgcolor="#00AEF0"><span style="font-size: 16px;"><span style="font-family: Arial,Helvetica,sans-serif;"><strong><span style="color: #ffffff;">SUMA DEL VOLUMEN POR D&Iacute;A (GJ/D&Iacute;A)</span></strong></span></span></td>
+<td style="background-color: #ffffff; text-align: center; border: 1px solid #dddddd; height: 18px;" valign="middle" bgcolor="#FFFFFF"><span style="font-size: 16px;"><span style="font-family: Arial,Helvetica,sans-serif;">{!Quote.OSFMX_MasterDailyVolume__c}</span></span></td>
+</tr>
+<tr style="height: 27px;">
+<td style="background-color: #00aef0; height: 27px; text-align: center; border: 1px solid #dddddd;" valign="middle" bgcolor="#00AEF0"><span style="font-size: 16px;"><span style="font-family: Arial,Helvetica,sans-serif;"><strong><span style="color: #ffffff;">SUMA GWh/Plazo suministro</span></strong></span></span></td>
+<td style="background-color: #ffffff; text-align: center; border: 1px solid #dddddd; height: 27px;" valign="middle" bgcolor="#FFFFFF"><span style="font-size: 16px;"><span style="font-family: Arial,Helvetica,sans-serif;">{!Quote.OSFMX_MasterGwhYear__c}</span></span></td>
+</tr>
+<tr style="height: 12px;">
+<td style="background-color: #00aef0; height: 12px; text-align: center; border: 1px solid #dddddd;" valign="middle" bgcolor="#00AEF0"><span style="font-size: 16px;"><span style="font-family: Arial,Helvetica,sans-serif;"><strong><span style="color: #ffffff;">PLAZO DE SUMINISTRO (MESES)</span></strong></span></span></td>
+<td style="background-color: #ffffff; text-align: center; border: 1px solid #dddddd; height: 12px;" valign="middle" bgcolor="#FFFFFF"><span style="font-size: 16px;"><span style="font-family: Arial,Helvetica,sans-serif;">{!Quote.OSFMX_MasterConsumoPlazoSTR__c}</span></span></td>
+</tr>
+<tr style="height: 18px;">
+<td style="background-color: #00aef0; height: 18px; text-align: center; border: 1px solid #dddddd;" valign="middle" bgcolor="#00AEF0"><span style="font-size: 16px;"><span style="font-family: Arial,Helvetica,sans-serif;"><strong><span style="color: #ffffff;">CUADRANTE</span></strong></span></span></td>
+<td style="background-color: #ffffff; text-align: center; border: 1px solid #dddddd; height: 18px;" valign="middle" bgcolor="#FFFFFF"><span style="font-size: 16px;"><span style="font-family: Arial,Helvetica,sans-serif;">{!Quote.OSFMX_MasterCuadrante__c}</span></span></td>
+</tr>
+<tr style="height: 42px;">
+<td style="background-color: #00aef0; height: 42px; text-align: center; border: 1px solid #dddddd;" valign="middle" bgcolor="#00AEF0"><span style="font-size: 16px;"><span style="font-family: Arial,Helvetica,sans-serif;"><strong><span style="color: #ffffff;">MARGEN ESTIMADO MOL&Eacute;CULA USD<br /> (Por encima del precio medio de compra)</span></strong></span></span></td>
+<td style="background-color: #ffffff; text-align: center; border: 1px solid #dddddd; height: 42px;" valign="middle" bgcolor="#FFFFFF"><span style="font-size: 16px;"><span style="font-family: Arial,Helvetica,sans-serif;">USD {!Quote.OSFMX_Master_MargenEstimadoMoleculaUSD__c}</span></span></td>
+</tr>
+<tr style="height: 18px;">
+<td style="background-color: #00aef0; height: 18px; text-align: center; border: 1px solid #dddddd;" valign="middle" bgcolor="#00AEF0"><span style="font-size: 16px;"><span style="font-family: Arial,Helvetica,sans-serif;"><strong><span style="color: #ffffff;">COMERCIALIZACI&Oacute;N</span></strong></span></span></td>
+<td style="background-color: #ffffff; text-align: center; border: 1px solid #dddddd; height: 18px;" valign="middle" bgcolor="#FFFFFF"><span style="font-size: 16px;"><span style="font-family: Arial,Helvetica,sans-serif;">{!Quote.OSFMX_Rango_comercializaci_n__c}</span></span></td>
+</tr>
+<tr style="height: 14px;">
+<td style="background-color: #00aef0; height: 14px; text-align: center; border: 1px solid #dddddd;" valign="middle" bgcolor="#00AEF0"><span style="font-size: 16px;"><span style="font-family: Arial,Helvetica,sans-serif;"><strong><span style="color: #ffffff;">MARGEN DE COMERCIALIZACI&Oacute;N (USD)</span></strong></span></span></td>
+<td style="background-color: #ffffff; text-align: center; border: 1px solid #dddddd; height: 14px;" valign="middle" bgcolor="#FFFFFF"><span style="font-size: 16px;"><span style="font-family: Arial,Helvetica,sans-serif;">USD {!Quote.OSFMX_Margen_comercializacion_usd__c}</span></span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div>&nbsp;</div>
+<div><a style="font-size: 12pt; font-family: Arial, Helvetica, sans-serif;" href="{!Quote.Link}">Si requiere consultar la oferta en SalesForce de click AQU&Iacute;</a></div>
+<p><br /><a style="font-size: 12pt; font-family: Arial, Helvetica, sans-serif;">N&uacute;mero de Oferta:&nbsp;<strong>{!Quote.QuoteNumber}</strong></a></p><br />
+<img style="max-width: 895.1177276611328px;" title="Engie_jpg1" src="https://engielatam--devmexico--c.documentforce.com/file-asset-public/Engie_jpg1?oid=00Dc0000003wiic" alt="Engie_jpg1" /><br /> <br /> &nbsp;</div>

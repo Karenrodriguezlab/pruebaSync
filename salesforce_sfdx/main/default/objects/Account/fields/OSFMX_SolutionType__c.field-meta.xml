@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OSFMX_SolutionType__c</fullName>
+    <externalId>false</externalId>
+    <label>Tipo de solución</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Comercialización de Gas Natural</fullName>
+                <default>false</default>
+                <label>Comercialización de Gas Natural</label>
+            </value>
+            <value>
+                <fullName>Corporativa PPA</fullName>
+                <default>false</default>
+                <label>Corporativa PPA</label>
+            </value>
+            <value>
+                <fullName>Distribución de Gas Natural</fullName>
+                <default>false</default>
+                <label>Distribución de Gas Natural</label>
+            </value>
+            <value>
+                <fullName>Ducto Dedicado</fullName>
+                <default>false</default>
+                <label>Ducto Dedicado</label>
+            </value>
+            <value>
+                <fullName>Eficiencia Energética</fullName>
+                <default>false</default>
+                <label>Eficiencia Energética</label>
+            </value>
+            <value>
+                <fullName>Generación en sitio</fullName>
+                <default>false</default>
+                <label>Generación en sitio</label>
+            </value>
+            <value>
+                <fullName>GNC</fullName>
+                <default>false</default>
+                <label>GNC</label>
+            </value>
+            <value>
+                <fullName>GNV</fullName>
+                <default>false</default>
+                <label>GNV</label>
+            </value>
+            <value>
+                <fullName>Instalación</fullName>
+                <default>false</default>
+                <label>Instalación</label>
+            </value>
+            <value>
+                <fullName>Mantenimiento</fullName>
+                <default>false</default>
+                <label>Mantenimiento</label>
+            </value>
+            <value>
+                <fullName>Movilidad Eléctrica</fullName>
+                <default>false</default>
+                <label>Movilidad Eléctrica</label>
+            </value>
+            <value>
+                <fullName>Suministro Eléctrico MX</fullName>
+                <default>false</default>
+                <label>Suministro Eléctrico MX</label>
+            </value>
+            <value>
+                <fullName>Suministro Eléctrico Latam</fullName>
+                <default>false</default>
+                <label>Suministro Eléctrico Latam</label>
+            </value>
+            <value>
+                <fullName>Soluciones</fullName>
+                <default>false</default>
+                <label>Soluciones</label>
+            </value>
+            <value>
+                <fullName>Transmisión</fullName>
+                <default>false</default>
+                <label>Transmisión</label>
+            </value>
+            <value>
+                <fullName>Gas Chile</fullName>
+                <default>false</default>
+                <label>Gas Chile</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

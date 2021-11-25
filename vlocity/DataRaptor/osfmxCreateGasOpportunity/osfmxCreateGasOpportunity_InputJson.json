@@ -1,0 +1,22 @@
+{
+    "AccountId": "001c0000032ixnUAAQ",
+    "GasAmount": 34,
+    "GasAwardDate": "2021-01-29",
+    "GasCloseDate": "2021-01-21",
+    "GasContractMode": "Consultor",
+    "GasCurrentStatus": "prueba",
+    "GasCustomerOptions": "1. Cliente en zona Engie",
+    "GasCustomerType": "Cliente Final",
+    "GasDateNextActivity": "2021-01-13T17:00:00.000Z",
+    "GasDeliveryTime": 4,
+    "GasDistributor": "1. NGM",
+    "GasEngieeSupplier": "ENLIGHT",
+    "GasExpectedAnnualConsumptionGjByYear": 1,
+    "GasMaximumdailycapacity": 1,
+    "GasNextActivity": "prueba",
+    "GasOpportunityName": "prueba",
+    "GasSolution": "Auditoría de Eficiencia Energética",
+    "GasSolutionType": "Comercialización de Gas Natural",
+    "GasStageName": "Qualification",
+    "GasSupplyStartDate": "2021-02-10"
+}

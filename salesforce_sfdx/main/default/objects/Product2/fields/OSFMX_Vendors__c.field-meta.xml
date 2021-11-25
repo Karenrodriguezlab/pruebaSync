@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OSFMX_Vendors__c</fullName>
+    <externalId>false</externalId>
+    <label>Proveedores</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Estado de México</fullName>
+                <default>false</default>
+                <label>Estado de México</label>
+            </value>
+            <value>
+                <fullName>Jalisco</fullName>
+                <default>false</default>
+                <label>Jalisco</label>
+            </value>
+            <value>
+                <fullName>Quéretaro</fullName>
+                <default>false</default>
+                <label>Quéretaro</label>
+            </value>
+            <value>
+                <fullName>Puebla</fullName>
+                <default>false</default>
+                <label>Puebla</label>
+            </value>
+            <value>
+                <fullName>Reynosa - Matamoros</fullName>
+                <default>false</default>
+                <label>Reynosa - Matamoros</label>
+            </value>
+            <value>
+                <fullName>Tampico</fullName>
+                <default>false</default>
+                <label>Tampico</label>
+            </value>
+            <value>
+                <fullName>Mexcom</fullName>
+                <default>false</default>
+                <label>Mexcom</label>
+            </value>
+            <value>
+                <fullName>SYEM</fullName>
+                <default>false</default>
+                <label>SYEM</label>
+            </value>
+            <value>
+                <fullName>Mayakan</fullName>
+                <default>false</default>
+                <label>Mayakan</label>
+            </value>
+            <value>
+                <fullName>Tag Sur</fullName>
+                <default>false</default>
+                <label>Tag Sur</label>
+            </value>
+            <value>
+                <fullName>Otro</fullName>
+                <default>false</default>
+                <label>Otro</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

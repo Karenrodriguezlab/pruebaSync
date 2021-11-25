@@ -1,0 +1,58 @@
+<template>
+            <div class="slds-grid slds-wrap slds-is-relative">
+            <div if:false={cardLoaded} class="slds-is-absolute vloc-loader_override" style="height: 100%; width: 100%; min-height:50px; background: white; z-index: 99;">
+  <div>
+   <vlocity_cmt-spinner
+      variant="brand"
+      alternative-text="Loading content..."
+      size="medium"
+      theme="slds"
+      ></vlocity_cmt-spinner>
+  </div>
+</div>
+            <template if:false={hasPermission}>
+              You don't have required permissions to view this card.
+            </template>
+            <template if:true={hasPermission}>
+              <template if:true={hasRecords}>
+                      <vlocity_cmt-flex-card-state   data-statue="true"  data-index="0" data-rindex={rindex} class="cf-vlocity-state-0 cf-vlocity-state slds-size_12-of-12 "  tracking-obj={_childCardTrackingObj} >
+      <div if:true={cardLoaded} class="slds-grid slds-wrap slds-card slds-border_top slds-p-around_x-small slds-m-bottom_x-small " style="     border-color:#cccccc; border-width:2px;       ">
+          <div class="slds-col   slds-border_top slds-p-around_x-small  slds-size_12-of-12  " style="     border-color:#cccccc; border-width:2px;       ">
+    <vlocity_cmt-block  label="Block"  collapsible="false"  record={record}  collapsed-by-default="false"  card={card}  theme="slds" ><div class="slds-grid slds-wrap">
+          <div class="slds-col  slds-text-align_left  slds-size_0-of-12  " style="             "><vlocity_cmt-flex-icon  record={record}  icon-type="Salesforce SVG"  icon-name="standard:store_group"  size="medium"  extraclass="slds-icon_container slds-icon-standard-store-group "  variant="warning"  imgsrc=""  theme="slds" ></vlocity_cmt-flex-icon>
+      </div><div class="slds-col   slds-size_11-of-12  " style=""><vlocity_cmt-output-field  record={record}  merge-field="%3Cdiv%3E%3Cspan%20style=%22color:%20#95a5a6;%20font-size:%2018pt;%22%3E%3Cspan%20class=%22slds-text-color_inverse-weak%22%3E%3Cspan%20class=%22slds-text-color_default%22%20style=%22font-size:%2012pt;%22%3E&nbsp;%20Cuentas%20de%20Servicio%3C/span%3E%3C/span%3E%3C/span%3E%3C/div%3E"  card={card}  theme="slds" ></vlocity_cmt-output-field>
+      </div>
+        </div></vlocity_cmt-block>
+    </div><div class="slds-col  slds-theme_default slds-text-align_left slds-border_top slds-p-right_small slds-m-left_small  slds-large-size_11-of-12 slds-medium-size_10-of-12 slds-small-size_6-of-12 slds-size_6-of-12  " style="background-color:#FFFFFF;     border-color:#FFFFFF; border-width:2px;       "><vlocity_cmt-data-table  issearchavailable="false"  issortavailable="true"  styles='\{"cellMargin":[],"cellPadding":[],"cellBorderColor":"","tableBorderColor":"#FFFFFF","headBgColor":"#F0F0F0","tableBgColor":"#FFFFFF","rowBgColor":"#FFFFFF","tableBorderWidth":"0","tableBorderType":"border_top","headFontWeight":"bold","headTextDecoration":"","headFontFamily":"Arial","cellBorderWidth":"","cellBorderType":[]}'  cell-level-edit="true"  pagelimit="3"  group-order="asc"  columns='\[{"fieldName":"NombreCuenta","label":"Nombre","searchable":"false","sortable":"true","type":"text","visible":"true","userSelectable":"false","editable":"false"},{"fieldName":"Estatus","label":"Estatus","searchable":false,"sortable":true,"type":"text","editable":"false","userSelectable":"false","visible":"true"},{"fieldName":"Telefono","label":"Teléfono","searchable":false,"sortable":true,"type":"text","editable":"false","userSelectable":"false","visible":"true"},{"fieldName":"Ciudad","label":"Ciudad","searchable":false,"sortable":true,"type":"text","editable":"false","userSelectable":"false","visible":"true"},{"fieldName":"CondigoPostal","label":"Estado","searchable":"false","sortable":true,"type":"text","editable":"false","userSelectable":"false","visible":"true"}]'  records={records}  theme="slds" ></vlocity_cmt-data-table>
+      </div>
+        </div>
+      </vlocity_cmt-flex-card-state>
+                </template>
+                <template if:false={hasRecords}>
+                      <vlocity_cmt-flex-card-state   data-statue="false"  data-index="0" data-rindex={rindex} class="cf-vlocity-state-0 cf-vlocity-state slds-size_12-of-12 "  tracking-obj={_childCardTrackingObj} >
+      <div if:true={cardLoaded} class="slds-grid slds-wrap slds-card slds-border_top slds-p-around_x-small slds-m-bottom_x-small " style="     border-color:#cccccc; border-width:2px;       ">
+          <div class="slds-col   slds-border_top slds-p-around_x-small  slds-size_12-of-12  " style="     border-color:#cccccc; border-width:2px;       ">
+    <vlocity_cmt-block  label="Block"  collapsible="false"  record={record}  collapsed-by-default="false"  card={card}  theme="slds" ><div class="slds-grid slds-wrap">
+          <div class="slds-col  slds-text-align_left  slds-size_0-of-12  " style="             "><vlocity_cmt-flex-icon  record={record}  icon-type="Salesforce SVG"  icon-name="standard:store_group"  size="medium"  extraclass="slds-icon_container slds-icon-standard-store-group "  variant="warning"  imgsrc=""  theme="slds" ></vlocity_cmt-flex-icon>
+      </div><div class="slds-col   slds-size_11-of-12  " style=""><vlocity_cmt-output-field  record={record}  merge-field="%3Cdiv%3E%3Cspan%20style=%22color:%20#95a5a6;%20font-size:%2018pt;%22%3E%3Cspan%20class=%22slds-text-color_inverse-weak%22%3E%3Cspan%20class=%22slds-text-color_default%22%20style=%22font-size:%2012pt;%22%3E&nbsp;%20Cuentas%20de%20Servicio%3C/span%3E%3C/span%3E%3C/span%3E%3C/div%3E"  card={card}  theme="slds" ></vlocity_cmt-output-field>
+      </div>
+        </div></vlocity_cmt-block>
+    </div><div class="slds-col  slds-theme_default slds-text-align_left slds-border_top slds-p-right_small slds-m-left_small  slds-large-size_11-of-12 slds-medium-size_10-of-12 slds-small-size_6-of-12 slds-size_6-of-12  " style="background-color:#FFFFFF;     border-color:#FFFFFF; border-width:2px;       "><vlocity_cmt-data-table  issearchavailable="false"  issortavailable="true"  styles='\{"cellMargin":[],"cellPadding":[],"cellBorderColor":"","tableBorderColor":"#FFFFFF","headBgColor":"#F0F0F0","tableBgColor":"#FFFFFF","rowBgColor":"#FFFFFF","tableBorderWidth":"0","tableBorderType":"border_top","headFontWeight":"bold","headTextDecoration":"","headFontFamily":"Arial","cellBorderWidth":"","cellBorderType":[]}'  cell-level-edit="true"  pagelimit="3"  group-order="asc"  columns='\[{"fieldName":"NombreCuenta","label":"Nombre","searchable":"false","sortable":"true","type":"text","visible":"true","userSelectable":"false","editable":"false"},{"fieldName":"Estatus","label":"Estatus","searchable":false,"sortable":true,"type":"text","editable":"false","userSelectable":"false","visible":"true"},{"fieldName":"Telefono","label":"Teléfono","searchable":false,"sortable":true,"type":"text","editable":"false","userSelectable":"false","visible":"true"},{"fieldName":"Ciudad","label":"Ciudad","searchable":false,"sortable":true,"type":"text","editable":"false","userSelectable":"false","visible":"true"},{"fieldName":"CondigoPostal","label":"Estado","searchable":"false","sortable":true,"type":"text","editable":"false","userSelectable":"false","visible":"true"}]'  records={records}  theme="slds" ></vlocity_cmt-data-table>
+      </div>
+        </div>
+      </vlocity_cmt-flex-card-state>
+                </template>
+            </template>
+            <template if:true={hasError}>
+            {error}
+            </template>
+            
+      <vlocity_cmt-action action-wrapperclass="slds-hide" re-render-flyout class="action-trigger slds-col" onupdateos={updateOmniscript} onsetvalue={updateAction}>
+      
+      </vlocity_cmt-action>
+  
+            <vlocity_cmt-action class="execute-action" re-render-flyout action-wrapperclass="slds-hide" onupdateos={updateOmniscript} onsetvalue={updateAction}>
+            
+            </vlocity_cmt-action>
+            </div>
+          </template>

@@ -1,0 +1,285 @@
+{
+    "b_partner": "?",
+    "cuenta_contrato": "005000865484",
+    "facturasLoopBlock": [
+        {
+            "JoinPayloadsDRStatus": true,
+            "LoopBlockIterationIndex": 1,
+            "LoopBlockIterationStatus": true,
+            "PayloadGHitssLoopBlock": {
+                "conceptos_facturados": [
+                    {
+                        "descripcion": "Adquisición de Gas",
+                        "importe": 40000
+                    },
+                    {
+                        "descripcion": "Cargo por Servicio Residencial CMG",
+                        "importe": 5000
+                    }
+                ],
+                "contrato_suministro": "00000000000000504971",
+                "estado_factura": "Pagado",
+                "fecha_emision": "01/31/2020",
+                "fecha_envio": "01/31/2020",
+                "fecha_fin_periodo_consumo": "01/31/2020",
+                "fecha_inicio_periodo_consumo": "01/01/2020",
+                "fecha_vencimiento": "02/29/2020",
+                "id_documento": "refFac_idDoc01",
+                "id_factura": "idFactura01",
+                "moneda_del_cfdi": "Pesos",
+                "monto_factura": 45000,
+                "num_de_factura": "1",
+                "referencia_factura": "refFac_idDoc01",
+                "tipo_documento": "Factura"
+            }
+        },
+        {
+            "JoinPayloadsDRStatus": true,
+            "LoopBlockIterationIndex": 2,
+            "LoopBlockIterationStatus": true,
+            "PayloadGHitssLoopBlock": {
+                "conceptos_facturados": [
+                    {
+                        "descripcion": "Molécula",
+                        "importe": 25000
+                    },
+                    {
+                        "descripcion": "Transporte",
+                        "importe": 4000
+                    },
+                    {
+                        "descripcion": "Regulación",
+                        "importe": 1000
+                    }
+                ],
+                "contrato_suministro": "00000000000000504971",
+                "estado_factura": "Pagado",
+                "fecha_emision": "02/29/2020",
+                "fecha_envio": "02/29/2020",
+                "fecha_fin_periodo_consumo": "02/29/2020",
+                "fecha_inicio_periodo_consumo": "02/01/2020",
+                "fecha_vencimiento": "03/31/2020",
+                "id_documento": "refFac_idDoc02",
+                "id_factura": "idFactura02",
+                "moneda_del_cfdi": "Pesos",
+                "monto_factura": 30000,
+                "num_de_factura": "2",
+                "referencia_factura": "refFac_idDoc02",
+                "tipo_documento": "Factura"
+            }
+        },
+        {
+            "JoinPayloadsDRStatus": true,
+            "LoopBlockIterationIndex": 3,
+            "LoopBlockIterationStatus": true,
+            "PayloadGHitssLoopBlock": {
+                "conceptos_facturados": [
+                    {
+                        "descripcion": "Adquisición de Gas",
+                        "importe": 25000
+                    },
+                    {
+                        "descripcion": "Transporte",
+                        "importe": 5000
+                    }
+                ],
+                "contrato_suministro": "00000000000000505044",
+                "estado_factura": "Pagado",
+                "fecha_emision": "03/31/2020",
+                "fecha_envio": "03/31/2020",
+                "fecha_fin_periodo_consumo": "03/31/2020",
+                "fecha_inicio_periodo_consumo": "03/01/2020",
+                "fecha_vencimiento": "04/30/2020",
+                "id_documento": "refFac_idDoc03",
+                "id_factura": "idFactura03",
+                "moneda_del_cfdi": "Pesos",
+                "monto_factura": 30000,
+                "num_de_factura": "3",
+                "referencia_factura": "refFac_idDoc03",
+                "tipo_documento": "Factura"
+            }
+        },
+        {
+            "JoinPayloadsDRStatus": true,
+            "LoopBlockIterationIndex": 4,
+            "LoopBlockIterationStatus": true,
+            "PayloadGHitssLoopBlock": {
+                "conceptos_facturados": [
+                    {
+                        "descripcion": "Adquisición de Gas",
+                        "importe": 25000
+                    },
+                    {
+                        "descripcion": "Transporte",
+                        "importe": 10000
+                    }
+                ],
+                "contrato_suministro": "00000000000000505044",
+                "estado_factura": "Pagado",
+                "fecha_emision": "04/30/2020",
+                "fecha_envio": "04/30/2020",
+                "fecha_fin_periodo_consumo": "04/30/2020",
+                "fecha_inicio_periodo_consumo": "04/01/2020",
+                "fecha_vencimiento": "05/31/2020",
+                "id_documento": "refFac_idDoc04",
+                "id_factura": "idFactura04",
+                "moneda_del_cfdi": "Pesos",
+                "monto_factura": 40000,
+                "num_de_factura": "4",
+                "referencia_factura": "refFac_idDoc04",
+                "tipo_documento": "Factura"
+            }
+        },
+        {
+            "JoinPayloadsDRStatus": true,
+            "LoopBlockIterationIndex": 5,
+            "LoopBlockIterationStatus": true,
+            "PayloadGHitssLoopBlock": {
+                "conceptos_facturados": [
+                    {
+                        "descripcion": "Adquisición de Gas",
+                        "importe": 40000
+                    },
+                    {
+                        "descripcion": "Transporte",
+                        "importe": 10000
+                    }
+                ],
+                "contrato_suministro": "00000000000000505044",
+                "estado_factura": "Vencido",
+                "fecha_emision": "05/31/2020",
+                "fecha_envio": "05/31/2020",
+                "fecha_fin_periodo_consumo": "05/31/2020",
+                "fecha_inicio_periodo_consumo": "05/01/2020",
+                "fecha_vencimiento": "06/30/2020",
+                "id_documento": "refFac_idDoc05",
+                "id_factura": "idFactura05",
+                "moneda_del_cfdi": "Pesos",
+                "monto_factura": 50000,
+                "num_de_factura": "5",
+                "referencia_factura": "refFac_idDoc05",
+                "tipo_documento": "Factura"
+            }
+        },
+        {
+            "JoinPayloadsDRStatus": true,
+            "LoopBlockIterationIndex": 6,
+            "LoopBlockIterationStatus": true,
+            "PayloadGHitssLoopBlock": {
+                "conceptos_facturados": [
+                    {
+                        "descripcion": "Adquisición de Gas",
+                        "importe": 55000
+                    },
+                    {
+                        "descripcion": "Transporte",
+                        "importe": 5000
+                    }
+                ],
+                "contrato_suministro": "00000000000000505044",
+                "estado_factura": "Vencido",
+                "fecha_emision": "06/30/2020",
+                "fecha_envio": "06/30/2020",
+                "fecha_fin_periodo_consumo": "06/30/2020",
+                "fecha_inicio_periodo_consumo": "06/01/2020",
+                "fecha_vencimiento": "07/31/2020",
+                "id_documento": "refFac_idDoc06",
+                "id_factura": "idFactura06",
+                "moneda_del_cfdi": "Pesos",
+                "monto_factura": 60000,
+                "num_de_factura": "6",
+                "referencia_factura": "refFac_idDoc06",
+                "tipo_documento": "Factura"
+            }
+        },
+        {
+            "JoinPayloadsDRStatus": true,
+            "LoopBlockIterationIndex": 7,
+            "LoopBlockIterationStatus": true,
+            "PayloadGHitssLoopBlock": {
+                "conceptos_facturados": [
+                    {
+                        "descripcion": "Adquisición de Gas",
+                        "importe": 63000
+                    },
+                    {
+                        "descripcion": "Transporte",
+                        "importe": 7000
+                    }
+                ],
+                "contrato_suministro": "00000000000000505044",
+                "estado_factura": "No vencido",
+                "fecha_emision": "07/31/2020",
+                "fecha_envio": "07/31/2020",
+                "fecha_fin_periodo_consumo": "07/31/2020",
+                "fecha_inicio_periodo_consumo": "07/01/2020",
+                "fecha_vencimiento": "08/31/2020",
+                "id_documento": "refFac_idDoc07",
+                "id_factura": "idFactura07",
+                "moneda_del_cfdi": "Pesos",
+                "monto_factura": 70000,
+                "num_de_factura": "7",
+                "referencia_factura": "refFac_idDoc07",
+                "tipo_documento": "Factura"
+            }
+        },
+        {
+            "JoinPayloadsDRStatus": true,
+            "LoopBlockIterationIndex": 8,
+            "LoopBlockIterationStatus": true,
+            "PayloadGHitssLoopBlock": {
+                "conceptos_facturados": [
+                    {
+                        "descripcion": "Adquisición de Gas",
+                        "importe": 63000
+                    },
+                    {
+                        "descripcion": "Transporte",
+                        "importe": 7000
+                    }
+                ],
+                "fecha_emision": "07/31/2020",
+                "fecha_envio": "07/31/2020",
+                "fecha_fin_periodo_consumo": "07/31/2020",
+                "fecha_inicio_periodo_consumo": "07/01/2020",
+                "fecha_vencimiento": "08/31/2020",
+                "id_factura": "idNoFactura08",
+                "moneda_del_cfdi": "Pesos",
+                "monto_factura": 80000,
+                "num_de_factura": "8",
+                "referencia_factura": "refFac_idDoc08",
+                "tipo_documento": "Nota de Crédito"
+            }
+        },
+        {
+            "JoinPayloadsDRStatus": true,
+            "LoopBlockIterationIndex": 9,
+            "LoopBlockIterationStatus": true,
+            "PayloadGHitssLoopBlock": {
+                "conceptos_facturados": [
+                    {
+                        "descripcion": "Adquisición de Gas",
+                        "importe": 63000
+                    },
+                    {
+                        "descripcion": "Transporte",
+                        "importe": 7000
+                    }
+                ],
+                "fecha_emision": "07/31/2020",
+                "fecha_envio": "07/31/2020",
+                "fecha_fin_periodo_consumo": "07/31/2020",
+                "fecha_inicio_periodo_consumo": "07/01/2020",
+                "fecha_vencimiento": "08/31/2020",
+                "id_factura": "idNoFactura09",
+                "moneda_del_cfdi": "Pesos",
+                "monto_factura": 90000,
+                "num_de_factura": "9",
+                "referencia_factura": "refFac_idDoc09",
+                "tipo_documento": "Nota de Débito"
+            }
+        }
+    ],
+    "saldo_cliente": -1216424.68,
+    "sociedad": "Natgasmex SA de CV"
+}

@@ -1,0 +1,6 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<div><font face="arial"><span style="font-size: 12pt;">Estimado</span><span style="font-size: 12pt;">,</span></font><div style="font-size: 12pt;"><div style="font-size: 12pt;">La aprobación de la oferta fue declinada por el equipo de Transporte y necesita revisión.</div><div style="font-size: 12pt;"><br></div><div style="font-size: 12pt;">Detalles de la oferta:</div><div style="font-size: 12pt;"><ul><li><span style="font-size: 12pt;">Nombre:&nbsp;</span><b style="font-size: 12pt;">{!Quote.Name}</b><span style="font-size: 12pt;">&nbsp;.</span></li><li>Número: {!Quote.QuoteNumber}</li><li>Estado:&nbsp;{!Quote.Status}</li><li>Sub estado:&nbsp;{!Quote.OSFMX_SubEstatus__c}</li><li><span style="font-size: 12pt; background-color: rgb(255, 255, 255);">Enlace directo:&nbsp;<u>{!Quote.Link}</u></span></li></ul></div><div style="font-size: 12pt;"><div style="font-size: 12pt;">Saludos.</div></div></div></div>]]></td>
+</tr>
+</table>

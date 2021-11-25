@@ -1,0 +1,968 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>51.0</apiVersion>
+    <decisions>
+        <name>isChangedDecision10_myRule_9_OSFMX_S_P_c</name>
+        <label>isChangedDecision10_myRule_9_OSFMX_S_P_c</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>isChangedDecision14_myRule_13_OSFMX_Moodys_c</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>isChangedRule_10_myRule_9_OSFMX_S_P_c</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>myVariable_old</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>myVariable_old.OSFMX_S_P__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>myVariable_current.OSFMX_S_P__c</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>isChangedDecision14_myRule_13_OSFMX_Moodys_c</targetReference>
+            </connector>
+            <label>isChangedRule_10_myRule_9_OSFMX_S_P_c</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>isChangedDecision14_myRule_13_OSFMX_Moodys_c</name>
+        <label>isChangedDecision14_myRule_13_OSFMX_Moodys_c</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>myDecision</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>isChangedRule_14_myRule_13_OSFMX_Moodys_c</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>myVariable_old</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>myVariable_old.OSFMX_Moodys__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>myVariable_current.OSFMX_Moodys__c</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myDecision</targetReference>
+            </connector>
+            <label>isChangedRule_14_myRule_13_OSFMX_Moodys_c</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>isChangedDecision2_myRule_1_OSFMX_ECR_c</name>
+        <label>isChangedDecision2_myRule_1_OSFMX_ECR_c</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>isChangedDecision6_myRule_5_OSFMX_Fitch_c</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>isChangedRule_2_myRule_1_OSFMX_ECR_c</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>myVariable_old</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>myVariable_old.OSFMX_ECR__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>myVariable_current.OSFMX_ECR__c</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>isChangedDecision6_myRule_5_OSFMX_Fitch_c</targetReference>
+            </connector>
+            <label>isChangedRule_2_myRule_1_OSFMX_ECR_c</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>isChangedDecision6_myRule_5_OSFMX_Fitch_c</name>
+        <label>isChangedDecision6_myRule_5_OSFMX_Fitch_c</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>isChangedDecision10_myRule_9_OSFMX_S_P_c</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>isChangedRule_6_myRule_5_OSFMX_Fitch_c</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>myVariable_old</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>myVariable_old.OSFMX_Fitch__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>myVariable_current.OSFMX_Fitch__c</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>isChangedDecision10_myRule_9_OSFMX_S_P_c</targetReference>
+            </connector>
+            <label>isChangedRule_6_myRule_5_OSFMX_Fitch_c</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <processMetadataValues>
+            <name>index</name>
+            <value>
+                <numberValue>0.0</numberValue>
+            </value>
+        </processMetadataValues>
+        <name>myDecision</name>
+        <label>myDecision</label>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>myDecision4</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>myRule_1</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <processMetadataValues>
+                    <name>inputDataType</name>
+                    <value>
+                        <stringValue>Boolean</stringValue>
+                    </value>
+                </processMetadataValues>
+                <processMetadataValues>
+                    <name>leftHandSideType</name>
+                    <value>
+                        <stringValue>Picklist</stringValue>
+                    </value>
+                </processMetadataValues>
+                <processMetadataValues>
+                    <name>operatorDataType</name>
+                    <value>
+                        <stringValue>String</stringValue>
+                    </value>
+                </processMetadataValues>
+                <processMetadataValues>
+                    <name>rightHandSideType</name>
+                    <value>
+                        <stringValue>Boolean</stringValue>
+                    </value>
+                </processMetadataValues>
+                <leftValueReference>isChangedRule_2_myRule_1_OSFMX_ECR_c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_1_A1</targetReference>
+            </connector>
+            <label>ECR</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <processMetadataValues>
+            <name>index</name>
+            <value>
+                <numberValue>3.0</numberValue>
+            </value>
+        </processMetadataValues>
+        <name>myDecision12</name>
+        <label>myDecision12</label>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>myRule_13</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <processMetadataValues>
+                    <name>inputDataType</name>
+                    <value>
+                        <stringValue>Boolean</stringValue>
+                    </value>
+                </processMetadataValues>
+                <processMetadataValues>
+                    <name>leftHandSideType</name>
+                    <value>
+                        <stringValue>Picklist</stringValue>
+                    </value>
+                </processMetadataValues>
+                <processMetadataValues>
+                    <name>operatorDataType</name>
+                    <value>
+                        <stringValue>String</stringValue>
+                    </value>
+                </processMetadataValues>
+                <processMetadataValues>
+                    <name>rightHandSideType</name>
+                    <value>
+                        <stringValue>Boolean</stringValue>
+                    </value>
+                </processMetadataValues>
+                <leftValueReference>isChangedRule_14_myRule_13_OSFMX_Moodys_c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_13_A1</targetReference>
+            </connector>
+            <label>Moody´s</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <processMetadataValues>
+            <name>index</name>
+            <value>
+                <numberValue>1.0</numberValue>
+            </value>
+        </processMetadataValues>
+        <name>myDecision4</name>
+        <label>myDecision4</label>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>myDecision8</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>myRule_5</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <processMetadataValues>
+                    <name>inputDataType</name>
+                    <value>
+                        <stringValue>Boolean</stringValue>
+                    </value>
+                </processMetadataValues>
+                <processMetadataValues>
+                    <name>leftHandSideType</name>
+                    <value>
+                        <stringValue>Picklist</stringValue>
+                    </value>
+                </processMetadataValues>
+                <processMetadataValues>
+                    <name>operatorDataType</name>
+                    <value>
+                        <stringValue>String</stringValue>
+                    </value>
+                </processMetadataValues>
+                <processMetadataValues>
+                    <name>rightHandSideType</name>
+                    <value>
+                        <stringValue>Boolean</stringValue>
+                    </value>
+                </processMetadataValues>
+                <leftValueReference>isChangedRule_6_myRule_5_OSFMX_Fitch_c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_5_A1</targetReference>
+            </connector>
+            <label>Fitch</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <processMetadataValues>
+            <name>index</name>
+            <value>
+                <numberValue>2.0</numberValue>
+            </value>
+        </processMetadataValues>
+        <name>myDecision8</name>
+        <label>myDecision8</label>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>myDecision12</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>myRule_9</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <processMetadataValues>
+                    <name>inputDataType</name>
+                    <value>
+                        <stringValue>Boolean</stringValue>
+                    </value>
+                </processMetadataValues>
+                <processMetadataValues>
+                    <name>leftHandSideType</name>
+                    <value>
+                        <stringValue>Picklist</stringValue>
+                    </value>
+                </processMetadataValues>
+                <processMetadataValues>
+                    <name>operatorDataType</name>
+                    <value>
+                        <stringValue>String</stringValue>
+                    </value>
+                </processMetadataValues>
+                <processMetadataValues>
+                    <name>rightHandSideType</name>
+                    <value>
+                        <stringValue>Boolean</stringValue>
+                    </value>
+                </processMetadataValues>
+                <leftValueReference>isChangedRule_10_myRule_9_OSFMX_S_P_c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_9_A1</targetReference>
+            </connector>
+            <label>S&amp;P</label>
+        </rules>
+    </decisions>
+    <description>Calculo del Credit Rating</description>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>CASE([Account].OSFMX_S_P__c ,
+           &quot;AAA&quot;, 24, 
+           &quot;AA+&quot;, 23,
+           &quot;AA&quot;, 22, 
+           &quot;AA-&quot;, 21,
+           &quot;A+&quot;, 20,
+           &quot;A&quot;, 19, 
+           &quot;A-&quot;, 18,
+           &quot;BBB+&quot;, 17,
+           &quot;BBB&quot;, 16, 
+           &quot;BBB-&quot;, 15,
+           &quot;BB+&quot;, 14,
+           &quot;BB&quot;, 13, 
+           &quot;BB-&quot;, 12,
+           &quot;B+&quot;, 11,
+           &quot;B&quot;, 10, 
+           &quot;B-&quot;, 9,
+           &quot;CCC+&quot;, 8,
+           &quot;CCC&quot;, 7, 
+           &quot;CCC-&quot;, 6,
+           &quot;CC&quot;, 5,
+           &quot;C&quot;, 4, 
+           &quot;SD&quot;, 3,
+           &quot;D&quot;, 2, 
+           25)  </stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_11_myRule_9_A1_7851724924</name>
+        <dataType>Number</dataType>
+        <expression>CASE({!myVariable_current.OSFMX_S_P__c} ,
+           &quot;AAA&quot;, 24, 
+           &quot;AA+&quot;, 23,
+           &quot;AA&quot;, 22, 
+           &quot;AA-&quot;, 21,
+           &quot;A+&quot;, 20,
+           &quot;A&quot;, 19, 
+           &quot;A-&quot;, 18,
+           &quot;BBB+&quot;, 17,
+           &quot;BBB&quot;, 16, 
+           &quot;BBB-&quot;, 15,
+           &quot;BB+&quot;, 14,
+           &quot;BB&quot;, 13, 
+           &quot;BB-&quot;, 12,
+           &quot;B+&quot;, 11,
+           &quot;B&quot;, 10, 
+           &quot;B-&quot;, 9,
+           &quot;CCC+&quot;, 8,
+           &quot;CCC&quot;, 7, 
+           &quot;CCC-&quot;, 6,
+           &quot;CC&quot;, 5,
+           &quot;C&quot;, 4, 
+           &quot;SD&quot;, 3,
+           &quot;D&quot;, 2, 
+           25)</expression>
+        <scale>18</scale>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>CASE([Account].OSFMX_Moodys__c ,
+           &quot;Aaa&quot;, 24, 
+           &quot;Aa1&quot;, 23,
+           &quot;Aa2&quot;, 22, 
+           &quot;Aa3&quot;, 21,
+           &quot;A1&quot;, 20,
+           &quot;A2&quot;, 19, 
+           &quot;A3&quot;, 18,
+           &quot;Baa1&quot;, 17,
+           &quot;Baa2&quot;, 16, 
+           &quot;Baa3&quot;, 15,
+           &quot;Ba1&quot;, 14,
+           &quot;Ba2&quot;, 13, 
+           &quot;Ba3&quot;, 12,
+           &quot;B1&quot;, 11,
+           &quot;B2&quot;, 10, 
+           &quot;B3&quot;, 9,
+           &quot;Caa1&quot;, 8,
+           &quot;Caa2&quot;, 7, 
+           &quot;Caa3&quot;, 6,
+           &quot;Ca&quot;, 5, 
+           &quot;C&quot;, 3, 
+           25) </stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_15_myRule_13_A1_2863552288</name>
+        <dataType>Number</dataType>
+        <expression>CASE({!myVariable_current.OSFMX_Moodys__c} ,
+           &quot;Aaa&quot;, 24, 
+           &quot;Aa1&quot;, 23,
+           &quot;Aa2&quot;, 22, 
+           &quot;Aa3&quot;, 21,
+           &quot;A1&quot;, 20,
+           &quot;A2&quot;, 19, 
+           &quot;A3&quot;, 18,
+           &quot;Baa1&quot;, 17,
+           &quot;Baa2&quot;, 16, 
+           &quot;Baa3&quot;, 15,
+           &quot;Ba1&quot;, 14,
+           &quot;Ba2&quot;, 13, 
+           &quot;Ba3&quot;, 12,
+           &quot;B1&quot;, 11,
+           &quot;B2&quot;, 10, 
+           &quot;B3&quot;, 9,
+           &quot;Caa1&quot;, 8,
+           &quot;Caa2&quot;, 7, 
+           &quot;Caa3&quot;, 6,
+           &quot;Ca&quot;, 5, 
+           &quot;C&quot;, 3, 
+           25)</expression>
+        <scale>18</scale>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>CASE([Account].OSFMX_ECR__c  , 
+           &quot;AAA&quot;, 24, 
+           &quot;AA+&quot;, 23,
+           &quot;AA&quot;, 22, 
+           &quot;AA-&quot;, 21,
+           &quot;A+&quot;, 20,
+           &quot;A&quot;, 19, 
+           &quot;A-&quot;, 18,
+           &quot;BBB+&quot;, 17,
+           &quot;BBB&quot;, 16, 
+           &quot;BBB-&quot;, 15,
+           &quot;BB+&quot;, 14,
+           &quot;BB&quot;, 13, 
+           &quot;BB-&quot;, 12,
+           &quot;B+&quot;, 11,
+           &quot;B&quot;, 10, 
+           &quot;B-&quot;, 9,
+           &quot;CCC+&quot;, 8,
+           &quot;CCC&quot;, 7, 
+           &quot;CCC-&quot;, 6,
+           &quot;CC&quot;, 5,
+           &quot;C&quot;, 4, 
+           &quot;DDD&quot;, 3,
+           &quot;DD&quot;, 2,
+           &quot;D&quot;, 1, 
+            25) </stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_3_myRule_1_A1_5907763996</name>
+        <dataType>Number</dataType>
+        <expression>CASE({!myVariable_current.OSFMX_ECR__c}  , 
+           &quot;AAA&quot;, 24, 
+           &quot;AA+&quot;, 23,
+           &quot;AA&quot;, 22, 
+           &quot;AA-&quot;, 21,
+           &quot;A+&quot;, 20,
+           &quot;A&quot;, 19, 
+           &quot;A-&quot;, 18,
+           &quot;BBB+&quot;, 17,
+           &quot;BBB&quot;, 16, 
+           &quot;BBB-&quot;, 15,
+           &quot;BB+&quot;, 14,
+           &quot;BB&quot;, 13, 
+           &quot;BB-&quot;, 12,
+           &quot;B+&quot;, 11,
+           &quot;B&quot;, 10, 
+           &quot;B-&quot;, 9,
+           &quot;CCC+&quot;, 8,
+           &quot;CCC&quot;, 7, 
+           &quot;CCC-&quot;, 6,
+           &quot;CC&quot;, 5,
+           &quot;C&quot;, 4, 
+           &quot;DDD&quot;, 3,
+           &quot;DD&quot;, 2,
+           &quot;D&quot;, 1, 
+            25)</expression>
+        <scale>18</scale>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>CASE([Account].OSFMX_Fitch__c ,
+           &quot;AAA&quot;, 24, 
+           &quot;AA+&quot;, 23,
+           &quot;AA&quot;, 22, 
+           &quot;AA-&quot;, 21,
+           &quot;A+&quot;, 20,
+           &quot;A&quot;, 19, 
+           &quot;A-&quot;, 18,
+           &quot;BBB+&quot;, 17,
+           &quot;BBB&quot;, 16, 
+           &quot;BBB-&quot;, 15,
+           &quot;BB+&quot;, 14,
+           &quot;BB&quot;, 13, 
+           &quot;BB-&quot;, 12,
+           &quot;B+&quot;, 11,
+           &quot;B&quot;, 10, 
+           &quot;B-&quot;, 9,
+           &quot;CCC+&quot;, 8,
+           &quot;CCC&quot;, 7, 
+           &quot;CCC-&quot;, 6,
+           &quot;CC&quot;, 5,
+           &quot;C&quot;, 4, 
+           &quot;DDD&quot;, 3,
+           &quot;DD&quot;, 2,
+           &quot;D&quot;, 1, 
+           25) </stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_7_myRule_5_A1_5567165190</name>
+        <dataType>Number</dataType>
+        <expression>CASE({!myVariable_current.OSFMX_Fitch__c} ,
+           &quot;AAA&quot;, 24, 
+           &quot;AA+&quot;, 23,
+           &quot;AA&quot;, 22, 
+           &quot;AA-&quot;, 21,
+           &quot;A+&quot;, 20,
+           &quot;A&quot;, 19, 
+           &quot;A-&quot;, 18,
+           &quot;BBB+&quot;, 17,
+           &quot;BBB&quot;, 16, 
+           &quot;BBB-&quot;, 15,
+           &quot;BB+&quot;, 14,
+           &quot;BB&quot;, 13, 
+           &quot;BB-&quot;, 12,
+           &quot;B+&quot;, 11,
+           &quot;B&quot;, 10, 
+           &quot;B-&quot;, 9,
+           &quot;CCC+&quot;, 8,
+           &quot;CCC&quot;, 7, 
+           &quot;CCC-&quot;, 6,
+           &quot;CC&quot;, 5,
+           &quot;C&quot;, 4, 
+           &quot;DDD&quot;, 3,
+           &quot;DD&quot;, 2,
+           &quot;D&quot;, 1, 
+           25)</expression>
+        <scale>18</scale>
+    </formulas>
+    <interviewLabel>OSFMX_CreditRating-6_InterviewLabel</interviewLabel>
+    <label>OSFMX_CreditRating</label>
+    <processMetadataValues>
+        <name>ObjectType</name>
+        <value>
+            <stringValue>Account</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>ObjectVariable</name>
+        <value>
+            <elementReference>myVariable_current</elementReference>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OldObjectVariable</name>
+        <value>
+            <elementReference>myVariable_old</elementReference>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>TriggerType</name>
+        <value>
+            <stringValue>onAllChanges</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Workflow</processType>
+    <recordUpdates>
+        <processMetadataValues>
+            <name>evaluationType</name>
+            <value>
+                <stringValue>always</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>extraTypeInfo</name>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>isChildRelationship</name>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>reference</name>
+            <value>
+                <stringValue>[Account]</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>referenceTargetField</name>
+        </processMetadataValues>
+        <name>myRule_13_A1</name>
+        <label>Valor Moody&apos;s</label>
+        <locationX>1300</locationX>
+        <locationY>200</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <processMetadataValues>
+                <name>implicit</name>
+                <value>
+                    <booleanValue>true</booleanValue>
+                </value>
+            </processMetadataValues>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>Number</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Valor Moody´s</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideReferenceTo</name>
+                <value>
+                    <stringValue></stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Formula</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>OSFMX_Moody_sValue__c</field>
+            <value>
+                <elementReference>formula_15_myRule_13_A1_2863552288</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Account</object>
+    </recordUpdates>
+    <recordUpdates>
+        <processMetadataValues>
+            <name>evaluationType</name>
+            <value>
+                <stringValue>always</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>extraTypeInfo</name>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>isChildRelationship</name>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>reference</name>
+            <value>
+                <stringValue>[Account]</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>referenceTargetField</name>
+        </processMetadataValues>
+        <name>myRule_1_A1</name>
+        <label>Valor ECR</label>
+        <locationX>100</locationX>
+        <locationY>200</locationY>
+        <connector>
+            <targetReference>myDecision4</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <processMetadataValues>
+                <name>implicit</name>
+                <value>
+                    <booleanValue>true</booleanValue>
+                </value>
+            </processMetadataValues>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>Number</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Valor de ECR</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideReferenceTo</name>
+                <value>
+                    <stringValue></stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Formula</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>OSFMX_ECRValue__c</field>
+            <value>
+                <elementReference>formula_3_myRule_1_A1_5907763996</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Account</object>
+    </recordUpdates>
+    <recordUpdates>
+        <processMetadataValues>
+            <name>evaluationType</name>
+            <value>
+                <stringValue>always</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>extraTypeInfo</name>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>isChildRelationship</name>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>reference</name>
+            <value>
+                <stringValue>[Account]</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>referenceTargetField</name>
+        </processMetadataValues>
+        <name>myRule_5_A1</name>
+        <label>Valor Fitch</label>
+        <locationX>500</locationX>
+        <locationY>200</locationY>
+        <connector>
+            <targetReference>myDecision8</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <processMetadataValues>
+                <name>implicit</name>
+                <value>
+                    <booleanValue>true</booleanValue>
+                </value>
+            </processMetadataValues>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>Number</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Valor Fitch</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideReferenceTo</name>
+                <value>
+                    <stringValue></stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Formula</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>OSFMX_FitchValue__c</field>
+            <value>
+                <elementReference>formula_7_myRule_5_A1_5567165190</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Account</object>
+    </recordUpdates>
+    <recordUpdates>
+        <processMetadataValues>
+            <name>evaluationType</name>
+            <value>
+                <stringValue>always</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>extraTypeInfo</name>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>isChildRelationship</name>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>reference</name>
+            <value>
+                <stringValue>[Account]</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>referenceTargetField</name>
+        </processMetadataValues>
+        <name>myRule_9_A1</name>
+        <label>Valor S&amp;P</label>
+        <locationX>900</locationX>
+        <locationY>200</locationY>
+        <connector>
+            <targetReference>myDecision12</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <processMetadataValues>
+                <name>implicit</name>
+                <value>
+                    <booleanValue>true</booleanValue>
+                </value>
+            </processMetadataValues>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>Number</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Valor S&amp;P</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideReferenceTo</name>
+                <value>
+                    <stringValue></stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Formula</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>OSFMX_S_PValue__c</field>
+            <value>
+                <elementReference>formula_11_myRule_9_A1_7851724924</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Account</object>
+    </recordUpdates>
+    <startElementReference>isChangedDecision2_myRule_1_OSFMX_ECR_c</startElementReference>
+    <status>Active</status>
+    <variables>
+        <name>myVariable_current</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <objectType>Account</objectType>
+    </variables>
+    <variables>
+        <name>myVariable_old</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Account</objectType>
+    </variables>
+</Flow>

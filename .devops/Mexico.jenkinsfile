@@ -1,0 +1,161 @@
+
+def FOLDER_EXISTS="false"
+def SALESFORCE_DESTINATION='SFDX_URL_INT_MEXICO_RM'
+def SALESFORCE_DESTINATION_1='SFDX_URL_DEV_MEXICO1_RM'
+
+pipeline {
+  options {
+    disableConcurrentBuilds()
+  }
+  agent any
+  tools {nodejs "NodeJS_LATEST"}
+
+  stages {
+    stage('Validate Salesforce Delta') {
+      steps {
+        script{
+          echo 'Validating ...'
+          echo '####### Install Salesforce DX'
+          sh ('sfdx plugins:install salesforcedx@latest')
+          echo '####### Login salesforce'
+
+          withCredentials([string(credentialsId: SALESFORCE_DESTINATION, variable: 'AUTH_URL')]) {
+            sh ('printf \"%s\" \"$AUTH_URL\" > sfdxFile')
+            sh ('sfdx force:auth:sfdxurl:store -d -a ALIAS -f sfdxFile')
+            sh ('rm -rf sfdxFile')
+            echo "####### Install Vlocity tools"
+            sh ('echo \"y\" | sfdx plugins:install vlocityestools')
+            echo "####### Creck folder for SF Delta Package"
+            FOLDER_EXISTS = sh (script: 'if [ -d salesforce_sfdx_delta ]; then echo true; else echo false; fi', returnStdout: true).trim()
+            if(FOLDER_EXISTS == "true"){
+              sh ('rm -rf salesforce_sfdx_delta')
+            }
+            echo "####### Create SF Delta Package"
+            sh ('sfdx vlocityestools:sfsource:createdeltapackage -u ALIAS -p cmt -d salesforce_sfdx')
+            if(env.CHANGE_ID){
+              echo '####### Execute Salesforce validataion'
+              FOLDER_EXISTS = sh (script: 'if [ -d salesforce_sfdx_delta ]; then echo true; else echo false; fi', returnStdout: true).trim()
+              if(FOLDER_EXISTS == "true"){
+                echo "####### Salesforce Validate"
+                sh ('sfdx force:source:deploy --sourcepath salesforce_sfdx_delta --targetusername ALIAS --verbose -w 60 -c -l RunLocalTests')
+              }else{
+                echo '####### NO SF DELTA-FOLDER FOUND'
+              }
+            }else{
+              echo "####### Salesforce Validation SKIPPED"
+            }
+          }
+          echo 'END - Validating ...'
+        }
+      }
+    }
+    stage('Deploy Salesforce Delta'){
+      steps{
+        script{
+          echo '--- (SYNC-DEV1) Deploy changes from /develop to DevMexico1 (SYNC-DEV1)---'
+          sh ('ls -ltra')
+          FOLDER_EXISTS = sh (script: 'if [ -d salesforce_sfdx_delta ]; then echo true; else echo false; fi', returnStdout: true).trim()
+          echo 'FOLDER_EXISTS= '+FOLDER_EXISTS
+          if(FOLDER_EXISTS=="true"){
+            echo '--Create backup from salesforce_sfdx_delta folder--'
+            sh ('mv salesforce_sfdx_delta salesforce_sfdx_delta_original')
+            echo '--Created backup from salesforce_sfdx_delta folder--'
+          }
+          if(env.CHANGE_BRANCH in ['develop'] && !env.CHANGE_ID){
+            withCredentials([string(credentialsId: SALESFORCE_DESTINATION_1, variable: 'AUTH_URL1')]) {
+              sh ('printf \"%s\" \"$AUTH_URL1\" > sfdxFile')
+              sh ('sfdx force:auth:sfdxurl:store -d -a ALIAS1 -f sfdxFile')
+              sh ('rm -rf sfdxFile')
+              echo "####### Check folder for SF Delta Package"
+              FOLDER_EXISTS1 = sh (script: 'if [ -d salesforce_sfdx_delta ]; then echo true; else echo false; fi', returnStdout: true).trim()
+              if(FOLDER_EXISTS1 == "true"){
+                sh ('rm -rf salesforce_sfdx_delta')
+              }
+              echo "####### Create SF Delta Package"
+              sh ('sfdx vlocityestools:sfsource:createdeltapackage -u ALIAS1 -p cmt -d salesforce_sfdx')
+              echo '####### Execute Salesforce deployment'
+              FOLDER_EXISTS1 = sh (script: 'if [ -d salesforce_sfdx_delta ]; then echo true; else echo false; fi', returnStdout: true).trim()
+              if(FOLDER_EXISTS1 == "true"){
+                echo "####### Salesforce Deploy"
+                sh ('sfdx force:source:deploy --sourcepath salesforce_sfdx_delta --targetusername ALIAS1 --verbose -w 60')
+              }else{
+                echo '####### NO SF DELTA-FOLDER FOUND to deploy to DevMexico1'
+              }
+            }
+          }
+          if(FOLDER_EXISTS=="true"){
+            echo '--Restore salesforce_sfdx_delta folder from backup--'
+            sh ('mv salesforce_sfdx_delta_original salesforce_sfdx_delta')
+            echo '--Restored salesforce_sfdx_delta folder from backup--'
+          }
+          echo '--- (SYNC-DEV1) Deployed changes from /develop to DevMexico1 (SYNC-DEV1)---'
+          echo 'Salesforce Deploying ...'
+          if(env.BRANCH_NAME in ['int_mexico','testDevelop']){
+            echo "####### Salesforce Deploy "
+            FOLDER_EXISTS = sh (script: 'if [ -d salesforce_sfdx_delta ]; then echo true; else echo false; fi', returnStdout: true).trim()
+            if(FOLDER_EXISTS == "true"){
+              sh ('sfdx force:source:deploy --sourcepath salesforce_sfdx_delta --targetusername ALIAS --verbose -w 60')
+            }else{
+              echo '####### NO SF DELTA-FOLDER FOUND'
+            }
+          }else{
+            echo "####### Salesforce Deployment SKIPPED"
+          }
+          echo 'END - Salesforce Deploying ...'
+        }
+      }
+    }
+    stage('Vlocity deployment'){
+      steps {
+        script{
+          echo 'Vlocity Deploying ...'
+          if(env.BRANCH_NAME in ['int_mexico','testDevelop']){
+            echo "####### Vlocity Deploy"
+            sh ('vlocity -sfdx.username ALIAS -job Deploy_Delta.yaml packDeploy --verbose true --simpleLogging true')
+          }else{
+            echo "####### Vlocity Deployment SKIPPED"
+          }
+          echo 'END - Vlocity Deploying ...'
+        }
+      }
+    }
+    stage("Reports generation"){
+      steps{
+        script{
+          if(env.BRANCH_NAME in ['int_mexico','testDevelop']){
+            echo "####### Execute 'LocalTests' on Salesforce"
+            try{
+              //Run coverage report extractor when deployment finishes (develop-release-production)
+              sh (script: 'sfdx force:apex:test:run -l RunLocalTests -u ALIAS -w 60 --verbose --codecoverage --resultformat json --detailedcoverage -d SFDX_coverage', returnStdout: false)
+              }catch (Exception e) {
+                echo 'TESTS are FAILING !!!'
+              }
+          }else{
+            echo '--- NOT REQUIRED (SKIPPED) ---'
+          }
+        }
+      }
+    }
+    stage('SonarQube Analisys') {
+      steps{
+        script{
+          if(env.BRANCH_NAME in ['int_mexico','testDevelop']){
+            def scannerHome = tool 'SonarQube';
+            withSonarQubeEnv('onesalesforcemx-mxonesf-sonar') { // If you have configured more than one global server connection, you can specify its name
+              sh "${scannerHome}/bin/sonar-scanner -Dproject.settings=.devops/sonar-project.properties"
+            }
+          }else{
+            echo '--- NOT REQUIRED (SKIPPED) ---'
+          }
+        }
+      }
+    }
+  }
+  post {
+        always {
+            emailext body: "Para mayor informacion visita ${BUILD_URL}",
+              subject: "${currentBuild.result} Ambiente Integra MEXICO Job '${JOB_BASE_NAME}' (${BUILD_NUMBER}) ",
+              to: 'adrian.rosendo@globant.com, roberto.ranaya@globant.com, omar.mata@globant.com, edgar.maldonado@globant.com, nasser.abdala@globant.com, guillermo.lozano@globant.com ,enrique.juarez@globant.com'
+        }
+    }
+}

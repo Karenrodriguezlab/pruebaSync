@@ -1,0 +1,48 @@
+{
+    "dataSource": {
+        "type": "IntegrationProcedures",
+        "value": {
+            "ipMethod": "teamglobant_getBillingCompare",
+            "optionsMap": {
+                "vlcClass": "%vlocity_namespace%.IntegrationProcedureService"
+            }
+        }
+    },
+    "filter": {
+    },
+    "states": [
+        {
+            "conditions": {
+                "group": [
+                    {
+                        "field": "$scope.data.status",
+                        "operator": "===",
+                        "type": "system",
+                        "value": "'active'"
+                    }
+                ]
+            },
+            "definedActions": {
+                "actions": [
+                ]
+            },
+            "fields": [
+                {
+                    "collapse": true,
+                    "displayLabel": "['Statement']",
+                    "fieldType": "standard",
+                    "group": "Custom Properties",
+                    "label": "Statement",
+                    "name": "['Statement']",
+                    "type": "string"
+                }
+            ],
+            "isSmartAction": false,
+            "name": "Active",
+            "smartAction": {
+            },
+            "templateUrl": "vpl-energy-card--billing-balance-graph"
+        }
+    ],
+    "title": "billing_graph"
+}

@@ -1,0 +1,43 @@
+<table border="0" cellpadding="5" width="600" cellspacing="5" height="400" >
+<tr valign="top" height="50" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[]]></td>
+</tr>
+<tr valign="top" height="300" >
+<td tEditID="c1r2" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r2" locked="0" >
+<![CDATA[<p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><span lang="ES" style="font-size:12.0pt;font-family:&quot;Lato&quot;,sans-serif;
+mso-bidi-font-family:Arial">Estimad@&nbsp;<b>{!Contact.Name}</b><o:p></o:p></span></p>
+
+<p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><span lang="ES" style="font-size:12.0pt;font-family:&quot;Lato&quot;,sans-serif;
+mso-bidi-font-family:Arial">&nbsp;</span></p>
+
+<p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><span lang="ES" style="font-size:12.0pt;font-family:&quot;Lato&quot;,sans-serif;
+mso-bidi-font-family:Arial">¡Gracias por tus comentarios! <o:p></o:p></span></p>
+
+<p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><span lang="ES" style="font-size:12.0pt;font-family:&quot;Lato&quot;,sans-serif;
+mso-bidi-font-family:Arial">&nbsp;</span></p>
+
+<p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><span lang="ES" style="font-size:12.0pt;font-family:&quot;Lato&quot;,sans-serif;
+mso-bidi-font-family:Arial">En breve un Ejecutivo de Cuenta se pondrá en
+contacto contigo. Conoce los detalles de tu caso:<o:p></o:p></span></p>
+
+<p class="MsoNormal" align="center" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt; text-align: center;"><span lang="ES" style="font-size:12.0pt;font-family:&quot;Lato&quot;,sans-serif;mso-bidi-font-family:
+Arial">&nbsp;</span></p>
+
+<p class="MsoNormal" style=""><span lang="ES" style="color: rgb(0, 0, 0); font-family: Lato, sans-serif; font-size: 12pt;">Número de caso:&nbsp;</span><font face="Lato, sans-serif"><b>{!Case.CaseNumber}</b></font></p>
+
+<p class="MsoNormal" style=""><span lang="ES" style="color: rgb(0, 0, 0); font-family: Lato, sans-serif; font-size: 12pt;">Motivo de contacto:&nbsp;</span><font face="Lato, sans-serif"><b>{!Case.Reason}</b></font></p>
+
+<p class="MsoNormal" style=""><span lang="ES" style="color: rgb(0, 0, 0); font-family: Lato, sans-serif; font-size: 12pt;">Mensaje:&nbsp;</span><font face="Lato, sans-serif"><b>{!Case.Description}</b></font></p>
+
+<p class="MsoNormal" style=""><span lang="ES" style="color: rgb(0, 0, 0); font-family: Lato, sans-serif; font-size: 12pt;">Tu Ejecutivo de Cuenta es:&nbsp;</span><font face="Lato, sans-serif"><b>{!Account.OwnerFullName}</b></font></p>
+
+<p class="MsoNormal" style=""><span lang="ES" style="color: rgb(0, 0, 0); font-family: Lato, sans-serif; font-size: 12pt;">Correo&nbsp;electrónico:&nbsp;</span><font color="#0000ee" face="Lato, sans-serif"><b><u>{!Case.OwnerEmail}</u></b></font></p>
+
+<span lang="ES" style="color: rgb(0, 0, 0); font-family: Lato, sans-serif; font-size: 12pt;">Celular:&nbsp;</span><font face="Lato, sans-serif"><b>{!Case.OSFMX_CaseOwnerPhone__c}</b></font>]]></td>
+</tr>
+<tr valign="top" height="50" >
+<td tEditID="c1r3" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r3" locked="0" >
+<![CDATA[]]></td>
+</tr>
+</table>

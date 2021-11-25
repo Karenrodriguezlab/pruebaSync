@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OSFMX_LossReason__c</fullName>
+    <externalId>false</externalId>
+    <label>Motivo de pérdida</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Precio</fullName>
+                <default>false</default>
+                <label>Precio</label>
+            </value>
+            <value>
+                <fullName>Condiciones contractuales</fullName>
+                <default>false</default>
+                <label>Condiciones contractuales</label>
+            </value>
+            <value>
+                <fullName>Falta de presupuesto del cliente</fullName>
+                <default>false</default>
+                <label>Falta de presupuesto del cliente</label>
+            </value>
+            <value>
+                <fullName>Calidad crediticia cliente</fullName>
+                <default>false</default>
+                <label>Calidad crediticia cliente</label>
+            </value>
+            <value>
+                <fullName>Proceso cancelado</fullName>
+                <default>false</default>
+                <label>Proceso cancelado</label>
+            </value>
+            <value>
+                <fullName>No cumple expectativas del cliente</fullName>
+                <default>false</default>
+                <label>No cumple expectativas del cliente</label>
+            </value>
+            <value>
+                <fullName>Incertidumbre regulatoria</fullName>
+                <default>false</default>
+                <label>Incertidumbre regulatoria</label>
+            </value>
+            <value>
+                <fullName>Cambio de estrategia de ENGIE</fullName>
+                <default>false</default>
+                <label>Cambio de estrategia de ENGIE</label>
+            </value>
+            <value>
+                <fullName>Administrativo</fullName>
+                <default>false</default>
+                <label>Administrativo</label>
+            </value>
+            <value>
+                <fullName>Técnico</fullName>
+                <default>false</default>
+                <label>Técnico</label>
+            </value>
+            <value>
+                <fullName>Económico</fullName>
+                <default>false</default>
+                <label>Económico</label>
+            </value>
+            <value>
+                <fullName>Concurso vacío</fullName>
+                <default>false</default>
+                <label>Concurso vacío</label>
+            </value>
+            <value>
+                <fullName>Ética</fullName>
+                <default>false</default>
+                <label>Ética</label>
+            </value>
+            <value>
+                <fullName>Afinidad del Consultor/Cliente por la competencia</fullName>
+                <default>false</default>
+                <label>Afinidad del Consultor/Cliente por la competencia</label>
+            </value>
+            <value>
+                <fullName>Penalidad no paga romper el contrato</fullName>
+                <default>false</default>
+                <label>Penalidad no paga romper el contrato</label>
+            </value>
+            <value>
+                <fullName>Temor a cambiar de suministrador</fullName>
+                <default>false</default>
+                <label>Temor a cambiar de suministrador</label>
+            </value>
+            <value>
+                <fullName>Pendiente de validación</fullName>
+                <default>false</default>
+                <label>Pendiente de validación</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

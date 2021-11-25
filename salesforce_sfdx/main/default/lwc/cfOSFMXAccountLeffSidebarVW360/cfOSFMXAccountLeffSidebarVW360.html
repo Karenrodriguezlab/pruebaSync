@@ -1,0 +1,90 @@
+<template>
+            <div class="slds-grid slds-wrap slds-is-relative">
+            <div if:false={cardLoaded} class="slds-is-absolute vloc-loader_override" style="height: 100%; width: 100%; min-height:50px; background: white; z-index: 99;">
+  <div>
+   <vlocity_cmt-spinner
+      variant="brand"
+      alternative-text="Loading content..."
+      size="medium"
+      theme="slds"
+      ></vlocity_cmt-spinner>
+  </div>
+</div>
+            <template if:false={hasPermission}>
+              You don't have required permissions to view this card.
+            </template>
+            <template if:true={hasPermission}>
+              <template if:true={hasRecords}>
+                        <template for:each={_records} for:item="record" for:index="rindex">
+                            <vlocity_cmt-flex-card-state key={record.uniqueKey} data-recordid={record.Id} record={record} data-statue="true"  data-index="0" data-rindex={rindex} class="cf-vlocity-state-0 cf-vlocity-state slds-size_12-of-12 "  tracking-obj={_childCardTrackingObj} >
+      <div if:true={cardLoaded} class="slds-grid slds-wrap slds-card slds-border_top slds-p-around_x-small slds-m-bottom_x-small " style="     border-color:#cccccc; border-width:2px;   height:500px;    ">
+          <div class="slds-col   slds-p-around_x-small  slds-size_12-of-12  " style=" background-image:url(https://engielatam--devmexico--c.visualforce.com/resource/1618432565000/OSFMXAccMapa);        height:100px;    ">
+    <vlocity_cmt-block  label="Block"  collapsible="false"  record={record}  collapsed-by-default="false"  card={card}  theme="slds" ><div class="slds-grid slds-wrap">
+          
+        </div></vlocity_cmt-block>
+    </div><div class="slds-col   slds-size_12-of-12 " style=""><vlocity_cmt-output-field  placeholder="output"  record={record}  type="text"  card={card}  field-name="NombreCliente"  styles='\{"label":{"fontSize":""},"value":{"fontSize":"26px","fontFamily":""}}'  theme="slds" ></vlocity_cmt-output-field>
+      </div><div class="slds-col   slds-size_12-of-12  " style="             "><vlocity_cmt-output-field  placeholder="output"  record={record}  type="text"  card={card}  field-name="TipoCliente"  theme="slds" ></vlocity_cmt-output-field>
+      </div><div class="slds-col  slds-text-align_center  slds-size_1-of-12  condition-element" style="             "><vlocity_cmt-flex-icon  record={record}  icon-type="Salesforce SVG"  icon-name="custom:custom108"  size="x-small"  extraclass="slds-icon_container slds-icon-custom-custom108 "  variant="inverse"  imgsrc=""  data-conditions='\{"id":"state-condition-object","isParent":true,"group":[{"id":"state-new-condition-46","field":"TipoCliente","operator":"==","value":"Cuenta de Negocio","type":"custom"}]}'  theme="slds" ></vlocity_cmt-flex-icon>
+      </div><div class="slds-col   slds-size_11-of-12  condition-element" style="             "><vlocity_cmt-output-field  record={record}  merge-field="%3Cdiv%3EID%20SAP:%20%7BIDSAP%7D%3C/div%3E"  card={card}  data-conditions='\{"id":"state-condition-object","isParent":true,"group":[{"id":"state-new-condition-128","field":"TipoCliente","operator":"==","value":"Cuenta de Negocio","type":"custom"}]}'  theme="slds" ></vlocity_cmt-output-field>
+      </div><div class="slds-col  slds-text-align_center  slds-size_1-of-12  " style="             "><vlocity_cmt-flex-icon  record={record}  icon-type="Salesforce SVG"  icon-name="standard:avatar"  size="x-small"  extraclass="slds-icon_container slds-icon-standard-avatar "  variant="inverse"  imgsrc=""  theme="slds" ></vlocity_cmt-flex-icon>
+      </div><div class="slds-col   slds-size_11-of-12  " style=""><vlocity_cmt-output-field  placeholder=""  record={record}  type="text"  card={card}  field-name="NombreContacto"  theme="slds" ></vlocity_cmt-output-field>
+      </div><div class="slds-col  slds-text-align_center  slds-size_1-of-12  " style="             "><vlocity_cmt-flex-icon  record={record}  icon-type="Salesforce SVG"  icon-name="custom:custom28"  size="x-small"  extraclass="slds-icon_container slds-icon-custom-custom28 "  variant="inverse"  imgsrc=""  theme="slds" ></vlocity_cmt-flex-icon>
+      </div><div class="slds-col   slds-size_11-of-12  " style=""><vlocity_cmt-output-field  placeholder=""  record={record}  type="text"  card={card}  field-name="Telefono"  theme="slds" ></vlocity_cmt-output-field>
+      </div><div class="slds-col  slds-text-align_center  slds-size_1-of-12  " style="             "><vlocity_cmt-flex-icon  record={record}  icon-type="Salesforce SVG"  icon-name="custom:custom105"  size="x-small"  extraclass="slds-icon_container slds-icon-custom-custom105 "  variant="inverse"  imgsrc=""  theme="slds" ></vlocity_cmt-flex-icon>
+      </div><div class="slds-col   slds-size_11-of-12  " style=""><vlocity_cmt-output-field  placeholder=""  record={record}  type="text"  card={card}  field-name="Email"  theme="slds" ></vlocity_cmt-output-field>
+      </div><div class="slds-col  slds-text-align_center  slds-size_1-of-12  condition-element" style="             "><vlocity_cmt-flex-icon  record={record}  icon-type="Salesforce SVG"  icon-name="custom:custom24"  size="x-small"  extraclass="slds-icon_container slds-icon-custom-custom24 "  variant="inverse"  imgsrc=""  data-conditions='\{"id":"state-condition-object","isParent":true,"group":[{"id":"state-new-condition-9","field":"TipoCliente","operator":"==","value":"Cuenta de Negocio","type":"custom"}]}'  theme="slds" ></vlocity_cmt-flex-icon>
+      </div><div class="slds-col   slds-size_11-of-12  condition-element" style=""><vlocity_cmt-output-field  record={record}  merge-field="%3Cdiv%3E%7BCountServiceAccount%7D%3C/div%3E"  card={card}  data-conditions='\{"id":"state-condition-object","isParent":true,"group":[{"id":"state-new-condition-0","field":"TipoCliente","operator":"==","value":"Cuenta de Negocio","type":"custom"}]}'  theme="slds" ></vlocity_cmt-output-field>
+      </div><div class="slds-col  slds-text-align_center  slds-size_1-of-12  condition-element" style="             "><vlocity_cmt-flex-icon  record={record}  icon-type="Salesforce SVG"  icon-name="standard:opportunity"  size="x-small"  extraclass="slds-icon_container slds-icon-standard-opportunity "  variant="inverse"  imgsrc=""  data-conditions='\{"id":"state-condition-object","isParent":true,"group":[{"id":"state-new-condition-28","field":"TipoCliente","operator":"==","value":"Cuenta de Negocio","type":"custom"}]}'  theme="slds" ></vlocity_cmt-flex-icon>
+      </div><div class="slds-col   slds-size_11-of-12  condition-element" style="             "><vlocity_cmt-output-field  record={record}  merge-field="%3Cdiv%3E%3Cspan%20style=%22font-size:%2010pt;%22%3E%7BCountOpp%7D%3C/span%3E%3C/div%3E"  card={card}  data-conditions='\{"id":"state-condition-object","isParent":true,"group":[{"id":"state-new-condition-53","field":"TipoCliente","operator":"==","value":"Cuenta de Negocio","type":"custom"}]}'  theme="slds" ></vlocity_cmt-output-field>
+      </div><div class="slds-col  slds-text-align_center  slds-size_1-of-12  condition-element" style="             "><vlocity_cmt-flex-icon  record={record}  icon-type="Salesforce SVG"  icon-name="standard:contact_list"  size="x-small"  extraclass="slds-icon_container slds-icon-standard-contact-list "  variant="inverse"  imgsrc=""  data-conditions='\{"id":"state-condition-object","isParent":true,"group":[{"id":"state-new-condition-127","field":"TipoCliente","operator":"==","value":"Cuenta de Negocio","type":"custom"}]}'  theme="slds" ></vlocity_cmt-flex-icon>
+      </div><div class="slds-col   slds-size_11-of-12  condition-element" style=""><vlocity_cmt-output-field  record={record}  merge-field="%3Cdiv%3E%3Cspan%20style=%22font-size:%2010pt;%22%3E%7BCountCase%7D%3C/span%3E%3C/div%3E"  card={card}  data-conditions='\{"id":"state-condition-object","isParent":true,"group":[{"id":"state-new-condition-152","field":"TipoCliente","operator":"==","value":"Cuenta de Negocio","type":"custom"}]}'  theme="slds" ></vlocity_cmt-output-field>
+      </div><div class="slds-col  slds-text-align_center  slds-size_1-of-12  condition-element" style="             "><vlocity_cmt-flex-icon  record={record}  icon-type="Salesforce SVG"  icon-name="custom:custom17"  size="x-small"  extraclass="slds-icon_container slds-icon-custom-custom17 "  variant="inverse"  imgsrc=""  data-conditions='\{"id":"state-condition-object","isParent":true,"group":[{"id":"state-new-condition-226","field":"TipoCliente","operator":"==","value":"Cuenta de Negocio","type":"custom"}]}'  theme="slds" ></vlocity_cmt-flex-icon>
+      </div><div class="slds-col   slds-size_11-of-12  condition-element" style=""><vlocity_cmt-output-field  record={record}  merge-field="%3Cdiv%3E%7BCountTask%7D%3C/div%3E"  card={card}  data-conditions='\{"id":"state-condition-object","isParent":true,"group":[{"id":"state-new-condition-243","field":"TipoCliente","operator":"==","value":"Cuenta de Negocio","type":"custom"}]}'  theme="slds" ></vlocity_cmt-output-field>
+      </div>
+        </div>
+      </vlocity_cmt-flex-card-state>
+                        </template>
+                      </template>
+                      <template if:false={hasRecords}>
+                            <vlocity_cmt-flex-card-state  record={record} data-statue="false"  data-index="0" data-rindex={rindex} class="cf-vlocity-state-0 cf-vlocity-state slds-size_12-of-12 "  tracking-obj={_childCardTrackingObj} >
+      <div if:true={cardLoaded} class="slds-grid slds-wrap slds-card slds-border_top slds-p-around_x-small slds-m-bottom_x-small " style="     border-color:#cccccc; border-width:2px;   height:500px;    ">
+          <div class="slds-col   slds-p-around_x-small  slds-size_12-of-12  " style=" background-image:url(https://engielatam--devmexico--c.visualforce.com/resource/1618432565000/OSFMXAccMapa);        height:100px;    ">
+    <vlocity_cmt-block  label="Block"  collapsible="false"  record={record}  collapsed-by-default="false"  card={card}  theme="slds" ><div class="slds-grid slds-wrap">
+          
+        </div></vlocity_cmt-block>
+    </div><div class="slds-col   slds-size_12-of-12 " style=""><vlocity_cmt-output-field  placeholder="output"  record={record}  type="text"  card={card}  field-name="NombreCliente"  styles='\{"label":{"fontSize":""},"value":{"fontSize":"26px","fontFamily":""}}'  theme="slds" ></vlocity_cmt-output-field>
+      </div><div class="slds-col   slds-size_12-of-12  " style="             "><vlocity_cmt-output-field  placeholder="output"  record={record}  type="text"  card={card}  field-name="TipoCliente"  theme="slds" ></vlocity_cmt-output-field>
+      </div><div class="slds-col  slds-text-align_center  slds-size_1-of-12  condition-element" style="             "><vlocity_cmt-flex-icon  record={record}  icon-type="Salesforce SVG"  icon-name="custom:custom108"  size="x-small"  extraclass="slds-icon_container slds-icon-custom-custom108 "  variant="inverse"  imgsrc=""  data-conditions='\{"id":"state-condition-object","isParent":true,"group":[{"id":"state-new-condition-46","field":"TipoCliente","operator":"==","value":"Cuenta de Negocio","type":"custom"}]}'  theme="slds" ></vlocity_cmt-flex-icon>
+      </div><div class="slds-col   slds-size_11-of-12  condition-element" style="             "><vlocity_cmt-output-field  record={record}  merge-field="%3Cdiv%3EID%20SAP:%20%7BIDSAP%7D%3C/div%3E"  card={card}  data-conditions='\{"id":"state-condition-object","isParent":true,"group":[{"id":"state-new-condition-128","field":"TipoCliente","operator":"==","value":"Cuenta de Negocio","type":"custom"}]}'  theme="slds" ></vlocity_cmt-output-field>
+      </div><div class="slds-col  slds-text-align_center  slds-size_1-of-12  " style="             "><vlocity_cmt-flex-icon  record={record}  icon-type="Salesforce SVG"  icon-name="standard:avatar"  size="x-small"  extraclass="slds-icon_container slds-icon-standard-avatar "  variant="inverse"  imgsrc=""  theme="slds" ></vlocity_cmt-flex-icon>
+      </div><div class="slds-col   slds-size_11-of-12  " style=""><vlocity_cmt-output-field  placeholder=""  record={record}  type="text"  card={card}  field-name="NombreContacto"  theme="slds" ></vlocity_cmt-output-field>
+      </div><div class="slds-col  slds-text-align_center  slds-size_1-of-12  " style="             "><vlocity_cmt-flex-icon  record={record}  icon-type="Salesforce SVG"  icon-name="custom:custom28"  size="x-small"  extraclass="slds-icon_container slds-icon-custom-custom28 "  variant="inverse"  imgsrc=""  theme="slds" ></vlocity_cmt-flex-icon>
+      </div><div class="slds-col   slds-size_11-of-12  " style=""><vlocity_cmt-output-field  placeholder=""  record={record}  type="text"  card={card}  field-name="Telefono"  theme="slds" ></vlocity_cmt-output-field>
+      </div><div class="slds-col  slds-text-align_center  slds-size_1-of-12  " style="             "><vlocity_cmt-flex-icon  record={record}  icon-type="Salesforce SVG"  icon-name="custom:custom105"  size="x-small"  extraclass="slds-icon_container slds-icon-custom-custom105 "  variant="inverse"  imgsrc=""  theme="slds" ></vlocity_cmt-flex-icon>
+      </div><div class="slds-col   slds-size_11-of-12  " style=""><vlocity_cmt-output-field  placeholder=""  record={record}  type="text"  card={card}  field-name="Email"  theme="slds" ></vlocity_cmt-output-field>
+      </div><div class="slds-col  slds-text-align_center  slds-size_1-of-12  condition-element" style="             "><vlocity_cmt-flex-icon  record={record}  icon-type="Salesforce SVG"  icon-name="custom:custom24"  size="x-small"  extraclass="slds-icon_container slds-icon-custom-custom24 "  variant="inverse"  imgsrc=""  data-conditions='\{"id":"state-condition-object","isParent":true,"group":[{"id":"state-new-condition-9","field":"TipoCliente","operator":"==","value":"Cuenta de Negocio","type":"custom"}]}'  theme="slds" ></vlocity_cmt-flex-icon>
+      </div><div class="slds-col   slds-size_11-of-12  condition-element" style=""><vlocity_cmt-output-field  record={record}  merge-field="%3Cdiv%3E%7BCountServiceAccount%7D%3C/div%3E"  card={card}  data-conditions='\{"id":"state-condition-object","isParent":true,"group":[{"id":"state-new-condition-0","field":"TipoCliente","operator":"==","value":"Cuenta de Negocio","type":"custom"}]}'  theme="slds" ></vlocity_cmt-output-field>
+      </div><div class="slds-col  slds-text-align_center  slds-size_1-of-12  condition-element" style="             "><vlocity_cmt-flex-icon  record={record}  icon-type="Salesforce SVG"  icon-name="standard:opportunity"  size="x-small"  extraclass="slds-icon_container slds-icon-standard-opportunity "  variant="inverse"  imgsrc=""  data-conditions='\{"id":"state-condition-object","isParent":true,"group":[{"id":"state-new-condition-28","field":"TipoCliente","operator":"==","value":"Cuenta de Negocio","type":"custom"}]}'  theme="slds" ></vlocity_cmt-flex-icon>
+      </div><div class="slds-col   slds-size_11-of-12  condition-element" style="             "><vlocity_cmt-output-field  record={record}  merge-field="%3Cdiv%3E%3Cspan%20style=%22font-size:%2010pt;%22%3E%7BCountOpp%7D%3C/span%3E%3C/div%3E"  card={card}  data-conditions='\{"id":"state-condition-object","isParent":true,"group":[{"id":"state-new-condition-53","field":"TipoCliente","operator":"==","value":"Cuenta de Negocio","type":"custom"}]}'  theme="slds" ></vlocity_cmt-output-field>
+      </div><div class="slds-col  slds-text-align_center  slds-size_1-of-12  condition-element" style="             "><vlocity_cmt-flex-icon  record={record}  icon-type="Salesforce SVG"  icon-name="standard:contact_list"  size="x-small"  extraclass="slds-icon_container slds-icon-standard-contact-list "  variant="inverse"  imgsrc=""  data-conditions='\{"id":"state-condition-object","isParent":true,"group":[{"id":"state-new-condition-127","field":"TipoCliente","operator":"==","value":"Cuenta de Negocio","type":"custom"}]}'  theme="slds" ></vlocity_cmt-flex-icon>
+      </div><div class="slds-col   slds-size_11-of-12  condition-element" style=""><vlocity_cmt-output-field  record={record}  merge-field="%3Cdiv%3E%3Cspan%20style=%22font-size:%2010pt;%22%3E%7BCountCase%7D%3C/span%3E%3C/div%3E"  card={card}  data-conditions='\{"id":"state-condition-object","isParent":true,"group":[{"id":"state-new-condition-152","field":"TipoCliente","operator":"==","value":"Cuenta de Negocio","type":"custom"}]}'  theme="slds" ></vlocity_cmt-output-field>
+      </div><div class="slds-col  slds-text-align_center  slds-size_1-of-12  condition-element" style="             "><vlocity_cmt-flex-icon  record={record}  icon-type="Salesforce SVG"  icon-name="custom:custom17"  size="x-small"  extraclass="slds-icon_container slds-icon-custom-custom17 "  variant="inverse"  imgsrc=""  data-conditions='\{"id":"state-condition-object","isParent":true,"group":[{"id":"state-new-condition-226","field":"TipoCliente","operator":"==","value":"Cuenta de Negocio","type":"custom"}]}'  theme="slds" ></vlocity_cmt-flex-icon>
+      </div><div class="slds-col   slds-size_11-of-12  condition-element" style=""><vlocity_cmt-output-field  record={record}  merge-field="%3Cdiv%3E%7BCountTask%7D%3C/div%3E"  card={card}  data-conditions='\{"id":"state-condition-object","isParent":true,"group":[{"id":"state-new-condition-243","field":"TipoCliente","operator":"==","value":"Cuenta de Negocio","type":"custom"}]}'  theme="slds" ></vlocity_cmt-output-field>
+      </div>
+        </div>
+      </vlocity_cmt-flex-card-state>
+                      </template>
+            </template>
+            <template if:true={hasError}>
+            {error}
+            </template>
+            
+      <vlocity_cmt-action action-wrapperclass="slds-hide" re-render-flyout class="action-trigger slds-col" onupdateos={updateOmniscript} onsetvalue={updateAction}>
+      
+      </vlocity_cmt-action>
+  
+            <vlocity_cmt-action class="execute-action" re-render-flyout action-wrapperclass="slds-hide" onupdateos={updateOmniscript} onsetvalue={updateAction}>
+            
+            </vlocity_cmt-action>
+            </div>
+          </template>

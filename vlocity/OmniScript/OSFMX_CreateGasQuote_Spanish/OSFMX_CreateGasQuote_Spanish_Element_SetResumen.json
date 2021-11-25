@@ -1,0 +1,44 @@
+{
+    "%vlocity_namespace%__Active__c": true,
+    "%vlocity_namespace%__OmniScriptId__c": {
+        "Name": "CreateGasQuote",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__OmniScript__c/OSFMX/CreateGasQuote/Spanish",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OmniScript__c"
+    },
+    "%vlocity_namespace%__PropertySet__c": {
+        "HTMLTemplateId": "",
+        "controlWidth": 12,
+        "disOnTplt": false,
+        "elementValueMap": {
+            "basefirmeR": "=IF(%OfertaData:BaseFirme% == null, '', 'Especificación: %OfertaData:BaseFirme% ')",
+            "baseinterrumpibleR": "=IF(%OfertaData:BaseFirme% == null, '', 'Base Interrumpible : %OfertaData:BaseInterrumpible% ')",
+            "consideracionR": "=IF(%OfertaData:ConsideracionEsp% == null, '', 'Consideracion especial : %OfertaData:ConsideracionEsp% ')",
+            "descproductoR": "=IF(%OfertaData:DescProducto% == null, '', 'Descripción Producto : %OfertaData:DescProducto% ')",
+            "especificacionR": "=IF(%AccountDataOferta:Especificacion% == null, '', 'Otra vigencia (días): %AccountDataOferta:Especificacion% ')",
+            "montoinfraestructuraR": "=IF(%OfertaData:MontoInfraestructura% == null, '', 'Monto Infraestructura : %OfertaData:MontoInfraestructura% ')",
+            "nocasetaR": "=IF(%OfertaData:NoCaseta% == null, '', 'No Caseta : %OfertaData:NoCaseta% ')",
+            "receptionnode1": "=IF(%OfertaData:ReceptionNode1% == null, '', ' %OfertaData:ReceptionNode1% ')",
+            "receptionnode2": "=IF(%OfertaData:ReceptionNode2% == null, '', ' %OfertaData:ReceptionNode2% ')",
+            "receptionnode3": "=IF(%OfertaData:ReceptionNode3% == null, '', ' %OfertaData:ReceptionNode3% ')"
+        },
+        "label": "SetResumen",
+        "message": {
+        },
+        "pubsub": false,
+        "show": null,
+        "showPersistentComponent": [
+            false,
+            false
+        ],
+        "ssm": false,
+        "wpm": false
+    },
+    "%vlocity_namespace%__ReusableOmniScript__c": false,
+    "%vlocity_namespace%__Type__c": "Set Values",
+    "CurrencyIsoCode": "MXN",
+    "Name": "SetResumen",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__Element__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__Element__c/%vlocity_namespace%__OmniScript__c/OSFMX/CreateGasQuote/Spanish/SetResumen"
+}

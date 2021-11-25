@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssignmentRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignmentRule>
+        <fullName>Regla Asignación Casos Engie</fullName>
+        <active>true</active>
+        <ruleEntry>
+            <assignedTo>OSFMX_Cobranza_C1</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Cobranza,Creación Caso de Cobranza</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Status</field>
+                <operation>equals</operation>
+                <value>Nuevo</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.OSFMX_Society__c</field>
+                <operation>equals</operation>
+                <value>MX02-Consorcio Mexi Gas SA,MX05-Tractebel DGJ SA DE CV,MX06-Tractebel Digaqro,MX12-Tractebel GNP SA DE CV,MX16-Natgasmex SA de CV,MX24-Tamauligas SA de CV</value>
+            </criteriaItems>
+            <template>OSFMX_Template_Folder/OSFMX_Notificacion_de_asignacion_de_caso</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>OSFMX_Cobranza_C4</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Cobranza,Creación Caso de Cobranza</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Status</field>
+                <operation>equals</operation>
+                <value>Nuevo</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.OSFMX_Society__c</field>
+                <operation>equals</operation>
+                <value>MX10-Energía Mayakan SA de RL,MX13-Gasoductos del Bajío,MX15-Tractebel Energía de Mont,MX17-Tractebel Energia de Panu,MX21-Energia Natural Peninsula,MX25-GDF Suez México Comercial,MX38-TAG Pipelines Sur,MX39-Servicios y Energía México</value>
+            </criteriaItems>
+            <template>OSFMX_Template_Folder/OSFMX_Notificacion_de_asignacion_de_caso</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>OSFMX_CobranzaCasosNoAsignados</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.Status</field>
+                <operation>equals</operation>
+                <value>Nuevo</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Cobranza,Creación Caso de Cobranza</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>OSFMX_FacturacionF1</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Creación Caso de Facturación</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Status</field>
+                <operation>equals</operation>
+                <value>Nuevo</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.OSFMX_Society__c</field>
+                <operation>equals</operation>
+                <value>MX05-Tractebel DGJ SA DE CV</value>
+            </criteriaItems>
+            <template>OSFMX_Template_Folder/OSFMX_Notificacion_de_asignacion_de_caso</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>OSFMX_FacturacionF2</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Creación Caso de Facturación</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Status</field>
+                <operation>equals</operation>
+                <value>Nuevo</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.OSFMX_Society__c</field>
+                <operation>equals</operation>
+                <value>MX02-Consorcio Mexi Gas SA</value>
+            </criteriaItems>
+            <template>OSFMX_Template_Folder/OSFMX_Notificacion_de_asignacion_de_caso</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>OSFMX_FacturacionF3</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Creación Caso de Facturación</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Status</field>
+                <operation>equals</operation>
+                <value>Nuevo</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.OSFMX_Society__c</field>
+                <operation>equals</operation>
+                <value>MX24-Tamauligas SA de CV</value>
+            </criteriaItems>
+            <template>OSFMX_Template_Folder/OSFMX_Notificacion_de_asignacion_de_caso</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>OSFMX_FacturacionF4</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>1 AND 2 AND (3 OR 4)</booleanFilter>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Creación Caso de Facturación</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Status</field>
+                <operation>equals</operation>
+                <value>Nuevo</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.OSFMX_Society__c</field>
+                <operation>equals</operation>
+                <value>MX06-Tractebel Digaqro,MX10-Energía Mayakan SA de RL,MX12-Tractebel GNP SA DE CV,MX13-Gasoductos del Bajío,MX15-Tractebel Energía de Mont,MX16-Natgasmex SA de CV</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.OSFMX_Society__c</field>
+                <operation>equals</operation>
+                <value>MX17-Tractebel Energia de Panu,MX21-Energia Natural Peninsula,MX25-GDF Suez México Comercial,MX38-TAG Pipelines Sur,MX39-Servicios y Energía México</value>
+            </criteriaItems>
+            <template>OSFMX_Template_Folder/OSFMX_Notificacion_de_asignacion_de_caso</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>OSFMX_FacturacionCasosNoAsignados</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.Status</field>
+                <operation>equals</operation>
+                <value>Nuevo</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Creación Caso de Facturación</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Creación Caso de Crédito y Riesgo</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Status</field>
+                <operation>equals</operation>
+                <value>Nuevo</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.OSFMX_IncidenceType__c</field>
+                <operation>equals</operation>
+                <value>Solicitud de condiciones especiales,Inexistencia de garantía,Entrega de Garantía,Solicitud de EEFF</value>
+            </criteriaItems>
+        </ruleEntry>
+    </assignmentRule>
+</AssignmentRules>

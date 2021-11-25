@@ -1,0 +1,11 @@
+{
+    "StepUpdateOpportunity": {
+        "CloseDate": "2021-03-04",
+        "CurrentStatus": "test",
+        "CurrentStatusDate": "2021-02-03",
+        "NextActivity": "test",
+        "NextActivityDate": "2021-02-11"
+    },
+    "opportunityId": "006c000000TkUqfAAF",
+    "quoteId": "0Q0c0000000iEI8CAM"
+}

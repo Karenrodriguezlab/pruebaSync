@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SolonumeroCodigoPostalCotizarGasNat</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(NOT(ISBLANK(OSFMX_NewBusinessPostalCode__c)),NOT(ISNUMBER(OSFMX_NewBusinessPostalCode__c)))</errorConditionFormula>
+    <errorDisplayField>OSFMX_NewBusinessPostalCode__c</errorDisplayField>
+    <errorMessage>Debe ingresar valores numéricos.</errorMessage>
+</ValidationRule>

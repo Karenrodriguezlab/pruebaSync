@@ -1,0 +1,20 @@
+<p>&nbsp;</p>
+<div><img style="max-width: 607.377px; width: 177px; height: 87px;" title="Mexcom Ok" src="https://engielatam--devmexico--c.documentforce.com/sfc/dist/version/renditionDownload?rendition=ORIGINAL_Png&versionId=068c0000001hKcj&operationContext=DELIVERY&contentId=05Tc0000007S8rM&page=0&d=/a/c0000000AHr0/QDsg.TdUffCDXJTPitacftWuACVw6FKAJaD.sHanapE&oid=00Dc0000003wiic&dpt=null&viewId=" alt="Mexcom Ok" /></div>
+<div style="text-align: center;"><span style="font-family: Arial, Helvetica, sans-serif;"><em><strong><span style="font-size: 16px;"><span style="font-style: normal;"><span style="font-variant-ligatures: normal;"><span style="font-weight: 400;"><span style="white-space: normal;"><span style="text-decoration-thickness: initial;"><span style="text-decoration-style: initial;"><span style="text-decoration-color: initial;"><span style="font-family: arial; font-size: 12pt;"><span style="font-size: 12pt;"><strong><span style="color: #2980b9;">Notificaci&oacute;n de Oferta Aprobada</span></strong></span></span></span></span></span></span></span></span></span></span></strong></em></span></div>
+<div style="text-align: center;">&nbsp;</div>
+<div>
+<p>Estimad@&nbsp;<strong>{!Quote.OwnerFullName},</strong> su oferta&nbsp;<strong>{!Quote.Name}</strong>&nbsp;se encuentra aprobada y lista para enviar al cliente en SalesForce.&nbsp;</p>
+<p><br />Los comentarios del aprobador <strong>{!ApprovalRequest.Process_Approver}</strong> son:&nbsp;<br /><strong>{!ApprovalRequest.Comments}</strong><br /><br />"Al ser unánime la aprobación, solo se envían los comentarios antes descritos. Si desea consultar los comentarios del primer aprobador consulte el registro de oferta"&nbsp;<br /><strong></strong></p>
+<p><br />N&uacute;mero de Oferta:&nbsp;<strong>{!Quote.QuoteNumber}</strong></p>
+</div>
+<div>&nbsp;</div>
+<div><a style="font-size: 12pt; font-family: Arial, Helvetica, sans-serif;" href="{!Quote.Link}">Si requiere consultar la oferta en SalesForce de click AQU&Iacute;</a></div>
+<div>&nbsp;</div>
+<div><img style="max-width: 607.377px; width: 174px; height: 87px;" title="Engie jpg" src="https://engielatam--devmexico--c.documentforce.com/file-asset-public/Engie_jpg1?oid=00Dc0000003wiic" alt="Engie jpg" /></div>
+<div style="width: 800px; margin: 0 auto;">
+<div>
+<div>&nbsp;</div>
+</div>
+</div>
+<div id="" style="left: 588.182px; top: 693.153px;">&nbsp;</div>
+<div id="" style="left: 588.182px; top: 693.153px;">&nbsp;</div>

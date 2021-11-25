@@ -1,0 +1,78 @@
+{
+    "dataSource": {
+        "type": null,
+        "value": {
+            "body": "{\"FirstName\":\"Pat\"}"
+        }
+    },
+    "filter": {
+    },
+    "sessionVars": [
+        {
+            "name": "Tab",
+            "val": "\"Billing\""
+        }
+    ],
+    "states": [
+        {
+            "actionCtxId": "['AccountId']",
+            "conditions": {
+                "group": [
+                    {
+                        "field": "$scope.data.status",
+                        "operator": "===",
+                        "type": "system",
+                        "value": "'active'"
+                    }
+                ]
+            },
+            "definedActions": {
+                "actions": [
+                    {
+                        "collapse": true,
+                        "hasExtraParams": false,
+                        "id": "Investigate Bill",
+                        "isCustomAction": false,
+                        "type": "Vlocity Action"
+                    },
+                    {
+                        "collapse": true,
+                        "hasExtraParams": false,
+                        "id": "Paperless Bill",
+                        "isCustomAction": false,
+                        "type": "Vlocity Action"
+                    },
+                    {
+                        "collapse": true,
+                        "conditions": {
+                            "group": [
+                            ]
+                        },
+                        "hasExtraParams": false,
+                        "id": "Enable Auto-Pay",
+                        "isCustomAction": false,
+                        "type": "Vlocity Action"
+                    },
+                    {
+                        "collapse": true,
+                        "displayName": "Crear Oportunidad",
+                        "hasExtraParams": false,
+                        "iconName": "icon-v-document1-line",
+                        "id": "CrearOportunidad",
+                        "isCustomAction": false,
+                        "type": "Vlocity Action"
+                    }
+                ]
+            },
+            "fields": [
+            ],
+            "isSmartAction": false,
+            "name": "active",
+            "sObjectType": "Account",
+            "smartAction": {
+            },
+            "templateUrl": "vpl-energy-card--assistant-actions"
+        }
+    ],
+    "title": "Billing Actions"
+}

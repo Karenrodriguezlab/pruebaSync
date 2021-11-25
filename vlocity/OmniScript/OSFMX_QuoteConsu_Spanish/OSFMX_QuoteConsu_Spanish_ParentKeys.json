@@ -1,0 +1,6 @@
+[
+    "DataRaptor/DRExtractVolatilidadManual",
+    "DataRaptor/DRPostUpdateConsum",
+    "DataRaptor/DRPostUpdateVolatilidad",
+    "DataRaptor/DRTGetConsum"
+]

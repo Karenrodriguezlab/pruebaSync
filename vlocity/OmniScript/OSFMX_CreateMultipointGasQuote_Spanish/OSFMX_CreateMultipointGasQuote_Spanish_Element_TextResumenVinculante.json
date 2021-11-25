@@ -1,0 +1,52 @@
+{
+    "%vlocity_namespace%__Active__c": true,
+    "%vlocity_namespace%__OmniScriptId__c": {
+        "Name": "CreateMultipointGasQuote",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__OmniScript__c/OSFMX/CreateMultipointGasQuote/Spanish",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OmniScript__c"
+    },
+    "%vlocity_namespace%__ParentElementId__c": {
+        "%vlocity_namespace%__OmniScriptId__c": {
+            "Name": "CreateMultipointGasQuote",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__OmniScript__c/OSFMX/CreateMultipointGasQuote/Spanish",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__OmniScript__c"
+        },
+        "Name": "Resumen",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__Element__c/%vlocity_namespace%__OmniScript__c/OSFMX/CreateMultipointGasQuote/Spanish/Resumen",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__Element__c"
+    },
+    "%vlocity_namespace%__ParentElementName__c": "Resumen",
+    "%vlocity_namespace%__ParentElementType__c": "Step",
+    "%vlocity_namespace%__PropertySet__c": {
+        "HTMLTemplateId": "",
+        "controlWidth": 12,
+        "dataJSON": false,
+        "disOnTplt": false,
+        "label": "TextResumen",
+        "sanitize": false,
+        "show": {
+            "group": {
+                "operator": "AND",
+                "rules": [
+                    {
+                        "condition": "=",
+                        "data": "Vinculante",
+                        "field": "QuoteType"
+                    }
+                ]
+            }
+        },
+        "text": "<p><strong><span style=\"color: #ff6600;\">Validar que los campos est&eacute;n correctos</span></strong></p>\n<p>&nbsp;Nombre de la Oportunidad : %OportunidadName%</p>\n<p>&nbsp;Raz&oacute;n social : %AccountDataOferta:RazonSocial%</p>\n<p>&nbsp;Nombre Comercial :&nbsp; %AccountDataOferta:NombreComercial%</p>\n<p>&nbsp;Tipo vinculaci&oacute;n : %QuoteType%</p>\n<p>&nbsp;RFC : %AccountDataOferta:RFC%</p>\n<p>&nbsp;Sector :&nbsp; %AccountDataOferta:GiroName%</p>\n<p>&nbsp;Nombre de la Oferta&nbsp; :&nbsp; %OfertaData:Nombre%</p>\n<p>&nbsp;%especificacionR%</p>\n<p>&nbsp;%basefirmeR%</p>\n<p>&nbsp;%baseinterrumpibleR%</p>\n<p>&nbsp;%descproductoR%</p>\n<p>&nbsp;Fecha de inicio del suministro:&nbsp; %StepOfertaData:OfertaData:FechaInicioFormat%</p>\n<p>&nbsp;Plazo del suministro (meses):&nbsp; %StepOfertaData:OfertaData:PlazoSuministro%</p>\n<p>&nbsp;Fecha fin del suministro: %StepOfertaData:OfertaData:FechaFinFormat%</p>\n<p>&nbsp;%consideracionR%</p>\n<p>&nbsp;%montoinfraestructuraR%</p>\n<p>Nodo Recepci&oacute;n 1- Nodo Entrega 1-CMD 1: %receptionnode1%</p>\n<p>Nodo Recepci&oacute;n 2- Nodo Entrega 2-CMD 2: %receptionnode2%</p>\n<p>Nodo Recepci&oacute;n 3- Nodo Entrega 3-CMD 3: %receptionnode3%</p>\n<p></p>",
+        "textKey": ""
+    },
+    "%vlocity_namespace%__ReusableOmniScript__c": false,
+    "%vlocity_namespace%__Type__c": "Text Block",
+    "CurrencyIsoCode": "MXN",
+    "Name": "TextResumenVinculante",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__Element__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__Element__c/%vlocity_namespace%__OmniScript__c/OSFMX/CreateMultipointGasQuote/Spanish/TextResumenVinculante"
+}

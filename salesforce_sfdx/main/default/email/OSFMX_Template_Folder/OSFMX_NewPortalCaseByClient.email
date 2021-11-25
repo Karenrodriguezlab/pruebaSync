@@ -1,0 +1,22 @@
+<div><img style="max-width: 481.597px; width: 178.993px; height: 90px;" title="Engie jpg" src="https://engielatam--devmexico--c.documentforce.com/file-asset-public/Engie_jpg1?oid=00Dc0000003wiic" alt="Engie jpg" /></div>
+<div style="text-align: center;">&nbsp;</div>
+<div><span style="font-family: arial;"><span style="font-family: arial;"><span style="font-family: arial;"><span style="font-size: 12pt;">Estimad@ <strong>{!Contact.Name}</strong></span></span></span></span></div>
+<div>&nbsp;</div>
+<div><span style="font-family: arial;"><span style="font-family: arial;"><span style="font-family: arial;"><span style="font-size: 12pt;">Gracias por su comentario. En breve un ejecutivo de cuenta se pondr&aacute; en contacto con usted.</span></span></span></span></div>
+<div>&nbsp;</div>
+<div><span style="font-family: arial;"><span style="font-family: arial;"><span style="font-family: arial;"><span style="font-size: 12pt;">Aquí los detalles de su caso:&nbsp;</span></span></span></span></div>
+<div>&nbsp;</div>
+<div><span style="font-family: arial;"><span style="font-family: arial;"><span style="font-family: arial;"><span style="font-size: 12pt;">N&uacute;mero del caso:&nbsp;<strong>{!Case.CaseNumber}</strong></span></span></span></span></div>
+<div>&nbsp;</div>
+<div><span style="font-family: arial;"><span style="font-family: arial;"><span style="font-family: arial;"><span style="font-size: 12pt;">Motivo del contacto: <strong>{!Case.Reason}</strong></span></span></span></span></div>
+<div>&nbsp;</div>
+<div><span style="font-family: arial;"><span style="font-family: arial;"><span style="font-family: arial;"><span style="font-size: 12pt;">Mensaje: <strong>{!Case.Description}</strong></span></span></span></span></div>
+<div>&nbsp;</div>
+<div><span style="font-family: arial;"><span style="font-family: arial;"><span style="font-family: arial;"><span style="font-size: 12pt;">Tu Ejecutivo de Cuenta es:&nbsp;<strong>{!Account.OwnerFullName}</strong></span></span></span></span></div>
+<div>&nbsp;</div>
+<div><span style="font-family: arial;"><span style="font-family: arial;"><span style="font-family: arial;"><span style="font-size: 12pt;">Correo&nbsp;electr&oacute;nico:&nbsp;<strong>{!Case.OwnerEmail}</strong></span></span></span></span></div>
+<div>&nbsp;</div>
+<div><span style="font-family: arial;"><span style="font-family: arial;"><span style="font-family: arial;"><span style="font-size: 12pt;">Telefono celular: <strong>{!Case.OSFMX_CaseOwnerPhone__c}</strong><br /></span></span></span></span></div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div><span style="font-family: arial;"><span style="font-size: 12pt;"><img style="max-width: 481.597px; width: 178.993px; height: 90px;" title="Engie jpg" src="https://engielatam--devmexico--c.documentforce.com/file-asset-public/Engie_jpg1?oid=00Dc0000003wiic" alt="Engie jpg" /></span></span></div>

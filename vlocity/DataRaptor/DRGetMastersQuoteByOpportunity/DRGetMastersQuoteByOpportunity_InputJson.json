@@ -1,0 +1,26 @@
+{
+    "ContextId": null,
+    "Multipunto": {
+    },
+    "Unipunto": {
+        "LoopServicePoint": {
+            "LostOpportunity": {
+            },
+            "WonSyncUnipunto": {
+            },
+            "WonSyncUnipunto2": {
+            }
+        }
+    },
+    "timeStamp": null,
+    "userId": null,
+    "userName": null,
+    "userProfile": null,
+    "userTimeZone": null,
+    "vlcPersistentComponent": {
+    },
+    "vlcTimeTracking": {
+        "Multipunto": null,
+        "Unipunto": null
+    }
+}

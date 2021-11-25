@@ -1,0 +1,62 @@
+{
+    "GlobalKey__c": "vplEnergySavedOmniScriptStory/Accenture India/1/1592897414617",
+    "dataSource": {
+        "type": null
+    },
+    "enableLwc": true,
+    "filter": {
+        "['objAPIName']": "%vlocity_namespace%__OmniScriptInstance__c"
+    },
+    "states": [
+        {
+            "collapse": false,
+            "conditions": {
+                "group": [
+                    {
+                        "field": "$scope.data.status",
+                        "operator": "===",
+                        "type": "system",
+                        "value": "'active'"
+                    }
+                ]
+            },
+            "definedActions": {
+                "actions": [
+                ]
+            },
+            "fields": [
+                {
+                    "collapse": true,
+                    "displayLabel": "['subtitle']",
+                    "editing": false,
+                    "fieldType": "standard",
+                    "group": "Custom Properties",
+                    "label": "Status",
+                    "name": "['subtitle']",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "['highlight']",
+                    "editing": false,
+                    "fieldType": "standard",
+                    "group": "Custom Properties",
+                    "label": "OmniScript Type",
+                    "name": "['highlight']",
+                    "type": "string"
+                }
+            ],
+            "isSmartAction": false,
+            "lwc": {
+                "DeveloperName": "storyNormalState",
+                "Id": "0Rb3h000000Xu4DCAS",
+                "MasterLabel": "storyNormalState",
+                "name": "storyNormalState"
+            },
+            "name": "Active",
+            "smartAction": {
+            }
+        }
+    ],
+    "title": "Saved OmniScripts"
+}

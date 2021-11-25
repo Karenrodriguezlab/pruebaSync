@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>Edit</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>Gerente de Generación SYEM</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>Gerente de Generación SYEM</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
+    <parentRole>OSFMX_DirectoresMexComSYEM</parentRole>
+</Role>

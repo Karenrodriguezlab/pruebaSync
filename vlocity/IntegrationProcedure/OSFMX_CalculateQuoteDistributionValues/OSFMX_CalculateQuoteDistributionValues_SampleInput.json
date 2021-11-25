@@ -1,0 +1,11 @@
+{
+    "DataToCalculateValues": {
+        "consumoAnualEsperado": 4500,
+        "distribuidorTransportista": "Distribución CMG",
+        "ductoConexion": "Distribución Regulada",
+        "metroConexionNoEstandar": 121,
+        "plazoSuministro": 12,
+        "solucion": "Distribución + Comercialización",
+        "tipoSolucion": "Distribución de Gas Natural"
+    }
+}

@@ -1,0 +1,50 @@
+{
+    "Cards": [
+        "vpl-energy-assistant--icon",
+        "vpl-energy-assistant--outage",
+        "vpl-energy-assistant--billing-actions",
+        "vpl-energy-assistant--usage-actions",
+        "vpl-energy-assistant--profile-actions"
+    ],
+    "componentName": "cfVPLenergyVlocityAssistant",
+    "dataSource": {
+        "contextVariables": [
+            {
+                "name": "params.id",
+                "val": "a1M3i000000JbiLEAS"
+            }
+        ],
+        "type": "DataRaptor",
+        "value": {
+            "body": "{}",
+            "bundle": "VPL-GetAccountLastStatement",
+            "inputMap": {
+                "Id": "{{params.id}}"
+            },
+            "isReplace": "true",
+            "optionsMap": {
+                "vlcClass": "%vlocity_namespace%.IntegrationProcedureService"
+            },
+            "replayAll": "true",
+            "type": "pushTopic"
+        }
+    },
+    "previewType": "runTime",
+    "sessionVars": [
+    ],
+    "templates": {
+        "0": {
+            "templateUrl": "vpl-energy-canvas--assistant"
+        }
+    },
+    "workspace": [
+        "vpl-energy-assistant--icon/VPL/1/1553115458791",
+        "vpl-energy-assistant--outage/VPL/1/1553036726830",
+        "vpl-energy-assistant--overview-actions/VPL/1/1553038616398",
+        "vpl-energy-assistant--billing-actions/VPL/1/1553038643517",
+        "vpl-energy-assistant--billing-actions/VPL/2/1613533075970",
+        "vpl-energy-assistant--usage-actions/VPL/1/1553038677569",
+        "vpl-energy-assistant--profile-actions/VPL/1/1553038729330",
+        "vpl-energy--assistant-cost-contribution/vlocityDev/1/1555436543712"
+    ]
+}

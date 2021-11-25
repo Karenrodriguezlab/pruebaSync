@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ofertas_aprobadas</fullName>
+    <columns>QUOTE.NAME</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>OSFMX_QuotCreation__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>QUOTE.STATUS</field>
+        <operation>equals</operation>
+        <value>Aprobada</value>
+    </filters>
+    <label>Ofertas aprobadas</label>
+</ListView>

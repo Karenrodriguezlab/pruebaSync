@@ -1,0 +1,26 @@
+{
+    "%vlocity_namespace%__AdditionalInformation__c": "This VIP extracts account Notification Preferences",
+    "%vlocity_namespace%__CustomJavaScript__c": "VPL_GetAccountNotificationPrefDetails_SampleInput.json",
+    "%vlocity_namespace%__DisableMetadataCache__c": false,
+    "%vlocity_namespace%__ElementTypeToHTMLTemplateList__c": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "%vlocity_namespace%__Element__c": [
+        "VPL_GetAccountNotificationPrefDetails_Element_FetchAccount.json",
+        "VPL_GetAccountNotificationPrefDetails_Element_DRExtractAccountPreferences.json",
+        "VPL_GetAccountNotificationPrefDetails_Element_DRTransformAccPrefAttr.json",
+        "VPL_GetAccountNotificationPrefDetails_Element_SVAccountPreferenceDetails.json",
+        "VPL_GetAccountNotificationPrefDetails_Element_GetAccountPreferenceDetailsResponse.json"
+    ],
+    "%vlocity_namespace%__IsLwcEnabled__c": false,
+    "%vlocity_namespace%__IsProcedure__c": true,
+    "%vlocity_namespace%__IsReusable__c": false,
+    "%vlocity_namespace%__IsTest__c": false,
+    "%vlocity_namespace%__Language__c": "Procedure",
+    "%vlocity_namespace%__ProcedureKey__c": "VPL_GetAccountNotificationPrefDetails",
+    "%vlocity_namespace%__PropertySet__c": "VPL_GetAccountNotificationPrefDetails_PropertySet.json",
+    "%vlocity_namespace%__SubType__c": "GetAccountNotificationPrefDetails",
+    "%vlocity_namespace%__Type__c": "VPL",
+    "Name": "VPL-GetAccountNotificationPrefDetails",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__OmniScript__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__OmniScript__c/VPL/GetAccountNotificationPrefDetails/Procedure"
+}

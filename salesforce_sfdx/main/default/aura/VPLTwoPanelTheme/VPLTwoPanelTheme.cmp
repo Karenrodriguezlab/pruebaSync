@@ -1,0 +1,36 @@
+<aura:component implements="lightning:recordHomeTemplate" access="global" description="Collapsible two columns: Middle column is 75% width, left is 25% widths. No padding in between. ">
+    <aura:attribute name="left" type="Aura.Component[]" description="Collapsible left-sidebar region"/>
+    <aura:attribute name="main" type="Aura.Component[]" description="Collapsible main-sidebar region"/>
+    <aura:attribute name="isLeftSidebarCollapsed" type="Boolean" access="PRIVATE" default="false" />
+    <!-- Please be sure to set the API Version of the Aura Component to 41. -->
+	<style> 
+        .slds-template_default {
+        	padding: 0; 
+        }
+        .flexipageComponent:not(:last-child):not(:empty) {
+        	margin-bottom: 0; 
+        }
+    </style>
+    <div> 
+        <lightning:layout> 
+            <lightning:layoutItem class="{! v.isLeftSidebarCollapsed ? ' slds-hide' : '' + 'sidebarLayout leftPanel'}">
+                {!v.left}
+            </lightning:layoutItem>
+            
+            <lightning:layoutItem flexibility="no-flex">
+                <div class="slds-chevron">
+                    <lightning:buttonIcon onclick ="{!c.toggleSectionLeft}" 
+                                          variant="bare"
+                                          iconName="{! v.isLeftSidebarCollapsed ? 'utility:chevronright' : 'utility:chevronleft' }" 
+                                          alternativeText="{! v.isLeftSidebarCollapsed ? 'Expand/Collapse Sidebar' : 'Expand/Collapse Sidebar' }" />
+                </div>
+            </lightning:layoutItem>             
+            
+            <lightning:layoutItem class="mainLayout">
+                {!v.main}
+            </lightning:layoutItem>
+             
+        </lightning:layout>
+    </div> 
+    
+</aura:component>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>OSFMX_PortalLetterhead</letterhead>
+    <name>Modificación de datos en portal</name>
+    <style>formalLetter</style>
+    <subject>Información de usuario modificada</subject>
+    <textOnly>Estimad@ {!User.OSFMX_AccountOwnername__c} {!User.OSFMX_Accountownerlastname__c}
+
+
+Le informamos que su contacto {!User.Name} de la cuenta {!User.OSFMX_AccountBussinesName__c} ha modificado su información de contacto desde el Portal Mi Cuenta Empresa.
+
+
+Para consultar la información modificada haga click AQUÍ</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

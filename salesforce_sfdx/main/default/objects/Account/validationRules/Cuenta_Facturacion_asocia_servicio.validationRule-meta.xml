@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cuenta_Facturacion_asocia_servicio</fullName>
+    <active>true</active>
+    <description>Una cuenta de facturación SOLO se puede asociar a una cuenta de Negocio</description>
+    <errorConditionFormula>AND ( RecordType.Name = &quot;Billing&quot;, 
+  $Profile.Name &lt;&gt; &quot;Administrador del sistema&quot;, 
+  $Profile.Name &lt;&gt; &quot;System Administrator&quot;,
+  Parent.RecordType.Name &lt;&gt; &quot;Business&quot; )</errorConditionFormula>
+    <errorDisplayField>ParentId</errorDisplayField>
+    <errorMessage>Debes escoger una cuenta principal de Tipo Negocio</errorMessage>
+</ValidationRule>

@@ -1,0 +1,32 @@
+{
+    "Cards": [
+        "vpl-energy-billing--balance-table"
+    ],
+    "componentName": "cfVPLenergyBillingBalanceTable",
+    "dataSource": {
+        "contextVariables": [
+            {
+                "name": "params.id",
+                "val": "a1M3i000000JbeOEAS"
+            }
+        ],
+        "type": "DataRaptor",
+        "value": {
+            "body": "[\n    {\n      \"Date\": \"11/10/2018\",\n      \"Type\": \"Bill\",\n      \"Amount\": \"$173.06\",\n      \"Method\": \"---\",\n      \"Balance\": \"$285.03\"\n    },\n    {\n      \"Date\": \"10/10/2018\",\n      \"Type\": \"Bill\",\n      \"Amount\": \"$111.06\",\n      \"Method\": \"---\",\n      \"Balance\": \"$111.97\"\n    },\n    {\n      \"Date\": \"09/25/2018\",\n      \"Type\": \"Payment\",\n      \"Amount\": \"-$106.58.06\",\n      \"Method\": \"Visa 1234\",\n      \"Balance\": \"$0.00\"\n    },\n    {\n      \"Date\": \"09/10/2018\",\n      \"Type\": \"Bill\",\n      \"Amount\": \"$106.58\",\n      \"Method\": \"---\",\n      \"Balance\": \"$112.62\"\n    },\n    {\n      \"Date\": \"08/31/2018\",\n      \"Type\": \"Payment\",\n      \"Amount\": \"-$73.56\",\n      \"Method\": \"Visa 1234\",\n      \"Balance\": \"0.00\"\n    },\n    {\n      \"Date\": \"08/20/2018\",\n      \"Type\": \"Payment\",\n      \"Amount\": \"-$50.00\",\n      \"Method\": \"Visa 1234\",\n      \"Balance\": \"$73.56\"\n    },\n    {\n      \"Date\": \"08/10/2018\",\n      \"Type\": \"Bill\",\n      \"Amount\": \"$113.56\",\n      \"Method\": \"---\",\n      \"Balance\": \"$285.03\"\n    },\n    {\n      \"Date\": \"11/10/2018\",\n      \"Type\": \"Bill\",\n      \"Amount\": \"$173.06\",\n      \"Method\": \"---\",\n      \"Balance\": \"$285.03\"\n    },\n    {\n      \"Date\": \"11/10/2018\",\n      \"Type\": \"Bill\",\n      \"Amount\": \"$173.06\",\n      \"Method\": \"---\",\n      \"Balance\": \"$285.03\"\n    },\n    {\n      \"Date\": \"11/10/2018\",\n      \"Type\": \"Bill\",\n      \"Amount\": \"$173.06\",\n      \"Method\": \"---\",\n      \"Balance\": \"$285.03\"\n    }\n  ]",
+            "bundle": "VPL-AccountBillingStatement",
+            "inputMap": {
+                "Id": "{{params.id}}"
+            },
+            "resultVar": ""
+        }
+    },
+    "previewType": "runTime",
+    "templates": {
+        "0": {
+            "templateUrl": "vpl-energy-canvas--table"
+        }
+    },
+    "workspace": [
+        "vpl-energy-billing--balance-table/VPL/1/1550002255133"
+    ]
+}

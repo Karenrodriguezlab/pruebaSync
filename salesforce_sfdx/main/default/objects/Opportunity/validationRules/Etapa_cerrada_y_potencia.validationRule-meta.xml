@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Etapa_cerrada_y_potencia</fullName>
+    <active>true</active>
+    <description>En las etapas de la oportunidad Cerrada Ganada y Oferta Presentadas se pide llenar la sección completa de consumo, tener un producto asociado a la oportunidad con una oferta sincronizada.</description>
+    <errorConditionFormula>AND($Profile.Name &lt;&gt; &quot;Administrador del sistema&quot;,$Profile.Name &lt;&gt; &quot;System Administrator&quot;,or(
+and(RecordType.Name = &apos;Electricidad&apos;,isblank(OSFMX_ExpectedAnnualConsumptionMWhByYear__c	),text(StageName)=&quot;Oferta Presentada&quot;), 
+and(RecordType.Name = &apos;Electricidad&apos;,isblank(OSFMX_ExpectedAnnualConsumptionMWhByYear__c	),text(StageName)=&quot;Cerrada ganada&quot;), 
+and(RecordType.Name = &apos;Electricidad&apos;,ISBLANK(OSFMX_RequiredPower__c),text(StageName)=&quot;Oferta Presentada&quot;), 
+and(RecordType.Name = &apos;Electricidad&apos;,ISBLANK(OSFMX_RequiredPower__c),text(StageName)=&quot;Cerrada ganada&quot;) 
+))</errorConditionFormula>
+    <errorMessage>En las etapas de la oportunidad &quot;Cerrada Ganada&quot; y &quot;Oferta Presentada&quot; se pide llenar la sección completa de consumo, previo al cambio de etapa.</errorMessage>
+</ValidationRule>

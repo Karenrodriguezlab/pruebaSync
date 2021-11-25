@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Valida_RecordType_Colombia</fullName>
+    <active>true</active>
+    <description>Valida correspondencia entre tipos de registro de la oportunidad y la oferta</description>
+    <errorConditionFormula>$Profile.Name &lt;&gt; &quot;System Administrator&quot;&amp;&amp;
+((RecordType.DeveloperName=&apos;Oferta_Energia_Colombia&apos;)||(RecordType.DeveloperName=&apos;Oferta_Soluciones_Colombia&apos;))&amp;&amp;
+if(AND(Opportunity.RecordType.Name = &apos;Oportunidad Energía Colombia&apos;, RecordType.Name = &apos;Oferta Energía Colombia&apos;),false,
+if(AND(Opportunity.RecordType.Name = &apos;Oportunidad Soluciones Colombia&apos;, RecordType.Name = &apos;Oferta Soluciones Colombia&apos;),false,true))</errorConditionFormula>
+    <errorMessage>Debe seleccionar el tipo de registro correspondiente a la oportunidad.</errorMessage>
+</ValidationRule>

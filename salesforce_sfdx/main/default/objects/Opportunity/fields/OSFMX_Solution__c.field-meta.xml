@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OSFMX_Solution__c</fullName>
+    <externalId>false</externalId>
+    <label>Solución</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>OSFMX_SolutionType__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>All in: Compresión, transporte y descompresión</fullName>
+                <default>false</default>
+                <label>All in: Compresión, transporte y descompresión</label>
+            </value>
+            <value>
+                <fullName>Auditoría de Eficiencia Energética</fullName>
+                <default>false</default>
+                <label>Auditoría de Eficiencia Energética</label>
+            </value>
+            <value>
+                <fullName>Cogeneración (on site)</fullName>
+                <default>false</default>
+                <label>Cogeneración (on site)</label>
+            </value>
+            <value>
+                <fullName>Comercialización + Conducción</fullName>
+                <default>false</default>
+                <label>Comercialización + Conducción</label>
+            </value>
+            <value>
+                <fullName>Comercialización a través de un tercero</fullName>
+                <default>false</default>
+                <label>Comercialización a través de un tercero</label>
+            </value>
+            <value>
+                <fullName>Compresión molécula</fullName>
+                <default>false</default>
+                <label>Compresión molécula</label>
+            </value>
+            <value>
+                <fullName>Conducción</fullName>
+                <default>false</default>
+                <label>Conducción</label>
+            </value>
+            <value>
+                <fullName>Conexiones Gas Natural</fullName>
+                <default>false</default>
+                <label>Conexiones Gas Natural</label>
+            </value>
+            <value>
+                <fullName>Corporate PPA Renovable</fullName>
+                <default>false</default>
+                <label>Corporate PPA Renovable</label>
+            </value>
+            <value>
+                <fullName>Corporate PPA Térmico</fullName>
+                <default>false</default>
+                <label>Corporate PPA Térmico</label>
+            </value>
+            <value>
+                <fullName>Distribución + Comercialización</fullName>
+                <default>false</default>
+                <label>Distribución + Comercialización</label>
+            </value>
+            <value>
+                <fullName>Distribución Simple</fullName>
+                <default>false</default>
+                <label>Distribución Simple</label>
+            </value>
+            <value>
+                <fullName>Ducto Dedicado</fullName>
+                <default>false</default>
+                <label>Ducto Dedicado</label>
+            </value>
+            <value>
+                <fullName>ESCO</fullName>
+                <default>false</default>
+                <label>ESCO</label>
+            </value>
+            <value>
+                <fullName>EV Chargers</fullName>
+                <default>false</default>
+                <label>EV Chargers</label>
+            </value>
+            <value>
+                <fullName>EV Chargers + Flotas</fullName>
+                <default>false</default>
+                <label>EV Chargers + Flotas</label>
+            </value>
+            <value>
+                <fullName>Excedentes</fullName>
+                <default>false</default>
+                <label>Excedentes</label>
+            </value>
+            <value>
+                <fullName>Flotas de Vehículos Eléctricos</fullName>
+                <default>false</default>
+                <label>Flotas de Vehículos Eléctricos</label>
+            </value>
+            <value>
+                <fullName>Flotas de Vehículos GNV</fullName>
+                <default>false</default>
+                <label>Flotas de Vehículos GNV</label>
+            </value>
+            <value>
+                <fullName>Hard Facility Management</fullName>
+                <default>false</default>
+                <label>Hard Facility Management</label>
+            </value>
+            <value>
+                <fullName>HVAC Retrofit</fullName>
+                <default>false</default>
+                <label>HVAC Retrofit</label>
+            </value>
+            <value>
+                <fullName>Instalación estación GNV onsite</fullName>
+                <default>false</default>
+                <label>Instalación estación GNV onsite</label>
+            </value>
+            <value>
+                <fullName>Integrated Facility Management</fullName>
+                <default>false</default>
+                <label>Integrated Facility Management</label>
+            </value>
+            <value>
+                <fullName>MEM</fullName>
+                <default>false</default>
+                <label>MEM</label>
+            </value>
+            <value>
+                <fullName>Molécula pura</fullName>
+                <default>false</default>
+                <label>Molécula pura</label>
+            </value>
+            <value>
+                <fullName>O&amp;M Industrial</fullName>
+                <default>false</default>
+                <label>O&amp;M Industrial</label>
+            </value>
+            <value>
+                <fullName>O&amp;M Plantas Fotovoltaicas</fullName>
+                <default>false</default>
+                <label>O&amp;M Plantas Fotovoltaicas</label>
+            </value>
+            <value>
+                <fullName>PPA Renovable</fullName>
+                <default>false</default>
+                <label>PPA Renovable</label>
+            </value>
+            <value>
+                <fullName>PPA Térmico</fullName>
+                <default>false</default>
+                <label>PPA Térmico</label>
+            </value>
+            <value>
+                <fullName>Rooftop PV (on site)</fullName>
+                <default>false</default>
+                <label>Rooftop PV (on site)</label>
+            </value>
+            <value>
+                <fullName>Soft Facility Management</fullName>
+                <default>false</default>
+                <label>Soft Facility Management</label>
+            </value>
+            <value>
+                <fullName>Subastas</fullName>
+                <default>false</default>
+                <label>Subastas</label>
+            </value>
+            <value>
+                <fullName>PPA Estandar</fullName>
+                <default>false</default>
+                <label>PPA Estandar</label>
+            </value>
+            <value>
+                <fullName>Green PPA-Solar</fullName>
+                <default>false</default>
+                <label>Green PPA-Solar</label>
+            </value>
+            <value>
+                <fullName>Green PPA-Hydro</fullName>
+                <default>false</default>
+                <label>Green PPA-Hydro</label>
+            </value>
+            <value>
+                <fullName>Green PPA-Wind</fullName>
+                <default>false</default>
+                <label>Green PPA-Wind</label>
+            </value>
+            <value>
+                <fullName>Green PPA - Solar</fullName>
+                <default>false</default>
+                <label>Green PPA - Solar</label>
+            </value>
+            <value>
+                <fullName>Green PPA - Hydro</fullName>
+                <default>false</default>
+                <label>Green PPA - Hydro</label>
+            </value>
+            <value>
+                <fullName>Green PPA - Wind</fullName>
+                <default>false</default>
+                <label>Green PPA - Wind</label>
+            </value>
+            <value>
+                <fullName>PPA</fullName>
+                <default>false</default>
+                <label>PPA</label>
+            </value>
+            <value>
+                <fullName>PPA Green</fullName>
+                <default>false</default>
+                <label>PPA Green</label>
+            </value>
+            <value>
+                <fullName>PPA+PV</fullName>
+                <default>false</default>
+                <label>PPA+PV</label>
+            </value>
+            <value>
+                <fullName>Green Corporate PPA</fullName>
+                <default>false</default>
+                <label>Green Corporate PPA</label>
+            </value>
+            <value>
+                <fullName>Generación OnSite</fullName>
+                <default>false</default>
+                <label>Generación OnSite</label>
+            </value>
+            <value>
+                <fullName>HVAC&amp;DHC</fullName>
+                <default>false</default>
+                <label>HVAC&amp;DHC</label>
+            </value>
+            <value>
+                <fullName>Agua</fullName>
+                <default>false</default>
+                <label>Agua</label>
+            </value>
+            <value>
+                <fullName>TX</fullName>
+                <default>false</default>
+                <label>TX</label>
+            </value>
+            <value>
+                <fullName>PSR</fullName>
+                <default>false</default>
+                <label>PSR</label>
+            </value>
+            <value>
+                <fullName>Ducto</fullName>
+                <default>false</default>
+                <label>Ducto</label>
+            </value>
+            <value>
+                <fullName>Otros</fullName>
+                <default>false</default>
+                <label>Otros</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Movilidad Eléctrica</controllingFieldValue>
+            <valueName>EV Chargers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Movilidad Eléctrica</controllingFieldValue>
+            <valueName>EV Chargers + Flotas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Movilidad Eléctrica</controllingFieldValue>
+            <valueName>Flotas de Vehículos Eléctricos</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Suministro Eléctrico MX</controllingFieldValue>
+            <valueName>Excedentes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Suministro Eléctrico MX</controllingFieldValue>
+            <valueName>MEM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Movilidad Eléctrica</controllingFieldValue>
+            <controllingFieldValue>Suministro Eléctrico Latam</controllingFieldValue>
+            <controllingFieldValue>Soluciones</controllingFieldValue>
+            <controllingFieldValue>Transmisión</controllingFieldValue>
+            <controllingFieldValue>Gas Chile</controllingFieldValue>
+            <controllingFieldValue>Comercialización de Gas Natural</controllingFieldValue>
+            <controllingFieldValue>Corporate PPA</controllingFieldValue>
+            <controllingFieldValue>Distribución de Gas Natural</controllingFieldValue>
+            <controllingFieldValue>Ducto Dedicado</controllingFieldValue>
+            <controllingFieldValue>Eficiencia Energética</controllingFieldValue>
+            <controllingFieldValue>Generación Onsite</controllingFieldValue>
+            <controllingFieldValue>GNC</controllingFieldValue>
+            <controllingFieldValue>GNV</controllingFieldValue>
+            <controllingFieldValue>Instalación</controllingFieldValue>
+            <controllingFieldValue>Mantenimiento</controllingFieldValue>
+            <valueName>Otros</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Suministro Eléctrico MX</controllingFieldValue>
+            <controllingFieldValue>Suministro Eléctrico Latam</controllingFieldValue>
+            <valueName>PPA Renovable</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Suministro Eléctrico MX</controllingFieldValue>
+            <valueName>PPA Térmico</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Suministro Eléctrico MX</controllingFieldValue>
+            <valueName>Subastas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Suministro Eléctrico Latam</controllingFieldValue>
+            <valueName>PPA Estandar</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Suministro Eléctrico Latam</controllingFieldValue>
+            <valueName>Green PPA-Solar</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Suministro Eléctrico Latam</controllingFieldValue>
+            <valueName>Green PPA-Hydro</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Suministro Eléctrico Latam</controllingFieldValue>
+            <valueName>Green PPA-Wind</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Suministro Eléctrico Latam</controllingFieldValue>
+            <valueName>PPA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Suministro Eléctrico Latam</controllingFieldValue>
+            <valueName>PPA Green</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Suministro Eléctrico Latam</controllingFieldValue>
+            <valueName>PPA+PV</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Suministro Eléctrico Latam</controllingFieldValue>
+            <valueName>Green Corporate PPA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soluciones</controllingFieldValue>
+            <valueName>Generación OnSite</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soluciones</controllingFieldValue>
+            <valueName>HVAC&amp;DHC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soluciones</controllingFieldValue>
+            <valueName>Agua</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transmisión</controllingFieldValue>
+            <valueName>TX</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Gas Chile</controllingFieldValue>
+            <valueName>PSR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Gas Chile</controllingFieldValue>
+            <valueName>Ducto</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Comercialización de Gas Natural</controllingFieldValue>
+            <valueName>Comercialización + Conducción</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Comercialización de Gas Natural</controllingFieldValue>
+            <valueName>Molécula pura</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Corporate PPA</controllingFieldValue>
+            <valueName>Corporate PPA Renovable</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Corporate PPA</controllingFieldValue>
+            <valueName>Corporate PPA Térmico</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Distribución de Gas Natural</controllingFieldValue>
+            <valueName>Distribución + Comercialización</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Distribución de Gas Natural</controllingFieldValue>
+            <valueName>Distribución Simple</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ducto Dedicado</controllingFieldValue>
+            <valueName>Ducto Dedicado</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Eficiencia Energética</controllingFieldValue>
+            <valueName>Auditoría de Eficiencia Energética</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Eficiencia Energética</controllingFieldValue>
+            <valueName>ESCO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Generación Onsite</controllingFieldValue>
+            <valueName>Cogeneración (on site)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Generación Onsite</controllingFieldValue>
+            <valueName>Rooftop PV (on site)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GNC</controllingFieldValue>
+            <valueName>All in: Compresión, transporte y descompresión</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GNC</controllingFieldValue>
+            <valueName>Comercialización a través de un tercero</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GNC</controllingFieldValue>
+            <valueName>Compresión molécula</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GNV</controllingFieldValue>
+            <valueName>Flotas de Vehículos GNV</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GNV</controllingFieldValue>
+            <valueName>Instalación estación GNV onsite</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Instalación</controllingFieldValue>
+            <valueName>Conexiones Gas Natural</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Instalación</controllingFieldValue>
+            <valueName>HVAC Retrofit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mantenimiento</controllingFieldValue>
+            <valueName>Hard Facility Management</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mantenimiento</controllingFieldValue>
+            <valueName>Integrated Facility Management</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mantenimiento</controllingFieldValue>
+            <valueName>O&amp;M Industrial</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mantenimiento</controllingFieldValue>
+            <valueName>O&amp;M Plantas Fotovoltaicas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mantenimiento</controllingFieldValue>
+            <valueName>Soft Facility Management</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Plantilla para oferta Imposible</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Oferta Imposible</name>
+    <style>none</style>
+    <subject>{!Quote.OSFMX_BusinessName__c} | Oferta Imposible</subject>
+    <textOnly>Oferta Imposible
+Estimad@ {!Quote.OwnerFullName} le informamos que su oferta {!Quote.Name} ha sido cambiada a estatus IMPOSIBLE por el equipo de MexCom. Por favor revisar los siguientes comentarios:
+
+{!Quote.OSFMX_ImpossibleComments__c}
+
+Detalles de la oferta:
+
+- Razón Social: {!Quote.OSFMX_BusinessName__c}
+
+- Nombre de la Oferta: {!Quote.Name}
+
+- Número de la Oferta: {!Quote.QuoteNumber}
+
+- Tipo de Oferta: {!Quote.OSFMX_OfferType__c}
+
+
+Si requiere consultar la oferta en SalesForce de click AQUÍ
+
+
+Engie México</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,19 @@
+{
+    "opportunity": [
+        {
+            "CurrencyIsoCode": "MXN",
+            "Id": "006c000000V5WuyAAF",
+            "OSFMX_ContractStatus__c": "En Proceso",
+            "OSFMX_CurrentStatus__c": "test",
+            "OSFMX_DeliveryTime__c": 12,
+            "OSFMX_ExpConsGjByYear__c": 4500,
+            "OSFMX_Maximumdailycapacity__c": 50,
+            "OSFMX_NextActivityDate__c": "2021-07-14",
+            "OSFMX_NextActivity__c": "test",
+            "OSFMX_SupplyStartDate__c": "2021-09-01",
+            "Probability": 50,
+            "RecordTypeId": "012c0000000E94aAAC",
+            "StageName": "Oferta Presentada"
+        }
+    ]
+}

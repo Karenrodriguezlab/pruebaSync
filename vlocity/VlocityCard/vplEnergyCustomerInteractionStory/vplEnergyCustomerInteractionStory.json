@@ -1,0 +1,51 @@
+{
+    "GlobalKey__c": "vplEnergyCustomerInteractionStory/Accenture India/1/1592897273356",
+    "dataSource": {
+        "type": null
+    },
+    "enableLwc": true,
+    "filter": {
+        "['objAPIName']": "%vlocity_namespace%__CustomerInteraction__c"
+    },
+    "states": [
+        {
+            "conditions": {
+                "group": [
+                    {
+                        "field": "$scope.data.status",
+                        "operator": "===",
+                        "type": "system",
+                        "value": "'active'"
+                    }
+                ]
+            },
+            "definedActions": {
+                "actions": [
+                ]
+            },
+            "fields": [
+                {
+                    "collapse": true,
+                    "displayLabel": "['highlight']",
+                    "editing": false,
+                    "fieldType": "standard",
+                    "group": "Custom Properties",
+                    "label": "Tipo",
+                    "name": "['highlight']",
+                    "type": "string"
+                }
+            ],
+            "isSmartAction": false,
+            "lwc": {
+                "DeveloperName": "storyNormalState",
+                "Id": "0Rb3h000000Xu4DCAS",
+                "MasterLabel": "storyNormalState",
+                "name": "storyNormalState"
+            },
+            "name": "Active",
+            "smartAction": {
+            }
+        }
+    ],
+    "title": "Customer Interactions"
+}

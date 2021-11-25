@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Todas_Cta_Facturacion</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ACCOUNT.RECORDTYPE</columns>
+    <columns>OSFMX_OwnerFullName__c</columns>
+    <columns>OSFMX_AccountContractID__c</columns>
+    <columns>PARENT_NAME</columns>
+    <columns>ACCOUNT.CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Account.vlocity_cmt__Billing</value>
+    </filters>
+    <label>Todas Cta. Facturación</label>
+</ListView>

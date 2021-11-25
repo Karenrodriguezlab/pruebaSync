@@ -1,0 +1,129 @@
+
+pipeline {
+  options {
+    disableConcurrentBuilds()
+  }
+  agent any
+  tools {nodejs "NodeJS_LATEST"}
+  stages {
+    stage('Validate Salesforce Delta') {
+      steps {
+        script{
+          echo 'Validating ...'
+          echo '####### Install Salesforce DX'
+          sh ('sfdx plugins:install salesforcedx@latest')
+          echo '####### Login salesforce'
+          if (env.BRANCH_NAME in ['master'] || env.CHANGE_TARGET in ['master']){
+            SALESFORCE_DESTINATION='SFDX_URL_PROD_RM'
+            TARGET_ENV="PRODUCTION"
+          }else if (env.BRANCH_NAME in ['release/uat'] || env.CHANGE_TARGET in ['release/uat']){
+            SALESFORCE_DESTINATION='SFDX_URL_UAT_RM'
+            TARGET_ENV="UAT"
+          }else{
+            echo "####### INVALID BRANCH or invalida destination branch."
+          }
+          echo "####### Target Environment -> $TARGET_ENV"
+          withCredentials([string(credentialsId: SALESFORCE_DESTINATION, variable: 'AUTH_URL')]) {
+            sh ('printf \"%s\" \"$AUTH_URL\" > sfdxFile')
+            sh ('sfdx force:auth:sfdxurl:store -d -a ALIAS -f sfdxFile')
+            sh ('rm -rf sfdxFile')
+            echo "####### Install Vlocity tools"
+            sh ('echo \"y\" | sfdx plugins:install vlocityestools')
+            echo "####### Creck folder for SF Delta Package"
+            FOLDER_EXISTS = sh (script: 'if [ -d salesforce_sfdx_delta ]; then echo true; else echo false; fi', returnStdout: true).trim()
+            if(FOLDER_EXISTS == "true"){
+              sh ('rm -rf salesforce_sfdx_delta')
+            }
+            echo "####### Create SF Delta Package"
+            sh ('sfdx vlocityestools:sfsource:createdeltapackage -u ALIAS -p cmt -d salesforce_sfdx')
+            if(env.CHANGE_ID){
+              echo "##############################################"
+              echo '####### Execute Salesforce validataion #######'
+              echo "##############################################"
+              FOLDER_EXISTS = sh (script: 'if [ -d salesforce_sfdx_delta ]; then echo true; else echo false; fi', returnStdout: true).trim()
+              if(FOLDER_EXISTS == "true"){
+                echo "####### Salesforce Validate"
+                sh ('sfdx force:source:deploy --sourcepath salesforce_sfdx_delta --targetusername ALIAS --verbose -w 60 -c -l RunLocalTests ')
+                }else{
+                  echo '####### NO SF DELTA-FOLDER FOUND'
+                }
+              }else{
+                echo '####### Salesforce Validation SKKIPED'
+              }
+            }
+            echo 'END - Validating ...'
+          }
+        }
+      }
+    stage('Deploy Salesforce Delta'){
+      steps{
+        script{
+          echo 'Salesforce Deploying ...'
+          if(env.BRANCH_NAME in ['release/uat', 'master']){
+            echo "#################################"
+            echo "####### Salesforce Deploy #######"
+            echo "#################################"
+            echo "###### $TARGET_ENV ######"
+            echo "#################################"
+            FOLDER_EXISTS = sh (script: 'if [ -d salesforce_sfdx_delta ]; then echo true; else echo false; fi', returnStdout: true).trim()
+            if(FOLDER_EXISTS == "true"){
+              sh ('sfdx force:source:deploy --sourcepath salesforce_sfdx_delta --targetusername ALIAS --verbose -w 60 -l RunLocalTests')
+              }else{
+                echo '####### NO SF DELTA-FOLDER FOUND'
+              }
+            }else{
+              echo "####### Salesforce deployment SKIPPED"
+            }
+            echo 'END - Salesforce Deploying ...'
+          }
+        }
+      }
+    stage('Vlocity deployment'){
+      steps {
+        script{
+          echo 'Vlocity Deploying ...'
+          if(env.BRANCH_NAME in ['release/uat', 'master']){
+            echo "##############################"
+            echo "####### Vlocity Deploy #######"
+            echo "##############################"
+            sh ('vlocity -sfdx.username ALIAS -job Deploy_Delta.yaml packDeploy --verbose true --simpleLogging true')
+          }else{
+            echo "####### Vlocity Deployment SKIPPED"
+          }
+          echo 'END - Vlocity Deploying ...'
+        }
+      }
+    }
+    stage("Reports generation"){
+      steps{
+        script{
+          if(env.BRANCH_NAME in ['release/uat', 'master']){
+            echo "####### Execute 'LocalTests' on Salesforce"
+            try{
+              //Run coverage report extractor when deployment finishes (develop-release-production)
+              sh (script: 'sfdx force:apex:test:run -l RunLocalTests -u ALIAS -w 60 --verbose --codecoverage --resultformat json --detailedcoverage -d SFDX_coverage', returnStdout: false)
+              }catch (Exception e) {
+                echo 'TESTS are FAILING !!!'
+              }
+          }else{
+            echo '--- NOT REQUIRED (SKIPPED) ---'
+          }
+        }
+      }
+    }
+    stage('SonarQube Analisys') {
+      steps{
+        script{
+          if(env.BRANCH_NAME in ['release/uat', 'master']){
+            def scannerHome = tool 'SonarQube';
+            withSonarQubeEnv('onesalesforcemx-mxonesf-sonar') { // If you have configured more than one global server connection, you can specify its name
+              sh "${scannerHome}/bin/sonar-scanner -Dproject.settings=.devops/sonar-project.properties"
+            }
+          }else{
+            echo '--- NOT REQUIRED (SKIPPED) ---'
+          }
+        }
+      }
+    }
+  }
+}

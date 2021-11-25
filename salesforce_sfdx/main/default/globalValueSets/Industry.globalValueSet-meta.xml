@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Automotriz y autopartes</fullName>
+        <default>false</default>
+        <label>Automotriz y autopartes</label>
+    </customValue>
+    <customValue>
+        <fullName>Bancos e instituciones financieras</fullName>
+        <default>false</default>
+        <label>Bancos e instituciones financieras</label>
+    </customValue>
+    <customValue>
+        <fullName>Bienes de consumo</fullName>
+        <default>false</default>
+        <label>Bienes de consumo</label>
+    </customValue>
+    <customValue>
+        <fullName>Cemento</fullName>
+        <default>false</default>
+        <label>Cemento</label>
+    </customValue>
+    <customValue>
+        <fullName>Centros Comerciales</fullName>
+        <default>false</default>
+        <label>Centros Comerciales</label>
+    </customValue>
+    <customValue>
+        <fullName>Cerámicos</fullName>
+        <default>false</default>
+        <label>Cerámicos</label>
+    </customValue>
+    <customValue>
+        <fullName>Constructora / Ingeniería</fullName>
+        <default>false</default>
+        <label>Constructora / Ingeniería</label>
+    </customValue>
+    <customValue>
+        <fullName>Data Center</fullName>
+        <default>false</default>
+        <label>Data Center</label>
+    </customValue>
+    <customValue>
+        <fullName>Educación privada</fullName>
+        <default>false</default>
+        <label>Educación privada</label>
+    </customValue>
+    <customValue>
+        <fullName>Educación pública</fullName>
+        <default>false</default>
+        <label>Educación pública</label>
+    </customValue>
+    <customValue>
+        <fullName>Empresas de Telecomunicación</fullName>
+        <default>false</default>
+        <label>Empresas de Telecomunicación</label>
+    </customValue>
+    <customValue>
+        <fullName>Entretenimientos</fullName>
+        <default>false</default>
+        <label>Entretenimientos</label>
+    </customValue>
+    <customValue>
+        <fullName>Generación eléctrica</fullName>
+        <default>false</default>
+        <label>Generación eléctrica</label>
+    </customValue>
+    <customValue>
+        <fullName>Gestión inmobiliaria</fullName>
+        <default>false</default>
+        <label>Gestión inmobiliaria</label>
+    </customValue>
+    <customValue>
+        <fullName>Gobiernos (Defensa, etc.)</fullName>
+        <default>false</default>
+        <label>Gobiernos (Defensa, etc.)</label>
+    </customValue>
+    <customValue>
+        <fullName>Hoteles</fullName>
+        <default>false</default>
+        <label>Hoteles</label>
+    </customValue>
+    <customValue>
+        <fullName>Materiales y herramientas</fullName>
+        <default>false</default>
+        <label>Materiales y herramientas</label>
+    </customValue>
+    <customValue>
+        <fullName>Metalurgia</fullName>
+        <default>false</default>
+        <label>Metalurgia</label>
+    </customValue>
+    <customValue>
+        <fullName>Minería</fullName>
+        <default>false</default>
+        <label>Minería</label>
+    </customValue>
+    <customValue>
+        <fullName>Municipalidades</fullName>
+        <default>false</default>
+        <label>Municipalidades</label>
+    </customValue>
+    <customValue>
+        <fullName>Parques Industriales</fullName>
+        <default>false</default>
+        <label>Parques Industriales</label>
+    </customValue>
+    <customValue>
+        <fullName>Petróleo y gas</fullName>
+        <default>false</default>
+        <label>Petróleo y gas</label>
+    </customValue>
+    <customValue>
+        <fullName>Planta / Distribución de agua</fullName>
+        <default>false</default>
+        <label>Planta / Distribución de agua</label>
+    </customValue>
+    <customValue>
+        <fullName>Pulpa y papel</fullName>
+        <default>false</default>
+        <label>Pulpa y papel</label>
+    </customValue>
+    <customValue>
+        <fullName>Química farmacéutica</fullName>
+        <default>false</default>
+        <label>Química farmacéutica</label>
+    </customValue>
+    <customValue>
+        <fullName>Química y Petroquímica</fullName>
+        <default>false</default>
+        <label>Química y Petroquímica</label>
+    </customValue>
+    <customValue>
+        <fullName>Retail (tiendas, etc.)</fullName>
+        <default>false</default>
+        <label>Retail (tiendas, etc.)</label>
+    </customValue>
+    <customValue>
+        <fullName>Salud privada</fullName>
+        <default>false</default>
+        <label>Salud privada</label>
+    </customValue>
+    <customValue>
+        <fullName>Salud pública</fullName>
+        <default>false</default>
+        <label>Salud pública</label>
+    </customValue>
+    <customValue>
+        <fullName>Servicios</fullName>
+        <default>false</default>
+        <label>Servicios</label>
+    </customValue>
+    <customValue>
+        <fullName>Textil</fullName>
+        <default>false</default>
+        <label>Textil</label>
+    </customValue>
+    <customValue>
+        <fullName>Transporte / Distribución de electricidad</fullName>
+        <default>false</default>
+        <label>Transporte / Distribución de electricidad</label>
+    </customValue>
+    <customValue>
+        <fullName>Transporte / Distribución de gas</fullName>
+        <default>false</default>
+        <label>Transporte / Distribución de gas</label>
+    </customValue>
+    <customValue>
+        <fullName>Transporte (Tren, Metro)</fullName>
+        <default>false</default>
+        <label>Transporte (Tren, Metro)</label>
+    </customValue>
+    <customValue>
+        <fullName>Usos Mixtos</fullName>
+        <default>false</default>
+        <label>Usos Mixtos</label>
+    </customValue>
+    <customValue>
+        <fullName>Vidrios</fullName>
+        <default>false</default>
+        <label>Vidrios</label>
+    </customValue>
+    <customValue>
+        <fullName>Aeropuertos y puertos</fullName>
+        <default>false</default>
+        <label>Aeropuertos y puertos</label>
+    </customValue>
+    <customValue>
+        <fullName>Agricultura</fullName>
+        <default>false</default>
+        <label>Agricultura</label>
+    </customValue>
+    <customValue>
+        <fullName>Alimentos y bebidas</fullName>
+        <default>false</default>
+        <label>Alimentos y bebidas</label>
+    </customValue>
+    <customValue>
+        <fullName>Hospitality</fullName>
+        <default>false</default>
+        <label>Hospitality</label>
+    </customValue>
+    <customValue>
+        <fullName>Communications</fullName>
+        <default>false</default>
+        <label>Communications</label>
+    </customValue>
+    <customValue>
+        <fullName>Energy</fullName>
+        <default>false</default>
+        <label>Energy</label>
+    </customValue>
+    <customValue>
+        <fullName>Food &amp; Beverage</fullName>
+        <default>false</default>
+        <label>Food &amp; Beverage</label>
+    </customValue>
+    <customValue>
+        <fullName>Manufacturing</fullName>
+        <default>false</default>
+        <label>Manufacturing</label>
+    </customValue>
+    <customValue>
+        <fullName>Retail</fullName>
+        <default>false</default>
+        <label>Retail</label>
+    </customValue>
+    <customValue>
+        <fullName>Utilities</fullName>
+        <default>false</default>
+        <label>Utilities</label>
+    </customValue>
+    <customValue>
+        <fullName>Apparel</fullName>
+        <default>false</default>
+        <label>Apparel</label>
+    </customValue>
+    <customValue>
+        <fullName>Construction</fullName>
+        <default>false</default>
+        <label>Construction</label>
+    </customValue>
+    <customValue>
+        <fullName>Engineering</fullName>
+        <default>false</default>
+        <label>Engineering</label>
+    </customValue>
+    <customValue>
+        <fullName>Government</fullName>
+        <default>false</default>
+        <label>Government</label>
+    </customValue>
+    <customValue>
+        <fullName>Media</fullName>
+        <default>false</default>
+        <label>Media</label>
+    </customValue>
+    <customValue>
+        <fullName>Shipping</fullName>
+        <default>false</default>
+        <label>Shipping</label>
+    </customValue>
+    <customValue>
+        <fullName>Biotechnology</fullName>
+        <default>false</default>
+        <label>Biotechnology</label>
+    </customValue>
+    <customValue>
+        <fullName>Education</fullName>
+        <default>false</default>
+        <label>Education</label>
+    </customValue>
+    <customValue>
+        <fullName>Environmental</fullName>
+        <default>false</default>
+        <label>Environmental</label>
+    </customValue>
+    <customValue>
+        <fullName>Insurance</fullName>
+        <default>false</default>
+        <label>Insurance</label>
+    </customValue>
+    <customValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <customValue>
+        <fullName>Telecommunications</fullName>
+        <default>false</default>
+        <label>Telecommunications</label>
+    </customValue>
+    <customValue>
+        <fullName>Chemicals</fullName>
+        <default>false</default>
+        <label>Chemicals</label>
+    </customValue>
+    <customValue>
+        <fullName>Electronics</fullName>
+        <default>false</default>
+        <label>Electronics</label>
+    </customValue>
+    <customValue>
+        <fullName>Finance</fullName>
+        <default>false</default>
+        <label>Finance</label>
+    </customValue>
+    <customValue>
+        <fullName>Machinery</fullName>
+        <default>false</default>
+        <label>Machinery</label>
+    </customValue>
+    <customValue>
+        <fullName>Recreation</fullName>
+        <default>false</default>
+        <label>Recreation</label>
+    </customValue>
+    <customValue>
+        <fullName>Transportation</fullName>
+        <default>false</default>
+        <label>Transportation</label>
+    </customValue>
+    <customValue>
+        <fullName>Aerospace &amp; Defense</fullName>
+        <default>false</default>
+        <label>Aerospace &amp; Defense</label>
+    </customValue>
+    <customValue>
+        <fullName>Business Services</fullName>
+        <default>false</default>
+        <label>Business Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Consulting</fullName>
+        <default>false</default>
+        <label>Consulting</label>
+    </customValue>
+    <customValue>
+        <fullName>Entertainment</fullName>
+        <default>false</default>
+        <label>Entertainment</label>
+    </customValue>
+    <customValue>
+        <fullName>Healthcare</fullName>
+        <default>false</default>
+        <label>Healthcare</label>
+    </customValue>
+    <customValue>
+        <fullName>Bancos y instituciones financieras</fullName>
+        <default>false</default>
+        <label>Bancos y instituciones financieras</label>
+    </customValue>
+    <customValue>
+        <fullName>Agriculture</fullName>
+        <default>false</default>
+        <label>Agriculture</label>
+    </customValue>
+    <customValue>
+        <fullName>Construcción</fullName>
+        <default>false</default>
+        <label>Construcción</label>
+    </customValue>
+    <description>Lista Global creada para manejar los sectores</description>
+    <masterLabel>Industry</masterLabel>
+    <sorted>true</sorted>
+</GlobalValueSet>

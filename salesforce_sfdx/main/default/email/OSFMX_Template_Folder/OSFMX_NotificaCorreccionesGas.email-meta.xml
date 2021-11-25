@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Revisar oferta con correciones por parte del equipo de Gas</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>OSFMX_Membrete_Engie_Casos</letterhead>
+    <name>Notifica correcciones a KAM</name>
+    <style>formalLetter</style>
+    <subject>Revisión de solicitud de oferta con observaciones</subject>
+    <textOnly>Estimada (o): {!Quote.OSFMX_Assignedto__c}
+
+Este mensaje es para recordarle que tiene un registro de solicitud de oferta para revisar con los siguientes elementos:
+
+a) Propietario: {!Quote.OwnerFullName}
+
+b) Tipo de oferta: {!Quote.OSFMX_OfferType__c}
+
+c) Tipo de conexión: {!Quote.OSFMX_ConnectionType__c}
+
+d) Tipo de solución: {!Quote.OSFMX_SolutionType__c}
+
+e) Sector: {!Quote.OSFMX_AccountSector__c}
+
+Para ir directamente al registro haga clic en el siguiente vínculo:
+
+{!Quote.Link}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>
