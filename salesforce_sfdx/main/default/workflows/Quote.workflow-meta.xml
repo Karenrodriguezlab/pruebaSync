@@ -1,0 +1,2064 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>OFSMX_QuoteBindingPending</fullName>
+        <ccEmails>ismar.duran@globant.com</ccEmails>
+        <ccEmails>armando.gomez@globant.com</ccEmails>
+        <description>Oferta Vinculante para Factibilidad</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>OSFMX_Factibilidad</recipient>
+            <type>group</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>OSFMX_Template_Folder/OSFMX_MEXCOM_FactibilityTM</template>
+    </alerts>
+    <alerts>
+        <fullName>OSFMX_ApprovedDistributionOfferAlert</fullName>
+        <ccEmails>guillermo.lozano@globant.com</ccEmails>
+        <ccEmails>ismar.duran@globant.com</ccEmails>
+        <description>OSFMX_AlertaDistribuciónOfertaAprobada</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>OSFMX_Template_Folder/OSFMX_Distribution_QuoteApproved</template>
+    </alerts>
+    <alerts>
+        <fullName>OSFMX_CanceledOffer</fullName>
+        <description>Aviso de Cancelación</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/ContactFollowUpSAMPLE</template>
+    </alerts>
+    <alerts>
+        <fullName>OSFMX_ExpiredOffer</fullName>
+        <ccEmails>omar.mata@globant.com</ccEmails>
+        <description>Oferta Expirada</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>OSFMX_Template_Folder/OSFMX_ExpiredOfferHTML</template>
+    </alerts>
+    <alerts>
+        <fullName>OSFMX_Factibilidad</fullName>
+        <description>OSFMX KAM oferta en revisión por factibilidad</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/OSFMX_FactibilidadReview</template>
+    </alerts>
+    <alerts>
+        <fullName>OSFMX_ImpossibleoOfferAlert</fullName>
+        <ccEmails>ivan.schmitt@globant.com</ccEmails>
+        <ccEmails>guillermo.lozano@globant.com</ccEmails>
+        <description>Alerta Oferta Imposible</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>OSFMX_Template_Folder/OSFMX_ImpossibleOffer</template>
+    </alerts>
+	<alerts>
+        <fullName>OSFMX_ImpossibleoOfferAlerttogasofferuser</fullName>
+        <ccEmails>ivan.schmitt@globant.com</ccEmails>
+        <ccEmails>guillermo.lozano@globant.com</ccEmails>
+        <description>Alerta Oferta Imposible para Usuario oferta Gas</description>
+        <protected>false</protected>
+        <recipients>
+            <field>LastModifiedById</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>OSFMX_Template_Folder/OSFMX_ImpossibleOffertogasofferUser</template>
+    </alerts>
+    <alerts>
+        <fullName>OSFMX_KAM_oferta_en_revision_por_Equipo_Gas</fullName>
+        <description>OSFMX KAM oferta en revisión por Equipo Gas</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>OSFMX_Template_Folder/OSFMX_KAM_oferta_en_revision_por_Equipo_Gas</template>
+    </alerts>
+    <alerts>
+        <fullName>OSFMX_KAM_oferta_en_revision_por_Supply</fullName>
+        <ccEmails>guillermo.trujillo@globant.com</ccEmails>
+        <description>OSFMX KAM oferta en revisión por Supply</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>OSFMX_Template_Folder/OSFMX_KAM_oferta_en_revision_por_VP_Supply</template>
+    </alerts>
+    <alerts>
+        <fullName>OSFMX_KAM_oferta_en_revision_por_VP_Supply</fullName>
+        <description>OSFMX KAM oferta en revisión por VP Supply</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>OSFMX_Template_Folder/OSFMX_KAM_oferta_en_revision_por_VP_Supply</template>
+    </alerts>
+    <alerts>
+        <fullName>OSFMX_Kam_Revision_con_observaciones_de_Equipo_Gas</fullName>
+        <description>OSFMX Kam Revisión con observaciones de Equipo Gas</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>OSFMX_Template_Folder/OSFMX_Kam_Revision_con_observaciones_de_Equipo_Gas</template>
+    </alerts>
+    <alerts>
+        <fullName>OSFMX_La_oferta_lleva_inactiva_tres_dias</fullName>
+        <description>OSFMX_La oferta lleva inactiva tres dias.</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>OSFMX_Template_Folder/OSFMX_OfferNotReviewed</template>
+    </alerts>
+    <alerts>
+        <fullName>OSFMX_La_oferta_no_fue_revisada</fullName>
+        <description>OSFMX La oferta no fue revisada</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>OSFMX_Template_Folder/OSFMX_OfferNotReviewed</template>
+    </alerts>
+    <alerts>
+        <fullName>OSFMX_La_oferta_no_fue_revisada_en_tres_d_as</fullName>
+        <description>OSFMX La oferta no fue revisada en tres días.</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>OSFMX_Template_Folder/OSFMX_OfferNotReviewed</template>
+    </alerts>
+    <alerts>
+        <fullName>OSFMX_La_oferta_no_fue_revisada_en_tres_dias</fullName>
+        <description>OSFMX La oferta no fue revisada en tres días.</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>OSFMX_Template_Folder/OSFMX_OfferNotReviewed</template>
+    </alerts>
+    <alerts>
+        <fullName>OSFMX_MEXCOM_QuoteDeniedButton</fullName>
+        <ccEmails>ismar.duran@globant.com</ccEmails>
+        <ccEmails>nasser.abdala@globant.com</ccEmails>
+        <description>MEXCOM Oferta Rechazada (por botón)</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>OSFMX_GasTeam</recipient>
+            <type>group</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>OSFMX_Template_Folder/OSFMX_MEXCOM_QuoteDeniedButton</template>
+    </alerts>
+    <alerts>
+        <fullName>OSFMX_NewQuoteRequest</fullName>
+        <ccEmails>ismar.duran@globant.com</ccEmails>
+        <ccEmails>omar.mata@globant.com</ccEmails>
+        <description>Nueva Solicitud de Oferta</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>OSFMX_GasTeam</recipient>
+            <type>group</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>OSFMX_Template_Folder/MEXCOM_NewGasQuote</template>
+    </alerts>
+    <alerts>
+        <fullName>OSFMX_NotificacionN1_ofertada_rechazada_No_Aprobada</fullName>
+        <description>OSFMX Notificación ofertada rechazada (No Aprobada)</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>OSFMX_MEXCOM_Nivel_1_Usuarios</recipient>
+            <type>group</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>OSFMX_Template_Folder/OSFMX_MEXCOM_Oferta_NoAprobada_Rechazada</template>
+    </alerts>
+    <alerts>
+        <fullName>OSFMX_Notificacion_oferta_rechazada_No_aprobada</fullName>
+        <description>OSFMX Notificación oferta rechazada (No aprobada)</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>OSFMX_MEXCOM_Nivel_2_Usuarios</recipient>
+            <type>group</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>OSFMX_Template_Folder/OSFMX_MEXCOM_Oferta_NoAprobada_Rechazada</template>
+    </alerts>
+    <alerts>
+        <fullName>OSFMX_Notificaci_n_Oferta_Aprobada_por_Transporte</fullName>
+        <description>OSFMX Notificación Oferta Aprobada por Transporte</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>OSFMX_Template_Folder/OSFMX_Notificacion_Oferta_Aprobada_por_Transporte</template>
+    </alerts>
+    <alerts>
+        <fullName>OSFMX_NotificacionDeOfertaParaTransporte</fullName>
+        <description>OSFMX La oferta necesita ser revisada por equipo de Transporte</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>OSFMX_Template_Folder/OSFMX_La_oferta_necesita_ser_revisada_por_equipo_de_Transporte</template>
+    </alerts>
+    <alerts>
+        <fullName>OSFMX_Notificacion_Oferta_Aprobada_por_Comercial_Supply</fullName>
+        <ccEmails>guillermo.lozano@globant.com</ccEmails>
+        <ccEmails>ismar.duran@globant.com</ccEmails>
+        <ccEmails>armando.gomez@globant.com</ccEmails>
+        <description>OSFMX Notificación Oferta Aprobada por Comercial/Supply</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>OSFMX_Template_Folder/OSFMX_MEXCOM_ApprovedOffer</template>
+    </alerts>
+    <alerts>
+        <fullName>OSFMX_Notificacion_Oferta_Aprobada_por_Transporte</fullName>
+        <description>OSFMX Notificación Oferta Aprobada por Transporte</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>OSFMX_Template_Folder/OSFMX_Notificacion_Oferta_Aprobada_por_Transporte</template>
+    </alerts>
+	<alerts>
+        <fullName>OSFMX_NotificacionOfertaAprobadaComercialSupplytoOfertaGas</fullName>
+        <ccEmails>guillermo.lozano@globant.com</ccEmails>
+        <ccEmails>ismar.duran@globant.com</ccEmails>
+        <ccEmails>monica.huesca@engie.com</ccEmails>
+        <description>OSFMX Notificación Oferta Aprobada por Comercial/Supply para OfertaGas</description>
+        <protected>false</protected>
+        <recipients>
+            <field>OSMFX_CorreoOfertaGasProcesoA__c</field>
+            <type>email</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>OSFMX_Template_Folder/OSFMX_MEXCOMApprovedOffertoOfertagas</template>
+    </alerts>
+    <alerts>
+        <fullName>OSFMX_Notificacion_Oferta_Rechazada_por_Comercial_Supply</fullName>
+        <ccEmails>guillermo.lozano@globant.com</ccEmails>
+        <ccEmails>ismar.duran@globant.com</ccEmails>
+        <description>OSFMX Notificación Oferta Rechazada por Comercial/Supply</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>OSFMX_Template_Folder/OSFMX_MEXCOM_DeniedOffer</template>
+    </alerts>
+	<alerts>
+        <fullName>OSFMX_NotificacionOfertaRechazadaporComercialSupplytoOfertaGas</fullName>
+        <ccEmails>guillermo.lozano@globant.com</ccEmails>
+        <ccEmails>ismar.duran@globant.com</ccEmails>
+        <ccEmails>monica.huesca@engie.com</ccEmails>
+        <description>OSFMX Notificación Oferta Rechazada por Comercial/Supply para OfertaGas</description>
+        <protected>false</protected>
+        <recipients>
+            <field>OSMFX_CorreoOfertaGasProcesoA__c</field>
+            <type>email</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>OSFMX_Template_Folder/OSFMX_MEXCOM_DeniedOffertoOfertaGas</template>
+    </alerts>
+    <alerts>
+        <fullName>OSFMX_ObsToKAM</fullName>
+        <ccEmails>ismar.duran@globant.com</ccEmails>
+        <ccEmails>armando.gomez@globant.com</ccEmails>
+        <description>Observaciones a KAM</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>OSFMX_Template_Folder/OSFMX_MEXCOM_QuoteObs</template>
+    </alerts>
+    <alerts>
+        <fullName>OSFMX_OfertaAprobada</fullName>
+        <ccEmails>noemi.diaz@engie.com</ccEmails>
+        <description>OSFMX Notificación de Oferta aprobada a KAM</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>OSFMX_Template_Folder/OSFMX_OfferWasApprovedKAM</template>
+    </alerts>
+    <alerts>
+        <fullName>OSFMX_Oferta_no_revisada</fullName>
+        <description>OSFMX Oferta no revisada</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>OSFMX_Template_Folder/OSFMX_OfferNotReviewed</template>
+    </alerts>
+    <alerts>
+        <fullName>OSFMX_Oferta_no_revisada_tres_dias</fullName>
+        <description>OSFMX Oferta no revisada tres dias</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>OSFMX_Template_Folder/OSFMX_OfferNotReviewed</template>
+    </alerts>
+    <alerts>
+        <fullName>OSFMX_Oferta_rechazada_por_Transporte</fullName>
+        <description>OSFMX Oferta rechazada por Transporte</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>OSFMX_Template_Folder/OSFMX_Oferta_rechazada_por_Transporte</template>
+    </alerts>
+    <alerts>
+        <fullName>OSFMX_PendingOfferEmailAlert</fullName>
+        <ccEmails>guillermo.lozano@globant.com</ccEmails>
+        <ccEmails>ismar.duran@globant.com</ccEmails>
+        <description>Alerta de Correo para Oferta Pendiente</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>OSFMX_GasTeam</recipient>
+            <type>group</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>OSFMX_Template_Folder/OSFMX_MEXCOM_OfertaVinculantePendiente</template>
+    </alerts>
+    <alerts>
+        <fullName>OSFMX_QuoteUpdated</fullName>
+        <ccEmails>ismar.duran@globant.com</ccEmails>
+        <description>Oferta Actualizada</description>
+        <protected>false</protected>
+        <recipients>
+            <field>OSMFX_CorreoOfertaGasProcesoA__c</field>
+            <type>email</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>OSFMX_Template_Folder/OSFMX_QuoteUpdated</template>
+    </alerts>
+    <alerts>
+        <fullName>OSFMX_RejectedDistributionOfferAlert</fullName>
+        <ccEmails>guillermo.lozano@globant.com</ccEmails>
+        <ccEmails>ismar.duran@globant.com</ccEmails>
+        <description>OOSFMX_AlertaDistribuciónOfertaRechazada</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>OSFMX_Template_Folder/OSFMX_Distribution_QuoteDenied</template>
+    </alerts>
+    <alerts>
+        <fullName>OSFMX_TheOfferIsNotReviewed</fullName>
+        <description>OSFMX La oferta aún no es revisada</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>OSFMX_Template_Folder/OSFMX_OfferNotReviewed</template>
+    </alerts>
+    <alerts>
+        <fullName>OSFMX_WarningExpiredOffer</fullName>
+        <ccEmails>omar.mata@globant.com</ccEmails>
+        <ccEmails>armando.gomez@globant.com</ccEmails>
+        <ccEmails>noemi.diaz@engie.com</ccEmails>
+        <ccEmails>jose.villanuevaM@engie.com</ccEmails>
+        <description>Oferta por expirar</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>OSFMX_Template_Folder/OSFMX_WarningExpiredOffer</template>
+    </alerts>
+    <alerts>
+        <fullName>OSMXNotificacionaprobacion</fullName>
+        <ccEmails>JOSE.HEREDIA@GLOBANT.COM</ccEmails>
+        <description>Notificación de aprobación</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/OSFMX_Oferta_APROBADA</template>
+    </alerts>
+    <alerts>
+        <fullName>OSMXNotificacionrechazo</fullName>
+        <ccEmails>JOSE.HEREDIA@GLOBANT.COM</ccEmails>
+        <description>Notificación de rechazo</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/OSFMX_Oferta_RECHAZADA</template>
+    </alerts>
+    <alerts>
+        <fullName>OSFMX_MexcomobstoKAMbyFactmolecule</fullName>
+        <ccEmails>guillermo.lozano@globant.com</ccEmails>
+        <description>Mexcom Observaciones a KAM por factibilidad molécula</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>OSFMX_Template_Folder/OSFMX_Mexcomofertaobservacionesfactmolecula</template>
+    </alerts>
+    <alerts>
+        <fullName>OSFMX_MexcomobstoKAMbyFactransport</fullName>
+        <ccEmails>guillermo.lozano@globant.com</ccEmails>
+        <description>Mexcom Observaciones a KAM por factibilidad transporte</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>OSFMX_Template_Folder/OSFMX_Mexcomofertaobservacionesfactransporte</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Comentarios_de_cierre_perdido_Opp_Perdid</fullName>
+        <field>OSFMX_ClosedComments__c</field>
+        <formula>Opportunity.OSFMX_ClosedComments__c</formula>
+        <name>Comentarios de cierre perdido Opp Perdid</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>EstatusDeOferta</fullName>
+        <description>Cambia el valor de Estatus a: Draft</description>
+        <field>Status</field>
+        <literalValue>Draft</literalValue>
+        <name>EstatusDeOferta</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>EstatusDeOfertaBorrador</fullName>
+        <field>Status</field>
+        <literalValue>Borrador</literalValue>
+        <name>EstatusDeOfertaBorrador</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>OSFMX_MoleculeComments</fullName>
+        <field>OSFMX_GasMoleculeObservation__c</field>
+        <name>Valor en blanco Molécula Observaciones</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Null</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>OSFMX_TransportComments</fullName>
+        <field>OSFMX_GasTransportObservation__c</field>
+        <name>Valor en blanco Transporte Observaciones</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Null</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>OSFMX_TransportPriceNull</fullName>
+        <field>OSFMX_GasTransportPrice__c</field>
+        <name>Anula precio de transporte</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Null</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>OSFMX_UpdateCheckMolecule</fullName>
+        <field>OSFMX_MoleculeValidation__c</field>
+        <literalValue>0</literalValue>
+        <name>Check en falso Molécula</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>OSFMX_UpdateFalseCheckTransport</fullName>
+        <field>OSFMX_TransportValidation__c</field>
+        <literalValue>0</literalValue>
+        <name>Check en falso Transporte</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>OFSMX_RTChangedGas</fullName>
+        <field>RecordTypeId</field>
+        <lookupValue>OSFMX_OfertaGas</lookupValue>
+        <lookupValueType>RecordType</lookupValueType>
+        <name>Cambia RT a Gas</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>OSFMX_ActualizaIdOportunidad</fullName>
+        <field>OSFMX_OppId__c</field>
+        <formula>Opportunity.OSFMX_IdAutoNumber__c</formula>
+        <name>Actualiza Id de Oportunidad</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>OSFMX_CanceledOffer</fullName>
+        <field>Status</field>
+        <literalValue>Expirada</literalValue>
+        <name>Oferta Cancelada Vencida</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>OSFMX_CleanCommentsGas</fullName>
+        <field>OSFMX_Specify__c</field>
+        <name>Limpia comentarios de Gas</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Null</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>OSFMX_CleanObservationsGas</fullName>
+        <field>OSFMX_RequestWithObservationsGas__c</field>
+        <name>Limpia observaciones de gas lista</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>OSFMX_ClosedLossComents</fullName>
+        <field>OSFMX_ClosedComments__c</field>
+        <formula>&quot;Se ganó con otra oferta.&quot;</formula>
+        <name>Comentarios de cierre perdido</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>OSFMX_Comentarios_de_cierre_ganado</fullName>
+        <field>OSFMX_ClosedWonComments__c</field>
+        <formula>Opportunity.OSFMX_ClosedWonComments__c</formula>
+        <name>Comentarios de cierre ganado</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>OSFMX_DatetimeSend</fullName>
+        <field>OSFMX_OfferDeliveryDate__c</field>
+        <formula>Now ()</formula>
+        <name>Establece fecha de envío</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>OSFMX_DatetimeSendTeamGas</fullName>
+        <field>OSFMX_DatetimeSend__c</field>
+        <formula>Now ()</formula>
+        <name>Establece fecha y hora de envío</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>OSFMX_DraftRT</fullName>
+        <field>RecordTypeId</field>
+        <lookupValue>Draft</lookupValue>
+        <lookupValueType>RecordType</lookupValueType>
+        <name>Cambia RT de Borrador a Gas</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>OSFMX_InReviewByGasTrasnportFalse</fullName>
+        <description>Campo Falso</description>
+        <field>OSFMX_ReviewByGasTransport__c</field>
+        <literalValue>0</literalValue>
+        <name>OSFMX InReviewByGasTrasnportFalse</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>OSFMX_InReviewByGasTrasnportTrue</fullName>
+        <description>Campo True</description>
+        <field>OSFMX_ReviewByGasTransport__c</field>
+        <literalValue>1</literalValue>
+        <name>OSFMX InReviewByGasTrasnportTrue</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>OSFMX_InitialStageOffers</fullName>
+        <field>Status</field>
+        <literalValue>Borrador</literalValue>
+        <name>Fase inicial de Ofertas</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>OSFMX_Last_Modify_By_Gas_User</fullName>
+        <field>OSFMX_LastMOdifyByGasUser__c</field>
+        <formula>$User.FirstName + &apos; &apos; + $User.LastName + &apos; / &apos; + TEXT(LastModifiedDate)</formula>
+        <name>Last Modify By Gas User</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>OSFMX_Last_Modify_By_KAM</fullName>
+        <field>OSFMX_Last_Modify_By_KAM__c</field>
+        <formula>$User.FirstName + &apos; &apos; + $User.LastName + &apos; / &apos; + TEXT(LastModifiedDate)</formula>
+        <name>Last Modify By KAM</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>OSFMX_ManagerApprovalDate</fullName>
+        <field>OSFMX_ManagerApproveDate__c</field>
+        <formula>NOW()</formula>
+        <name>Fecha Aprobación Gerentes Distribución</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>OSFMX_QuoteAuthorizedTrue</fullName>
+        <field>OSFMX_Autorizada__c</field>
+        <literalValue>1</literalValue>
+        <name>Quote Authorized True</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>OSFMX_QuoteInApprovalFalse</fullName>
+        <field>OSFMX_EnAprobacion__c</field>
+        <literalValue>0</literalValue>
+        <name>Quote In Approval False</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>OSFMX_Quote_Authorized_False</fullName>
+        <field>OSFMX_Autorizada__c</field>
+        <literalValue>0</literalValue>
+        <name>OSFMX Quote Authorized False</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>OSFMX_Quote_InReview_False</fullName>
+        <field>OSFMX_RevisionNecesaria__c</field>
+        <literalValue>0</literalValue>
+        <name>OSFMX Quote InReview False</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>OSFMX_Quote_InReview_True</fullName>
+        <field>OSFMX_RevisionNecesaria__c</field>
+        <literalValue>1</literalValue>
+        <name>OSFMX Quote InReview True</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>OSFMX_Quote_In_Approval_True</fullName>
+        <field>OSFMX_EnAprobacion__c</field>
+        <literalValue>1</literalValue>
+        <name>OSFMX Quote In Approval True</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>OSFMX_RejetedDate</fullName>
+        <field>OSFMX_RejectedDate__c</field>
+        <formula>Today()</formula>
+        <name>Establece fecha de rechazo</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>OSFMX_RequestInReviewByGasTeam_False</fullName>
+        <description>2. Casilla de Solicitud Aprobada</description>
+        <field>OSFMX_RequestInReviewByGasTeam__c</field>
+        <literalValue>0</literalValue>
+        <name>OSFMX RequestInReviewGas Aprobada False</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>OSFMX_RequestInReviewByGasTeam_True</fullName>
+        <description>2.</description>
+        <field>OSFMX_RequestInReviewByGasTeam__c</field>
+        <literalValue>1</literalValue>
+        <name>OSFMX RequestInReviewGas Aprobada True</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>OSFMX_RequestReviewNotesByGas_False</fullName>
+        <description>3</description>
+        <field>OSFMX_RequestReviewNotesByGas__c</field>
+        <literalValue>0</literalValue>
+        <name>OSFMX RequestReviewNotesByGas False</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>OSFMX_RequestReviewNotesByGas_True</fullName>
+        <description>3</description>
+        <field>OSFMX_RequestReviewNotesByGas__c</field>
+        <literalValue>1</literalValue>
+        <name>OSFMX RequestReviewNotesByGas True</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>OSFMX_ReviewApprovedByGasTransportFalse</fullName>
+        <description>Campo False</description>
+        <field>OSFMX_RevieApprovedByGasTransport__c</field>
+        <literalValue>0</literalValue>
+        <name>OSFMX ReviewApprovedByGasTransportFalse</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>OSFMX_ReviewApprovedByGasTransportTrue</fullName>
+        <description>Campo True</description>
+        <field>OSFMX_RevieApprovedByGasTransport__c</field>
+        <literalValue>1</literalValue>
+        <name>OSFMX ReviewApprovedByGasTransportTrue</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>OSFMX_ReviewGasTransportObservationsFals</fullName>
+        <description>Campo False</description>
+        <field>OSFMX_ObservationsReviewByGasTransport__c</field>
+        <literalValue>0</literalValue>
+        <name>OSFMX ReviewGasTransportObservationsFals</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>OSFMX_ReviewGasTransportObservationsTrue</fullName>
+        <description>Campo True</description>
+        <field>OSFMX_ObservationsReviewByGasTransport__c</field>
+        <literalValue>1</literalValue>
+        <name>OSFMX ReviewGasTransportObservationsTrue</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>OSFMX_SubStatusChanged</fullName>
+        <field>OSFMX_SubEstatus__c</field>
+        <name>Cambia subestado</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>OSFMX_SubStatusSolicitud</fullName>
+        <field>OSFMX_SubEstatus__c</field>
+        <literalValue>Solicitud</literalValue>
+        <name>OSFMX SubStatusSolicitud</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>OSFMX_TeamsGasRequestReview_False</fullName>
+        <description>1</description>
+        <field>OSFMX_TeamsGasRequestReview__c</field>
+        <literalValue>0</literalValue>
+        <name>OSFMX_TeamsGasRequestReview_False</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>OSFMX_TeamsGasRequestReview_True</fullName>
+        <description>1</description>
+        <field>OSFMX_TeamsGasRequestReview__c</field>
+        <literalValue>1</literalValue>
+        <name>OSFMX_TeamsGasRequestReview_True</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>OSFMX_TurnOffCheckSendGas</fullName>
+        <field>OSFMX_SendtoReview__c</field>
+        <literalValue>0</literalValue>
+        <name>Apaga casilla de envío a Gas</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>OSFMX_UpdateCheckSend</fullName>
+        <field>OSFMX_SendtoReview__c</field>
+        <literalValue>1</literalValue>
+        <name>Prende check de envío a Gas</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>OSFMX_UpdateCheckTransport</fullName>
+        <field>OSFMX_SentReviewtoTransport__c</field>
+        <literalValue>1</literalValue>
+        <name>Prende check de envío a Transporte</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>OSFMX_UpdateCheckWon</fullName>
+        <field>OSFMX_ClosedWonOpp__c</field>
+        <literalValue>1</literalValue>
+        <name>Actualiza Casilla de Cierre Ganado</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>OSFMX_UpdateStatusonProcess</fullName>
+        <field>Status</field>
+        <literalValue>Proceso</literalValue>
+        <name>Actualiza Estado Proceso</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>OSFMX_UpdateStatustoApproved</fullName>
+        <field>Status</field>
+        <literalValue>Ganada</literalValue>
+        <name>Actualiza Estado a Aprobada</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>OSFMX_UpdateStatustoRejected</fullName>
+        <field>Status</field>
+        <literalValue>Rechazada</literalValue>
+        <name>Actualiza Estado a Rechazada</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>OSFMX_UpdateSubStatus</fullName>
+        <field>OSFMX_SubEstatus__c</field>
+        <literalValue>Producto (Oferta con observaciones)</literalValue>
+        <name>Actualiza Subestado</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>OSFMX_UpdateSubStatusProduct</fullName>
+        <field>OSFMX_SubEstatus__c</field>
+        <literalValue>Producto</literalValue>
+        <name>Actualiza Subestado a Producto</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>OSFMX_UpdateSubStatusRequest</fullName>
+        <field>OSFMX_SubEstatus__c</field>
+        <literalValue>Solicitud</literalValue>
+        <name>Actualiza subestado a Solicitud</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>OSFMX_UpdateToApprovedSubStatus</fullName>
+        <field>OSFMX_SubEstatus__c</field>
+        <literalValue>Aprobación</literalValue>
+        <name>OSFMX UpdateToApprovedSubStatus</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>OSFMX_UpdateToApproved_Status</fullName>
+        <field>Status</field>
+        <literalValue>Aprobada</literalValue>
+        <name>OSFMX UpdateToApproved Status</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>OSFMX_UpdateToAuthorization_SubStatus</fullName>
+        <field>OSFMX_SubEstatus__c</field>
+        <literalValue>Autorización</literalValue>
+        <name>OSFMX UpdateToAuthorization SubStatus</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>OSFMX_UpdateToFactMexcom_SubStatus</fullName>
+        <field>OSFMX_SubEstatus__c</field>
+        <literalValue>Factibilidad Mexcom</literalValue>
+        <name>OSFMX UpdateToFactMexcom SubStatus</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>OSFMX_UpdateToNullSubStatus</fullName>
+        <field>OSFMX_SubEstatus__c</field>
+        <name>OSFMX UpdateToNullSubStatus</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>OSFMX_UpdateToObservationsStatus</fullName>
+        <field>Status</field>
+        <literalValue>Observaciones</literalValue>
+        <name>OSFMX UpdateToObservationsStatus</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>OSFMX_UpdateToProcessStatus</fullName>
+        <field>Status</field>
+        <literalValue>Proceso</literalValue>
+        <name>OSFMX UpdateToProcessStatus</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>OSFMX_UpdateToProductWithObsSubStatus</fullName>
+        <field>OSFMX_SubEstatus__c</field>
+        <literalValue>Producto (Oferta con observaciones)</literalValue>
+        <name>OSFMX UpdateToProductWithObsSubStatus</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>OSFMX_UpdateToProduct_SubStatus</fullName>
+        <field>OSFMX_SubEstatus__c</field>
+        <literalValue>Producto</literalValue>
+        <name>OSFMX UpdateToProduct SubStatus</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>OSFMX_UpdateToRejectedStatus</fullName>
+        <field>Status</field>
+        <literalValue>Rechazada</literalValue>
+        <name>OSFMX UpdateToRejectedStatus</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>OSFMX_VPComercialEnAprobacion</fullName>
+        <field>OSFMX_AuthorizationVPComercial__c</field>
+        <literalValue>En Aprobación</literalValue>
+        <name>VP Comercial en Aprobación</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>OSFMX_VPComercialOk</fullName>
+        <field>OSFMX_AuthorizationVPComercial__c</field>
+        <literalValue>Autorizada</literalValue>
+        <name>VP Comercial Ok</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>OSFMX_VPSupplyEnAprobacion</fullName>
+        <description>Campo de selección de Supply.</description>
+        <field>OSFMX_AuthorizationVPSupply__c</field>
+        <literalValue>En Aprobación</literalValue>
+        <name>VP Supply en Aprobación</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>OSFMX_VP_Comercial_No_Ok</fullName>
+        <field>OSFMX_AuthorizationVPComercial__c</field>
+        <literalValue>Revisión Necesaria</literalValue>
+        <name>VP Comercial No Ok</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>OSFMX_VPsAprovalDate</fullName>
+        <field>OSFMX_VPsAprovalDate__c</field>
+        <formula>NOW()</formula>
+        <name>Fecha Aprobación VP&apos;s</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>VP_Comercial_No_Ok_Level_3</fullName>
+        <field>OSFMX_AuthorizationVPSupply__c</field>
+        <literalValue>Revisión Necesaria</literalValue>
+        <name>VP Comercial No Ok Level 3</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>VP_Supply_Lev1_Ok</fullName>
+        <field>OSFMX_AuthorizationVPSupply__c</field>
+        <literalValue>Autorizada</literalValue>
+        <name>VP Supply Lev1 Ok</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>VP_Supply_Lev_1_No_Ok</fullName>
+        <field>OSFMX_AuthorizationVPSupply__c</field>
+        <literalValue>Revisión Necesaria</literalValue>
+        <name>VP Supply Lev 1 No Ok</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>VP_Supply_Lev_2_No_Ok</fullName>
+        <field>OSFMX_AuthorizationVPSupply__c</field>
+        <literalValue>Revisión Necesaria</literalValue>
+        <name>VP Supply Lev 2 No Ok</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>VP_Supply_Lev_2_Ok</fullName>
+        <field>OSFMX_AuthorizationVPSupply__c</field>
+        <literalValue>Autorizada</literalValue>
+        <name>VP Supply Lev 2 Ok</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>VP_Supply_Ok</fullName>
+        <field>OSFMX_AuthorizationVPSupply__c</field>
+        <literalValue>Autorizada</literalValue>
+        <name>VP Supply Ok</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>OSFPE_fu_Cambia_de_estado_a_propuesta</fullName>
+        <field>Status</field>
+        <literalValue>Observaciones</literalValue>
+        <name>Cambia de estado a propuesta</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>OSFCL_Actualiza_Fecha_Envio_Oferta</fullName>
+        <field>OSFMX_OfferDeliveryDate__c</field>
+        <formula>TODAY()</formula>
+        <name>OSFCL Actualiza Fecha Envio Oferta</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>OSFMX_SyncUpdateClone</fullName>
+        <field>OSFMX_SyncQuote__c</field>
+        <literalValue>0</literalValue>
+        <name>Apaga check de sincronización</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>Aviso de expiración</fullName>
+        <active>false</active>
+        <criteriaItems>
+            <field>Quote.vlocity_cmt__ValidationDate__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Quote.Status</field>
+            <operation>notEqual</operation>
+            <value>Expirada,Ganada,Rechazada,Imposible</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Quote.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Oferta de Gas,Oferta de Electricidad,Otras Soluciones</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>OSFMX_WarningExpiredOffer</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Quote.vlocity_cmt__ValidationDate__c</offsetFromField>
+            <timeLength>-7</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Cambia proceso producto</fullName>
+        <actions>
+            <name>OSFMX_UpdateSubStatusProduct</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Quote.OSFMX_MoleculeValidation__c</field>
+            <operation>equals</operation>
+            <value>Verdadero</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Quote.OSFMX_TransportValidation__c</field>
+            <operation>equals</operation>
+            <value>Verdadero</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Quote.Status</field>
+            <operation>equals</operation>
+            <value>Proceso</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Quote.OSFMX_SubEstatus__c</field>
+            <operation>equals</operation>
+            <value>Factibilidad Mexcom</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Casilla de Cierre Ganado</fullName>
+        <actions>
+            <name>OSFMX_Comentarios_de_cierre_ganado</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>OSFMX_UpdateStatustoApproved</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Quote.OSFMX_ClosedWonOpp__c</field>
+            <operation>equals</operation>
+            <value>Verdadero</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Quote.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Oferta de Gas,Oferta de Electricidad,Otras Soluciones</value>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Casilla de Cierre Perdido</fullName>
+        <actions>
+            <name>OSFMX_ClosedLossComents</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>OSFMX_UpdateStatustoRejected</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>1 AND 2 AND 3 AND 4</booleanFilter>
+        <criteriaItems>
+            <field>Quote.OSFMX_ClosedLossOpp__c</field>
+            <operation>equals</operation>
+            <value>Verdadero</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>equals</operation>
+            <value>Cerrada ganada</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Quote.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Oferta de Gas,Oferta de Electricidad,Otras Soluciones</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Quote.OSFMX_OppServicePointType__c</field>
+            <operation>notEqual</operation>
+            <value>Multipunto</value>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Casilla de Cierre Perdido En Opp Perdida</fullName>
+        <actions>
+            <name>Comentarios_de_cierre_perdido_Opp_Perdid</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>OSFMX_UpdateStatustoRejected</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Quote.OSFMX_ClosedLossOpp__c</field>
+            <operation>equals</operation>
+            <value>Verdadero</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>equals</operation>
+            <value>Cerrada Perdida</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Quote.Status</field>
+            <operation>notEqual</operation>
+            <value>Imposible</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Quote.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Oferta de Gas,Oferta de Electricidad,Otras Soluciones</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>DELETE La oferta esta en revisión</fullName>
+        <active>false</active>
+        <criteriaItems>
+            <field>Quote.Status</field>
+            <operation>equals</operation>
+            <value>Observaciones</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Quote.OSFMX_QuoteType__c</field>
+            <operation>equals</operation>
+            <value>OSFMX_OfertaGas</value>
+        </criteriaItems>
+        <description>Manda una notificación al KAM cuando una oferta requiere atención.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>OSFMX_TheOfferIsNotReviewed</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Quote.LastModifiedDate</offsetFromField>
+            <timeLength>3</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Establece Id de Oportunidad a Ofertas</fullName>
+        <actions>
+            <name>OSFMX_ActualizaIdOportunidad</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Quote.CreatedDate</field>
+            <operation>equals</operation>
+            <value>ESTE AÑO</value>
+        </criteriaItems>
+        <description>Cada oferta ligada a la oportunidad tendrá el número consecutivo creado como Id externo.</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Establece fecha de rechazo</fullName>
+        <actions>
+            <name>OSFMX_RejetedDate</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Quote.Status</field>
+            <operation>equals</operation>
+            <value>Rechazada</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Quote.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Oferta de Gas,Oferta de Electricidad,Otras Soluciones</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Fase inicial de Ofertas</fullName>
+        <actions>
+            <name>EstatusDeOfertaBorrador</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>OSFMX_MoleculeComments</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>OSFMX_SyncUpdateClone</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>OSFMX_TransportComments</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>OSFMX_TransportPriceNull</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>OSFMX_UpdateCheckMolecule</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>OSFMX_UpdateFalseCheckTransport</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>OSFMX_UpdateToNullSubStatus</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Quote.CreatedDate</field>
+            <operation>equals</operation>
+            <value>ESTE AÑO</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Quote.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Oferta de Gas,Oferta de Electricidad,Otras Soluciones</value>
+        </criteriaItems>
+        <description>Todas las ofertas generadas se crearan con la fase 1 del proceso</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Last Modify By Gas User</fullName>
+        <actions>
+            <name>OSFMX_Last_Modify_By_Gas_User</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Quote.CreatedDate</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Quote.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Oferta de Gas</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>User.ProfileId</field>
+            <operation>equals</operation>
+            <value>Oferta Gas</value>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Last Modify By KAM</fullName>
+        <actions>
+            <name>OSFMX_Last_Modify_By_KAM</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Quote.CreatedDate</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Quote.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Oferta de Gas</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>User.ProfileId</field>
+            <operation>equals</operation>
+            <value>KAM</value>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>MEXCOM Oferta Rechazada %28por botón%29</fullName>
+        <actions>
+            <name>OSFMX_MEXCOM_QuoteDeniedButton</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>(1 AND 2 AND 3 AND 4 AND 5) OR (1 AND 3 AND 4 AND 6)</booleanFilter>
+        <criteriaItems>
+            <field>Opportunity.OSFMX_SolutionType__c</field>
+            <operation>equals</operation>
+            <value>Comercialización de Gas Natural</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Quote.OSFMX_QuoteType__c</field>
+            <operation>equals</operation>
+            <value>OSFMX_OfertaGas</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Quote.Status</field>
+            <operation>equals</operation>
+            <value>Rechazada</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Quote.OSFMX_CheckManualRejected__c</field>
+            <operation>equals</operation>
+            <value>Verdadero</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Quote.OSFMX_OppServicePointType__c</field>
+            <operation>notEqual</operation>
+            <value>Multipunto</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Quote.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Master Quote</value>
+        </criteriaItems>
+        <description>MEXCOM Oferta Rechazada (por botón vlocity)</description>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Notificación Oferta Imposible</fullName>
+        <actions>
+            <name>OSFMX_ImpossibleoOfferAlert</name>
+            <type>Alert</type>
+        </actions>
+        <actions>
+            <name>OSFMX_ImpossibleoOfferAlerttogasofferuser</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>(1 AND 2 AND 3 AND 4) OR (1 AND 2 AND 5)</booleanFilter>
+        <criteriaItems>
+            <field>Quote.Status</field>
+            <operation>equals</operation>
+            <value>Imposible</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Quote.OSFMX_SubEstatus__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Quote.OSFMX_QuoteType__c</field>
+            <operation>equals</operation>
+            <value>OSFMX_OfertaGas</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Quote.OSFMX_OppServicePointType__c</field>
+            <operation>notEqual</operation>
+            <value>Multipunto</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Quote.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Master Quote</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>OSFMX KAM oferta en revisión por Equipo Gas</fullName>
+        <actions>
+            <name>OSFMX_KAM_oferta_en_revision_por_Equipo_Gas</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Quote.OSFMX_QuoteType__c</field>
+            <operation>equals</operation>
+            <value>OSFMX_OfertaGas</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Quote.OSFMX_TeamsGasRequestReview__c</field>
+            <operation>equals</operation>
+            <value>Verdadero</value>
+        </criteriaItems>
+        <description>Manda una notificación al KAM cuando una oferta fue mandada a aprobar por el Equipo de Oferta Gas.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>OSFMX NotificaciónOfertaAprobada a KAM</fullName>
+        <actions>
+            <name>OSFMX_OfertaAprobada</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Quote.OSFMX_QuoteType__c</field>
+            <operation>equals</operation>
+            <value>OSFMX_OfertaGas</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Quote.Status</field>
+            <operation>equals</operation>
+            <value>Aprobada</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Quote.OSFMX_SubEstatus__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Quote.OSFMX_RequestInReviewByGasTeam__c</field>
+            <operation>equals</operation>
+            <value>Verdadero</value>
+        </criteriaItems>
+        <description>Manda una notificación al KAM cuando una oferta fue aprobada.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>OSFMX Oferta no revisada%2E</fullName>
+        <active>false</active>
+        <criteriaItems>
+            <field>Quote.Status</field>
+            <operation>equals</operation>
+            <value>Proceso</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Quote.OSFMX_SubEstatus__c</field>
+            <operation>equals</operation>
+            <value>Solicitud</value>
+        </criteriaItems>
+        <description>Manda un correo electrónico al responsable de revisar la oferta tras 3 días de inactividad.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <timeLength>1</timeLength>
+            <workflowTimeTriggerUnit>Hours</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+        <workflowTimeTriggers>
+            <timeLength>3</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>OSFMX_AlertaOfertaPendiente</fullName>
+        <actions>
+            <name>OSFMX_PendingOfferEmailAlert</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND 6 AND 7 AND 8</booleanFilter>
+        <criteriaItems>
+            <field>Quote.OSFMX_MoleculeValidation__c</field>
+            <operation>equals</operation>
+            <value>Verdadero</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Quote.OSFMX_TransportValidation__c</field>
+            <operation>equals</operation>
+            <value>Verdadero</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Quote.Status</field>
+            <operation>equals</operation>
+            <value>Proceso</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Quote.OSFMX_SubEstatus__c</field>
+            <operation>equals</operation>
+            <value>Producto</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Quote.OSFMX_OfferType__c</field>
+            <operation>equals</operation>
+            <value>Vinculante</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Quote.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Oferta de Gas</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Quote.OSFMX_KamSendBack__c</field>
+            <operation>equals</operation>
+            <value>Falso</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Quote.OSFMX_OppServicePointType__c</field>
+            <operation>notEqual</operation>
+            <value>Multipunto</value>
+        </criteriaItems>
+        <description>Envía Alerta de correo para oferta pendiente</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>OSFMX_AlertaOfertaPendienteMultipunto</fullName>
+        <actions>
+            <name>OSFMX_PendingOfferEmailAlert</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Quote.OSFMX_ValidationstatusPPVinculante__c</field>
+            <operation>equals</operation>
+            <value>Verdadero</value>
+        </criteriaItems>
+        <description>Envía Alerta de correo para oferta pendiente</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Observaciones a KAM</fullName>
+        <actions>
+            <name>OSFMX_ObsToKAM</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>1 AND 2 AND 3 AND 4</booleanFilter>
+        <criteriaItems>
+            <field>Quote.OSFMX_KamSendBack__c</field>
+            <operation>equals</operation>
+            <value>Falso</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Quote.OSFMX_QuoteType__c</field>
+            <operation>equals</operation>
+            <value>OSFMX_OfertaGas</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Quote.Status</field>
+            <operation>equals</operation>
+            <value>Observaciones</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Quote.OSFMX_SubEstatus__c</field>
+            <operation>equals</operation>
+            <value>Producto (Oferta con observaciones)</value>
+        </criteriaItems>
+        <description>Obserbaciones a KAM por parte de Ofertas Gas</description>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Oferta Actualizada</fullName>
+        <actions>
+            <name>OSFMX_QuoteUpdated</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Quote.CreatedDate</field>
+            <operation>equals</operation>
+            <value>ESTE AÑO</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Quote.OSFMX_QuoteType__c</field>
+            <operation>equals</operation>
+            <value>OSFMX_OfertaGas</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Quote.OSFMX_KamSendBack__c</field>
+            <operation>equals</operation>
+            <value>Verdadero</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Quote.Status</field>
+            <operation>equals</operation>
+            <value>Proceso</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Quote.OSFMX_SubEstatus__c</field>
+            <operation>equals</operation>
+            <value>Producto</value>
+        </criteriaItems>
+        <description>Alerta cuando el KAM regresa la oferta con sus modificaciones</description>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Oferta Cancelada Vencida</fullName>
+        <active>false</active>
+        <criteriaItems>
+            <field>Quote.CreatedDate</field>
+            <operation>equals</operation>
+            <value>ESTE AÑO</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Quote.IsSyncing</field>
+            <operation>equals</operation>
+            <value>Verdadero</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Quote.Status</field>
+            <operation>equals</operation>
+            <value>Borrador,Proceso,Observaciones,Aprobada,Presentada</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Quote.ExpirationDate</field>
+            <operation>equals</operation>
+            <value>HOY</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>OSFMX_CanceledOffer</name>
+                <type>Alert</type>
+            </actions>
+            <actions>
+                <name>OSFMX_CanceledOffer</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <offsetFromField>Quote.ExpirationDate</offsetFromField>
+            <timeLength>1</timeLength>
+            <workflowTimeTriggerUnit>Hours</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Oferta Vinculante Pendiente</fullName>
+        <actions>
+            <name>OFSMX_QuoteBindingPending</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND 6 AND 7 AND 8</booleanFilter>
+        <criteriaItems>
+            <field>Quote.CreatedDate</field>
+            <operation>equals</operation>
+            <value>ESTE AÑO</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Quote.OSFMX_QuoteType__c</field>
+            <operation>equals</operation>
+            <value>OSFMX_OfertaGas</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Quote.OSFMX_OfferType__c</field>
+            <operation>equals</operation>
+            <value>Vinculante</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Quote.Status</field>
+            <operation>equals</operation>
+            <value>Proceso</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Quote.OSFMX_SubEstatus__c</field>
+            <operation>equals</operation>
+            <value>Factibilidad Mexcom</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Quote.OSFMX_MoleculeValidation__c</field>
+            <operation>equals</operation>
+            <value>Falso</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Quote.OSFMX_TransportValidation__c</field>
+            <operation>equals</operation>
+            <value>Falso</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Quote.OSFMX_OppServicePointType__c</field>
+            <operation>notEqual</operation>
+            <value>Multipunto</value>
+        </criteriaItems>
+        <description>Agregar a usuarios de Factibilidad Molecula y transporte a la alerta</description>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Oferta sin Observaciones por Usuario Gas</fullName>
+        <actions>
+            <name>OSFMX_UpdateSubStatusProduct</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Quote.OSFMX_RequestWithObservationsGas__c</field>
+            <operation>equals</operation>
+            <value>No</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Quote.OSFMX_SendtoReview__c</field>
+            <operation>equals</operation>
+            <value>Verdadero</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Quote.OSFMX_OfferType__c</field>
+            <operation>equals</operation>
+            <value>No Vinculante</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+
+    <rules>
+        <fullName>Tarea para revisar oferta equipo de gas</fullName>
+        <actions>
+            <name>OSFMX_NewQuoteRequest</name>
+            <type>Alert</type>
+        </actions>
+        <actions>
+            <name>OSFMX_DatetimeSendTeamGas</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>OSFMX_UpdateCheckSend</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND 6 AND 7</booleanFilter>
+        <criteriaItems>
+            <field>Quote.CreatedDate</field>
+            <operation>equals</operation>
+            <value>ESTE AÑO</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Quote.OSFMX_QuoteType__c</field>
+            <operation>equals</operation>
+            <value>OSFMX_OfertaGas</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Quote.OSFMX_KamSendBack__c</field>
+            <operation>equals</operation>
+            <value>Falso</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Quote.Status</field>
+            <operation>equals</operation>
+            <value>Proceso</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Quote.OSFMX_SubEstatus__c</field>
+            <operation>equals</operation>
+            <value>Solicitud</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Quote.OSFMX_OfferType__c</field>
+            <operation>equals</operation>
+            <value>No Vinculante</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Quote.OSFMX_OppServicePointType__c</field>
+            <operation>notEqual</operation>
+            <value>Multipunto</value>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Tarea para revisar oferta equipo de molécula</fullName>
+        <active>false</active>
+        <criteriaItems>
+            <field>Quote.CreatedDate</field>
+            <operation>equals</operation>
+            <value>ESTE AÑO</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Quote.OSFMX_OfferType__c</field>
+            <operation>equals</operation>
+            <value>Vinculante</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Tarea para revisar oferta equipo de transporte</fullName>
+        <actions>
+            <name>OSFMX_UpdateCheckTransport</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>OSFMX_OfferReview</name>
+            <type>Task</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Quote.CreatedDate</field>
+            <operation>equals</operation>
+            <value>ESTE AÑO</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Quote.OSFMX_OfferType__c</field>
+            <operation>equals</operation>
+            <value>Vinculante</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>OSFCL Actualiza Fecha Envio Oferta</fullName>
+        <actions>
+            <name>OSFCL_Actualiza_Fecha_Envio_Oferta</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Quote.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Oferta Energía Chile,Oferta Gas Chile,Oferta Soluciones Chile</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Quote.Status</field>
+            <operation>equals</operation>
+            <value>Presentada</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <tasks>
+        <fullName>OSFMX_OfferReview</fullName>
+        <assignedTo>OSFMX_AdministradorMexico</assignedTo>
+        <assignedToType>role</assignedToType>
+        <description>Post: asignar al usuario de transporte</description>
+        <dueDateOffset>3</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Open</status>
+        <subject>Revisión de oferta</subject>
+    </tasks>
+    <tasks>
+        <fullName>OSFMX_ReviewOfferwithComments</fullName>
+        <assignedToType>owner</assignedToType>
+        <description>Revisar la oferta con observaciones por parte del equipo de gas.</description>
+        <dueDateOffset>2</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Open</status>
+        <subject>Revisar oferta con observaciones</subject>
+    </tasks>
+</Workflow>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>OSFMX_ContractAccountForBilling__c</columns>
+    <columns>OSFMX_EstadoFactura__c</columns>
+    <columns>OSFMX_FechaEmision__c</columns>
+    <columns>OSFMX_DescripcionConcepto__c</columns>
+    <columns>OSFMX_ImporteConcepto__c</columns>
+    <columns>OSFMX_ContratoSuministro__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All</label>
+</ListView>

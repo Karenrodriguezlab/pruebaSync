@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OSFCO_Solucion__c</fullName>
+    <externalId>false</externalId>
+    <label>Solución</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>OSFCO_Tipo_de_Solucion__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>PPA</fullName>
+                <default>false</default>
+                <label>PPA</label>
+            </value>
+            <value>
+                <fullName>PPA Green</fullName>
+                <default>false</default>
+                <label>PPA Green</label>
+            </value>
+            <value>
+                <fullName>PPA+PV</fullName>
+                <default>false</default>
+                <label>PPA+PV</label>
+            </value>
+            <value>
+                <fullName>PSR</fullName>
+                <default>false</default>
+                <label>PSR</label>
+            </value>
+            <value>
+                <fullName>Ducto</fullName>
+                <default>false</default>
+                <label>Ducto</label>
+            </value>
+            <value>
+                <fullName>TX</fullName>
+                <default>false</default>
+                <label>TX</label>
+            </value>
+            <value>
+                <fullName>Generación OnSite</fullName>
+                <default>false</default>
+                <label>Generación OnSite</label>
+            </value>
+            <value>
+                <fullName>HVAC</fullName>
+                <default>false</default>
+                <label>HVAC</label>
+            </value>
+            <value>
+                <fullName>Agua</fullName>
+                <default>false</default>
+                <label>Agua</label>
+            </value>
+            <value>
+                <fullName>PPA Renovable</fullName>
+                <default>false</default>
+                <label>PPA Renovable</label>
+            </value>
+            <value>
+                <fullName>PPA Estandar</fullName>
+                <default>false</default>
+                <label>PPA Estandar</label>
+            </value>
+            <value>
+                <fullName>Green PPA-Solar</fullName>
+                <default>false</default>
+                <label>Green PPA-Solar</label>
+            </value>
+            <value>
+                <fullName>Green PPA-Hydro</fullName>
+                <default>false</default>
+                <label>Green PPA-Hydro</label>
+            </value>
+            <value>
+                <fullName>Green PPA-Wind</fullName>
+                <default>false</default>
+                <label>Green PPA-Wind</label>
+            </value>
+            <value>
+                <fullName>HVAC&amp;DHC</fullName>
+                <default>false</default>
+                <label>HVAC&amp;DHC</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Transmisión</controllingFieldValue>
+            <valueName>TX</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Gas</controllingFieldValue>
+            <valueName>PSR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Gas</controllingFieldValue>
+            <valueName>Ducto</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soluciones</controllingFieldValue>
+            <valueName>Generación OnSite</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soluciones</controllingFieldValue>
+            <valueName>HVAC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soluciones</controllingFieldValue>
+            <valueName>Agua</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

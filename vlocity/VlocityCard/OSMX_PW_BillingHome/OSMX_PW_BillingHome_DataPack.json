@@ -1,0 +1,37 @@
+{
+    "%vlocity_namespace%__Author__c": "Globant",
+    "%vlocity_namespace%__CardType__c": "flex",
+    "%vlocity_namespace%__Datasource__c": {
+        "contextVariables": [
+            {
+                "id": 0,
+                "name": "recordId",
+                "val": "001c0000038mVzCAAU"
+            }
+        ],
+        "orderBy": {
+            "isReverse": false,
+            "name": ""
+        },
+        "type": "Query",
+        "value": {
+            "jsonMap": "{\"recordId\":\"{recordId}\"}",
+            "query": "SELECT Id,Name,RecordTypeId FROM Account WHERE Id = '{recordId}'",
+            "resultVar": ""
+        }
+    },
+    "%vlocity_namespace%__Definition__c": "OSMX_PW_BillingHome.json",
+    "%vlocity_namespace%__Description__c": "",
+    "%vlocity_namespace%__GlobalKey__c": "OSMX_PW_BillingHome/Globant/1/1619198212161",
+    "%vlocity_namespace%__IsChildCard__c": false,
+    "%vlocity_namespace%__ParentID__c": "",
+    "%vlocity_namespace%__SampleData__c": "[{\"attributes\":{\"type\":\"Account\",\"url\":\"/services/data/v52.0/sobjects/Account/001c0000038mVzCAAU\"},\"Id\":\"001c0000038mVzCAAU\",\"Name\":\"CN MONDELEZ MÉXICO, S. DE R.L. DE C.V. OSMX\",\"RecordTypeId\":\"012c0000000E7mwAAC\"}]",
+    "%vlocity_namespace%__Styles__c": "{\"styleObjects\":{\"X-LargeIcon\":{\"sizeClass\":\"nds-size_12-of-12 \",\"padding\":[],\"margin\":[],\"background\":{\"color\":\"\",\"image\":\"\",\"size\":\"\",\"repeat\":\"no-repeat\",\"position\":\"\"},\"size\":{\"isResponsive\":false,\"default\":\"12\",\"large\":\"12\",\"medium\":\"12\",\"small\":\"12\"},\"container\":{\"class\":\"\"},\"border\":{\"type\":\"\",\"width\":\"\",\"color\":\"\",\"radius\":\"\",\"style\":\"\"},\"elementStyleProperties\":{\"styles\":{\"label\":{\"textAlign\":\"center\"}},\"iconSize\":\"large\"},\"text\":{\"align\":\"center\",\"color\":\"\"},\"inlineStyle\":\"\",\"class\":\"nds-theme_default nds-text-align_center \",\"style\":\"  background-repeat:no-repeat;   : #ccc 1px solid; \\n     height:11em;    \",\"height\":\"11em\",\"customClass\":\"\",\"theme\":\"theme_default\",\"minHeight\":\"\",\"selectedStyles\":\"X-LargeIcon\",\"element\":\"action\"}},\"customStyles\":\"\"}",
+    "%vlocity_namespace%__Type__c": "",
+    "%vlocity_namespace%__Version__c": 1,
+    "CurrencyIsoCode": "MXN",
+    "Name": "OSMX_PW_BillingHome",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__VlocityCard__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__VlocityCard__c/OSMX_PW_BillingHome"
+}

@@ -1,0 +1,1029 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Oportunidad_Soluciones_Colombia</fullName>
+    <active>true</active>
+    <businessProcess>Oportunidad Colombia</businessProcess>
+    <label>Oportunidad Soluciones Colombia</label>
+    <picklistValues>
+        <picklist>Cerrada_Perdida__c</picklist>
+        <values>
+            <fullName>Desierta</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Desistida</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No invitado</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Perdida</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rechazado</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ForecastCategoryName</picklist>
+        <values>
+            <fullName>Best Case</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Omitted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pipeline</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LeadSource</picklist>
+        <values>
+            <fullName>Advertisement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Event</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Employee Referral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Google AdWords</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Purchased List</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trade Show</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Webinar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Website</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Linea_de_Negocio__c</picklist>
+        <values>
+            <fullName>AUT %28Automatización%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CER %28Certificación%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CON %28Construcción%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Detección de temperatura por cámaras</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Green Corporate PPA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MSM %28Mantención Sitios Móviles%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PEX %28Planta Externa%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PPA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SAT %28Servicios Alta Tensión%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SOC %28Servicios Operaciones Comerciales%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SOT %28Servicios Operaciones Técnicas%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UMH %28Ultima Milla Hogar%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Loss_Reason__c</picklist>
+        <values>
+            <fullName>Lost to Competitor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Budget %2F Lost Funding</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Decision %2F Non-Responsive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Price</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Motivo_de_Perdida__c</picklist>
+        <values>
+            <fullName>Alcances Administrativos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Alcances Económicos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Alcances Técnicos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cambios en la Ingeniería</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Evaluación Administrativa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Evaluación Económica</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Evaluación Técnica</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Preferencia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Presupuesto</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OSFCL_Clasificacion_Oportunidad__c</picklist>
+        <values>
+            <fullName>Clasica</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>One Engie</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OSFCL_Driver_del_proyecto__c</picklist>
+        <values>
+            <fullName>Extensión de PPA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>One-ENGIE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PPA Nuevo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Posicionamiento de marca</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OSFCL_Estado_del_contrato__c</picklist>
+        <values>
+            <fullName>Firmado</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pendiente</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OSFCL_Lider_de_proyecto__c</picklist>
+        <values>
+            <fullName>Alejandra Hernández</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Andrea Vera</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Andres Pregallo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Camila Bolados</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Felipe Peña</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Francisco Barros</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ivania Novacovic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Patricio Sanchez</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Valentina Vera</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vicente Camino</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OSFCL_Motivo_no_adjudicacion__c</picklist>
+        <values>
+            <fullName>Calidad crediticia cliente</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Condiciones contractuales</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Falta de presupuesto del cliente</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No cumple expectativas del cliente</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Precio</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Proceso cancelado</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OSFCL_Opciones_cierre_no_ganado__c</picklist>
+        <values>
+            <fullName>Desierta</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Desistida</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Perdida</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OSFCL_Prioridad__c</picklist>
+        <values>
+            <fullName>Crítica</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Must Win</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OSFCL_Probabilidad_de_cierre__c</picklist>
+        <values>
+            <fullName>0</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>10</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>100</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>20</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>30</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>40</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>60</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>70</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>80</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>90</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OSFCL_Proveedor_de_molecula__c</picklist>
+        <values>
+            <fullName>EECL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ENAP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ENEL</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OSFCL_Tipo_Venta_a_la_Red__c</picklist>
+        <values>
+            <fullName>100%25 Autoconsumo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Instalación Compartida %2F PMGD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Net Billing</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OSFCL_Tipo_de_Contrato__c</picklist>
+        <values>
+            <fullName>Nuevo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Renovación</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OSFCL_Tipo_de_PV__c</picklist>
+        <values>
+            <fullName>Ground</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rooftop</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OSFCL_Tipo_de_oferta__c</picklist>
+        <values>
+            <fullName>No vinculante</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vinculante</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OSFCO_Mercado_destino__c</picklist>
+        <values>
+            <fullName>No regulado</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Regulado</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OSFCO_Planta_Engie_1__c</picklist>
+        <values>
+            <fullName>Caracoli %28124%2E558 GWh-y%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cerritos %2823%2E837 GWh-y%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Malambo %28122%2E528 GWh-y%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OSFCO_Planta_Engie_2__c</picklist>
+        <values>
+            <fullName>Caracoli %28124%2E558 GWh-y%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cerritos %2823%2E837 GWh-y%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Malambo %28122%2E528 GWh-y%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OSFCO_Planta_Engie_3__c</picklist>
+        <values>
+            <fullName>Caracoli %28124%2E558 GWh-y%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cerritos %2823%2E837 GWh-y%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Malambo %28122%2E528 GWh-y%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OSFCO_Rol_de_la_cuenta__c</picklist>
+        <values>
+            <fullName>Cliente Final</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Comercializadora</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Comercializadora cliente</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OSFMX_BusinessModel__c</picklist>
+        <values>
+            <fullName>Asset Based</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Asset Light</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OSFMX_ConnectionType__c</picklist>
+        <values>
+            <fullName>Conexion Estandar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Conexion Estandar %2B No Estandar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ninguno</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OSFMX_ContractMode__c</picklist>
+        <values>
+            <fullName>Consultor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contratación directa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Licitación</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OSFMX_ContractStatus__c</picklist>
+        <values>
+            <fullName>Firmado</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OSFMX_CustomerOptions__c</picklist>
+        <values>
+            <fullName>1%2E Cliente en zona Engie</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%2E Cliente en zona no Engie</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3%2E Cliente directo a transporte</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OSFMX_CustomerType__c</picklist>
+        <values>
+            <fullName>Cliente Final</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Comercializador</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OSFMX_Dealer__c</picklist>
+        <values>
+            <fullName>1%2E NGM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%2E GNP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3%2E CMG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4%2E DGQ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5%2E DGJ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6%2E TMG</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OSFMX_EngiePlantSecondOption__c</picklist>
+        <values>
+            <fullName>Akin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Angel 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Magdalena II %28ENEL%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pánuco</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rancho Norte</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TEM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Villa Ahumada</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OSFMX_EngiePlant__c</picklist>
+        <values>
+            <fullName>Akin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Angel 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Magdalena II %28ENEL%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pánuco</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rancho Norte</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TEM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Villa Ahumada</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OSFMX_EngieSupplier__c</picklist>
+        <values>
+            <fullName>ENLIGHT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MEM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MX01-Country Template MX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MX02-Consorcio Mexi Gas SA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MX03-Cofely España SA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MX04-ENGIE México Servicios</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MX05-Tractebel DGJ SA DE CV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MX06-Tractebel Digaqro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MX07-Engie Eólica Tres Mesas 3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MX08-México Renovables</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MX09-Engie Mex Consultores SA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MX10-Energía Mayakan%2C S de RL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MX11-Engie México SA de CV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MX12-Tractebel GNP SA DE CV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MX13-Gasoductos del Bajío</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MX14-Cogeneración Eficiente NL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MX15-Tractebel Energía de Mont</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MX16-Natgasmex SA de CV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MX17-Tractebel Energia de Panu</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MX18-Servicios  Especializados</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MX19-Engie México Plataforma</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MX20-Engie México Renovables</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MX21-Energia Natural Peninsula</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MX22-ENGIE México Generación</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MX23-Engie México Operación</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MX24-Tamauligas SA de CV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MX25-GDF Suez México Comercial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MX26-Engie Factory México</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MX27-Solairedirect de México</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MX28-Geotérmica Cerro Pinto</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MX29-Geotérmica Derrumbabas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MX30-Geotérmica Sanganguey</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MX31-Thermion Solar PV Holding</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MX32-Solaire PV Holding México</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MX33-Recursos Solares PV de</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MX34-Energia Villa de Arriaga</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MX35-Tractebel Engineering LTD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MX36-Sol de Insurgentes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MX37-Sol de Insurgentes 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MX38-TAG Pipelines Sur</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MX39-Servicios y Energía México</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MX40-Engie México Transporte</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MX41-Engie México Eólica SAPI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MX42-Engie Marketplace</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MX43-Eólica Tres Mesas 4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MX44-Akin Solar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MX45-Engie Villa Ahumada PV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MX46-Engie Abril PV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MX47-Engie Calpulalpan PV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MX48-BNB Villa Ahumada Solar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MX49-Buenos Días Energía</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MX50-Solar PV Holdings México</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MX51-Recursos Solares PV de</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MX52-Grupo Enerclima SA PI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MX53-SEN Sistemas Solares</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MX54-Enerclima S de RL de CV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MX55-Membresía Enerclima</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MX56-Engie GBS LATAM SA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MX57-Engie Mex Servicios Admin</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OSFMX_LossReason__c</picklist>
+        <values>
+            <fullName>Calidad crediticia cliente</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Condiciones contractuales</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Falta de presupuesto del cliente</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No cumple expectativas del cliente</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Precio</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Proceso cancelado</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OSFMX_OpportunityType__c</picklist>
+        <values>
+            <fullName>Otras_Soluciones</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OSFMX_ProjectType__c</picklist>
+        <values>
+            <fullName>EPC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PPA</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OSFMX_SolutionType__c</picklist>
+        <values>
+            <fullName>Soluciones</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OSFMX_Solution__c</picklist>
+        <values>
+            <fullName>Generación OnSite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HVAC%26DHC</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OSFPE_fld_Clasificacion_Sentinel__c</picklist>
+        <values>
+            <fullName>CPP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DEF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Normal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PER</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Tipo_de_propuesta__c</picklist>
+        <values>
+            <fullName>No vinculante</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vinculante</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Nuevo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Renovación</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

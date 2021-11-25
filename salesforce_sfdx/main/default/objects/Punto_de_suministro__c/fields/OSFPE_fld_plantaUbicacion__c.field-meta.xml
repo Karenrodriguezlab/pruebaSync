@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OSFPE_fld_plantaUbicacion__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Nombre de la planta del cliente o la ubicación o sede del cliente donde se suministra la energía</inlineHelpText>
+    <label>Planta/Ubicación</label>
+    <length>100</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OSFMX_IsMultipagosSuccessfulResponse__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Es verdadera cuando Multipagos invocó la visualforce de respuesta exitosa del portal del clientes.</description>
+    <externalId>false</externalId>
+    <label>Respuesta Exitosa de Multipagos</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

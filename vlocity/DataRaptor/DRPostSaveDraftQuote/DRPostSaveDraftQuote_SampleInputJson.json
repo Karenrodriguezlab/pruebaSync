@@ -1,0 +1,66 @@
+{
+    "Account": {
+        "Coordenadas": "1212 2121",
+        "GiroName": "Alimentos y bebidas",
+        "Latitud": 1212,
+        "Longitud": 2121,
+        "Name": "Negocio Arm",
+        "RFC": "ADFH84648SH",
+        "RazonSocial": "NegArm"
+    },
+    "AccountId": "0011900000xiNxKAAU",
+    "BaseInterrumpible": "",
+    "ContextId": "0061900000BFQgWAAX",
+    "Fechas": 30,
+    "Giro": "",
+    "Oportunidad": {
+        "AccountId": "0011900000xiNxKAAU",
+        "Actividad": "Documentación",
+        "CapacidadMaximaDiaria": 34,
+        "CloseDate": "2021-07-17",
+        "ConsumoAnual": 5000,
+        "FechaActividad": "2021-02-26",
+        "FechaCierre": "2021-07-17",
+        "FechaFinSuministro": "2022-05-01",
+        "FechaInicioSuministro": "2021-05-01",
+        "FechaStatus": "2021-02-21T00:00:00.000Z",
+        "Id": "0061900000BFQgWAAX",
+        "Importe": 20000,
+        "Name": "Fabricas Arm",
+        "PlazoSuministro": 12,
+        "Probabilidad": 35,
+        "RecordType": "01219000000ZyOIAA0",
+        "Solucion": "All in: Compresión, transporte y descompresión",
+        "StageName": "En proceso",
+        "StatusActual": "Nuevo",
+        "TipoCliente": "Cliente Final",
+        "TipoContrato": "Renovación",
+        "TipoSolucion": "Comercialización de Gas Natural"
+    },
+    "OportunidadId": "0061900000BFQgWAAX",
+    "OportunidadName": "Fabricas Arm",
+    "OportunidadTS": "Comercialización de Gas Natural",
+    "StepAccountData": {
+        "AccountDataOferta": {
+            "Especificacion": null,
+            "FechaVto": "30 días",
+            "GiroName": "Alimentos y bebidas",
+            "NombreComercial": "Negocio Arm",
+            "QuoteType": "Vinculante",
+            "RFC": "ADFH84648SH",
+            "RazonSocial": "NegArm"
+        }
+    },
+    "StepDataDistributionQuote": null,
+    "StepDistributionAccountData": null,
+    "StepOfertaData": {
+    },
+    "contextId": "0061900000BFQgWAAX",
+    "omnidesignerChannelId": "omni-designer-channel-id-1615309099653",
+    "timeStamp": "2021-03-09T16:58:24.127Z",
+    "userCurrencyCode": "MXN",
+    "userId": "00519000003hCzZAAU",
+    "userName": "osmxmigration@engie.com.qa",
+    "userProfile": "Administrador de migración",
+    "userTimeZone": "-360"
+}

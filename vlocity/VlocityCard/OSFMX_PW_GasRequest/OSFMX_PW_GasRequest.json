@@ -1,0 +1,243 @@
+{
+    "dataSource": {
+        "contextVariables": [
+        ],
+        "orderBy": {
+            "isReverse": false,
+            "name": ""
+        },
+        "type": "IntegrationProcedures",
+        "value": {
+            "ipMethod": "OSFMX_GetUrlRequestSolutionsPortal",
+            "resultVar": "",
+            "vlocityAsync": false
+        }
+    },
+    "enableLwc": true,
+    "isFlex": true,
+    "lwc": {
+        "DeveloperName": "cfOSFMX_PW_GasRequest_1_Globant",
+        "Id": "0Rbc0000000DFbcCAG",
+        "MasterLabel": "cfOSFMX_PW_GasRequest_1_Globant",
+        "NamespacePrefix": "c"
+    },
+    "states": [
+        {
+            "actions": [
+            ],
+            "childCards": [
+            ],
+            "components": {
+                "layer-0": {
+                    "children": [
+                        {
+                            "class": "nds-col ",
+                            "element": "flexImg",
+                            "elementLabel": "Image-0",
+                            "name": "Image",
+                            "property": {
+                                "extraclass": "slds-align_absolute-center",
+                                "record": "{record}",
+                                "size": "",
+                                "stateImg": {
+                                    "alternativeText": "Image description",
+                                    "imgsrc": "/resource/1619217538000/RequestImage?"
+                                }
+                            },
+                            "size": {
+                                "default": "12",
+                                "isResponsive": false
+                            },
+                            "stateIndex": 0,
+                            "styleObject": {
+                                "sizeClass": "nds-size_12-of-12"
+                            },
+                            "type": "element"
+                        },
+                        {
+                            "class": "nds-col ",
+                            "element": "outputField",
+                            "elementLabel": "Text-1",
+                            "name": "Text",
+                            "property": {
+                                "card": "{card}",
+                                "mergeField": "%3Cdiv%20class=%22nds-text-heading_large%20nds-text-align_center%22%3E%3Cstrong%3EUps!!%20Parece%20que%20aun%20no%20cuentas%20con%20este%20servicio%3C/strong%3E%3C/div%3E",
+                                "record": "{record}"
+                            },
+                            "size": {
+                                "default": "12",
+                                "isResponsive": false
+                            },
+                            "stateIndex": 0,
+                            "styleObject": {
+                                "sizeClass": "nds-size_12-of-12"
+                            },
+                            "type": "text"
+                        },
+                        {
+                            "class": "nds-col ",
+                            "element": "outputField",
+                            "elementLabel": "Text-2",
+                            "name": "Text",
+                            "property": {
+                                "card": "{card}",
+                                "mergeField": "%3Cdiv%20class=%22nds-text-heading_medium%22%3E&nbsp;%3C/div%3E%0A%3Cdiv%20class=%22nds-text-heading_medium%22%3EENGIE%20M&eacute;xico%20ha%20sido%20pionero%20en%20la%20distribuci&oacute;n%20y%20transporte%20de%20gas%20natural%20con%20operaciones%20en%20el%20Pa&iacute;s%20desde%20mediados%20de%20los%20a&ntilde;os%20noventa.%20Esta%20trayectoria%20s&oacute;lida%20nos%20coloca%20entre%20las%20compa&ntilde;&iacute;as%20m&aacute;s%20importantes%20en%20M&eacute;xico%20siendo%20el%20Primer%20Comprador%20Privado%20de%20Gas%20Natural%20en%20la%20Rep&uacute;blica%20Mexicana,%20suministrando%20a%20m&aacute;s%20de%202,000%20grandes%20grupos%20industriales%20de%20todos%20los%20sectores%20en%20diversos%20puntos%20de%20M&eacute;xico.&nbsp;%3C/div%3E%0A%3Cdiv%20class=%22nds-text-heading_medium%22%3E&nbsp;%3C/div%3E",
+                                "record": "{record}"
+                            },
+                            "size": {
+                                "default": "12",
+                                "isResponsive": false
+                            },
+                            "stateIndex": 0,
+                            "styleObject": {
+                                "sizeClass": "nds-size_12-of-12"
+                            },
+                            "type": "text"
+                        },
+                        {
+                            "class": "nds-col ",
+                            "element": "action",
+                            "elementLabel": "Aquí",
+                            "name": "Action",
+                            "property": {
+                                "card": "{card}",
+                                "displayAsButton": true,
+                                "hideActionIcon": true,
+                                "record": "{record}",
+                                "stateAction": {
+                                    "Web Page": {
+                                        "targetName": "{URLSolucionGas}"
+                                    },
+                                    "displayName": "¿Te gustaría conocer mas de esta solución? da click aquí",
+                                    "id": "flex-action-1619219154512",
+                                    "openUrlIn": "New Tab/Window",
+                                    "targetType": "Web Page",
+                                    "type": "Custom",
+                                    "vlocityIcon": "standard-default"
+                                },
+                                "stateObj": "{record}",
+                                "styles": {
+                                    "label": {
+                                        "textAlign": "center"
+                                    }
+                                }
+                            },
+                            "size": {
+                                "default": "12",
+                                "isResponsive": false
+                            },
+                            "stateIndex": 0,
+                            "styleObject": {
+                                "background": {
+                                    "color": "",
+                                    "image": "",
+                                    "position": "",
+                                    "repeat": "",
+                                    "size": ""
+                                },
+                                "border": {
+                                    "color": "",
+                                    "radius": "",
+                                    "style": "",
+                                    "type": "",
+                                    "width": ""
+                                },
+                                "class": "nds-text-align_center ",
+                                "container": {
+                                    "class": ""
+                                },
+                                "elementStyleProperties": {
+                                    "styles": {
+                                        "label": {
+                                            "textAlign": "center"
+                                        }
+                                    }
+                                },
+                                "inlineStyle": "",
+                                "margin": [
+                                ],
+                                "padding": [
+                                ],
+                                "size": {
+                                    "default": "12",
+                                    "isResponsive": false
+                                },
+                                "sizeClass": "nds-size_12-of-12 ",
+                                "style": "             ",
+                                "text": {
+                                    "align": "center",
+                                    "color": ""
+                                }
+                            },
+                            "type": "element",
+                            "userUpdatedElementLabel": true
+                        }
+                    ]
+                }
+            },
+            "conditions": {
+                "group": [
+                ],
+                "id": "state-condition-object",
+                "isParent": true
+            },
+            "definedActions": {
+                "actions": [
+                ]
+            },
+            "fields": [
+            ],
+            "isSmartAction": false,
+            "name": "Active",
+            "omniscripts": [
+            ],
+            "smartAction": {
+            },
+            "styleObject": {
+                "background": {
+                    "color": "",
+                    "image": "",
+                    "position": "",
+                    "repeat": "",
+                    "size": ""
+                },
+                "border": {
+                    "color": "",
+                    "radius": "",
+                    "style": "",
+                    "type": "",
+                    "width": ""
+                },
+                "class": "nds-text-align_center ",
+                "container": {
+                    "class": ""
+                },
+                "customClass": "",
+                "elementStyleProperties": {
+                },
+                "height": "",
+                "inlineStyle": "",
+                "margin": [
+                ],
+                "maxHeight": "",
+                "minHeight": "",
+                "padding": [
+                ],
+                "selectedStyles": "",
+                "size": {
+                    "default": "12",
+                    "isResponsive": false
+                },
+                "sizeClass": "nds-size_12-of-12 ",
+                "style": "             ",
+                "text": {
+                    "align": "center",
+                    "color": ""
+                },
+                "theme": ""
+            }
+        }
+    ],
+    "theme": "nds",
+    "title": "OSFMX_PW_GasRequest"
+}

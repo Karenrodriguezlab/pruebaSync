@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>OSFPE_wea_alertaDia1</fullName>
+        <description>Alerta 1 día vencimiento correo</description>
+        <protected>false</protected>
+        <recipients>
+            <type>accountOwner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/OSFPE_eplt_recordatorioDia1</template>
+    </alerts>
+    <alerts>
+        <fullName>OSFPE_wea_alertaDia3</fullName>
+        <description>Alerta 3 días vencimiento correo</description>
+        <protected>false</protected>
+        <recipients>
+            <type>accountOwner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/OSFPE_eplt_recordatorioDia3</template>
+    </alerts>
+    <alerts>
+        <fullName>OSFPE_wea_alertaDia7</fullName>
+        <description>Alerta 7 días vencimiento correo</description>
+        <protected>false</protected>
+        <recipients>
+            <type>accountOwner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/OSFPE_eplt_recordatorioDia7</template>
+    </alerts>
+    <rules>
+        <fullName>Notificación Tarea creada</fullName>
+        <active>true</active>
+        <description>Flujo de trabajo para el envió de notificación cuando se crea una tarea</description>
+        <formula>ISNULL(ActivityDate) &lt;&gt; True &amp;&amp; RecordType.DeveloperName =&apos;OSFPE_rt_Tarea&apos;</formula>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+</Workflow>

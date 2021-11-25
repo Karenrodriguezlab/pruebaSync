@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>OSFMX_NewBusinessNaturalFuel</fullName>
+        <description>Nuevos Negocios Gas Natural</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>OSFMX_Template_Folder/OSFMX_NewBusinessHTML</template>
+    </alerts>
+    <alerts>
+        <fullName>OSFMX_NewBusinessPower</fullName>
+        <description>Nuevos Negocios Electricidad</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>OSFMX_Template_Folder/OSFMX_NewBusinessPowerHTML</template>
+    </alerts>
+    <alerts>
+        <fullName>OSFMX_NewOther</fullName>
+        <description>Nuevos Negocios Otros Negocios</description>
+        <protected>false</protected>
+         <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>OSFMX_Template_Folder/OSFMX_NewOtherHTML</template>
+    </alerts>
+</Workflow>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OSFMX_ClosedWonMessage__c</fullName>
+    <defaultValue>&quot;Revisa que sea correcta la oferta sincronizada. Las ofertas asociadas a esta oportunidad se van a cerrar en automático como rechazadas.&quot;</defaultValue>
+    <externalId>false</externalId>
+    <label>Mensaje de Cierre Ganado</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

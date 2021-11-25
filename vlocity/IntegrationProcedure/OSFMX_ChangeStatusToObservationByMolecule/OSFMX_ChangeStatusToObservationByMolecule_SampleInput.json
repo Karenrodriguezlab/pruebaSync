@@ -1,0 +1,23 @@
+{
+    "Body": "test",
+    "ContextId": "0Q0c0000000iN6pCAE",
+    "OSFMX_KamSendBack__c": false,
+    "OwnerId": "005c0000007TAbFAAW",
+    "ParentId": "0Q0c0000000iN6pCAE",
+    "QuoteId": "0Q0c0000000iN6pCAE",
+    "Stage": "Observaciones",
+    "StepComments": {
+        "Comments": "test",
+        "State": "Observaciones",
+        "SubStatus": "Factibilidad Mexcom"
+    },
+    "SubStage": "Factibilidad Mexcom",
+    "UserId": "005c0000007TAbFAAW",
+    "omnidesignerChannelId": "omni-designer-channel-id-1622927627573",
+    "timeStamp": "2021-06-05T21:17:29.217Z",
+    "userCurrencyCode": "MXN",
+    "userId": "005c0000007TAbFAAW",
+    "userName": "nasser.abdala@globant.com.latam.devmexico",
+    "userProfile": "Administrador del sistema",
+    "userTimeZone": "-300"
+}

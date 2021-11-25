@@ -1,0 +1,34 @@
+<div class="slds-card via-slds-card--horiz" data-card="card-{{cardIndex}}" ng-class="{selected:isSelected(cardIndex)}" data-popover-flyout="true" >
+  <div class="slds-small-show via-slds-card__body sldsslds-grid slds-grid--vertical slds-theme--default slds-p-around--large">
+    <div class="slds-grid slds-wrap">
+        <div class="slds-col slds-size_1-of-2">
+            <div class="slds-text-heading_medium font-weight-bold">Saldo Total</div>
+        </div>
+        <div class="slds-col slds-size_1-of-2">
+            <!--div class="slds-text-heading_large slds-text-align_right font-weight-bold">{{obj.Statement ? obj.Statement.CurrentBalance : ''}}</div-->
+            <!--div class="slds-text-heading_large slds-text-align_right font-weight-bold">$45,000.00</div-->
+            <div class="slds-text-heading_large slds-text-align_right font-weight-bold">$ {{obj.montoFactura ? obj.montoFactura : ''}}</div>
+        </div>
+    </div>   
+    <div class="slds-text-body_regular font-weight-bold slds-p-around--x-small slds-p-left_none">Factura Actual: {{ obj.Statement ? (obj.Statement.StartDate | date:'MMM y') : ''}}</div>     
+
+        <table class="slds-table slds-no-row-hover slds-table_bordered">
+            <tbody>
+                <tr class="slds-hint-parent" ng-repeat="field in data.fields"  ng-show="key != 'attributes'">
+                    <th ng-class="{'slds-border-last-color': $last, 'slds-border-first-color': $first}">
+                        <div class="slds-truncate" title="{{field.label}}">{{field.label}}</a></div>
+                    </th>
+                    <td ng-class="{'slds-border-last-color': $last, 'slds-border-first-color': $first}">
+                        <div class="slds-truncate slds-text-align_right" ng-if="!obj[field.relationshipName]">{{obj | getter: field | picker: field.type}} </div>
+                        <div class="slds-truncate slds-text-align_right" ng-if="obj[field.relationshipName]">{{obj[field.relationshipName]['Name']}} </div>                        
+                    </td>
+                </tr>  
+            </tbody>
+        </table> 
+        <div class="slds-text-body_small slds-disconnect" ng-if="obj.DisconnectAmount">or <span class="font-weight-bold">{{obj.DisconnectAmount}}</span> to avoid disconnection</div>    
+
+    <div class="slds-vlocity-actions slds-p-top--medium">
+    <span class="slds-tile slds-truncate" ng-repeat="action in data.actions | limitTo: (data.limitActionLinksTo?data.limitActionLinksTo:5)">
+        <button class="slds-button slds-button_neutral" ng-disabled="action.%vlocity_namespace%__LinkType__c && !action.%vlocity_namespace%__URL__c" ng-click="performAction(action)">{{action.displayName}}</button>
+    </span>    
+  </div>

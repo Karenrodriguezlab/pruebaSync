@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>Edit</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>Crédito - Riesgos y Garantías</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>Crédito - Riesgos y Garantías</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
+    <parentRole>OSFMX_ServicioalCliente</parentRole>
+</Role>

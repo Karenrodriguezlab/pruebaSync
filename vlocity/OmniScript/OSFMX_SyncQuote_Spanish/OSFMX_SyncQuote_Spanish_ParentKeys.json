@@ -1,0 +1,5 @@
+[
+    "IntegrationProcedure/OSFMX_GetQuoteInformation",
+    "IntegrationProcedure/OSFMX_SyncQuote",
+    "IntegrationProcedure/OSFMX_UnsyncQuote"
+]

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Closed</fullName>
+        <default>false</default>
+        <label>Cerrado</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>No Asignado</fullName>
+        <default>false</default>
+        <label>No Asignado</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Validación Alta de caso por KAM</fullName>
+        <default>false</default>
+        <label>Validación Alta de caso por KAM</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Revalidación Alta de caso por KAM</fullName>
+        <default>false</default>
+        <label>Revalidación Alta de caso por KAM</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Validación Crédito y Riesgo</fullName>
+        <default>false</default>
+        <label>Validación Crédito y Riesgo</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Revalidación Crédito y Riesgo</fullName>
+        <default>false</default>
+        <label>Revalidación Crédito y Riesgo</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>En espera de asignación mensual</fullName>
+        <default>false</default>
+        <label>En espera de asignación mensual</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Validación-Comité</fullName>
+        <default>false</default>
+        <label>Validación-Comité</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Validación Especialista Facturación</fullName>
+        <default>false</default>
+        <label>Validación Especialista Facturación</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Revalidación Especialista Facturación</fullName>
+        <default>false</default>
+        <label>Revalidación Especialista Facturación</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Validación por Cobranza</fullName>
+        <default>false</default>
+        <label>Validación por Cobranza</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Revalidación Cobranza</fullName>
+        <default>false</default>
+        <label>Revalidación Cobranza</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Validación de cierre por KAM</fullName>
+        <default>false</default>
+        <label>Validación de cierre por KAM</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Revalidación de cierre por KAM</fullName>
+        <default>false</default>
+        <label>Revalidación de cierre por KAM</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Cierre Satisfactorio-Crédito</fullName>
+        <default>false</default>
+        <label>Cierre Satisfactorio-Crédito</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Caso creado por error - Cerrado</fullName>
+        <default>false</default>
+        <label>Caso creado por error - Cerrado</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Pendiente Cerrar por Crédito</fullName>
+        <default>false</default>
+        <label>Pendiente Cerrar por Crédito</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Cierre Satisfactorio KAM</fullName>
+        <default>false</default>
+        <label>Cierre Satisfactorio KAM</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Nuevo</fullName>
+        <default>true</default>
+        <label>Nuevo</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Abierto</fullName>
+        <default>false</default>
+        <label>Abierto</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Escalado a Asuntos Corporativos</fullName>
+        <default>false</default>
+        <label>Escalado a Asuntos Corporativos</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Escalado a Comercial</fullName>
+        <default>false</default>
+        <label>Escalado a Comercial</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Escalado a Desarrollo</fullName>
+        <default>false</default>
+        <label>Escalado a Desarrollo</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Escalado a Finanzas</fullName>
+        <default>false</default>
+        <label>Escalado a Finanzas</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Escalado a Legal</fullName>
+        <default>false</default>
+        <label>Escalado a Legal</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Escalado a Operaciones</fullName>
+        <default>false</default>
+        <label>Escalado a Operaciones</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>No atendido</fullName>
+        <default>false</default>
+        <label>No atendido</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Pendiente de externo</fullName>
+        <default>false</default>
+        <label>Pendiente de externo</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Stand by</fullName>
+        <default>false</default>
+        <label>Stand by</label>
+        <closed>false</closed>
+    </standardValue>
+</StandardValueSet>

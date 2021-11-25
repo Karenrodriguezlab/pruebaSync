@@ -1,0 +1,26 @@
+{
+    "%vlocity_namespace%__AdditionalInformation__c": "No aplica cambios - NKA - 05/08/21",
+    "%vlocity_namespace%__DisableMetadataCache__c": false,
+    "%vlocity_namespace%__ElementTypeToHTMLTemplateList__c": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "%vlocity_namespace%__Element__c": [
+        "OSFMX_QuoteRejectedByKam_English_Element_SetValuesStatus.json",
+        "OSFMX_QuoteRejectedByKam_English_Element_StepRejectedReason.json",
+        "OSFMX_QuoteRejectedByKam_English_Element_rejectedReason.json",
+        "OSFMX_QuoteRejectedByKam_English_Element_DRRejectQuoteByKam.json",
+        "OSFMX_QuoteRejectedByKam_English_Element_NavigateAction1.json"
+    ],
+    "%vlocity_namespace%__IsLwcEnabled__c": true,
+    "%vlocity_namespace%__IsProcedure__c": false,
+    "%vlocity_namespace%__IsReusable__c": false,
+    "%vlocity_namespace%__IsTest__c": false,
+    "%vlocity_namespace%__Language__c": "English",
+    "%vlocity_namespace%__OmniProcessType__c": "OmniScript",
+    "%vlocity_namespace%__PropertySet__c": "OSFMX_QuoteRejectedByKam_English_PropertySet.json",
+    "%vlocity_namespace%__SubType__c": "QuoteRejectedByKam",
+    "%vlocity_namespace%__Type__c": "OSFMX",
+    "CurrencyIsoCode": "MXN",
+    "Name": "QuoteRejectedByKam",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__OmniScript__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__OmniScript__c/OSFMX/QuoteRejectedByKam/English"
+}

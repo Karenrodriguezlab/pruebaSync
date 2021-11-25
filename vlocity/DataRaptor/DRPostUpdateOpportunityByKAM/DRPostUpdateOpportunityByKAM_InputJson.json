@@ -1,0 +1,37 @@
+{
+    "StepUpdateOportunidad": {
+        "AccountName": "CN MONDELEZ MÉXICO, S. DE R.L. DE C.V. OSMX",
+        "Amount": 50000,
+        "CloseDate": "2021-05-06",
+        "ContactSelected-Block": {
+            "ContactId": "003c000001UYiWHAA1",
+            "ContactName": "Marc Benioff",
+            "ContactSelected": "Marc Benioff"
+        },
+        "Id": "006c000000UcVbLAAV",
+        "Name": "oportunidad electricidad 6 mayo",
+        "OSFMX_BusinessModel__c": null,
+        "OSFMX_ContractMode__c": "Consultor",
+        "OSFMX_CurrentStatusDate__c": "2021-05-06T20:12:00.000Z",
+        "OSFMX_CurrentStatus__c": "test",
+        "OSFMX_CustomerType__c": "Cliente Final",
+        "OSFMX_DeliveryTime__c": 12,
+        "OSFMX_EngiePlantSecondOption__c": "TEM",
+        "OSFMX_EngiePlant__c": "Rancho Norte",
+        "OSFMX_EngieSupplier__c": "MX15-Tractebel Energía de Mont",
+        "OSFMX_ExpConsGjByYear__c": null,
+        "OSFMX_ExpectedAnnualConsumptionMWhByYear__c": 12,
+        "OSFMX_FreeInformation__c": null,
+        "OSFMX_Maximumdailycapacity__c": null,
+        "OSFMX_NextActivityDate__c": "2021-05-06",
+        "OSFMX_NextActivity__c": "test",
+        "OSFMX_RequiredPower__c": 12,
+        "OSFMX_ServiceStartDate__c": null,
+        "OSFMX_SolutionType__c": "Corporate PPA",
+        "OSFMX_Solution__c": "Corporate PPA Renovable",
+        "OSFMX_SupplyStartDate__c": "2021-05-06",
+        "OpportunityType": "Electricidad",
+        "Probability": 50,
+        "Type": "Renovación"
+    }
+}

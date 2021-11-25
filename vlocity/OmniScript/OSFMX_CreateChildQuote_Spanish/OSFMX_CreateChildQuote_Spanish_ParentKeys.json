@@ -1,0 +1,5 @@
+[
+    "DataRaptor/DRGetInformationMasterQuoteById",
+    "DataRaptor/DRGetServicePointWithOutQuoteByMasterQuote",
+    "IntegrationProcedure/OSFMX_CreateUpdateChildQuote"
+]

@@ -1,0 +1,4 @@
+<apex:page standardController="Quote" extensions="OSFMX_CreateObjIdCtrl" action="{!createObjId}">
+    <apex:form >
+    </apex:form>
+</apex:page>

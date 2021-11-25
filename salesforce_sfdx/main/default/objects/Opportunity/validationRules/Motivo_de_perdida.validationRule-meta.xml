@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Motivo_de_perdida</fullName>
+    <active>true</active>
+    <description>Exige información en campo motivo de perdida cuando oportunidad es cerrada perdida</description>
+    <errorConditionFormula>AND(ISPICKVAL(StageName, &quot;Cerrada Perdida&quot;), ISPICKVAL(	OSFMX_LossReason__c, &quot;&quot;),OR(RecordType.DeveloperName=&quot;OSFMX_Electricidad&quot;,RecordType.DeveloperName=&quot;Otras_Soluciones&quot;),$Profile.Name &lt;&gt; &quot;Administrador del sistema&quot;,$Profile.Name &lt;&gt; &quot;System Administrator&quot;)</errorConditionFormula>
+    <errorMessage>Debe completar el campo Motivo de pérdida para cerrar la oportunidad como perdida.</errorMessage>
+</ValidationRule>

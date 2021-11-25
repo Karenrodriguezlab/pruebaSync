@@ -1,0 +1,17 @@
+{
+    "OSFMX_ClosedComments__c": "Text",
+    "OSFMX_ClosedWonComments__c": "Text",
+    "OSFMX_ContractSignDate__c": "Text",
+    "OSFMX_ContractStatus__c": "Text",
+    "OSFMX_CurrentStatus__c": "Text",
+    "OSFMX_DeliveryTime__c": "Text",
+    "OSFMX_EstimateStartUpDate__c": "Text",
+    "OSFMX_ExpConsGjByYear__c": "Text",
+    "OSFMX_LossReason__c": "Text",
+    "OSFMX_Maximumdailycapacity__c": "Text",
+    "OSFMX_NextActivityDate__c": "Text",
+    "OSFMX_NextActivity__c": "Text",
+    "OSFMX_SupplyStartDate__c": "Text",
+    "Probability": "Text",
+    "StageName": "Text"
+}

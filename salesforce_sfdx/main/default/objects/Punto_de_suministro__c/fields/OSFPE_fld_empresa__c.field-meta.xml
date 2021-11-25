@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OSFPE_fld_empresa__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <externalId>false</externalId>
+    <inlineHelpText>Seleccione la cuenta asociada al Punto de Suministro</inlineHelpText>
+    <label>Cuenta</label>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Puntos de Suministro</relationshipLabel>
+    <relationshipName>Puntos_de_Suministro</relationshipName>
+    <required>true</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

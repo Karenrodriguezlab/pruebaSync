@@ -1,0 +1,33 @@
+{
+    "StepUpdateOportunidad": {
+        "AccountName": "CN MONDELEZ MÉXICO, S. DE R.L. DE C.V. OSMX",
+        "Amount": 50,
+        "CloseDate": "2021-05-01",
+        "ContactSelected-Block": {
+            "ContactEmail": "pruebasss@gmail.com",
+            "ContactId": "003c000001XySJpAAN",
+            "ContactName": "Johanna Rodas",
+            "ContactSelected": "Johanna Rodas",
+            "ContactTitle": "Consultor"
+        },
+        "Id": "006c000000UbgzjAAB",
+        "Name": "test contacto",
+        "OSFMX_ContractMode__c": "Contratación directa",
+        "OSFMX_CurrentStatusDate__c": "2021-05-01T17:42:00.000Z",
+        "OSFMX_CurrentStatus__c": "test",
+        "OSFMX_CustomerType__c": "Cliente Final",
+        "OSFMX_DeliveryTime__c": 12,
+        "OSFMX_EngieSupplier__c": "MX02-Consorcio Mexi Gas SA",
+        "OSFMX_ExpConsGjByYear__c": 4500,
+        "OSFMX_FreeInformation__c": null,
+        "OSFMX_Maximumdailycapacity__c": 50,
+        "OSFMX_NextActivityDate__c": "2021-05-01",
+        "OSFMX_NextActivity__c": "test",
+        "OSFMX_SolutionType__c": "Distribución de Gas Natural",
+        "OSFMX_Solution__c": "Distribución + Comercialización",
+        "OSFMX_SupplyStartDate__c": "2021-05-01",
+        "OpportunityType": "Gas",
+        "Probability": 50,
+        "Type": "Nuevo"
+    }
+}

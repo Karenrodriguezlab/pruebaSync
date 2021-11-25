@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OfertaVinculante</fullName>
+    <active>false</active>
+    <description>Para cerrar ganada una oportunidad la oferta no debe tener el atributo de No Vinculante.</description>
+    <errorConditionFormula>AND(
+
+  ISPICKVAL(StageName, "Cerrada ganada"),
+
+TEXT(  aiesync__Easy_Sync_Quote__r.OSFMX_OfferType__c  )= "No Vinculante")</errorConditionFormula>
+    <errorMessage>La oferta es No Vinculante por tal motivo no puedes cerrar la oportunidad ganada.</errorMessage>
+</ValidationRule>

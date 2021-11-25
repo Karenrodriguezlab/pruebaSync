@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Valida_RecordType_chile</fullName>
+    <active>true</active>
+    <errorConditionFormula>OR(RecordType.DeveloperName=&apos;Oferta_Energia_Chile&apos;,RecordType.DeveloperName=&apos;Oferta_Gas_Chile&apos;,RecordType.DeveloperName=&apos;Oferta_Soluciones_Chile&apos;)&amp;&amp;$Profile.Name &lt;&gt; &quot;System Administrator&quot;
+&amp;&amp;
+if(AND(Opportunity.RecordType.Name = &apos;Oportunidad Energía Chile&apos;, RecordType.Name = &apos;Oferta Energía Chile&apos;),false,
+if(AND(Opportunity.RecordType.Name = &apos;Oportunidad Gas Chile&apos;, RecordType.Name = &apos;Oferta Gas Chile&apos;),false,
+if(AND(Opportunity.RecordType.Name = &apos;Oportunidad Soluciones Chile&apos;, RecordType.Name = &apos;Oferta Soluciones Chile&apos;),false,true)))</errorConditionFormula>
+    <errorMessage>Debe seleccionar el tipo de registro correspondiente a la oportunidad.</errorMessage>
+</ValidationRule>

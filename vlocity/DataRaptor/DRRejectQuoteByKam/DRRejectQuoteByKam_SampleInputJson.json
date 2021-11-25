@@ -1,0 +1,17 @@
+{
+    "ContextId": "0Q0c0000000iKXmCAM",
+    "RejectedDate": "2021-04-21T05:00:00.000Z",
+    "Status": "Rechazada",
+    "StepRejectedReason": {
+        "rejectedReason": "test"
+    },
+    "SubStatus": "",
+    "contextId": "0Q0c0000000iKXmCAM",
+    "omnidesignerChannelId": "omni-designer-channel-id-1619042979904",
+    "timeStamp": "2021-04-21T22:39:24.664Z",
+    "userCurrencyCode": "MXN",
+    "userId": "005c0000007TAbFAAW",
+    "userName": "nasser.abdala@globant.com.latam.devmexico",
+    "userProfile": "Administrador del sistema",
+    "userTimeZone": "-300"
+}

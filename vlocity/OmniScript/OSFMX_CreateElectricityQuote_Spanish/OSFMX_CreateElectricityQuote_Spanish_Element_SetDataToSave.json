@@ -1,0 +1,61 @@
+{
+    "%vlocity_namespace%__Active__c": true,
+    "%vlocity_namespace%__OmniScriptId__c": {
+        "Name": "CreateElectricityQuote",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__OmniScript__c/OSFMX/CreateElectricityQuote/Spanish",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OmniScript__c"
+    },
+    "%vlocity_namespace%__PropertySet__c": {
+        "HTMLTemplateId": "",
+        "controlWidth": 12,
+        "disOnTplt": false,
+        "elementValueMap": {
+            "DataQuote": {
+                "%vlocity_namespace%__DefaultServiceAccountId__c": "%ElectricityServiceAccountIdSelected%",
+                "AccountId": "%Oportunidad:AccountId%",
+                "Description": "%ElectricityDescription%",
+                "FileId": "%StepFileUpload:FileQuote|1:data%",
+                "Id": "%QuoteId%",
+                "OSFMX_Amount__c": "%ElectricityOSFMX_Amount__c%",
+                "OSFMX_Coordinates__c": "%CoordenadasSelected%",
+                "OSFMX_CoveredEnergy__c": "%OSFMX_CoveredEnergy__c%",
+                "OSFMX_CoveredPower__c": "%OSFMX_CoveredPower__c%",
+                "OSFMX_EndDateSupply__c": "%ElectricityOSFMX_EndDateSupply__c%",
+                "OSFMX_EnergyMEM__c": "%OSFMX_EnergyMEM__c%",
+                "OSFMX_OfferValidity__c": "%ElectricityOSFMX_OfferValidity__c%",
+                "OSFMX_PowerMEM__c": "%OSFMX_PowerMEM__c%",
+                "OSFMX_PriceEnergy__c": "%OSFMX_PriceEnergy__c%",
+                "OSFMX_PricePower__c": "%OSFMX_PricePower__c%",
+                "OSFMX_SolutionType__c": "%ElectricitySolutionType%",
+                "OSFMX_Solution__c": "%ElectricitySolution%",
+                "OSFMX_SubEstatus__c": null,
+                "OSFMX_SupplyStartDate__c": "%ElectricityOSFMX_SupplyStartDate__c%",
+                "OSFMX_TimeLimitSupply__c": "%ElectricityOSFMX_TimeLimitSupply__c%",
+                "OSFMX_TotalEnergy__c": "%OSFMX_TotalEnergy__c%",
+                "OSFMX_TotalPower__c": "%OSFMX_TotalPower__c%",
+                "OpportunityId": "%Oportunidad:Id%",
+                "QuoteName": "%ElectricityQuoteName%",
+                "Status": "Presentada"
+            }
+        },
+        "label": "SetDataToSave",
+        "message": {
+        },
+        "pubsub": false,
+        "show": null,
+        "showPersistentComponent": [
+            false,
+            false
+        ],
+        "ssm": false,
+        "wpm": false
+    },
+    "%vlocity_namespace%__ReusableOmniScript__c": false,
+    "%vlocity_namespace%__Type__c": "Set Values",
+    "CurrencyIsoCode": "MXN",
+    "Name": "SetDataToSave",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__Element__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__Element__c/%vlocity_namespace%__OmniScript__c/OSFMX/CreateElectricityQuote/Spanish/SetDataToSave"
+}

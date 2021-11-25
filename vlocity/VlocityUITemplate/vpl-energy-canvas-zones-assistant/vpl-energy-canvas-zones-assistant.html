@@ -1,0 +1,28 @@
+<div class="via-slds slds-grid vlc-canvas-container " ng-controller="canvasAssistantCtrl">
+ 
+    <!-- After adding zones in template designer we can reference them inside the template like
+        - To get cards of a specific zone 
+            data.zones['<Name of Zone>'].cards
+    -->
+    <!-- Body Zone -->
+    <div class="slds-grid slds-wrap cards-container slds-p-top--small slds-p-right_small slds-grid--vertical-align-start" style="width:100%" >
+        <!-- Name of zone here is "Body" -->
+        <div ng-repeat="card in data.zones['Body'].cards |orderBy:order|filter: searchFunc(card, searchTerm.value)" vloc-card ctrl="{{ctrl}}" ng-model="card" data="card" records="records" index="{{$index}}" session-id="{{sessionId}}"
+            class="slds-size--1-of-1" use-existing-element-type></div>
+            
+        <div ng-repeat="layout in data.zones['Body'].layouts |orderBy:order" vloc-layout layout-name="{{layout.name}}" ctrl="{{layout.ctrl}}" records="layout.records" parent="layout.parent" class="slds-size--1-of-1"></div>
+        
+        <span id="flyout" class="slds-p-around--small slds-size--1-of-1 slds-medium-size--3-of-6 slds-large-size--4-of-12"></span>
+    </div>
+    
+    <!-- Sidebar Zone -->
+    <div class="slds-grid slds-wrap cards-container vlc-assistant-container  slds-border_left">
+        <!-- Name of zone here is "Sidebar" -->
+        <div ng-repeat="card in data.zones['Sidebar'].cards |orderBy:order|filter: searchFunc(card, searchTerm.value)" vloc-card ctrl="{{ctrl}}" ng-model="card" data="card" records="records" index="{{$index}}" session-id="{{sessionId}}"
+            class="slds-size--1-of-1 slds-medium-size--3-of-6 slds-large-size--4-of-12 " use-existing-element-type></div>
+           <!-- records="tabData" to provide a condition for rendering the appropriate cards in the assistant layouts base on the tabs clicked --> 
+        <div ng-repeat="layout in data.zones['Sidebar'].layouts |orderBy:order" vloc-layout layout-name="{{layout.name}}" ctrl="{{layout.ctrl}}" records="layout.records" parent="layout.parent" class="slds-size--1-of-1"></div>
+        <span id="flyout" class="slds-p-around--small slds-size--1-of-1 "></span>
+    </div> 
+    
+</div>

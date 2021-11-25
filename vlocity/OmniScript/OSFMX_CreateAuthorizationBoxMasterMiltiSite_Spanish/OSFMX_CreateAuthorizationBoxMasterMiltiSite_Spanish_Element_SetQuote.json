@@ -1,0 +1,76 @@
+{
+    "%vlocity_namespace%__Active__c": true,
+    "%vlocity_namespace%__OmniScriptId__c": {
+        "Name": "CreateAuthorizationBoxMasterMiltiSite",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__OmniScript__c/OSFMX/CreateAuthorizationBoxMasterMiltiSite/Spanish",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OmniScript__c"
+    },
+    "%vlocity_namespace%__PropertySet__c": {
+        "HTMLTemplateId": "",
+        "controlWidth": 12,
+        "disOnTplt": false,
+        "elementValueMap": {
+            "Quote": {
+                "Cliente": "%Cliente%",
+                "EstructuraPrecio": "%EstructuraPrecio%",
+                "Id": "%QuoteId%",
+                "KAM": "%KAM%",
+                "MasterAprueba": "%RAprueba%",
+                "MasterConsumoPlazoSTR": "%RSumConsumoPlazoSTR%",
+                "MasterCuadrante": "%cuadrante%",
+                "MasterDailyVolume": "%RSumDailyVolume%",
+                "MasterGwhYea": "%RSumGwhYear%",
+                "MasterMargenMolecula": "%RSumMargenMolecula%",
+                "MasterNivelApro": "%RNivelAprobacion%",
+                "Status": "Proceso",
+                "Substatus": "Autorización",
+                "cargoPorCapacidad": "%RecordCargoCapacidad%",
+                "cargoPorServicio": "%RecordCargoServ%",
+                "cargoPorUso": "%RecordCargoUso%",
+                "clasificacionTarifaria": "%RecordClasificacionTarifaria%",
+                "comentarioofertagas": "%comentariosofgas%",
+                "cuadrante": "%cuadrante%",
+                "cuadroOK": "%CuadroAutorizacionOK:CuadroOK%",
+                "desviacionvolatilidad": "%bcexcedente%",
+                "garantiaCostoMoleculaEstimado": "%garantiaCostoMoleculaEstimado%",
+                "garantiaIva": "%garantiaIva%",
+                "garantiaSubtotal": "%SubtotalOK%",
+                "garantiaTotal": "%garantiaTotal%",
+                "importeGarantia": "%importeGarantia%",
+                "importetotaloferta": "%ValorImporteTotal%",
+                "indice": "%CuadroDeAutorizacion:indice%",
+                "margenEstimado": "%CuadroDeAutorizacion:MargenEstimadoFinal%",
+                "margenEstimadoComer": "%margenEstimadoComer%",
+                "mesesMayorConsumo": "%mesesMayorConsumo%",
+                "precioActual": "%CuadroDeAutorizacion:Currency1%",
+                "rangoComercializacion": "%rangoComercializacion%",
+                "rangocomermonto": "%RangodeConsumo%",
+                "spreadOfertado": "%CuadroDeAutorizacion:ofertaSpread%",
+                "spreadPisoCuadrante": "%spreadPisoCuadrante%",
+                "tipovolatilidad": "%TipoVolatilidad%",
+                "transporte": "%CuadroDeAutorizacion:transporte%",
+                "txtvolatilidad": "%Volatilidad%",
+                "volumenSolicitado": "%volumenSolicitado%"
+            }
+        },
+        "label": "SetQuote",
+        "message": {
+        },
+        "pubsub": false,
+        "show": null,
+        "showPersistentComponent": [
+            false,
+            false
+        ],
+        "ssm": false,
+        "wpm": false
+    },
+    "%vlocity_namespace%__ReusableOmniScript__c": false,
+    "%vlocity_namespace%__Type__c": "Set Values",
+    "CurrencyIsoCode": "MXN",
+    "Name": "SetQuote",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__Element__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__Element__c/%vlocity_namespace%__OmniScript__c/OSFMX/CreateAuthorizationBoxMasterMiltiSite/Spanish/SetQuote"
+}

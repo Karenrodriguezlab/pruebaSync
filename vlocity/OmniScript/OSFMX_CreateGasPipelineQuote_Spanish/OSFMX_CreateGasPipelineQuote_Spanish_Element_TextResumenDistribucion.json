@@ -1,0 +1,41 @@
+{
+    "%vlocity_namespace%__Active__c": true,
+    "%vlocity_namespace%__OmniScriptId__c": {
+        "Name": "CreateGasPipelineQuote",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__OmniScript__c/OSFMX/CreateGasPipelineQuote/Spanish",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OmniScript__c"
+    },
+    "%vlocity_namespace%__ParentElementId__c": {
+        "%vlocity_namespace%__OmniScriptId__c": {
+            "Name": "CreateGasPipelineQuote",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__OmniScript__c/OSFMX/CreateGasPipelineQuote/Spanish",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__OmniScript__c"
+        },
+        "Name": "Resumen",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__Element__c/%vlocity_namespace%__OmniScript__c/OSFMX/CreateGasPipelineQuote/Spanish/Resumen",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__Element__c"
+    },
+    "%vlocity_namespace%__ParentElementName__c": "Resumen",
+    "%vlocity_namespace%__ParentElementType__c": "Step",
+    "%vlocity_namespace%__PropertySet__c": {
+        "HTMLTemplateId": "",
+        "controlWidth": 12,
+        "dataJSON": false,
+        "disOnTplt": false,
+        "label": "TextResumen",
+        "sanitize": false,
+        "show": null,
+        "text": "<p><span style=\"color: #ff6600;\"><strong>Validar que los campos esten correctos</strong></span></p>\n<p>&nbsp;<strong>Id de la Oportunidad:</strong> %OportunidadId%<br />&nbsp;<strong>Id de la Cuenta:</strong>&nbsp; %AccountId%<br />&nbsp;<strong>Nombre de la Oportunidad:</strong> %StepDataDistributionQuote:QuoteDistributionName%<br />&nbsp;<strong>Soluci&oacute;n :</strong> %StepDataDistributionQuote:DistributionSolution%<br />&nbsp;<strong>Tipo de contrato:</strong>&nbsp; %StepDataDistributionQuote:DistributionContractType%<br />&nbsp;<strong>Tipo de consumidor:</strong> %StepDataDistributionQuote:OportunityCustomerType%<br /><strong>&nbsp;Importe (MXN):</strong>&nbsp; %StepDataDistributionQuote:DistributionAmount%<br />&nbsp;<strong>Probabilidad de cierre:</strong> %StepDataDistributionQuote:DistributionProbability%<br />&nbsp;<strong>Fecha de inicio del suministro:</strong>&nbsp; %StepDataDistributionQuote:DistributionSupplyStartDateFormat%&nbsp;<br />&nbsp;<strong>Plazo del contrato (Meses):&nbsp;</strong> %StepDataDistributionQuote:DistributionSupplyTerms%<br />&nbsp;<strong>Fecha de Vencimiento:</strong> %StepDataDistributionQuote:DistributionSupplyEndDateFormat%<br />&nbsp;<strong>Tipo de conexi&oacute;n:</strong> %StepDataDistributionQuote:DistributionConnectionType%<br />&nbsp;<strong>Consumo anual esperado (Gj/A&ntilde;o):</strong> %StepDataDistributionQuote:DistributionConsYear%<br />&nbsp;<strong>Capacidad m&aacute;xima diaria (Gj/D&iacute;a):</strong>&nbsp; %StepDataDistributionQuote:DistributionMaxDailyCapacity%<br />&nbsp;<strong>Aportaci&oacute;n voluntaria:</strong>&nbsp; %StepDataDistributionQuote:DistributionVoluntaryContribution%</p>\n<p><br /><br /></p>",
+        "textKey": ""
+    },
+    "%vlocity_namespace%__ReusableOmniScript__c": false,
+    "%vlocity_namespace%__Type__c": "Text Block",
+    "CurrencyIsoCode": "MXN",
+    "Name": "TextResumenDistribucion",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__Element__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__Element__c/%vlocity_namespace%__OmniScript__c/OSFMX/CreateGasPipelineQuote/Spanish/TextResumenDistribucion"
+}

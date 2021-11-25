@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OSFMX_OppServicePointType__c</fullName>
+    <description>Muestra si la oportunidad/oferta es punto o multipunto</description>
+    <externalId>false</externalId>
+    <label>Tipo de Oportunidad</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>OSFMX_SolutionType__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Un punto</fullName>
+                <default>false</default>
+                <label>Un punto</label>
+            </value>
+            <value>
+                <fullName>Multipunto</fullName>
+                <default>false</default>
+                <label>Multipunto</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Suministro Eléctrico MX</controllingFieldValue>
+            <controllingFieldValue>Comercialización de Gas Natural</controllingFieldValue>
+            <controllingFieldValue>Corporate PPA</controllingFieldValue>
+            <controllingFieldValue>Distribución de Gas Natural</controllingFieldValue>
+            <controllingFieldValue>Ducto Dedicado</controllingFieldValue>
+            <valueName>Un punto</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Suministro Eléctrico MX</controllingFieldValue>
+            <controllingFieldValue>Comercialización de Gas Natural</controllingFieldValue>
+            <controllingFieldValue>Corporate PPA</controllingFieldValue>
+            <valueName>Multipunto</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

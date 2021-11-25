@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OSFPE_vr_Direccion_obligatorio</fullName>
+    <active>true</active>
+    <errorConditionFormula>RecordType.DeveloperName = &apos;OSFPE_rt_Contacto&apos; &amp;&amp; ISBLANK( MailingAddress )</errorConditionFormula>
+    <errorMessage>Es obligatorio llenar la dirección física del contacto para las actividades de relacionamiento (invitaciones a eventos, regalos, etc.) En caso no tenga la dirección puede poner Pendiente y luego completarlo.</errorMessage>
+</ValidationRule>

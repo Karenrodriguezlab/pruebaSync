@@ -1,0 +1,25 @@
+<apex:page lightningStylesheets="true" standardController="vlocity_cmt__CustomerInteraction__c" showHeader="false" sidebar="false" docType="html-5.0" >
+<apex:stylesheet value="{!URLFOR($Resource.vlocity_cmt__IcoMoonIconPack, 'style.css')}"/>
+    <style>
+        td.pbTitle {
+    height: 50px !important;
+}
+    </style>
+    <apex:outputPanel style="text-align:center" >
+        <apex:form >
+            <br/>
+            <apex:outputLink style="text-decoration: none;" value="{!$Page.vlocity_cmt__RelateParties}?id={!vlocity_cmt__CustomerInteraction__c.vlocity_cmt__AccountId__r.vlocity_cmt__PartyId__c}&returnURL={!$CurrentPage.Name}" styleClass="btn">{!$Label.vlocity_cmt__editrelationships}</apex:outputLink>
+             <span style="text-align:right" > 
+                <button id="zoom_in"  class="zoomb"><span aria-hidden="true" class="icon-zoomin" data-icon="&amp;#xe600;" ></span></button>
+                <button id="zoom_out"  class="zoomb"><span aria-hidden="true" class="icon-zoomout" data-icon="&amp;#xe601;" ></span></button>           
+             </span>
+           
+        </apex:form>
+    </apex:outputPanel>
+    <br/>
+    <span>{!vlocity_cmt__CustomerInteraction__c.vlocity_cmt__AccountId__r.vlocity_cmt__PartyId__c}</span>
+
+    <vlocity_cmt:PartyHierarchy />    
+    <apex:iframe src="{!$Page.vlocity_cmt__RelateParties}?id={!vlocity_cmt__CustomerInteraction__c.vlocity_cmt__AccountId__r.vlocity_cmt__PartyId__c}&returnURL={!$CurrentPage.Name}&isdtp=p1&clc=1" scrolling="true" id="theIframe"/>
+
+</apex:page>

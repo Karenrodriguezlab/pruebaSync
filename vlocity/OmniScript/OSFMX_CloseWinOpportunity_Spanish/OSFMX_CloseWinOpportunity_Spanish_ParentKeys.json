@@ -1,0 +1,5 @@
+[
+    "DataRaptor/DRGetOpportunityQuoteInformationById",
+    "IntegrationProcedure/OSFMX_UpdateServicePointByOpportunity",
+    "IntegrationProcedure/OSFMX_UpdateWinOpportunityComent"
+]

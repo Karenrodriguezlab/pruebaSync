@@ -1,0 +1,101 @@
+{
+    "%vlocity_namespace%__Active__c": true,
+    "%vlocity_namespace%__OmniScriptId__c": {
+        "Name": "CreateGasDistributionQuote",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__OmniScript__c/OSFMX/CreateGasDistributionQuote/Spanish",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OmniScript__c"
+    },
+    "%vlocity_namespace%__ParentElementId__c": {
+        "%vlocity_namespace%__OmniScriptId__c": {
+            "Name": "CreateGasDistributionQuote",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__OmniScript__c/OSFMX/CreateGasDistributionQuote/Spanish",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__OmniScript__c"
+        },
+        "Name": "StepDataDistributionQuote",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__Element__c/%vlocity_namespace%__OmniScript__c/OSFMX/CreateGasDistributionQuote/Spanish/StepDataDistributionQuote",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__Element__c"
+    },
+    "%vlocity_namespace%__ParentElementName__c": "StepDataDistributionQuote",
+    "%vlocity_namespace%__ParentElementType__c": "Step",
+    "%vlocity_namespace%__PropertySet__c": {
+        "HTMLTemplateId": "",
+        "accessibleInFutureSteps": false,
+        "conditionType": "Hide if False",
+        "controlWidth": 6,
+        "controllingField": {
+            "element": "OSFMX_ConnectionPipeline__c",
+            "source": "Quote.OSFMX_ConnectionPipeline__c",
+            "type": "SObject"
+        },
+        "defaultValue": null,
+        "disOnTplt": false,
+        "help": false,
+        "helpText": "",
+        "hide": false,
+        "inputWidth": 12,
+        "label": "Distribuidor/Transportista",
+        "optionSource": {
+            "source": "Quote.OSFMX_DistributorOrCarrier__c",
+            "type": ""
+        },
+        "options": [
+            {
+                "autoAdv": null,
+                "name": "Distribución CMG",
+                "value": "CMG"
+            },
+            {
+                "autoAdv": null,
+                "name": "Distribución NGM",
+                "value": "NGM"
+            },
+            {
+                "autoAdv": null,
+                "name": "Distribución TMG",
+                "value": "TMG"
+            },
+            {
+                "autoAdv": null,
+                "name": "Distribución DGJ",
+                "value": "DGJ"
+            },
+            {
+                "autoAdv": null,
+                "name": "DGJ-Bajio",
+                "value": "DGJ-Bajio"
+            },
+            {
+                "autoAdv": null,
+                "name": "Distribución DGQ",
+                "value": "DGQ"
+            },
+            {
+                "autoAdv": null,
+                "name": "Distribución GNP",
+                "value": "GNP"
+            },
+            {
+                "autoAdv": null,
+                "name": "Distribución GNP-Mérida",
+                "value": "GNP-Mérida"
+            }
+        ],
+        "readOnly": false,
+        "repeat": false,
+        "repeatClone": false,
+        "repeatLimit": null,
+        "required": true,
+        "show": null,
+        "showInputWidth": false
+    },
+    "%vlocity_namespace%__ReusableOmniScript__c": false,
+    "%vlocity_namespace%__Type__c": "Select",
+    "CurrencyIsoCode": "MXN",
+    "Name": "OSFMX_DistributorOrCarrier__c",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__Element__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__Element__c/%vlocity_namespace%__OmniScript__c/OSFMX/CreateGasDistributionQuote/Spanish/OSFMX_DistributorOrCarrier__c"
+}

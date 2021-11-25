@@ -1,0 +1,37 @@
+{
+    "ContextId": null,
+    "StepUpdateOportunidad": {
+        "OSFMX_ClosedComments__c": null,
+        "OSFMX_ClosedWonComments__c": null,
+        "OSFMX_ContractSignDate__c": null,
+        "OSFMX_ContractStatus__c": null,
+        "OSFMX_CurrentStatusDate__c": null,
+        "OSFMX_CurrentStatusDate__cshow": null,
+        "OSFMX_CurrentStatus__c": null,
+        "OSFMX_DeliveryTime__c": null,
+        "OSFMX_EstimateStartUpDate__c": null,
+        "OSFMX_ExpConsGjByYear__c": null,
+        "OSFMX_LossReason__c": null,
+        "OSFMX_Maximumdailycapacity__c": null,
+        "OSFMX_NextActivityDate__c": null,
+        "OSFMX_NextActivity__c": null,
+        "OSFMX_SupplyStartDate__c": null,
+        "Probability": null,
+        "StageName": null
+    },
+    "timeStamp": null,
+    "userId": null,
+    "userName": null,
+    "userProfile": null,
+    "userTimeZone": null,
+    "vlcPersistentComponent": {
+    },
+    "vlcTimeTracking": {
+        "DRGetCloseOpportunityById": null,
+        "DRPostUpdateCloseOpportunity": null,
+        "NavigateAction1": null,
+        "SVOpportunityId": null,
+        "SetErrorsProbability": null,
+        "StepUpdateOportunidad": null
+    }
+}
