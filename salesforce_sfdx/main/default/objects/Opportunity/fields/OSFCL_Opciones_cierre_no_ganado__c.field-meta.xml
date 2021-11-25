@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OSFCL_Opciones_cierre_no_ganado__c</fullName>
+    <externalId>false</externalId>
+    <label>Opciones cierre no ganado</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Perdida</fullName>
+                <default>false</default>
+                <label>Perdida</label>
+            </value>
+            <value>
+                <fullName>Desistida</fullName>
+                <default>false</default>
+                <label>Desistida</label>
+            </value>
+            <value>
+                <fullName>Desierta</fullName>
+                <default>false</default>
+                <label>Desierta</label>
+            </value>
+            <value>
+                <fullName>No adjudicado</fullName>
+                <default>false</default>
+                <label>No adjudicado</label>
+            </value>
+            <value>
+                <fullName>No firmado</fullName>
+                <default>false</default>
+                <label>No firmado</label>
+            </value>
+            <value>
+                <fullName>Vencido</fullName>
+                <default>false</default>
+                <label>Vencido</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

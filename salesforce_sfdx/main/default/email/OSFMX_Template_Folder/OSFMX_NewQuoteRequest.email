@@ -1,0 +1,83 @@
+<html style="overflow-y: hidden;">
+<head>
+	<title></title>
+</head>
+<body style="height: auto; min-height: auto;">
+<div><img alt="Engie Logo" src="https://engielatam--devmexico--c.documentforce.com/servlet/servlet.ImageServer?id=015c00000012od7&oid=00Dc0000003wiic&lastMod=1616542800000" style="max-width: 803.87px; width: 116.989px; height: 69.9574px;" title="Engie Logo" /></div>
+
+<div style="text-align: center;">
+<table height="400" style="font-family:arial; text-decoration-thickness:initial; text-decoration-style:initial; text-decoration-color:initial" width="600">
+	<tbody>
+		<tr>
+			<td style="background-color:#ffffff">
+			<div style="text-align:center"><span style="font-size:16px"><span style="color:#000000"><span style="font-family:arial"><span style="font-size:12pt"><b>Revisi&oacute;n de Solicitud</b></span></span></span></span><br />
+			&nbsp;</div>
+			</td>
+		</tr>
+		<tr>
+			<td style="background-color:#ffffff">
+			<div style="text-align: left;"><span style="font-size:16px"><span style="color:#000000"><span style="font-family:arial"><font face="arial"><span style="font-size:12pt">Estimada:&nbsp;</span></font><b style="color:#000000; font-family:arial; font-size:12pt">{!Quote.OSFMX_Assignedto__c}</b></span></span></span></div>
+
+			<div style="text-align: left;">&nbsp;</div>
+
+			<div style="text-align: left;"><span style="font-size:16px"><span style="color:#000000"><span style="font-family:arial"><span style="font-size:12pt"><span style="color:#000000"><span style="font-family:arial">Le notificamos que tiene un registro de solicitud para revisi&oacute;n con las siguientes caracter&iacute;sticas:</span></span></span></span></span></span><br />
+			&nbsp;</div>
+
+			<div style="text-align: left;">&nbsp;</div>
+
+			<div style="text-align: left;"><span style="font-size:16px"><span style="color:#000000"><span style="font-family:arial"><span style="font-size:12pt"><span style="color:#000000"><span style="font-family:arial">Nombre de la oferta:&nbsp;<b>{!Quote.Name}</b><br />
+			<br />
+			N&uacute;mero de la oferta:<b>&nbsp;{!Quote.QuoteNumber}</b></span></span></span></span></span></span><br />
+			<br />
+			<span style="font-size:16px"><span style="color:#000000"><span style="font-family:arial"><span style="font-size:12pt"><span style="color:#000000"><span style="font-family:arial">Propietario:&nbsp;<b>{!Quote.OwnerFullName}</b></span></span></span></span></span></span></div>
+
+			<div style="text-align: left;">&nbsp;</div>
+
+			<div style="text-align: left;"><span style="font-size:16px"><span style="color:#000000"><span style="font-family:arial"><span style="font-size:12pt"><span style="color:#000000"><span style="font-family:arial">Raz&oacute;n Social:&nbsp;<b>{!Quote.OSFMX_BusinessName__c}</b></span></span></span></span></span></span></div>
+
+			<div style="text-align: left;">&nbsp;</div>
+
+			<div style="text-align: left;"><span style="font-size:16px"><span style="color:#000000"><span style="font-family:arial"><span style="font-size:12pt"><span style="color:#000000"><span style="font-family:arial">RFC:&nbsp;<b>{!Quote.OSFMX_AccountRFC__c}</b></span></span></span></span></span></span></div>
+
+			<div style="text-align: left;">&nbsp;</div>
+
+			<div style="text-align: left;"><span style="font-size:16px"><span style="color:#000000"><span style="font-family:arial"><span style="font-size:12pt"><span style="color:#000000"><span style="font-family:arial">Tipo de oferta:&nbsp;<b>{!Quote.OSFMX_OfferType__c}</b></span></span></span></span></span></span></div>
+
+			<div style="text-align: left;">&nbsp;</div>
+
+			<div style="text-align: left;"><span style="font-size:16px"><span style="color:#000000"><span style="font-family:arial"><span style="font-size:12pt"><span style="color:#000000"><span style="font-family:arial">Sector:&nbsp;<b>{!Quote.OSFMX_AccountSector__c}</b></span></span></span></span></span></span></div>
+
+			<div style="text-align: left;">&nbsp;</div>
+
+			<div style="text-align: left;"><span style="font-size:16px"><span style="color:#000000"><span style="font-family:arial"><span style="font-size:12pt"><span style="color:#000000"><span style="font-family:arial">Especificaciones:&nbsp;<b>{!Quote.OSFMX_ParticularSpecifications__c}</b></span></span></span></span></span></span></div>
+
+			<div style="text-align: left;">&nbsp;</div>
+
+			<div style="text-align: left;"><span style="font-size:16px"><span style="color:#000000"><span style="font-family:arial"><span style="font-size:12pt"><span style="color:#000000"><span style="font-family:arial">Para ir directamente al registro haga clic:</span></span></span></span></span></span></div>
+
+			<div style="text-align: left;">&nbsp;</div>
+
+			<div style="text-align: left;"><span style="font-size:16px"><span style="color:#000000"><span style="font-family:arial"><span style="font-size:12pt"><span style="color:#000000"><span style="font-family:arial">{!Quote.Link}</span></span></span></span></span></span></div>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<div><br />
+&nbsp;</div>
+
+<div><span style="font-size:16px;"><span style="color:#000000"><span style="font-family:arial"><span style="font-size:12pt"><span style="color:#000000"><span style="font-family:arial">Engie M&eacute;xico</span></span></span></span></span></span></div>
+
+<div style="width:800px; margin:0 auto;"><br />
+<img alt="Footer Engie" src="https://engielatam--devmexico--c.documentforce.com/servlet/servlet.ImageServer?id=015c00000012oPe&oid=00Dc0000003wiic" style="max-width: 544.064px; width: 615.052px; height: 160px;" title="Footer Engie" /></div>
+
+<div id="" style="left: 588.182px; top: 693.153px;">&nbsp;</div>
+
+<div id="" style="left: 588.182px; top: 693.153px;">&nbsp;</div>
+
+<div id="" style="left: 127.778px; top: 422.378px;">&nbsp;</div>
+
+<div id="" style="left: 127.778px; top: 422.378px;">&nbsp;</div>
+</body>
+</html>

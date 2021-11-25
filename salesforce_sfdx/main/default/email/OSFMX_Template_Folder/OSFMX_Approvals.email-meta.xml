@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>OSFMX_Approvals</letterhead>
+    <name>Aprobaciones</name>
+    <style>formalLetter</style>
+    <subject>Solicitud de Aprobación de Oferta</subject>
+    <textOnly>Notificación de aprobación
+Estimado aprobador, le informamos que tiene una oferta por revisar y aprobar.
+
+Puede contestar este correo poniendo en la primera línea las palabras APROBAR o RECHAZAR, y en la segunda línea, sin espacio, los comentarios u observaciones que tenga.
+
+
+Razón Social: {!Quote.OSFMX_BusinessName__c}
+RFC: {!Quote.OSFMX_AccountRFC__c}
+Volumen solicitado:
+Volumen diario:
+Distribuidor / Transportista: {!Quote.OSFMX_DistributorOrCarrier__c}
+KAM: {!Quote.OwnerFullName}
+Es cliente actual:
+Precio actual:
+Estructura de precio: {!Quote.OSFMX_PriceStructure__c}
+Cuadrante: {!Quote.OSFMX_Quadrant__c}
+Spread Piso: {!Quote.OSFMX_Spread_piso_por_cuadrante__c}
+Oferta spread (USD / Gj) : {!Quote.OSFMX_Spread_ofertado_USD_Gj__c}
+Margen estimado USD (Por encima del precio medio de compra):
+Comercialización:
+Margen de comercialización:
+Tarifa transporte aplicable:
+GWh/año:
+
+Si requiere ir a los detalles de la aprobación de clic en la siguiente liga:
+
+{!ApprovalRequest.Internal_URL}
+
+Liga directa a la Oferta:
+
+{!Quote.Link}
+
+
+Engie México</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

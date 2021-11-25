@@ -1,0 +1,25 @@
+<apex:page showHeader="false" controller="OSFMX_PagoExitosoMultipagos" action="{!init}">
+    <apex:slds />
+    <style>
+        body{ background-color:#248248248;  }
+    </style>
+    
+    <div id="header" style="width:864px;margin:0 auto;">
+        <p style="text-align:center!important;color:#16325C;font-size:16px;" maxlength="20">
+            <font face="Lato">
+                <b>{!message}</b>
+            </font>
+        </p>
+    </div>
+    <div style="height:30px;">
+        
+    </div>
+    <div class="slds-scope" style="width:100px;margin:0 auto;">
+        <apex:form >
+            <apex:commandButton action="{!urlRedirection}" 
+                                value="Aceptar" 
+                                styleClass="slds-button slds-button_stretch slds-button_brand"/>
+        </apex:form>
+    </div>
+    
+</apex:page>

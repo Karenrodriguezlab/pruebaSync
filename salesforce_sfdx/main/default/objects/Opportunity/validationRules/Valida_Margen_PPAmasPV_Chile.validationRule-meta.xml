@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Valida_Margen_PPAmasPV_Chile</fullName>
+    <active>true</active>
+    <description>Pide dato en campo margen cuando solución es PPA+PV</description>
+    <errorConditionFormula>AND(
+TEXT(OSFMX_Solution__c) = &apos;PPA+PV&apos;,
+ISBLANK(OSFCL_Margen_esperado__c) &amp;&amp; $Profile.Name &lt;&gt; &quot;System Administrator&quot; &amp;&amp;
+((RecordType.DeveloperName=&apos;Oportunidad_Energia_Chile&apos;) || (RecordType.DeveloperName=&apos;Oportunidad_Gas_Chile&apos;) ||
+(RecordType.DeveloperName=&apos;Oportunidad_Soluciones_Chile&apos;))
+)</errorConditionFormula>
+    <errorDisplayField>OSFCL_Margen_esperado__c</errorDisplayField>
+    <errorMessage>Debe ingresar un valor en el campo Margen esperado</errorMessage>
+</ValidationRule>

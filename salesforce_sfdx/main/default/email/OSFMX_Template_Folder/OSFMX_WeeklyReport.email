@@ -1,0 +1,14 @@
+<table border="0" cellpadding="5" width="600" cellspacing="5" height="400" >
+<tr valign="top" height="50" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[]]></td>
+</tr>
+<tr valign="top" height="300" >
+<td tEditID="c1r2" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r2" locked="0" >
+<![CDATA[Estimado&nbsp;<b>{!OSFMX_Subscription__c.OwnerFirstName}</b><div><b><br></b></div><div><br></div><div>Adjuntamos el vínculo con el reporte para su revisión y análisis.&nbsp;</div><div><br></div><div><br></div><div>Haga clic <a href="https://engieclorg--devmexico.my.salesforce.com/servlet/servlet.ExternalRedirect?url=https%3A%2F%2Fmy.visme.co%2Fview%2Fojnddjr7-reporte-semanal-sem-53">aquí</a> para ir al reporte.</div><div><br></div><div><br></div><div><br></div><div>Gracias,&nbsp;</div>]]></td>
+</tr>
+<tr valign="top" height="50" >
+<td tEditID="c1r3" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r3" locked="0" >
+<![CDATA[]]></td>
+</tr>
+</table>

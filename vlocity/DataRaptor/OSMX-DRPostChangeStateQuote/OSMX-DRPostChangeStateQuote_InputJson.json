@@ -1,0 +1,31 @@
+{
+    "ChangeState": {
+        "Comments": null,
+        "Name": null,
+        "StatusActual": null
+    },
+    "ContextId": null,
+    "Envio": {
+        "TASelectUser-Block": {
+            "TASelectUser": null,
+            "UserId": null
+        },
+        "comentarios": null
+    },
+    "timeStamp": null,
+    "userId": null,
+    "userName": null,
+    "userProfile": null,
+    "userTimeZone": null,
+    "vlcPersistentComponent": {
+    },
+    "vlcTimeTracking": {
+        "ChangeState": null,
+        "DataRaptorPostAction1": null,
+        "Envio": null,
+        "NavigateAction1": null,
+        "OSMX-DRExtractQuote": null,
+        "RemoteAction1": null,
+        "SetQuote": null
+    }
+}

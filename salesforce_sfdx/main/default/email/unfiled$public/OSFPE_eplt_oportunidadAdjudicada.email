@@ -1,0 +1,8 @@
+La siguiente oportunidad ha sido adjudicada:
+
+Nombre: {!Opportunity.Name}
+Empresa: {!Opportunity.Account}
+Potencia contratada HP(MW): {!Opportunity.OSFPE_fld_Potencia_Maxima_Contratada_HP__c}
+Potencia contratada HFP(MW): {!Opportunity.OSFPE_fld_Potencia_Maxima_Contratada_HFP__c}
+Fecha de inicio de suministro: {!Opportunity.OSFMX_SupplyStartDate__c}
+Fecha de fin de suministro: {!Opportunity.OSFPE_fld_Fecha_de_fin_del_suministro__c}

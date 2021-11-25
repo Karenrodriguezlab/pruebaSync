@@ -1,0 +1,586 @@
+<template>
+            <div class="slds-grid slds-wrap slds-is-relative">
+            <div if:false={cardLoaded} class="slds-is-absolute vloc-loader_override" style="height: 100%; width: 100%; min-height:50px; background: white; z-index: 99;">
+  <div>
+   <vlocity_cmt-spinner
+      variant="brand"
+      alternative-text="Loading content..."
+      size="medium"
+      theme="slds"
+      ></vlocity_cmt-spinner>
+  </div>
+</div>
+            <template if:false={hasPermission}>
+              You don't have required permissions to view this card.
+            </template>
+            <template if:true={hasPermission}>
+              <template if:true={hasRecords}>
+                        <template for:each={_records} for:item="record" for:index="rindex">
+                            <vlocity_cmt-flex-card-state key={record.uniqueKey} data-recordid={record.Id} record={record} data-statue="true"  data-index="1" data-rindex={rindex} class="cf-vlocity-state-1 cf-vlocity-state slds-size_12-of-12 "  tracking-obj={_childCardTrackingObj} >
+      <div if:true={cardLoaded} class="slds-grid slds-wrap nds-card slds-p-around_x-small slds-m-bottom_x-small " style="             ">
+          <div class="slds-col   slds-border_bottom slds-p-around_x-small  slds-size_12-of-12  " style="background-color:#F9FCFF;     border-color:#cccc; border-width:2px;      color:c; ">
+    <vlocity_cmt-block  label="Detalle Cuenta de Negocio"  collapsible="true"  record={record}  collapsed-by-default="false"  card={card}  theme="slds" ><div class="slds-grid slds-wrap">
+          <div class="slds-col    slds-p-around_x-small  slds-size_6-of-12  " style="             ">
+    <vlocity_cmt-block  label="Block"  collapsible="false"  record={record}  collapsed-by-default="false"  card={card}  theme="slds" ><div class="slds-grid slds-wrap">
+          <div class="slds-col   slds-size_12-of-12  " style="background-color:#F9FCFF;             "><vlocity_cmt-output-field  record={record}  merge-field="%3Cdiv%3E&nbsp;%20Nombre%20de%20la%20cuenta:&nbsp;%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BName%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E%0A%3Cdiv%3E%0A%3Cdiv%3E&nbsp;%20Raz&oacute;n%20social:&nbsp;%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BRazonSocial%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E%0A%3Cdiv%3E%0A%3Cdiv%3E&nbsp;%20RFC:&nbsp;%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BRFC%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E%0A%3Cdiv%3E%0A%3Cdiv%3E&nbsp;%20Cuenta%20principal:&nbsp;%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BParentAccName%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E%0A%3Cdiv%3E%0A%3Cdiv%3E&nbsp;%20Estatus:&nbsp;%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BEstatus%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E%0A%3C/div%3E%0A%3C/div%3E%0A%3C/div%3E%0A%3C/div%3E%0A%3C/div%3E"  card={card}  theme="slds" ></vlocity_cmt-output-field>
+      </div>
+        </div></vlocity_cmt-block>
+    </div><div class="slds-col    slds-p-around_x-small  slds-size_6-of-12  " style="             ">
+    <vlocity_cmt-block  label="Block"  collapsible="false"  record={record}  collapsed-by-default="false"  card={card}  theme="slds" ><div class="slds-grid slds-wrap">
+          <div class="slds-col   slds-size_12-of-12  " style="background-color:#F9FCFF;             "><vlocity_cmt-output-field  record={record}  merge-field="%3Cdiv%3EContacto%20Principal:%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cstrong%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%7BContactPrincipalName%7D%3C/span%3E%3C/strong%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E%0A%3Cdiv%3EPropietario%20de%20la%20cuenta:&nbsp;%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BPropietario%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E%0A%3Cdiv%3E%0A%3Cdiv%3E&nbsp;%20Prioridad%20del%20cliente:&nbsp;%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BPrioridadCliente%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E%0A%3Cdiv%3E%0A%3Cdiv%3E&nbsp;%20Descripci&oacute;n:&nbsp;%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BDescripcion%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E&nbsp;%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E%0A%3C/div%3E%0A%3C/div%3E%0A%3C/div%3E"  card={card}  theme="slds" ></vlocity_cmt-output-field>
+      </div><div class="slds-col   slds-size_12-of-12  " style="background-color:#F9FCFF;             "><vlocity_cmt-output-field  record={record}  merge-field="%3Cdiv%3E&nbsp;%20Cuenta%20global%20ENGIE:%3C/div%3E"  card={card}  theme="slds" ></vlocity_cmt-output-field>
+      </div><div class="slds-col  slds-text-align_right  slds-size_2-of-12  condition-element" style="             "><vlocity_cmt-flex-icon  record={record}  data-conditions='\{"id":"state-condition-object","isParent":true,"group":[{"id":"state-new-condition-73","field":"CuantaGlobal","operator":"==","value":"true","type":"custom"}]}'  icon-type="Salesforce SVG"  icon-name="standard:task2"  size="x-small"  extraclass="slds-icon_container slds-icon-standard-task2 "  variant="inverse"  imgsrc=""  theme="slds" ></vlocity_cmt-flex-icon>
+      </div><div class="slds-col  slds-text-align_center  slds-size_1-of-12  condition-element" style="             "><vlocity_cmt-flex-icon  record={record}  data-conditions='\{"id":"state-condition-object","isParent":true,"group":[{"id":"state-new-condition-73","field":"CuantaGlobal","operator":"==","value":"false","type":"custom"}]}'  icon-type="Salesforce SVG"  icon-name="action:close"  size="x-small"  extraclass="slds-icon_container slds-icon-action-close slds-icon_container--circle"  variant="inverse"  imgsrc=""  theme="slds" ></vlocity_cmt-flex-icon>
+      </div>
+        </div></vlocity_cmt-block>
+    </div>
+        </div></vlocity_cmt-block>
+    </div><div class="slds-col   slds-border_bottom slds-p-around_x-small  slds-size_12-of-12  " style="background-color:#F9FCFF;     border-color:#cccc; border-width:2px;       ">
+    <vlocity_cmt-block  label="Segmentación"  collapsible="true"  record={record}  collapsed-by-default="false"  card={card}  theme="slds" ><div class="slds-grid slds-wrap">
+          <div class="slds-col    slds-p-around_x-small  slds-size_6-of-12  " style="     border-color:#cccccc; border-width:2px;       ">
+    <vlocity_cmt-block  label="Block"  collapsible="false"  record={record}  collapsed-by-default="false"  card={card}  theme="slds" ><div class="slds-grid slds-wrap">
+          <div class="slds-col   slds-size_12-of-12  " style="background-color:#F9FCFF;             "><vlocity_cmt-output-field  record={record}  merge-field="%3Cdiv%3E&nbsp;%20Sector:&nbsp;%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BSector%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E"  card={card}  theme="slds" ></vlocity_cmt-output-field>
+      </div>
+        </div></vlocity_cmt-block>
+    </div><div class="slds-col    slds-p-around_x-small  slds-size_6-of-12  " style="     border-color:#62A2DD; border-width:2px;       ">
+    <vlocity_cmt-block  label="Block"  collapsible="false"  record={record}  collapsed-by-default="false"  card={card}  theme="slds" ><div class="slds-grid slds-wrap">
+          <div class="slds-col   slds-size_12-of-12  " style="background-color:#F9FCFF;             "><vlocity_cmt-output-field  record={record}  merge-field="%3Cdiv%3E&nbsp;%20Segmento:&nbsp;%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BSegmentoCliente%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E"  card={card}  theme="slds" ></vlocity_cmt-output-field>
+      </div>
+        </div></vlocity_cmt-block>
+    </div>
+        </div></vlocity_cmt-block>
+    </div><div class="slds-col   slds-border_bottom slds-p-around_x-small  slds-size_12-of-12  " style="background-color:#F9FCFF;     border-color:#cccc; border-width:2px;       ">
+    <vlocity_cmt-block  label="Información de contacto"  collapsible="true"  record={record}  collapsed-by-default="false"  card={card}  theme="slds" ><div class="slds-grid slds-wrap">
+          <div class="slds-col    slds-p-around_x-small  slds-size_6-of-12  " style="     border-color:#62A2DD; border-width:2px;       ">
+    <vlocity_cmt-block  label="Block"  collapsible="false"  record={record}  collapsed-by-default="false"  card={card}  theme="slds" ><div class="slds-grid slds-wrap">
+          <div class="slds-col   slds-size_12-of-12  " style="background-color:#F9FCFF;             "><vlocity_cmt-output-field  record={record}  merge-field="%3Cdiv%3E&nbsp;%20Sitio%20web:&nbsp;%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BWebSite%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E%0A%3Cdiv%3E%0A%3Cdiv%3E&nbsp;%20Persona%20contacto%20comercial%20Engie:%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BPersonaContactoEngie%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E%0A%3C/div%3E"  card={card}  theme="slds" ></vlocity_cmt-output-field>
+      </div>
+        </div></vlocity_cmt-block>
+    </div><div class="slds-col    slds-p-around_x-small  slds-size_6-of-12  " style="     border-color:#62A2DD; border-width:2px;       ">
+    <vlocity_cmt-block  label="Block"  collapsible="false"  record={record}  collapsed-by-default="false"  card={card}  theme="slds" ><div class="slds-grid slds-wrap">
+          <div class="slds-col   slds-size_12-of-12  " style="background-color:#F9FCFF;             "><vlocity_cmt-output-field  record={record}  merge-field="%3Cdiv%3E&nbsp;%20Tel&eacute;fono:&nbsp;%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BTelefono%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E"  card={card}  theme="slds" ></vlocity_cmt-output-field>
+      </div>
+        </div></vlocity_cmt-block>
+    </div>
+        </div></vlocity_cmt-block>
+    </div><div class="slds-col   slds-border_bottom slds-p-around_x-small  slds-size_12-of-12  " style="background-color:#F9FCFF;     border-color:#cccc; border-width:2px;       ">
+    <vlocity_cmt-block  label="Información de dirección "  collapsible="true"  record={record}  collapsed-by-default="true"  card={card}  theme="slds" ><div class="slds-grid slds-wrap">
+          <div class="slds-col    slds-p-around_x-small  slds-size_6-of-12  " style="     border-color:#62A2DD; border-width:2px;       ">
+    <vlocity_cmt-block  label="Block"  collapsible="false"  record={record}  collapsed-by-default="false"  card={card}  theme="slds" ><div class="slds-grid slds-wrap">
+          <div class="slds-col   slds-size_12-of-12  " style="background-color:#F9FCFF;             "><vlocity_cmt-output-field  record={record}  merge-field="%3Cdiv%3E&nbsp;%20Calle:&nbsp;%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BCalle%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E%0A%3Cdiv%3E%0A%3Cdiv%3E&nbsp;%20Ciudad:&nbsp;%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BCiudad%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E%0A%3Cdiv%3E%0A%3Cdiv%3E&nbsp;%20C&oacute;digo%20Postal:&nbsp;%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BCodigoPostal%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E%0A%3C/div%3E%0A%3C/div%3E"  card={card}  theme="slds" ></vlocity_cmt-output-field>
+      </div>
+        </div></vlocity_cmt-block>
+    </div><div class="slds-col    slds-p-around_x-small  slds-size_6-of-12  " style="     border-color:#62A2DD; border-width:2px;       ">
+    <vlocity_cmt-block  label="Block"  collapsible="false"  record={record}  collapsed-by-default="false"  card={card}  theme="slds" ><div class="slds-grid slds-wrap">
+          <div class="slds-col   slds-size_12-of-12  " style="background-color:#F9FCFF;             "><vlocity_cmt-output-field  record={record}  merge-field="%3Cdiv%3E%0A%3Cdiv%3E&nbsp;%20Estado/Provincia:&nbsp;%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BEstado/Provincia%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E%0A%3Cdiv%3E&nbsp;%20Pa&iacute;s:&nbsp;%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BPais%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E%0A%3C/div%3E"  card={card}  theme="slds" ></vlocity_cmt-output-field>
+      </div>
+        </div></vlocity_cmt-block>
+    </div>
+        </div></vlocity_cmt-block>
+    </div><div class="slds-col   slds-border_bottom slds-p-around_x-small  slds-size_12-of-12  " style="background-color:#F9FCFF;     border-color:#cccc; border-width:2px;       ">
+    <vlocity_cmt-block  label="Información del sistema"  collapsible="true"  record={record}  collapsed-by-default="true"  card={card}  theme="slds" ><div class="slds-grid slds-wrap">
+          <div class="slds-col    slds-p-around_x-small  slds-size_6-of-12  " style="     border-color:#62A2DD; border-width:2px;       ">
+    <vlocity_cmt-block  label="Block"  collapsible="false"  record={record}  collapsed-by-default="false"  card={card}  theme="slds" ><div class="slds-grid slds-wrap">
+          <div class="slds-col   slds-size_12-of-12  " style="background-color:#F9FCFF;             "><vlocity_cmt-output-field  record={record}  merge-field="%3Cdiv%3E&nbsp;%20Creado%20por:&nbsp;%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BCreadoPor%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E%0A%3Cdiv%3E&nbsp;%20Tipo%20de%20registro%20de%20cuenta:&nbsp;%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BTipoCuenta%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E"  card={card}  theme="slds" ></vlocity_cmt-output-field>
+      </div>
+        </div></vlocity_cmt-block>
+    </div><div class="slds-col    slds-p-around_x-small  slds-size_6-of-12  " style="     border-color:#62A2DD; border-width:2px;       ">
+    <vlocity_cmt-block  label="Block"  collapsible="false"  record={record}  collapsed-by-default="false"  card={card}  theme="slds" ><div class="slds-grid slds-wrap">
+          <div class="slds-col   slds-size_12-of-12  " style="background-color:#F9FCFF;             "><vlocity_cmt-output-field  record={record}  merge-field="%3Cdiv%3E%0A%3Cdiv%3E&nbsp;%20Ultima%20modificaci&oacute;n%20por:%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BUltimaModificacionPor%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E%0A%3Cdiv%3E&nbsp;%20N&uacute;mero%20de%20BP:&nbsp;%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BBusinessPartnerSAP%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E%0A%3C/div%3E"  card={card}  theme="slds" ></vlocity_cmt-output-field>
+      </div>
+        </div></vlocity_cmt-block>
+    </div>
+        </div></vlocity_cmt-block>
+    </div>
+        </div>
+      </vlocity_cmt-flex-card-state><vlocity_cmt-flex-card-state key={record.uniqueKey} data-recordid={record.Id} record={record} data-statue="true"  data-index="2" data-rindex={rindex} class="cf-vlocity-state-2 cf-vlocity-state slds-size_12-of-12 "  tracking-obj={_childCardTrackingObj} >
+      <div if:true={cardLoaded} class="slds-grid slds-wrap nds-card slds-p-around_x-small slds-m-bottom_x-small " style="             ">
+          <div class="slds-col   slds-border_bottom slds-p-around_x-small  slds-size_12-of-12  " style="background-color:#F9FCFF;     border-color:#cccc; border-width:2px;       ">
+    <vlocity_cmt-block  label="Grupo Económico"  collapsible="true"  record={record}  collapsed-by-default="false"  card={card}  theme="slds" ><div class="slds-grid slds-wrap">
+          <div class="slds-col    slds-p-around_x-small  slds-size_6-of-12  " style="     border-color:#62A2DD; border-width:2px;       ">
+    <vlocity_cmt-block  label="Block"  collapsible="false"  record={record}  collapsed-by-default="false"  card={card}  theme="slds" ><div class="slds-grid slds-wrap">
+          <div class="slds-col   slds-size_12-of-12  " style="background-color:#F9FCFF;             "><vlocity_cmt-output-field  record={record}  merge-field="%3Cdiv%3E&nbsp;%20Nombre%20de%20la%20cuenta:&nbsp;%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BName%7D%3C/strong%3E%3C/span%3E%3Cspan%20style=%22background-color:%20initial;%20font-size:%200.8125rem;%22%3E&nbsp;%3C/span%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E%0A%3Cdiv%3E&nbsp;%20Estatus:&nbsp;%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BEstatus%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E&nbsp;%3C/div%3E%0A%3Cdiv%3E%3Cspan%20style=%22background-color:%20initial;%20font-size:%200.8125rem;%22%3E&nbsp;%20Prioridad%20del%20cliente:&nbsp;%20%3C/span%3E%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BPrioridadCliente%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E"  card={card}  theme="slds" ></vlocity_cmt-output-field>
+      </div>
+        </div></vlocity_cmt-block>
+    </div><div class="slds-col    slds-p-around_x-small  slds-size_6-of-12  " style="     border-color:#62A2DD; border-width:2px;       ">
+    <vlocity_cmt-block  label="Block"  collapsible="false"  record={record}  collapsed-by-default="false"  card={card}  theme="slds" ><div class="slds-grid slds-wrap">
+          <div class="slds-col   slds-size_12-of-12  " style="background-color:#F9FCFF;             "><vlocity_cmt-output-field  record={record}  merge-field="%3Cdiv%3E&nbsp;%20Contacto%20principal:%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BContactPrincipalName%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E%0A%3Cdiv%3E&nbsp;%20Propietario%20de%20la%20cuenta:&nbsp;%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BPropietario%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E%0A%3Cdiv%3E%3Cspan%20style=%22background-color:%20initial;%20font-size:%200.8125rem;%22%3E&nbsp;%20Descripci&oacute;n:&nbsp;%20%3C/span%3E%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BDescripcion%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E"  card={card}  theme="slds" ></vlocity_cmt-output-field>
+      </div><div class="slds-col   slds-size_12-of-12  " style="background-color:#F9FCFF;             "><vlocity_cmt-output-field  record={record}  merge-field="%3Cdiv%3E&nbsp;%20Cuenta%20global%20ENGIE:%3C/div%3E"  card={card}  theme="slds" ></vlocity_cmt-output-field>
+      </div><div class="slds-col  slds-text-align_right  slds-size_2-of-12  condition-element" style="             "><vlocity_cmt-flex-icon  record={record}  data-conditions='\{"id":"state-condition-object","isParent":true,"group":[{"id":"state-new-condition-73","field":"CuantaGlobal","operator":"==","value":"true","type":"custom"}]}'  icon-type="Salesforce SVG"  icon-name="standard:task2"  size="x-small"  extraclass="slds-icon_container slds-icon-standard-task2 "  variant="inverse"  imgsrc=""  theme="slds" ></vlocity_cmt-flex-icon>
+      </div><div class="slds-col   slds-size_1-of-12  condition-element" style=""><vlocity_cmt-flex-icon  record={record}  data-conditions='\{"id":"state-condition-object","isParent":true,"group":[{"id":"state-new-condition-73","field":"CuantaGlobal","operator":"==","value":"false","type":"custom"}]}'  icon-type="Salesforce SVG"  icon-name="action:close"  size="x-small"  extraclass="slds-icon_container slds-icon-action-close slds-icon_container--circle"  variant="inverse"  imgsrc=""  theme="slds" ></vlocity_cmt-flex-icon>
+      </div>
+        </div></vlocity_cmt-block>
+    </div>
+        </div></vlocity_cmt-block>
+    </div><div class="slds-col   slds-border_bottom slds-p-around_x-small  slds-size_12-of-12  " style="background-color:#F9FCFF;     border-color:#cccc; border-width:2px;       ">
+    <vlocity_cmt-block  label="Información de contacto"  collapsible="true"  record={record}  collapsed-by-default="false"  card={card}  theme="slds" ><div class="slds-grid slds-wrap">
+          <div class="slds-col    slds-p-around_x-small  slds-size_6-of-12  " style="     border-color:#62A2DD; border-width:2px;       ">
+    <vlocity_cmt-block  label="Block"  collapsible="false"  record={record}  collapsed-by-default="false"  card={card}  theme="slds" ><div class="slds-grid slds-wrap">
+          <div class="slds-col   slds-size_12-of-12  " style="background-color:#F9FCFF;             "><vlocity_cmt-output-field  record={record}  merge-field="%3Cdiv%3E&nbsp;%20Sitio%20web:&nbsp;%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BWebSite%3C/strong%3E%3C/span%3E%3Cspan%20style=%22background-color:%20initial;%20font-size:%200.8125rem;%22%3E%3Cstrong%20style=%22font-size:%2012pt;%20background-color:%20initial;%22%3E%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E&nbsp;%3C/div%3E%0A%3Cdiv%3E%3Cspan%20style=%22font-size:%2012pt;%20background-color:%20initial;%22%3E%3Cspan%20style=%22background-color:%20initial;%20font-size:%200.8125rem;%22%3E&nbsp;%20Persona%20contacto%20comercial%20Engie:%3C/span%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cstrong%20style=%22font-size:%2012pt;%20background-color:%20initial;%22%3E%7BPersonaContactoEngie%7D%3C/strong%3E%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E&nbsp;%3C/div%3E"  card={card}  theme="slds" ></vlocity_cmt-output-field>
+      </div>
+        </div></vlocity_cmt-block>
+    </div><div class="slds-col    slds-p-around_x-small  slds-size_6-of-12  " style="     border-color:#62A2DD; border-width:2px;       ">
+    <vlocity_cmt-block  label="Block"  collapsible="false"  record={record}  collapsed-by-default="false"  card={card}  theme="slds" ><div class="slds-grid slds-wrap">
+          <div class="slds-col   slds-size_12-of-12  " style="background-color:#F9FCFF;             "><vlocity_cmt-output-field  record={record}  merge-field="%3Cdiv%3E&nbsp;%20Tel&eacute;fono:&nbsp;%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BTelefono%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E"  card={card}  theme="slds" ></vlocity_cmt-output-field>
+      </div>
+        </div></vlocity_cmt-block>
+    </div>
+        </div></vlocity_cmt-block>
+    </div><div class="slds-col   slds-border_bottom slds-p-around_x-small  slds-size_12-of-12  " style="background-color:#F9FCFF;     border-color:#cccc; border-width:2px;       ">
+    <vlocity_cmt-block  label="Información de dirección "  collapsible="true"  record={record}  collapsed-by-default="true"  card={card}  theme="slds" ><div class="slds-grid slds-wrap">
+          <div class="slds-col    slds-p-around_x-small  slds-size_6-of-12  " style="     border-color:#62A2DD; border-width:2px;       ">
+    <vlocity_cmt-block  label="Block"  collapsible="false"  record={record}  collapsed-by-default="false"  card={card}  theme="slds" ><div class="slds-grid slds-wrap">
+          <div class="slds-col   slds-size_12-of-12  " style="background-color:#F9FCFF;             "><vlocity_cmt-output-field  record={record}  merge-field="%3Cdiv%3E&nbsp;%20Calle:&nbsp;%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BCalle%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E%0A%3Cdiv%3E%0A%3Cdiv%3E&nbsp;%20Ciudad:&nbsp;%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BCiudad%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E%0A%3Cdiv%3E%0A%3Cdiv%3E&nbsp;%20C&oacute;digo%20Postal:&nbsp;%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BCodigoPostal%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E%0A%3C/div%3E%0A%3C/div%3E"  card={card}  theme="slds" ></vlocity_cmt-output-field>
+      </div>
+        </div></vlocity_cmt-block>
+    </div><div class="slds-col    slds-p-around_x-small  slds-size_6-of-12  " style="     border-color:#62A2DD; border-width:2px;       ">
+    <vlocity_cmt-block  label="Block"  collapsible="false"  record={record}  collapsed-by-default="false"  card={card}  theme="slds" ><div class="slds-grid slds-wrap">
+          <div class="slds-col   slds-size_12-of-12  " style="background-color:#F9FCFF;             "><vlocity_cmt-output-field  record={record}  merge-field="%3Cdiv%3E%0A%3Cdiv%3E&nbsp;%20Estado/Provincia:&nbsp;%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BEstado/Provincia%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E%0A%3Cdiv%3E&nbsp;%20Pa&iacute;s:&nbsp;%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BPais%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E%0A%3C/div%3E"  card={card}  theme="slds" ></vlocity_cmt-output-field>
+      </div>
+        </div></vlocity_cmt-block>
+    </div>
+        </div></vlocity_cmt-block>
+    </div><div class="slds-col   slds-border_bottom slds-p-around_x-small  slds-size_12-of-12  " style="background-color:#F9FCFF;     border-color:#cccc; border-width:2px;       ">
+    <vlocity_cmt-block  label="Información del sistema"  collapsible="true"  record={record}  collapsed-by-default="true"  card={card}  theme="slds" ><div class="slds-grid slds-wrap">
+          <div class="slds-col    slds-p-around_x-small  slds-size_6-of-12  " style="     border-color:#62A2DD; border-width:2px;       ">
+    <vlocity_cmt-block  label="Block"  collapsible="false"  record={record}  collapsed-by-default="false"  card={card}  theme="slds" ><div class="slds-grid slds-wrap">
+          <div class="slds-col   slds-size_12-of-12  " style="background-color:#F9FCFF;             "><vlocity_cmt-output-field  record={record}  merge-field="%3Cdiv%3E&nbsp;%20Creado%20por:&nbsp;%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BCreadoPor%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E%0A%3Cdiv%3E&nbsp;%20Tipo%20de%20registro%20de%20cuenta:&nbsp;%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BTipoCuenta%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E"  card={card}  theme="slds" ></vlocity_cmt-output-field>
+      </div>
+        </div></vlocity_cmt-block>
+    </div><div class="slds-col    slds-p-around_x-small  slds-size_6-of-12  " style="     border-color:#62A2DD; border-width:2px;       ">
+    <vlocity_cmt-block  label="Block"  collapsible="false"  record={record}  collapsed-by-default="false"  card={card}  theme="slds" ><div class="slds-grid slds-wrap">
+          <div class="slds-col   slds-size_12-of-12  " style="background-color:#F9FCFF;             "><vlocity_cmt-output-field  record={record}  merge-field="%3Cdiv%3E%0A%3Cdiv%3E&nbsp;%20Ultima%20modificaci&oacute;n%20por:&nbsp;%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BUltimaModificacionPor%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E%0A%3C/div%3E"  card={card}  theme="slds" ></vlocity_cmt-output-field>
+      </div>
+        </div></vlocity_cmt-block>
+    </div>
+        </div></vlocity_cmt-block>
+    </div>
+        </div>
+      </vlocity_cmt-flex-card-state><vlocity_cmt-flex-card-state key={record.uniqueKey} data-recordid={record.Id} record={record} data-statue="true"  data-index="3" data-rindex={rindex} class="cf-vlocity-state-3 cf-vlocity-state slds-size_12-of-12 "  tracking-obj={_childCardTrackingObj} >
+      <div if:true={cardLoaded} class="slds-grid slds-wrap nds-card slds-p-around_x-small slds-m-bottom_x-small " style="             ">
+          <div class="slds-col   slds-border_bottom slds-p-around_x-small  slds-size_12-of-12  " style="background-color:#F9FCFF;     border-color:#cccc; border-width:2px;       ">
+    <vlocity_cmt-block  label="Detalle Cuenta de Servicio"  collapsible="true"  record={record}  collapsed-by-default="false"  card={card}  theme="slds" ><div class="slds-grid slds-wrap">
+          <div class="slds-col    slds-p-around_x-small  slds-size_6-of-12  " style="     border-color:#62A2DD; border-width:2px;       ">
+    <vlocity_cmt-block  label="Block"  collapsible="false"  record={record}  collapsed-by-default="false"  card={card}  theme="slds" ><div class="slds-grid slds-wrap">
+          <div class="slds-col   slds-size_12-of-12  " style="background-color:#F9FCFF;             "><vlocity_cmt-output-field  record={record}  merge-field="%3Cdiv%3E&nbsp;%20Nombre%20de%20la%20cuenta:&nbsp;%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BName%7D%3C/strong%3E%3C/span%3E%3Cspan%20style=%22background-color:%20initial;%20font-size:%200.8125rem;%22%3E&nbsp;%20%3C/span%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E%0A%3Cdiv%3E%3Cspan%20style=%22background-color:%20initial;%20font-size:%200.8125rem;%22%3E&nbsp;%20Cuenta%20principal:&nbsp;%20%3C/span%3E%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BParentAccName%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E%0A%3Cdiv%3E%0A%3Cdiv%3E&nbsp;%20Estatus:&nbsp;%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BEstatus%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E%0A%3C/div%3E%0A%3C/div%3E"  card={card}  theme="slds" ></vlocity_cmt-output-field>
+      </div>
+        </div></vlocity_cmt-block>
+    </div><div class="slds-col    slds-p-around_x-small  slds-size_6-of-12  " style="     border-color:#62A2DD; border-width:2px;       ">
+    <vlocity_cmt-block  label="Block"  collapsible="false"  record={record}  collapsed-by-default="false"  card={card}  theme="slds" ><div class="slds-grid slds-wrap">
+          <div class="slds-col   slds-size_12-of-12  " style="background-color:#F9FCFF;             "><vlocity_cmt-output-field  record={record}  merge-field="%3Cdiv%3E%0A%3Cdiv%3E&nbsp;%20Contacto%20principal:%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BContactPrincipalName%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E%0A%3C/div%3E%0A%3Cdiv%3E&nbsp;%20Propietario%20de%20la%20cuenta:&nbsp;%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BPropietario%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E&nbsp;%3C/div%3E%0A%3Cdiv%3E%3Cspan%20style=%22font-size:%2010pt;%22%3E&nbsp;%20&nbsp;%20Descripci&oacute;n:%20%3C/span%3E%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cstrong%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%7BDescripcion%7D%3C/span%3E%3C/strong%3E%3C/div%3E"  card={card}  theme="slds" ></vlocity_cmt-output-field>
+      </div>
+        </div></vlocity_cmt-block>
+    </div>
+        </div></vlocity_cmt-block>
+    </div><div class="slds-col   slds-border_bottom slds-p-around_x-small  slds-size_12-of-12  " style="background-color:#F9FCFF;     border-color:#cccc; border-width:2px;       ">
+    <vlocity_cmt-block  label="Información cuenta principal"  collapsible="true"  record={record}  collapsed-by-default="false"  card={card}  theme="slds" ><div class="slds-grid slds-wrap">
+          <div class="slds-col    slds-p-around_x-small  slds-size_6-of-12  " style="     border-color:#62A2DD; border-width:2px;       ">
+    <vlocity_cmt-block  label="Block"  collapsible="false"  record={record}  collapsed-by-default="false"  card={card}  theme="slds" ><div class="slds-grid slds-wrap">
+          <div class="slds-col   slds-size_12-of-12  " style="background-color:#F9FCFF;             "><vlocity_cmt-output-field  record={record}  merge-field="%3Cdiv%3E%0A%3Cdiv%3E&nbsp;%20Raz&oacute;n%20social:&nbsp;%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BRazonSocial%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E%0A%3Cdiv%3E%3Cspan%20style=%22background-color:%20initial;%20font-size:%200.8125rem;%22%3E&nbsp;%20RFC:&nbsp;%20%3C/span%3E%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BRFC%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E%0A%3C/div%3E%0A%3C/div%3E"  card={card}  theme="slds" ></vlocity_cmt-output-field>
+      </div>
+        </div></vlocity_cmt-block>
+    </div><div class="slds-col    slds-p-around_x-small  slds-size_6-of-12  " style="     border-color:#62A2DD; border-width:2px;       ">
+    <vlocity_cmt-block  label="Block"  collapsible="false"  record={record}  collapsed-by-default="false"  card={card}  theme="slds" ><div class="slds-grid slds-wrap">
+          <div class="slds-col   slds-size_12-of-12  " style="background-color:#F9FCFF;             "><vlocity_cmt-output-field  record={record}  merge-field="%3Cdiv%3E&nbsp;%20Sector:&nbsp;%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BSector%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E"  card={card}  theme="slds" ></vlocity_cmt-output-field>
+      </div>
+        </div></vlocity_cmt-block>
+    </div>
+        </div></vlocity_cmt-block>
+    </div><div class="slds-col   slds-border_bottom slds-p-around_x-small  slds-size_12-of-12  " style="background-color:#F9FCFF;     border-color:#cccc; border-width:2px;       ">
+    <vlocity_cmt-block  label="Información de contacto"  collapsible="true"  record={record}  collapsed-by-default="false"  card={card}  theme="slds" ><div class="slds-grid slds-wrap">
+          <div class="slds-col    slds-p-around_x-small  slds-size_6-of-12  " style="     border-color:#62A2DD; border-width:2px;       ">
+    <vlocity_cmt-block  label="Block"  collapsible="false"  record={record}  collapsed-by-default="false"  card={card}  theme="slds" ><div class="slds-grid slds-wrap">
+          <div class="slds-col   slds-size_12-of-12  " style="background-color:#F9FCFF;             "><vlocity_cmt-output-field  record={record}  merge-field="%3Cdiv%3E%0A%3Cdiv%3E&nbsp;%20Persona%20contacto%20comercial%20Engie:&nbsp;%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BPersonaContactoEngie%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E%0A%3C/div%3E"  card={card}  theme="slds" ></vlocity_cmt-output-field>
+      </div>
+        </div></vlocity_cmt-block>
+    </div><div class="slds-col    slds-p-around_x-small  slds-size_6-of-12  " style="     border-color:#62A2DD; border-width:2px;       ">
+    <vlocity_cmt-block  label="Block"  collapsible="false"  record={record}  collapsed-by-default="false"  card={card}  theme="slds" ><div class="slds-grid slds-wrap">
+          <div class="slds-col   slds-size_12-of-12  " style="background-color:#F9FCFF;             "><vlocity_cmt-output-field  record={record}  merge-field="%3Cdiv%3E&nbsp;%20Tel&eacute;fono:&nbsp;%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BTelefono%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E"  card={card}  theme="slds" ></vlocity_cmt-output-field>
+      </div>
+        </div></vlocity_cmt-block>
+    </div>
+        </div></vlocity_cmt-block>
+    </div><div class="slds-col   slds-border_bottom slds-p-around_x-small  slds-size_12-of-12  " style="background-color:#F9FCFF;     border-color:#cccc; border-width:2px;       ">
+    <vlocity_cmt-block  label="Información de dirección "  collapsible="true"  record={record}  collapsed-by-default="true"  card={card}  theme="slds" ><div class="slds-grid slds-wrap">
+          <div class="slds-col    slds-p-around_x-small  slds-size_6-of-12  " style="     border-color:#62A2DD; border-width:2px;       ">
+    <vlocity_cmt-block  label="Block"  collapsible="false"  record={record}  collapsed-by-default="false"  card={card}  theme="slds" ><div class="slds-grid slds-wrap">
+          <div class="slds-col   slds-size_12-of-12  " style="background-color:#F9FCFF;             "><vlocity_cmt-output-field  record={record}  merge-field="%3Cdiv%3E&nbsp;%20Calle:&nbsp;%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BCalle%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E%0A%3Cdiv%3E%0A%3Cdiv%3E&nbsp;%20Ciudad:&nbsp;%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BCiudad%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E%0A%3Cdiv%3E%0A%3Cdiv%3E&nbsp;%20C&oacute;digo%20Postal:&nbsp;%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BCodigoPostal%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E%0A%3C/div%3E%0A%3C/div%3E"  card={card}  theme="slds" ></vlocity_cmt-output-field>
+      </div>
+        </div></vlocity_cmt-block>
+    </div><div class="slds-col    slds-p-around_x-small  slds-size_6-of-12  " style="     border-color:#62A2DD; border-width:2px;       ">
+    <vlocity_cmt-block  label="Block"  collapsible="false"  record={record}  collapsed-by-default="false"  card={card}  theme="slds" ><div class="slds-grid slds-wrap">
+          <div class="slds-col   slds-size_12-of-12  " style="background-color:#F9FCFF;             "><vlocity_cmt-output-field  record={record}  merge-field="%3Cdiv%3E%0A%3Cdiv%3E&nbsp;%20Estado/Provincia:&nbsp;%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BEstado/Provincia%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E%0A%3Cdiv%3E&nbsp;%20Pa&iacute;s:&nbsp;%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BPais%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E%0A%3C/div%3E"  card={card}  theme="slds" ></vlocity_cmt-output-field>
+      </div>
+        </div></vlocity_cmt-block>
+    </div>
+        </div></vlocity_cmt-block>
+    </div><div class="slds-col   slds-border_bottom slds-p-around_x-small  slds-size_12-of-12  " style="background-color:#F9FCFF;     border-color:#cccc;        ">
+    <vlocity_cmt-block  label="Coordenadas"  collapsible="true"  record={record}  collapsed-by-default="true"  card={card}  theme="slds" ><div class="slds-grid slds-wrap">
+          <div class="slds-col    slds-p-around_x-small  slds-size_6-of-12  " style="     border-color:#62A2DD; border-width:2px;       ">
+    <vlocity_cmt-block  label="Block"  collapsible="false"  record={record}  collapsed-by-default="false"  card={card}  theme="slds" ><div class="slds-grid slds-wrap">
+          <div class="slds-col   slds-size_12-of-12  " style="background-color:#F9FCFF;             "><vlocity_cmt-output-field  record={record}  merge-field="%3Cdiv%3E&nbsp;%20Latitud:&nbsp;%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BLatitud%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E"  card={card}  theme="slds" ></vlocity_cmt-output-field>
+      </div>
+        </div></vlocity_cmt-block>
+    </div><div class="slds-col    slds-p-around_x-small  slds-size_6-of-12  " style="     border-color:#62A2DD; border-width:2px;       ">
+    <vlocity_cmt-block  label="Block"  collapsible="false"  record={record}  collapsed-by-default="false"  card={card}  theme="slds" ><div class="slds-grid slds-wrap">
+          <div class="slds-col   slds-size_12-of-12  " style="background-color:#F9FCFF;             "><vlocity_cmt-output-field  record={record}  merge-field="%3Cdiv%3E&nbsp;%20Longitud:&nbsp;%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BLongitud%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E"  card={card}  theme="slds" ></vlocity_cmt-output-field>
+      </div>
+        </div></vlocity_cmt-block>
+    </div>
+        </div></vlocity_cmt-block>
+    </div><div class="slds-col   slds-border_bottom slds-p-around_x-small  slds-size_12-of-12  " style="background-color:#F9FCFF;     border-color:#cccc; border-width:2px;       ">
+    <vlocity_cmt-block  label="Información del sistema"  collapsible="true"  record={record}  collapsed-by-default="true"  card={card}  theme="slds" ><div class="slds-grid slds-wrap">
+          <div class="slds-col    slds-p-around_x-small  slds-size_6-of-12  " style="     border-color:#62A2DD; border-width:2px;       ">
+    <vlocity_cmt-block  label="Block"  collapsible="false"  record={record}  collapsed-by-default="false"  card={card}  theme="slds" ><div class="slds-grid slds-wrap">
+          <div class="slds-col   slds-size_12-of-12  " style="background-color:#F9FCFF;             "><vlocity_cmt-output-field  record={record}  merge-field="%3Cdiv%3E&nbsp;%20Creado%20por:&nbsp;%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BCreadoPor%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E%0A%3Cdiv%3E&nbsp;%20Tipo%20de%20registro%20de%20cuenta:&nbsp;%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BTipoCuenta%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E"  card={card}  theme="slds" ></vlocity_cmt-output-field>
+      </div>
+        </div></vlocity_cmt-block>
+    </div><div class="slds-col    slds-p-around_x-small  slds-size_6-of-12  " style="     border-color:#62A2DD; border-width:2px;       ">
+    <vlocity_cmt-block  label="Block"  collapsible="false"  record={record}  collapsed-by-default="false"  card={card}  theme="slds" ><div class="slds-grid slds-wrap">
+          <div class="slds-col   slds-size_12-of-12  " style="background-color:#F9FCFF;             "><vlocity_cmt-output-field  record={record}  merge-field="%3Cdiv%3E%0A%3Cdiv%3E&nbsp;%20Ultima%20modificaci&oacute;n%20por:%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BUltimaModificacionPor%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E%0A%3Cdiv%3E&nbsp;%20Id%20instalaci&oacute;n%20de%20suministro:%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BIDInstalacionSuministroSAP%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E&nbsp;%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E%0A%3C/div%3E"  card={card}  theme="slds" ></vlocity_cmt-output-field>
+      </div>
+        </div></vlocity_cmt-block>
+    </div>
+        </div></vlocity_cmt-block>
+    </div>
+        </div>
+      </vlocity_cmt-flex-card-state><vlocity_cmt-flex-card-state key={record.uniqueKey} data-recordid={record.Id} record={record} data-statue="true"  data-index="4" data-rindex={rindex} class="cf-vlocity-state-4 cf-vlocity-state slds-size_12-of-12 "  tracking-obj={_childCardTrackingObj} >
+      <div if:true={cardLoaded} class="slds-grid slds-wrap nds-card slds-p-around_x-small slds-m-bottom_x-small " style="             ">
+          <div class="slds-col   slds-border_bottom slds-p-around_x-small  slds-size_12-of-12  " style="background-color:#F9FCFF;     border-color:#cccc; border-width:2px;       ">
+    <vlocity_cmt-block  label="Detalle Cuenta de Facturación"  collapsible="true"  record={record}  collapsed-by-default="false"  card={card}  theme="slds" ><div class="slds-grid slds-wrap">
+          <div class="slds-col    slds-p-around_x-small  slds-size_6-of-12  " style="     border-color:#62A2DD; border-width:2px;       ">
+    <vlocity_cmt-block  label="Block"  collapsible="false"  record={record}  collapsed-by-default="false"  card={card}  theme="slds" ><div class="slds-grid slds-wrap">
+          <div class="slds-col   slds-size_12-of-12  " style="background-color:#F9FCFF;             "><vlocity_cmt-output-field  record={record}  merge-field="%3Cdiv%3E&nbsp;%20Nombre%20de%20la%20cuenta:&nbsp;%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BName%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E&nbsp;%3C/div%3E%0A%3Cdiv%3E%3Cspan%20style=%22background-color:%20initial;%20font-size:%200.8125rem;%22%3ECuenta%20principal:&nbsp;%20%3C/span%3E%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BParentAccName%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E&nbsp;%3C/div%3E%0A%3Cdiv%3E%3Cspan%20style=%22background-color:%20initial;%20font-size:%200.8125rem;%22%3EEstatus:&nbsp;%20%3C/span%3E%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BEstatus%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E%0A%3C/div%3E"  card={card}  theme="slds" ></vlocity_cmt-output-field>
+      </div>
+        </div></vlocity_cmt-block>
+    </div><div class="slds-col    slds-p-around_x-small  slds-size_6-of-12  " style="     border-color:#62A2DD; border-width:2px;       ">
+    <vlocity_cmt-block  label="Block"  collapsible="false"  record={record}  collapsed-by-default="false"  card={card}  theme="slds" ><div class="slds-grid slds-wrap">
+          <div class="slds-col   slds-size_12-of-12  " style="background-color:#F9FCFF;             "><vlocity_cmt-output-field  record={record}  merge-field="%3Cdiv%3E&nbsp;%20Propietario%20de%20la%20cuenta:&nbsp;%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BPropietario%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E%0A%3Cdiv%3E%3Cspan%20style=%22background-color:%20initial;%20font-size:%200.8125rem;%22%3E&nbsp;%20Descripci&oacute;n:&nbsp;%20%3C/span%3E%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BDescripcion%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E&nbsp;%3C/div%3E"  card={card}  theme="slds" ></vlocity_cmt-output-field>
+      </div>
+        </div></vlocity_cmt-block>
+    </div>
+        </div></vlocity_cmt-block>
+    </div><div class="slds-col   slds-border_bottom slds-p-around_x-small  slds-size_12-of-12  " style="background-color:#F9FCFF;     border-color:#cccc; border-width:2px;       ">
+    <vlocity_cmt-block  label="Información cuenta principal"  collapsible="true"  record={record}  collapsed-by-default="true"  card={card}  theme="slds" ><div class="slds-grid slds-wrap">
+          <div class="slds-col    slds-p-around_x-small  slds-size_6-of-12  " style="     border-color:#62A2DD; border-width:2px;       ">
+    <vlocity_cmt-block  label="Block"  collapsible="false"  record={record}  collapsed-by-default="false"  card={card}  theme="slds" ><div class="slds-grid slds-wrap">
+          <div class="slds-col   slds-size_12-of-12  " style="background-color:#F9FCFF;             "><vlocity_cmt-output-field  record={record}  merge-field="%3Cdiv%3E&nbsp;%20Raz&oacute;n%20social:&nbsp;%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BRazonSocial%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E%0A%3Cdiv%3E%0A%3Cdiv%3E&nbsp;%20RFC:&nbsp;%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BRFC%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E%0A%3C/div%3E"  card={card}  theme="slds" ></vlocity_cmt-output-field>
+      </div>
+        </div></vlocity_cmt-block>
+    </div><div class="slds-col    slds-p-around_x-small  slds-size_6-of-12  " style="     border-color:#62A2DD; border-width:2px;       ">
+    <vlocity_cmt-block  label="Block"  collapsible="false"  record={record}  collapsed-by-default="false"  card={card}  theme="slds" ><div class="slds-grid slds-wrap">
+          <div class="slds-col   slds-size_12-of-12  " style="background-color:#F9FCFF;             "><vlocity_cmt-output-field  record={record}  merge-field="%3Cdiv%3E&nbsp;%20Sector:&nbsp;%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BSector%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E"  card={card}  theme="slds" ></vlocity_cmt-output-field>
+      </div>
+        </div></vlocity_cmt-block>
+    </div>
+        </div></vlocity_cmt-block>
+    </div><div class="slds-col   slds-border_right slds-border_bottom slds-p-around_x-small  slds-size_12-of-12  " style="background-color:#F9FCFF;     border-color:#62A2DD; border-width:2px;       ">
+    <vlocity_cmt-block  label="Información del sistema"  collapsible="true"  record={record}  collapsed-by-default="true"  card={card}  theme="slds" ><div class="slds-grid slds-wrap">
+          <div class="slds-col    slds-p-around_x-small  slds-size_6-of-12  " style="     border-color:#62A2DD; border-width:2px;       ">
+    <vlocity_cmt-block  label="Block"  collapsible="false"  record={record}  collapsed-by-default="false"  card={card}  theme="slds" ><div class="slds-grid slds-wrap">
+          <div class="slds-col   slds-size_12-of-12  " style="background-color:#F9FCFF;             "><vlocity_cmt-output-field  record={record}  merge-field="%3Cdiv%3E&nbsp;%20Creado%20por:&nbsp;%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BCreadoPor%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E%0A%3Cdiv%3E&nbsp;%20Tipo%20de%20registro%20de%20cuenta:&nbsp;%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BTipoCuenta%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E"  card={card}  theme="slds" ></vlocity_cmt-output-field>
+      </div>
+        </div></vlocity_cmt-block>
+    </div><div class="slds-col    slds-p-around_x-small  slds-size_6-of-12  " style="     border-color:#62A2DD; border-width:2px;       ">
+    <vlocity_cmt-block  label="Block"  collapsible="false"  record={record}  collapsed-by-default="false"  card={card}  theme="slds" ><div class="slds-grid slds-wrap">
+          <div class="slds-col   slds-size_12-of-12  " style="background-color:#F9FCFF;             "><vlocity_cmt-output-field  record={record}  merge-field="%3Cdiv%3E%0A%3Cdiv%3E&nbsp;%20&Uacute;ltima%20modificaci&oacute;n%20por:&nbsp;%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BUltimaModificacionPor%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E%0A%3Cdiv%3E&nbsp;%20Id%20cuenta%20contrato:&nbsp;%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BCuentaContratoIdSAP%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E&nbsp;%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E%0A%3C/div%3E"  card={card}  theme="slds" ></vlocity_cmt-output-field>
+      </div>
+        </div></vlocity_cmt-block>
+    </div>
+        </div></vlocity_cmt-block>
+    </div>
+        </div>
+      </vlocity_cmt-flex-card-state>
+                        </template>
+                      </template>
+                      <template if:false={hasRecords}>
+                            <vlocity_cmt-flex-card-state  record={record} data-statue="false"  data-index="1" data-rindex={rindex} class="cf-vlocity-state-1 cf-vlocity-state slds-size_12-of-12 "  tracking-obj={_childCardTrackingObj} >
+      <div if:true={cardLoaded} class="slds-grid slds-wrap nds-card slds-p-around_x-small slds-m-bottom_x-small " style="             ">
+          <div class="slds-col   slds-border_bottom slds-p-around_x-small  slds-size_12-of-12  " style="background-color:#F9FCFF;     border-color:#cccc; border-width:2px;      color:c; ">
+    <vlocity_cmt-block  label="Detalle Cuenta de Negocio"  collapsible="true"  record={record}  collapsed-by-default="false"  card={card}  theme="slds" ><div class="slds-grid slds-wrap">
+          <div class="slds-col    slds-p-around_x-small  slds-size_6-of-12  " style="             ">
+    <vlocity_cmt-block  label="Block"  collapsible="false"  record={record}  collapsed-by-default="false"  card={card}  theme="slds" ><div class="slds-grid slds-wrap">
+          <div class="slds-col   slds-size_12-of-12  " style="background-color:#F9FCFF;             "><vlocity_cmt-output-field  record={record}  merge-field="%3Cdiv%3E&nbsp;%20Nombre%20de%20la%20cuenta:&nbsp;%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BName%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E%0A%3Cdiv%3E%0A%3Cdiv%3E&nbsp;%20Raz&oacute;n%20social:&nbsp;%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BRazonSocial%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E%0A%3Cdiv%3E%0A%3Cdiv%3E&nbsp;%20RFC:&nbsp;%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BRFC%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E%0A%3Cdiv%3E%0A%3Cdiv%3E&nbsp;%20Cuenta%20principal:&nbsp;%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BParentAccName%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E%0A%3Cdiv%3E%0A%3Cdiv%3E&nbsp;%20Estatus:&nbsp;%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BEstatus%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E%0A%3C/div%3E%0A%3C/div%3E%0A%3C/div%3E%0A%3C/div%3E%0A%3C/div%3E"  card={card}  theme="slds" ></vlocity_cmt-output-field>
+      </div>
+        </div></vlocity_cmt-block>
+    </div><div class="slds-col    slds-p-around_x-small  slds-size_6-of-12  " style="             ">
+    <vlocity_cmt-block  label="Block"  collapsible="false"  record={record}  collapsed-by-default="false"  card={card}  theme="slds" ><div class="slds-grid slds-wrap">
+          <div class="slds-col   slds-size_12-of-12  " style="background-color:#F9FCFF;             "><vlocity_cmt-output-field  record={record}  merge-field="%3Cdiv%3EContacto%20Principal:%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cstrong%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%7BContactPrincipalName%7D%3C/span%3E%3C/strong%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E%0A%3Cdiv%3EPropietario%20de%20la%20cuenta:&nbsp;%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BPropietario%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E%0A%3Cdiv%3E%0A%3Cdiv%3E&nbsp;%20Prioridad%20del%20cliente:&nbsp;%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BPrioridadCliente%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E%0A%3Cdiv%3E%0A%3Cdiv%3E&nbsp;%20Descripci&oacute;n:&nbsp;%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BDescripcion%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E&nbsp;%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E%0A%3C/div%3E%0A%3C/div%3E%0A%3C/div%3E"  card={card}  theme="slds" ></vlocity_cmt-output-field>
+      </div><div class="slds-col   slds-size_12-of-12  " style="background-color:#F9FCFF;             "><vlocity_cmt-output-field  record={record}  merge-field="%3Cdiv%3E&nbsp;%20Cuenta%20global%20ENGIE:%3C/div%3E"  card={card}  theme="slds" ></vlocity_cmt-output-field>
+      </div><div class="slds-col  slds-text-align_right  slds-size_2-of-12  condition-element" style="             "><vlocity_cmt-flex-icon  record={record}  data-conditions='\{"id":"state-condition-object","isParent":true,"group":[{"id":"state-new-condition-73","field":"CuantaGlobal","operator":"==","value":"true","type":"custom"}]}'  icon-type="Salesforce SVG"  icon-name="standard:task2"  size="x-small"  extraclass="slds-icon_container slds-icon-standard-task2 "  variant="inverse"  imgsrc=""  theme="slds" ></vlocity_cmt-flex-icon>
+      </div><div class="slds-col  slds-text-align_center  slds-size_1-of-12  condition-element" style="             "><vlocity_cmt-flex-icon  record={record}  data-conditions='\{"id":"state-condition-object","isParent":true,"group":[{"id":"state-new-condition-73","field":"CuantaGlobal","operator":"==","value":"false","type":"custom"}]}'  icon-type="Salesforce SVG"  icon-name="action:close"  size="x-small"  extraclass="slds-icon_container slds-icon-action-close slds-icon_container--circle"  variant="inverse"  imgsrc=""  theme="slds" ></vlocity_cmt-flex-icon>
+      </div>
+        </div></vlocity_cmt-block>
+    </div>
+        </div></vlocity_cmt-block>
+    </div><div class="slds-col   slds-border_bottom slds-p-around_x-small  slds-size_12-of-12  " style="background-color:#F9FCFF;     border-color:#cccc; border-width:2px;       ">
+    <vlocity_cmt-block  label="Segmentación"  collapsible="true"  record={record}  collapsed-by-default="false"  card={card}  theme="slds" ><div class="slds-grid slds-wrap">
+          <div class="slds-col    slds-p-around_x-small  slds-size_6-of-12  " style="     border-color:#cccccc; border-width:2px;       ">
+    <vlocity_cmt-block  label="Block"  collapsible="false"  record={record}  collapsed-by-default="false"  card={card}  theme="slds" ><div class="slds-grid slds-wrap">
+          <div class="slds-col   slds-size_12-of-12  " style="background-color:#F9FCFF;             "><vlocity_cmt-output-field  record={record}  merge-field="%3Cdiv%3E&nbsp;%20Sector:&nbsp;%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BSector%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E"  card={card}  theme="slds" ></vlocity_cmt-output-field>
+      </div>
+        </div></vlocity_cmt-block>
+    </div><div class="slds-col    slds-p-around_x-small  slds-size_6-of-12  " style="     border-color:#62A2DD; border-width:2px;       ">
+    <vlocity_cmt-block  label="Block"  collapsible="false"  record={record}  collapsed-by-default="false"  card={card}  theme="slds" ><div class="slds-grid slds-wrap">
+          <div class="slds-col   slds-size_12-of-12  " style="background-color:#F9FCFF;             "><vlocity_cmt-output-field  record={record}  merge-field="%3Cdiv%3E&nbsp;%20Segmento:&nbsp;%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BSegmentoCliente%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E"  card={card}  theme="slds" ></vlocity_cmt-output-field>
+      </div>
+        </div></vlocity_cmt-block>
+    </div>
+        </div></vlocity_cmt-block>
+    </div><div class="slds-col   slds-border_bottom slds-p-around_x-small  slds-size_12-of-12  " style="background-color:#F9FCFF;     border-color:#cccc; border-width:2px;       ">
+    <vlocity_cmt-block  label="Información de contacto"  collapsible="true"  record={record}  collapsed-by-default="false"  card={card}  theme="slds" ><div class="slds-grid slds-wrap">
+          <div class="slds-col    slds-p-around_x-small  slds-size_6-of-12  " style="     border-color:#62A2DD; border-width:2px;       ">
+    <vlocity_cmt-block  label="Block"  collapsible="false"  record={record}  collapsed-by-default="false"  card={card}  theme="slds" ><div class="slds-grid slds-wrap">
+          <div class="slds-col   slds-size_12-of-12  " style="background-color:#F9FCFF;             "><vlocity_cmt-output-field  record={record}  merge-field="%3Cdiv%3E&nbsp;%20Sitio%20web:&nbsp;%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BWebSite%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E%0A%3Cdiv%3E%0A%3Cdiv%3E&nbsp;%20Persona%20contacto%20comercial%20Engie:%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BPersonaContactoEngie%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E%0A%3C/div%3E"  card={card}  theme="slds" ></vlocity_cmt-output-field>
+      </div>
+        </div></vlocity_cmt-block>
+    </div><div class="slds-col    slds-p-around_x-small  slds-size_6-of-12  " style="     border-color:#62A2DD; border-width:2px;       ">
+    <vlocity_cmt-block  label="Block"  collapsible="false"  record={record}  collapsed-by-default="false"  card={card}  theme="slds" ><div class="slds-grid slds-wrap">
+          <div class="slds-col   slds-size_12-of-12  " style="background-color:#F9FCFF;             "><vlocity_cmt-output-field  record={record}  merge-field="%3Cdiv%3E&nbsp;%20Tel&eacute;fono:&nbsp;%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BTelefono%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E"  card={card}  theme="slds" ></vlocity_cmt-output-field>
+      </div>
+        </div></vlocity_cmt-block>
+    </div>
+        </div></vlocity_cmt-block>
+    </div><div class="slds-col   slds-border_bottom slds-p-around_x-small  slds-size_12-of-12  " style="background-color:#F9FCFF;     border-color:#cccc; border-width:2px;       ">
+    <vlocity_cmt-block  label="Información de dirección "  collapsible="true"  record={record}  collapsed-by-default="true"  card={card}  theme="slds" ><div class="slds-grid slds-wrap">
+          <div class="slds-col    slds-p-around_x-small  slds-size_6-of-12  " style="     border-color:#62A2DD; border-width:2px;       ">
+    <vlocity_cmt-block  label="Block"  collapsible="false"  record={record}  collapsed-by-default="false"  card={card}  theme="slds" ><div class="slds-grid slds-wrap">
+          <div class="slds-col   slds-size_12-of-12  " style="background-color:#F9FCFF;             "><vlocity_cmt-output-field  record={record}  merge-field="%3Cdiv%3E&nbsp;%20Calle:&nbsp;%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BCalle%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E%0A%3Cdiv%3E%0A%3Cdiv%3E&nbsp;%20Ciudad:&nbsp;%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BCiudad%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E%0A%3Cdiv%3E%0A%3Cdiv%3E&nbsp;%20C&oacute;digo%20Postal:&nbsp;%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BCodigoPostal%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E%0A%3C/div%3E%0A%3C/div%3E"  card={card}  theme="slds" ></vlocity_cmt-output-field>
+      </div>
+        </div></vlocity_cmt-block>
+    </div><div class="slds-col    slds-p-around_x-small  slds-size_6-of-12  " style="     border-color:#62A2DD; border-width:2px;       ">
+    <vlocity_cmt-block  label="Block"  collapsible="false"  record={record}  collapsed-by-default="false"  card={card}  theme="slds" ><div class="slds-grid slds-wrap">
+          <div class="slds-col   slds-size_12-of-12  " style="background-color:#F9FCFF;             "><vlocity_cmt-output-field  record={record}  merge-field="%3Cdiv%3E%0A%3Cdiv%3E&nbsp;%20Estado/Provincia:&nbsp;%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BEstado/Provincia%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E%0A%3Cdiv%3E&nbsp;%20Pa&iacute;s:&nbsp;%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BPais%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E%0A%3C/div%3E"  card={card}  theme="slds" ></vlocity_cmt-output-field>
+      </div>
+        </div></vlocity_cmt-block>
+    </div>
+        </div></vlocity_cmt-block>
+    </div><div class="slds-col   slds-border_bottom slds-p-around_x-small  slds-size_12-of-12  " style="background-color:#F9FCFF;     border-color:#cccc; border-width:2px;       ">
+    <vlocity_cmt-block  label="Información del sistema"  collapsible="true"  record={record}  collapsed-by-default="true"  card={card}  theme="slds" ><div class="slds-grid slds-wrap">
+          <div class="slds-col    slds-p-around_x-small  slds-size_6-of-12  " style="     border-color:#62A2DD; border-width:2px;       ">
+    <vlocity_cmt-block  label="Block"  collapsible="false"  record={record}  collapsed-by-default="false"  card={card}  theme="slds" ><div class="slds-grid slds-wrap">
+          <div class="slds-col   slds-size_12-of-12  " style="background-color:#F9FCFF;             "><vlocity_cmt-output-field  record={record}  merge-field="%3Cdiv%3E&nbsp;%20Creado%20por:&nbsp;%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BCreadoPor%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E%0A%3Cdiv%3E&nbsp;%20Tipo%20de%20registro%20de%20cuenta:&nbsp;%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BTipoCuenta%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E"  card={card}  theme="slds" ></vlocity_cmt-output-field>
+      </div>
+        </div></vlocity_cmt-block>
+    </div><div class="slds-col    slds-p-around_x-small  slds-size_6-of-12  " style="     border-color:#62A2DD; border-width:2px;       ">
+    <vlocity_cmt-block  label="Block"  collapsible="false"  record={record}  collapsed-by-default="false"  card={card}  theme="slds" ><div class="slds-grid slds-wrap">
+          <div class="slds-col   slds-size_12-of-12  " style="background-color:#F9FCFF;             "><vlocity_cmt-output-field  record={record}  merge-field="%3Cdiv%3E%0A%3Cdiv%3E&nbsp;%20Ultima%20modificaci&oacute;n%20por:%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BUltimaModificacionPor%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E%0A%3Cdiv%3E&nbsp;%20N&uacute;mero%20de%20BP:&nbsp;%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BBusinessPartnerSAP%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E%0A%3C/div%3E"  card={card}  theme="slds" ></vlocity_cmt-output-field>
+      </div>
+        </div></vlocity_cmt-block>
+    </div>
+        </div></vlocity_cmt-block>
+    </div>
+        </div>
+      </vlocity_cmt-flex-card-state><vlocity_cmt-flex-card-state  record={record} data-statue="false"  data-index="2" data-rindex={rindex} class="cf-vlocity-state-2 cf-vlocity-state slds-size_12-of-12 "  tracking-obj={_childCardTrackingObj} >
+      <div if:true={cardLoaded} class="slds-grid slds-wrap nds-card slds-p-around_x-small slds-m-bottom_x-small " style="             ">
+          <div class="slds-col   slds-border_bottom slds-p-around_x-small  slds-size_12-of-12  " style="background-color:#F9FCFF;     border-color:#cccc; border-width:2px;       ">
+    <vlocity_cmt-block  label="Grupo Económico"  collapsible="true"  record={record}  collapsed-by-default="false"  card={card}  theme="slds" ><div class="slds-grid slds-wrap">
+          <div class="slds-col    slds-p-around_x-small  slds-size_6-of-12  " style="     border-color:#62A2DD; border-width:2px;       ">
+    <vlocity_cmt-block  label="Block"  collapsible="false"  record={record}  collapsed-by-default="false"  card={card}  theme="slds" ><div class="slds-grid slds-wrap">
+          <div class="slds-col   slds-size_12-of-12  " style="background-color:#F9FCFF;             "><vlocity_cmt-output-field  record={record}  merge-field="%3Cdiv%3E&nbsp;%20Nombre%20de%20la%20cuenta:&nbsp;%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BName%7D%3C/strong%3E%3C/span%3E%3Cspan%20style=%22background-color:%20initial;%20font-size:%200.8125rem;%22%3E&nbsp;%3C/span%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E%0A%3Cdiv%3E&nbsp;%20Estatus:&nbsp;%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BEstatus%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E&nbsp;%3C/div%3E%0A%3Cdiv%3E%3Cspan%20style=%22background-color:%20initial;%20font-size:%200.8125rem;%22%3E&nbsp;%20Prioridad%20del%20cliente:&nbsp;%20%3C/span%3E%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BPrioridadCliente%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E"  card={card}  theme="slds" ></vlocity_cmt-output-field>
+      </div>
+        </div></vlocity_cmt-block>
+    </div><div class="slds-col    slds-p-around_x-small  slds-size_6-of-12  " style="     border-color:#62A2DD; border-width:2px;       ">
+    <vlocity_cmt-block  label="Block"  collapsible="false"  record={record}  collapsed-by-default="false"  card={card}  theme="slds" ><div class="slds-grid slds-wrap">
+          <div class="slds-col   slds-size_12-of-12  " style="background-color:#F9FCFF;             "><vlocity_cmt-output-field  record={record}  merge-field="%3Cdiv%3E&nbsp;%20Contacto%20principal:%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BContactPrincipalName%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E%0A%3Cdiv%3E&nbsp;%20Propietario%20de%20la%20cuenta:&nbsp;%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BPropietario%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E%0A%3Cdiv%3E%3Cspan%20style=%22background-color:%20initial;%20font-size:%200.8125rem;%22%3E&nbsp;%20Descripci&oacute;n:&nbsp;%20%3C/span%3E%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BDescripcion%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E"  card={card}  theme="slds" ></vlocity_cmt-output-field>
+      </div><div class="slds-col   slds-size_12-of-12  " style="background-color:#F9FCFF;             "><vlocity_cmt-output-field  record={record}  merge-field="%3Cdiv%3E&nbsp;%20Cuenta%20global%20ENGIE:%3C/div%3E"  card={card}  theme="slds" ></vlocity_cmt-output-field>
+      </div><div class="slds-col  slds-text-align_right  slds-size_2-of-12  condition-element" style="             "><vlocity_cmt-flex-icon  record={record}  data-conditions='\{"id":"state-condition-object","isParent":true,"group":[{"id":"state-new-condition-73","field":"CuantaGlobal","operator":"==","value":"true","type":"custom"}]}'  icon-type="Salesforce SVG"  icon-name="standard:task2"  size="x-small"  extraclass="slds-icon_container slds-icon-standard-task2 "  variant="inverse"  imgsrc=""  theme="slds" ></vlocity_cmt-flex-icon>
+      </div><div class="slds-col   slds-size_1-of-12  condition-element" style=""><vlocity_cmt-flex-icon  record={record}  data-conditions='\{"id":"state-condition-object","isParent":true,"group":[{"id":"state-new-condition-73","field":"CuantaGlobal","operator":"==","value":"false","type":"custom"}]}'  icon-type="Salesforce SVG"  icon-name="action:close"  size="x-small"  extraclass="slds-icon_container slds-icon-action-close slds-icon_container--circle"  variant="inverse"  imgsrc=""  theme="slds" ></vlocity_cmt-flex-icon>
+      </div>
+        </div></vlocity_cmt-block>
+    </div>
+        </div></vlocity_cmt-block>
+    </div><div class="slds-col   slds-border_bottom slds-p-around_x-small  slds-size_12-of-12  " style="background-color:#F9FCFF;     border-color:#cccc; border-width:2px;       ">
+    <vlocity_cmt-block  label="Información de contacto"  collapsible="true"  record={record}  collapsed-by-default="false"  card={card}  theme="slds" ><div class="slds-grid slds-wrap">
+          <div class="slds-col    slds-p-around_x-small  slds-size_6-of-12  " style="     border-color:#62A2DD; border-width:2px;       ">
+    <vlocity_cmt-block  label="Block"  collapsible="false"  record={record}  collapsed-by-default="false"  card={card}  theme="slds" ><div class="slds-grid slds-wrap">
+          <div class="slds-col   slds-size_12-of-12  " style="background-color:#F9FCFF;             "><vlocity_cmt-output-field  record={record}  merge-field="%3Cdiv%3E&nbsp;%20Sitio%20web:&nbsp;%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BWebSite%3C/strong%3E%3C/span%3E%3Cspan%20style=%22background-color:%20initial;%20font-size:%200.8125rem;%22%3E%3Cstrong%20style=%22font-size:%2012pt;%20background-color:%20initial;%22%3E%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E&nbsp;%3C/div%3E%0A%3Cdiv%3E%3Cspan%20style=%22font-size:%2012pt;%20background-color:%20initial;%22%3E%3Cspan%20style=%22background-color:%20initial;%20font-size:%200.8125rem;%22%3E&nbsp;%20Persona%20contacto%20comercial%20Engie:%3C/span%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cstrong%20style=%22font-size:%2012pt;%20background-color:%20initial;%22%3E%7BPersonaContactoEngie%7D%3C/strong%3E%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E&nbsp;%3C/div%3E"  card={card}  theme="slds" ></vlocity_cmt-output-field>
+      </div>
+        </div></vlocity_cmt-block>
+    </div><div class="slds-col    slds-p-around_x-small  slds-size_6-of-12  " style="     border-color:#62A2DD; border-width:2px;       ">
+    <vlocity_cmt-block  label="Block"  collapsible="false"  record={record}  collapsed-by-default="false"  card={card}  theme="slds" ><div class="slds-grid slds-wrap">
+          <div class="slds-col   slds-size_12-of-12  " style="background-color:#F9FCFF;             "><vlocity_cmt-output-field  record={record}  merge-field="%3Cdiv%3E&nbsp;%20Tel&eacute;fono:&nbsp;%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BTelefono%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E"  card={card}  theme="slds" ></vlocity_cmt-output-field>
+      </div>
+        </div></vlocity_cmt-block>
+    </div>
+        </div></vlocity_cmt-block>
+    </div><div class="slds-col   slds-border_bottom slds-p-around_x-small  slds-size_12-of-12  " style="background-color:#F9FCFF;     border-color:#cccc; border-width:2px;       ">
+    <vlocity_cmt-block  label="Información de dirección "  collapsible="true"  record={record}  collapsed-by-default="true"  card={card}  theme="slds" ><div class="slds-grid slds-wrap">
+          <div class="slds-col    slds-p-around_x-small  slds-size_6-of-12  " style="     border-color:#62A2DD; border-width:2px;       ">
+    <vlocity_cmt-block  label="Block"  collapsible="false"  record={record}  collapsed-by-default="false"  card={card}  theme="slds" ><div class="slds-grid slds-wrap">
+          <div class="slds-col   slds-size_12-of-12  " style="background-color:#F9FCFF;             "><vlocity_cmt-output-field  record={record}  merge-field="%3Cdiv%3E&nbsp;%20Calle:&nbsp;%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BCalle%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E%0A%3Cdiv%3E%0A%3Cdiv%3E&nbsp;%20Ciudad:&nbsp;%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BCiudad%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E%0A%3Cdiv%3E%0A%3Cdiv%3E&nbsp;%20C&oacute;digo%20Postal:&nbsp;%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BCodigoPostal%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E%0A%3C/div%3E%0A%3C/div%3E"  card={card}  theme="slds" ></vlocity_cmt-output-field>
+      </div>
+        </div></vlocity_cmt-block>
+    </div><div class="slds-col    slds-p-around_x-small  slds-size_6-of-12  " style="     border-color:#62A2DD; border-width:2px;       ">
+    <vlocity_cmt-block  label="Block"  collapsible="false"  record={record}  collapsed-by-default="false"  card={card}  theme="slds" ><div class="slds-grid slds-wrap">
+          <div class="slds-col   slds-size_12-of-12  " style="background-color:#F9FCFF;             "><vlocity_cmt-output-field  record={record}  merge-field="%3Cdiv%3E%0A%3Cdiv%3E&nbsp;%20Estado/Provincia:&nbsp;%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BEstado/Provincia%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E%0A%3Cdiv%3E&nbsp;%20Pa&iacute;s:&nbsp;%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BPais%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E%0A%3C/div%3E"  card={card}  theme="slds" ></vlocity_cmt-output-field>
+      </div>
+        </div></vlocity_cmt-block>
+    </div>
+        </div></vlocity_cmt-block>
+    </div><div class="slds-col   slds-border_bottom slds-p-around_x-small  slds-size_12-of-12  " style="background-color:#F9FCFF;     border-color:#cccc; border-width:2px;       ">
+    <vlocity_cmt-block  label="Información del sistema"  collapsible="true"  record={record}  collapsed-by-default="true"  card={card}  theme="slds" ><div class="slds-grid slds-wrap">
+          <div class="slds-col    slds-p-around_x-small  slds-size_6-of-12  " style="     border-color:#62A2DD; border-width:2px;       ">
+    <vlocity_cmt-block  label="Block"  collapsible="false"  record={record}  collapsed-by-default="false"  card={card}  theme="slds" ><div class="slds-grid slds-wrap">
+          <div class="slds-col   slds-size_12-of-12  " style="background-color:#F9FCFF;             "><vlocity_cmt-output-field  record={record}  merge-field="%3Cdiv%3E&nbsp;%20Creado%20por:&nbsp;%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BCreadoPor%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E%0A%3Cdiv%3E&nbsp;%20Tipo%20de%20registro%20de%20cuenta:&nbsp;%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BTipoCuenta%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E"  card={card}  theme="slds" ></vlocity_cmt-output-field>
+      </div>
+        </div></vlocity_cmt-block>
+    </div><div class="slds-col    slds-p-around_x-small  slds-size_6-of-12  " style="     border-color:#62A2DD; border-width:2px;       ">
+    <vlocity_cmt-block  label="Block"  collapsible="false"  record={record}  collapsed-by-default="false"  card={card}  theme="slds" ><div class="slds-grid slds-wrap">
+          <div class="slds-col   slds-size_12-of-12  " style="background-color:#F9FCFF;             "><vlocity_cmt-output-field  record={record}  merge-field="%3Cdiv%3E%0A%3Cdiv%3E&nbsp;%20Ultima%20modificaci&oacute;n%20por:&nbsp;%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BUltimaModificacionPor%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E%0A%3C/div%3E"  card={card}  theme="slds" ></vlocity_cmt-output-field>
+      </div>
+        </div></vlocity_cmt-block>
+    </div>
+        </div></vlocity_cmt-block>
+    </div>
+        </div>
+      </vlocity_cmt-flex-card-state><vlocity_cmt-flex-card-state  record={record} data-statue="false"  data-index="3" data-rindex={rindex} class="cf-vlocity-state-3 cf-vlocity-state slds-size_12-of-12 "  tracking-obj={_childCardTrackingObj} >
+      <div if:true={cardLoaded} class="slds-grid slds-wrap nds-card slds-p-around_x-small slds-m-bottom_x-small " style="             ">
+          <div class="slds-col   slds-border_bottom slds-p-around_x-small  slds-size_12-of-12  " style="background-color:#F9FCFF;     border-color:#cccc; border-width:2px;       ">
+    <vlocity_cmt-block  label="Detalle Cuenta de Servicio"  collapsible="true"  record={record}  collapsed-by-default="false"  card={card}  theme="slds" ><div class="slds-grid slds-wrap">
+          <div class="slds-col    slds-p-around_x-small  slds-size_6-of-12  " style="     border-color:#62A2DD; border-width:2px;       ">
+    <vlocity_cmt-block  label="Block"  collapsible="false"  record={record}  collapsed-by-default="false"  card={card}  theme="slds" ><div class="slds-grid slds-wrap">
+          <div class="slds-col   slds-size_12-of-12  " style="background-color:#F9FCFF;             "><vlocity_cmt-output-field  record={record}  merge-field="%3Cdiv%3E&nbsp;%20Nombre%20de%20la%20cuenta:&nbsp;%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BName%7D%3C/strong%3E%3C/span%3E%3Cspan%20style=%22background-color:%20initial;%20font-size:%200.8125rem;%22%3E&nbsp;%20%3C/span%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E%0A%3Cdiv%3E%3Cspan%20style=%22background-color:%20initial;%20font-size:%200.8125rem;%22%3E&nbsp;%20Cuenta%20principal:&nbsp;%20%3C/span%3E%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BParentAccName%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E%0A%3Cdiv%3E%0A%3Cdiv%3E&nbsp;%20Estatus:&nbsp;%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BEstatus%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E%0A%3C/div%3E%0A%3C/div%3E"  card={card}  theme="slds" ></vlocity_cmt-output-field>
+      </div>
+        </div></vlocity_cmt-block>
+    </div><div class="slds-col    slds-p-around_x-small  slds-size_6-of-12  " style="     border-color:#62A2DD; border-width:2px;       ">
+    <vlocity_cmt-block  label="Block"  collapsible="false"  record={record}  collapsed-by-default="false"  card={card}  theme="slds" ><div class="slds-grid slds-wrap">
+          <div class="slds-col   slds-size_12-of-12  " style="background-color:#F9FCFF;             "><vlocity_cmt-output-field  record={record}  merge-field="%3Cdiv%3E%0A%3Cdiv%3E&nbsp;%20Contacto%20principal:%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BContactPrincipalName%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E%0A%3C/div%3E%0A%3Cdiv%3E&nbsp;%20Propietario%20de%20la%20cuenta:&nbsp;%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BPropietario%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E&nbsp;%3C/div%3E%0A%3Cdiv%3E%3Cspan%20style=%22font-size:%2010pt;%22%3E&nbsp;%20&nbsp;%20Descripci&oacute;n:%20%3C/span%3E%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cstrong%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%7BDescripcion%7D%3C/span%3E%3C/strong%3E%3C/div%3E"  card={card}  theme="slds" ></vlocity_cmt-output-field>
+      </div>
+        </div></vlocity_cmt-block>
+    </div>
+        </div></vlocity_cmt-block>
+    </div><div class="slds-col   slds-border_bottom slds-p-around_x-small  slds-size_12-of-12  " style="background-color:#F9FCFF;     border-color:#cccc; border-width:2px;       ">
+    <vlocity_cmt-block  label="Información cuenta principal"  collapsible="true"  record={record}  collapsed-by-default="false"  card={card}  theme="slds" ><div class="slds-grid slds-wrap">
+          <div class="slds-col    slds-p-around_x-small  slds-size_6-of-12  " style="     border-color:#62A2DD; border-width:2px;       ">
+    <vlocity_cmt-block  label="Block"  collapsible="false"  record={record}  collapsed-by-default="false"  card={card}  theme="slds" ><div class="slds-grid slds-wrap">
+          <div class="slds-col   slds-size_12-of-12  " style="background-color:#F9FCFF;             "><vlocity_cmt-output-field  record={record}  merge-field="%3Cdiv%3E%0A%3Cdiv%3E&nbsp;%20Raz&oacute;n%20social:&nbsp;%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BRazonSocial%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E%0A%3Cdiv%3E%3Cspan%20style=%22background-color:%20initial;%20font-size:%200.8125rem;%22%3E&nbsp;%20RFC:&nbsp;%20%3C/span%3E%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BRFC%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E%0A%3C/div%3E%0A%3C/div%3E"  card={card}  theme="slds" ></vlocity_cmt-output-field>
+      </div>
+        </div></vlocity_cmt-block>
+    </div><div class="slds-col    slds-p-around_x-small  slds-size_6-of-12  " style="     border-color:#62A2DD; border-width:2px;       ">
+    <vlocity_cmt-block  label="Block"  collapsible="false"  record={record}  collapsed-by-default="false"  card={card}  theme="slds" ><div class="slds-grid slds-wrap">
+          <div class="slds-col   slds-size_12-of-12  " style="background-color:#F9FCFF;             "><vlocity_cmt-output-field  record={record}  merge-field="%3Cdiv%3E&nbsp;%20Sector:&nbsp;%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BSector%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E"  card={card}  theme="slds" ></vlocity_cmt-output-field>
+      </div>
+        </div></vlocity_cmt-block>
+    </div>
+        </div></vlocity_cmt-block>
+    </div><div class="slds-col   slds-border_bottom slds-p-around_x-small  slds-size_12-of-12  " style="background-color:#F9FCFF;     border-color:#cccc; border-width:2px;       ">
+    <vlocity_cmt-block  label="Información de contacto"  collapsible="true"  record={record}  collapsed-by-default="false"  card={card}  theme="slds" ><div class="slds-grid slds-wrap">
+          <div class="slds-col    slds-p-around_x-small  slds-size_6-of-12  " style="     border-color:#62A2DD; border-width:2px;       ">
+    <vlocity_cmt-block  label="Block"  collapsible="false"  record={record}  collapsed-by-default="false"  card={card}  theme="slds" ><div class="slds-grid slds-wrap">
+          <div class="slds-col   slds-size_12-of-12  " style="background-color:#F9FCFF;             "><vlocity_cmt-output-field  record={record}  merge-field="%3Cdiv%3E%0A%3Cdiv%3E&nbsp;%20Persona%20contacto%20comercial%20Engie:&nbsp;%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BPersonaContactoEngie%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E%0A%3C/div%3E"  card={card}  theme="slds" ></vlocity_cmt-output-field>
+      </div>
+        </div></vlocity_cmt-block>
+    </div><div class="slds-col    slds-p-around_x-small  slds-size_6-of-12  " style="     border-color:#62A2DD; border-width:2px;       ">
+    <vlocity_cmt-block  label="Block"  collapsible="false"  record={record}  collapsed-by-default="false"  card={card}  theme="slds" ><div class="slds-grid slds-wrap">
+          <div class="slds-col   slds-size_12-of-12  " style="background-color:#F9FCFF;             "><vlocity_cmt-output-field  record={record}  merge-field="%3Cdiv%3E&nbsp;%20Tel&eacute;fono:&nbsp;%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BTelefono%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E"  card={card}  theme="slds" ></vlocity_cmt-output-field>
+      </div>
+        </div></vlocity_cmt-block>
+    </div>
+        </div></vlocity_cmt-block>
+    </div><div class="slds-col   slds-border_bottom slds-p-around_x-small  slds-size_12-of-12  " style="background-color:#F9FCFF;     border-color:#cccc; border-width:2px;       ">
+    <vlocity_cmt-block  label="Información de dirección "  collapsible="true"  record={record}  collapsed-by-default="true"  card={card}  theme="slds" ><div class="slds-grid slds-wrap">
+          <div class="slds-col    slds-p-around_x-small  slds-size_6-of-12  " style="     border-color:#62A2DD; border-width:2px;       ">
+    <vlocity_cmt-block  label="Block"  collapsible="false"  record={record}  collapsed-by-default="false"  card={card}  theme="slds" ><div class="slds-grid slds-wrap">
+          <div class="slds-col   slds-size_12-of-12  " style="background-color:#F9FCFF;             "><vlocity_cmt-output-field  record={record}  merge-field="%3Cdiv%3E&nbsp;%20Calle:&nbsp;%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BCalle%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E%0A%3Cdiv%3E%0A%3Cdiv%3E&nbsp;%20Ciudad:&nbsp;%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BCiudad%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E%0A%3Cdiv%3E%0A%3Cdiv%3E&nbsp;%20C&oacute;digo%20Postal:&nbsp;%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BCodigoPostal%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E%0A%3C/div%3E%0A%3C/div%3E"  card={card}  theme="slds" ></vlocity_cmt-output-field>
+      </div>
+        </div></vlocity_cmt-block>
+    </div><div class="slds-col    slds-p-around_x-small  slds-size_6-of-12  " style="     border-color:#62A2DD; border-width:2px;       ">
+    <vlocity_cmt-block  label="Block"  collapsible="false"  record={record}  collapsed-by-default="false"  card={card}  theme="slds" ><div class="slds-grid slds-wrap">
+          <div class="slds-col   slds-size_12-of-12  " style="background-color:#F9FCFF;             "><vlocity_cmt-output-field  record={record}  merge-field="%3Cdiv%3E%0A%3Cdiv%3E&nbsp;%20Estado/Provincia:&nbsp;%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BEstado/Provincia%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E%0A%3Cdiv%3E&nbsp;%20Pa&iacute;s:&nbsp;%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BPais%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E%0A%3C/div%3E"  card={card}  theme="slds" ></vlocity_cmt-output-field>
+      </div>
+        </div></vlocity_cmt-block>
+    </div>
+        </div></vlocity_cmt-block>
+    </div><div class="slds-col   slds-border_bottom slds-p-around_x-small  slds-size_12-of-12  " style="background-color:#F9FCFF;     border-color:#cccc;        ">
+    <vlocity_cmt-block  label="Coordenadas"  collapsible="true"  record={record}  collapsed-by-default="true"  card={card}  theme="slds" ><div class="slds-grid slds-wrap">
+          <div class="slds-col    slds-p-around_x-small  slds-size_6-of-12  " style="     border-color:#62A2DD; border-width:2px;       ">
+    <vlocity_cmt-block  label="Block"  collapsible="false"  record={record}  collapsed-by-default="false"  card={card}  theme="slds" ><div class="slds-grid slds-wrap">
+          <div class="slds-col   slds-size_12-of-12  " style="background-color:#F9FCFF;             "><vlocity_cmt-output-field  record={record}  merge-field="%3Cdiv%3E&nbsp;%20Latitud:&nbsp;%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BLatitud%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E"  card={card}  theme="slds" ></vlocity_cmt-output-field>
+      </div>
+        </div></vlocity_cmt-block>
+    </div><div class="slds-col    slds-p-around_x-small  slds-size_6-of-12  " style="     border-color:#62A2DD; border-width:2px;       ">
+    <vlocity_cmt-block  label="Block"  collapsible="false"  record={record}  collapsed-by-default="false"  card={card}  theme="slds" ><div class="slds-grid slds-wrap">
+          <div class="slds-col   slds-size_12-of-12  " style="background-color:#F9FCFF;             "><vlocity_cmt-output-field  record={record}  merge-field="%3Cdiv%3E&nbsp;%20Longitud:&nbsp;%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BLongitud%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E"  card={card}  theme="slds" ></vlocity_cmt-output-field>
+      </div>
+        </div></vlocity_cmt-block>
+    </div>
+        </div></vlocity_cmt-block>
+    </div><div class="slds-col   slds-border_bottom slds-p-around_x-small  slds-size_12-of-12  " style="background-color:#F9FCFF;     border-color:#cccc; border-width:2px;       ">
+    <vlocity_cmt-block  label="Información del sistema"  collapsible="true"  record={record}  collapsed-by-default="true"  card={card}  theme="slds" ><div class="slds-grid slds-wrap">
+          <div class="slds-col    slds-p-around_x-small  slds-size_6-of-12  " style="     border-color:#62A2DD; border-width:2px;       ">
+    <vlocity_cmt-block  label="Block"  collapsible="false"  record={record}  collapsed-by-default="false"  card={card}  theme="slds" ><div class="slds-grid slds-wrap">
+          <div class="slds-col   slds-size_12-of-12  " style="background-color:#F9FCFF;             "><vlocity_cmt-output-field  record={record}  merge-field="%3Cdiv%3E&nbsp;%20Creado%20por:&nbsp;%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BCreadoPor%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E%0A%3Cdiv%3E&nbsp;%20Tipo%20de%20registro%20de%20cuenta:&nbsp;%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BTipoCuenta%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E"  card={card}  theme="slds" ></vlocity_cmt-output-field>
+      </div>
+        </div></vlocity_cmt-block>
+    </div><div class="slds-col    slds-p-around_x-small  slds-size_6-of-12  " style="     border-color:#62A2DD; border-width:2px;       ">
+    <vlocity_cmt-block  label="Block"  collapsible="false"  record={record}  collapsed-by-default="false"  card={card}  theme="slds" ><div class="slds-grid slds-wrap">
+          <div class="slds-col   slds-size_12-of-12  " style="background-color:#F9FCFF;             "><vlocity_cmt-output-field  record={record}  merge-field="%3Cdiv%3E%0A%3Cdiv%3E&nbsp;%20Ultima%20modificaci&oacute;n%20por:%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BUltimaModificacionPor%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E%0A%3Cdiv%3E&nbsp;%20Id%20instalaci&oacute;n%20de%20suministro:%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BIDInstalacionSuministroSAP%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E&nbsp;%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E%0A%3C/div%3E"  card={card}  theme="slds" ></vlocity_cmt-output-field>
+      </div>
+        </div></vlocity_cmt-block>
+    </div>
+        </div></vlocity_cmt-block>
+    </div>
+        </div>
+      </vlocity_cmt-flex-card-state><vlocity_cmt-flex-card-state  record={record} data-statue="false"  data-index="4" data-rindex={rindex} class="cf-vlocity-state-4 cf-vlocity-state slds-size_12-of-12 "  tracking-obj={_childCardTrackingObj} >
+      <div if:true={cardLoaded} class="slds-grid slds-wrap nds-card slds-p-around_x-small slds-m-bottom_x-small " style="             ">
+          <div class="slds-col   slds-border_bottom slds-p-around_x-small  slds-size_12-of-12  " style="background-color:#F9FCFF;     border-color:#cccc; border-width:2px;       ">
+    <vlocity_cmt-block  label="Detalle Cuenta de Facturación"  collapsible="true"  record={record}  collapsed-by-default="false"  card={card}  theme="slds" ><div class="slds-grid slds-wrap">
+          <div class="slds-col    slds-p-around_x-small  slds-size_6-of-12  " style="     border-color:#62A2DD; border-width:2px;       ">
+    <vlocity_cmt-block  label="Block"  collapsible="false"  record={record}  collapsed-by-default="false"  card={card}  theme="slds" ><div class="slds-grid slds-wrap">
+          <div class="slds-col   slds-size_12-of-12  " style="background-color:#F9FCFF;             "><vlocity_cmt-output-field  record={record}  merge-field="%3Cdiv%3E&nbsp;%20Nombre%20de%20la%20cuenta:&nbsp;%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BName%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E&nbsp;%3C/div%3E%0A%3Cdiv%3E%3Cspan%20style=%22background-color:%20initial;%20font-size:%200.8125rem;%22%3ECuenta%20principal:&nbsp;%20%3C/span%3E%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BParentAccName%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E&nbsp;%3C/div%3E%0A%3Cdiv%3E%3Cspan%20style=%22background-color:%20initial;%20font-size:%200.8125rem;%22%3EEstatus:&nbsp;%20%3C/span%3E%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BEstatus%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E%0A%3C/div%3E"  card={card}  theme="slds" ></vlocity_cmt-output-field>
+      </div>
+        </div></vlocity_cmt-block>
+    </div><div class="slds-col    slds-p-around_x-small  slds-size_6-of-12  " style="     border-color:#62A2DD; border-width:2px;       ">
+    <vlocity_cmt-block  label="Block"  collapsible="false"  record={record}  collapsed-by-default="false"  card={card}  theme="slds" ><div class="slds-grid slds-wrap">
+          <div class="slds-col   slds-size_12-of-12  " style="background-color:#F9FCFF;             "><vlocity_cmt-output-field  record={record}  merge-field="%3Cdiv%3E&nbsp;%20Propietario%20de%20la%20cuenta:&nbsp;%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BPropietario%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E%0A%3Cdiv%3E%3Cspan%20style=%22background-color:%20initial;%20font-size:%200.8125rem;%22%3E&nbsp;%20Descripci&oacute;n:&nbsp;%20%3C/span%3E%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BDescripcion%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E&nbsp;%3C/div%3E"  card={card}  theme="slds" ></vlocity_cmt-output-field>
+      </div>
+        </div></vlocity_cmt-block>
+    </div>
+        </div></vlocity_cmt-block>
+    </div><div class="slds-col   slds-border_bottom slds-p-around_x-small  slds-size_12-of-12  " style="background-color:#F9FCFF;     border-color:#cccc; border-width:2px;       ">
+    <vlocity_cmt-block  label="Información cuenta principal"  collapsible="true"  record={record}  collapsed-by-default="true"  card={card}  theme="slds" ><div class="slds-grid slds-wrap">
+          <div class="slds-col    slds-p-around_x-small  slds-size_6-of-12  " style="     border-color:#62A2DD; border-width:2px;       ">
+    <vlocity_cmt-block  label="Block"  collapsible="false"  record={record}  collapsed-by-default="false"  card={card}  theme="slds" ><div class="slds-grid slds-wrap">
+          <div class="slds-col   slds-size_12-of-12  " style="background-color:#F9FCFF;             "><vlocity_cmt-output-field  record={record}  merge-field="%3Cdiv%3E&nbsp;%20Raz&oacute;n%20social:&nbsp;%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BRazonSocial%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E%0A%3Cdiv%3E%0A%3Cdiv%3E&nbsp;%20RFC:&nbsp;%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BRFC%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E%0A%3C/div%3E"  card={card}  theme="slds" ></vlocity_cmt-output-field>
+      </div>
+        </div></vlocity_cmt-block>
+    </div><div class="slds-col    slds-p-around_x-small  slds-size_6-of-12  " style="     border-color:#62A2DD; border-width:2px;       ">
+    <vlocity_cmt-block  label="Block"  collapsible="false"  record={record}  collapsed-by-default="false"  card={card}  theme="slds" ><div class="slds-grid slds-wrap">
+          <div class="slds-col   slds-size_12-of-12  " style="background-color:#F9FCFF;             "><vlocity_cmt-output-field  record={record}  merge-field="%3Cdiv%3E&nbsp;%20Sector:&nbsp;%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BSector%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E"  card={card}  theme="slds" ></vlocity_cmt-output-field>
+      </div>
+        </div></vlocity_cmt-block>
+    </div>
+        </div></vlocity_cmt-block>
+    </div><div class="slds-col   slds-border_right slds-border_bottom slds-p-around_x-small  slds-size_12-of-12  " style="background-color:#F9FCFF;     border-color:#62A2DD; border-width:2px;       ">
+    <vlocity_cmt-block  label="Información del sistema"  collapsible="true"  record={record}  collapsed-by-default="true"  card={card}  theme="slds" ><div class="slds-grid slds-wrap">
+          <div class="slds-col    slds-p-around_x-small  slds-size_6-of-12  " style="     border-color:#62A2DD; border-width:2px;       ">
+    <vlocity_cmt-block  label="Block"  collapsible="false"  record={record}  collapsed-by-default="false"  card={card}  theme="slds" ><div class="slds-grid slds-wrap">
+          <div class="slds-col   slds-size_12-of-12  " style="background-color:#F9FCFF;             "><vlocity_cmt-output-field  record={record}  merge-field="%3Cdiv%3E&nbsp;%20Creado%20por:&nbsp;%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BCreadoPor%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E%0A%3Cdiv%3E&nbsp;%20Tipo%20de%20registro%20de%20cuenta:&nbsp;%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BTipoCuenta%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E"  card={card}  theme="slds" ></vlocity_cmt-output-field>
+      </div>
+        </div></vlocity_cmt-block>
+    </div><div class="slds-col    slds-p-around_x-small  slds-size_6-of-12  " style="     border-color:#62A2DD; border-width:2px;       ">
+    <vlocity_cmt-block  label="Block"  collapsible="false"  record={record}  collapsed-by-default="false"  card={card}  theme="slds" ><div class="slds-grid slds-wrap">
+          <div class="slds-col   slds-size_12-of-12  " style="background-color:#F9FCFF;             "><vlocity_cmt-output-field  record={record}  merge-field="%3Cdiv%3E%0A%3Cdiv%3E&nbsp;%20&Uacute;ltima%20modificaci&oacute;n%20por:&nbsp;%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BUltimaModificacionPor%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E%0A%3Cdiv%3E&nbsp;%20Id%20cuenta%20contrato:&nbsp;%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3E%7BCuentaContratoIdSAP%7D%3C/strong%3E%3C/span%3E%3C/div%3E%0A%3Cdiv%20style=%22padding-left:%203em;%22%3E&nbsp;%3C/div%3E%0A%3Cdiv%3E&nbsp;%3C/div%3E%0A%3C/div%3E"  card={card}  theme="slds" ></vlocity_cmt-output-field>
+      </div>
+        </div></vlocity_cmt-block>
+    </div>
+        </div></vlocity_cmt-block>
+    </div>
+        </div>
+      </vlocity_cmt-flex-card-state>
+                      </template>
+            </template>
+            <template if:true={hasError}>
+            {error}
+            </template>
+            
+      <vlocity_cmt-action action-wrapperclass="slds-hide" re-render-flyout class="action-trigger slds-col" onupdateos={updateOmniscript} onsetvalue={updateAction}>
+      
+      </vlocity_cmt-action>
+  
+            <vlocity_cmt-action class="execute-action" re-render-flyout action-wrapperclass="slds-hide" onupdateos={updateOmniscript} onsetvalue={updateAction}>
+            
+            </vlocity_cmt-action>
+            </div>
+          </template>

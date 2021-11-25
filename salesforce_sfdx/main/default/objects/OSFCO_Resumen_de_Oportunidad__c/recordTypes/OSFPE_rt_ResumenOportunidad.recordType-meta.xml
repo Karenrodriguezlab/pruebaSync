@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OSFPE_rt_ResumenOportunidad</fullName>
+    <active>true</active>
+    <label>Perú</label>
+    <picklistValues>
+        <picklist>OSFCO_Solucion__c</picklist>
+        <values>
+            <fullName>Generación OnSite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Green PPA-Hydro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Green PPA-Solar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Green PPA-Wind</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HVAC%26DHC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PPA Estandar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PPA Renovable</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OSFCO_Tipo_de_Solucion__c</picklist>
+        <values>
+            <fullName>Soluciones</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Suministro Eléctrico</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

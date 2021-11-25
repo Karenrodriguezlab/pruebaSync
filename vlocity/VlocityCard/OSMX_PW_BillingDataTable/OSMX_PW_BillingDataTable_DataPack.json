@@ -1,0 +1,38 @@
+{
+    "%vlocity_namespace%__Author__c": "Globant",
+    "%vlocity_namespace%__CardType__c": "flex",
+    "%vlocity_namespace%__Datasource__c": {
+        "contextVariables": [
+            {
+                "id": 0,
+                "name": "Parent.cuentaContrato",
+                "val": "005100152643"
+            }
+        ],
+        "orderBy": {
+            "isReverse": false,
+            "name": ""
+        },
+        "type": "Query",
+        "value": {
+            "dsDelay": 0,
+            "jsonMap": "{\"Parent.cuentaContrato\":\"{Parent.cuentaContrato}\"}",
+            "query": "SELECT OSFMX_FechaEmision__c, OSFMX_FechaEnvio__c, OSFMX_PeriodoConsumo__c,\n\tOSFMX_NumFactura__c,\n\tOSFMX_UrlZip__c, OSFMX_UrlPdf__c, OSFMX_EstadoFactura__c, SUM(OSFMX_ImporteConcepto__c)monto, \n\tOSFMX_MonedaCfdi__c,OSFMX_FechaFinPeriodoConsumo__c, OSFMX_FechaInicioPeriodoConsumo__c, \n\tOSFMX_FechaVencimiento__c, OSFMX_TipoDocumento__c, AVG(OSFMX_MontoFactura__c)montoTotal, \n\tOSFMX_MpSignature__c,OSFMX_MpAccountMultipagos__c,OSFMX_MpUrlSuccessMultipagos__c,\n\tOSFMX_MpUrlFailureMultipagos__c, OSFMX_MpReferenceMultipagos__c, OSFMX_ReferenciaFactura__c, OSFMX_MpCustomernameMultipagos__c, OSFMX_InfoMultipagos__c, OSFMX_MpNodeMultipagos__c, OSFMX_MpAuthMultipagos__c\nFROM OSFMX_360ViewInvoice__c \nWHERE OSFMX_ContractAccountForBilling__r.OSFMX_CuentaContrato__c = '{Parent.cuentaContrato}' \nGROUP BY OSFMX_FechaEmision__c, OSFMX_FechaEnvio__c, OSFMX_EstadoFactura__c, \n\tOSFMX_FechaFinPeriodoConsumo__c, OSFMX_FechaInicioPeriodoConsumo__c, \n\tOSFMX_MonedaCfdi__c,OSFMX_FechaVencimiento__c, OSFMX_TipoDocumento__c,\n\tOSFMX_UrlZip__c, OSFMX_UrlPdf__c,OSFMX_NumFactura__c, OSFMX_PeriodoConsumo__c,\n\tOSFMX_MpSignature__c,OSFMX_MpAccountMultipagos__c,OSFMX_MpUrlSuccessMultipagos__c,\n\tOSFMX_MpUrlFailureMultipagos__c, OSFMX_MpReferenceMultipagos__c, OSFMX_ReferenciaFactura__c, OSFMX_MpCustomernameMultipagos__c, OSFMX_InfoMultipagos__c, OSFMX_MpNodeMultipagos__c, OSFMX_MpAuthMultipagos__c",
+            "resultVar": ""
+        }
+    },
+    "%vlocity_namespace%__Definition__c": "OSMX_PW_BillingDataTable.json",
+    "%vlocity_namespace%__Description__c": "",
+    "%vlocity_namespace%__GlobalKey__c": "OSMX_PW_BillingDataTable/Globant/2/1633721220460",
+    "%vlocity_namespace%__IsChildCard__c": true,
+    "%vlocity_namespace%__ParentID__c": "",
+    "%vlocity_namespace%__SampleData__c": "[{\"attributes\":{\"type\":\"AggregateResult\"},\"OSFMX_FechaEmision__c\":\"2021-08-31\",\"OSFMX_FechaEnvio__c\":null,\"OSFMX_PeriodoConsumo__c\":\"2021-08-01 -- 2021-08-31\",\"OSFMX_NumFactura__c\":\"B00054116\",\"OSFMX_UrlZip__c\":\"https://emisionservicio.detecno-control.info:43980/cfdiWebEmision_Servicio33_EngieTest/asp/download.aspx?folio=1679180&RFC=XIA190128J61&token=404ba2d60e6b389f5688219578a250cb\",\"OSFMX_UrlPdf__c\":\"https://emisionservicio.detecno-control.info:43980/cfdiWebEmision_Servicio33_EngieTest/asp/showPDF.aspx?folio=1679180&RFC=XIA190128J61&token=2b0a37b07276d9521604cdb4fc4a13c0\",\"OSFMX_EstadoFactura__c\":\"Pagado\",\"monto\":42073.32,\"OSFMX_MonedaCfdi__c\":\"MXN\",\"OSFMX_FechaFinPeriodoConsumo__c\":\"2021-08-31\",\"OSFMX_FechaInicioPeriodoConsumo__c\":\"2021-08-01\",\"OSFMX_FechaVencimiento__c\":\"2021-08-23\",\"OSFMX_TipoDocumento__c\":\"FACTURA\",\"montoTotal\":48805.04,\"OSFMX_MpSignature__c\":null,\"OSFMX_MpAccountMultipagos__c\":null,\"OSFMX_MpUrlSuccessMultipagos__c\":null,\"OSFMX_MpUrlFailureMultipagos__c\":null,\"OSFMX_MpReferenceMultipagos__c\":null,\"OSFMX_ReferenciaFactura__c\":\"INFMX02B00054116\",\"OSFMX_MpCustomernameMultipagos__c\":null,\"OSFMX_InfoMultipagos__c\":null,\"OSFMX_MpNodeMultipagos__c\":null,\"OSFMX_MpAuthMultipagos__c\":null},{\"attributes\":{\"type\":\"AggregateResult\"},\"OSFMX_FechaEmision__c\":\"2021-10-06\",\"OSFMX_FechaEnvio__c\":null,\"OSFMX_PeriodoConsumo__c\":\"2021-07-02 -- 2021-07-31\",\"OSFMX_NumFactura__c\":\"B00054216\",\"OSFMX_UrlZip__c\":\"https://emisionservicio.detecno-control.info:43980/cfdiWebEmision_Servicio33_EngieTest/asp/download.aspx?folio=1722134&RFC=XIA190128J61&token=b11fce4ccd426a07a688602fdcc02c99\",\"OSFMX_UrlPdf__c\":\"https://emisionservicio.detecno-control.info:43980/cfdiWebEmision_Servicio33_EngieTest/asp/showPDF.aspx?folio=1722134&RFC=XIA190128J61&token=1300fb8ee1dba37f5fbca97c2d760dd4\",\"OSFMX_EstadoFactura__c\":\"No pagado\",\"monto\":36171.34,\"OSFMX_MonedaCfdi__c\":\"MXN\",\"OSFMX_FechaFinPeriodoConsumo__c\":\"2021-07-31\",\"OSFMX_FechaInicioPeriodoConsumo__c\":\"2021-07-02\",\"OSFMX_FechaVencimiento__c\":\"2021-10-21\",\"OSFMX_TipoDocumento__c\":\"FACTURA\",\"montoTotal\":41958.75,\"OSFMX_MpSignature__c\":\"040b76e49bc9bad608be12f360154f1d114795612577db7dbe069a92c462812b\",\"OSFMX_MpAccountMultipagos__c\":\"3882\",\"OSFMX_MpUrlSuccessMultipagos__c\":\"https://devmexico-b2b-engiemexico.cs14.force.com/b2b/s/pagoexitosomultipagosportal\",\"OSFMX_MpUrlFailureMultipagos__c\":\"https://devmexico-b2b-engiemexico.cs14.force.com/b2b/s/pagoexitosomultipagosportal\",\"OSFMX_MpReferenceMultipagos__c\":\"005100152643\",\"OSFMX_ReferenciaFactura__c\":\"INFMX02B00054216\",\"OSFMX_MpCustomernameMultipagos__c\":\"edgar.maldonado@globant.com.latam.devmexico\",\"OSFMX_InfoMultipagos__c\":\"Inconsistencia en la información recibida del pago\",\"OSFMX_MpNodeMultipagos__c\":\"7\",\"OSFMX_MpAuthMultipagos__c\":null},{\"attributes\":{\"type\":\"AggregateResult\"},\"OSFMX_FechaEmision__c\":\"2021-10-06\",\"OSFMX_FechaEnvio__c\":null,\"OSFMX_PeriodoConsumo__c\":\"2021-07-02 -- 2021-07-31\",\"OSFMX_NumFactura__c\":\"D00003566\",\"OSFMX_UrlZip__c\":\"https://emisionservicio.detecno-control.info:43980/cfdiWebEmision_Servicio33_EngieTest/asp/download.aspx?folio=1722133&RFC=XIA190128J61&token=8a6e72cc446752222dd90bbac266c336\",\"OSFMX_UrlPdf__c\":\"https://emisionservicio.detecno-control.info:43980/cfdiWebEmision_Servicio33_EngieTest/asp/showPDF.aspx?folio=1722133&RFC=XIA190128J61&token=086ee7e7d1838b894331fb2efc90ed41\",\"OSFMX_EstadoFactura__c\":\"No aplicada\",\"monto\":36171.34,\"OSFMX_MonedaCfdi__c\":\"MXN\",\"OSFMX_FechaFinPeriodoConsumo__c\":\"2021-07-31\",\"OSFMX_FechaInicioPeriodoConsumo__c\":\"2021-07-02\",\"OSFMX_FechaVencimiento__c\":null,\"OSFMX_TipoDocumento__c\":\"NOTA DE CREDITO\",\"montoTotal\":41958.75,\"OSFMX_MpSignature__c\":null,\"OSFMX_MpAccountMultipagos__c\":null,\"OSFMX_MpUrlSuccessMultipagos__c\":null,\"OSFMX_MpUrlFailureMultipagos__c\":null,\"OSFMX_MpReferenceMultipagos__c\":null,\"OSFMX_ReferenciaFactura__c\":\"INNMX02D00003566\",\"OSFMX_MpCustomernameMultipagos__c\":null,\"OSFMX_InfoMultipagos__c\":null,\"OSFMX_MpNodeMultipagos__c\":null,\"OSFMX_MpAuthMultipagos__c\":null}]",
+    "%vlocity_namespace%__Styles__c": "",
+    "%vlocity_namespace%__Type__c": "",
+    "%vlocity_namespace%__Version__c": 2,
+    "CurrencyIsoCode": "MXN",
+    "Name": "OSMX_PW_BillingDataTable",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__VlocityCard__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__VlocityCard__c/OSMX_PW_BillingDataTable"
+}

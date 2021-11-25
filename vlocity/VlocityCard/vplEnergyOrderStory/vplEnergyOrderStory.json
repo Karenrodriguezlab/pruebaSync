@@ -1,0 +1,71 @@
+{
+    "GlobalKey__c": "vplEnergyOrderStory/Accenture India/1/1592896015489",
+    "dataSource": {
+        "type": null
+    },
+    "enableLwc": true,
+    "filter": {
+        "['objAPIName']": "Order"
+    },
+    "states": [
+        {
+            "conditions": {
+                "group": [
+                    {
+                        "field": "$scope.data.status",
+                        "operator": "===",
+                        "type": "system",
+                        "value": "'active'"
+                    }
+                ]
+            },
+            "definedActions": {
+                "actions": [
+                ]
+            },
+            "fields": [
+                {
+                    "collapse": true,
+                    "displayLabel": "['subtitle']",
+                    "editing": false,
+                    "fieldType": "standard",
+                    "group": "Custom Properties",
+                    "label": "Estado",
+                    "name": "['subtitle']",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "['highlight']",
+                    "editing": false,
+                    "fieldType": "standard",
+                    "group": "Custom Properties",
+                    "label": "Importe Total",
+                    "name": "['highlight']",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "['formatedLastActivityDate']",
+                    "editing": false,
+                    "fieldType": "standard",
+                    "group": "Custom Properties",
+                    "label": "Fecha de Actividad",
+                    "name": "['formatedLastActivityDate']",
+                    "type": "string"
+                }
+            ],
+            "isSmartAction": false,
+            "lwc": {
+                "DeveloperName": "storyNormalState",
+                "Id": "0Rb3h000000Xu4DCAS",
+                "MasterLabel": "storyNormalState",
+                "name": "storyNormalState"
+            },
+            "name": "Active",
+            "smartAction": {
+            }
+        }
+    ],
+    "title": "Ordenes"
+}

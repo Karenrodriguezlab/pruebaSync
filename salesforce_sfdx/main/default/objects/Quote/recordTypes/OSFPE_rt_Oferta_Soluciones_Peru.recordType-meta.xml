@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OSFPE_rt_Oferta_Soluciones_Peru</fullName>
+    <active>true</active>
+    <label>Oferta Soluciones Peru</label>
+    <picklistValues>
+        <picklist>Status</picklist>
+        <values>
+            <fullName>Aprobada</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Borrador</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Observaciones</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Presentada</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Proceso</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

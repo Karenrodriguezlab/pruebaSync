@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Sprint 6</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>MEXCOM Aprobaciones VPs</name>
+    <style>none</style>
+    <subject>{!Quote.OSFMX_BusinessName__c} | Solicitud de Aprobación de Oferta</subject>
+    <textOnly>Notificación de aprobación de oferta
+Estimado aprobador, tiene una oferta de {!Quote.OwnerFullName} pendiente de aprobación.
+Puede contestar este correo poniendo en la primera línea las palabras APROBAR o RECHAZAR, y en la segunda línea, sin espacio, los comentarios u observaciones que tenga.
+
+Número de Oferta: {!Quote.QuoteNumber}
+Nombre de Oferta: {!Quote.Name}
+
+NIVEL DE APROBACIÓN  {!ApprovalRequest.Process_Step_Name}
+TIPO DE OFERTA  {!Quote.OSFMX_OfferType__c}
+CLIENTE  {!Quote.OSFMX_BusinessName__c}
+RFC  {!Quote.OSFMX_AccountRFC__c}
+VOLUMEN SOLICITADO (GJ/Plazo suministro)  {!Quote.OSMXConsumo_Plazo__c}
+GWh/Plazo suministro  {!Quote.OSFMX_GwhYear__c}
+PLAZO DE SUMINISTRO GAS (MESES)  {!Quote.OSFMX_Plazo_suministro_Gas__c}
+VOLUMEN DIARIO (GJ/día)  {!Quote.OSFMX_DailyVolume__c}
+DISTRIBUIDOR/TRANSPORTISTA  {!Quote.OSFMX_DistributorOrCarrier__c}
+KAM  {!Quote.OwnerFullName}
+¿ES CLIENTE ACTUAL?  {!Quote.OSFMX_ParticularSpecifications__c}
+PRECIO ACTUAL (USD)  USD {!Quote.OSFMX_ActualPrice__c}
+ESTRUCTURA DE PRECIO  {!Quote.OSFMX_PriceStructure__c}
+CUADRANTE  {!Quote.OSFMX_Quadrant__c}
+SPREAD PISO  {!Quote.OSFMX_Spread_piso_por_cuadrante__c}
+OFERTA SPREAD (USD/GJ)  USD {!Quote.OSFMXSpreadAvoidCurrenSymbol__c} / {!Quote.OSFMX_Spread_BC_excedente_USD_Gj__c}
+MARGEN ESTIMADO USD (Por encima del precio medio de compra)  USD {!Quote.OSFMX_Margen_estimado_molecula_usd__c}
+COMERCIALIZACIÓN  {!Quote.OSFMX_Rango_comercializaci_n__c}
+MARGEN DE COMERCIALIZACIÓN (USD)  USD {!Quote.OSFMX_Margen_comercializacion_usd__c}
+TARIFA TRANSPORTE APLICABLE  {!Quote.OSFMX_GasTransportPrice__c}
+
+
+Observaciones Transporte: {!Quote.OSFMX_GasTransportObservation__c}
+
+Comentarios Usuario Oferta Gas:  {!Quote.OSFMX_GasQuoteUserComments__c}
+
+Si requiere aprobar la oferta directamente en SalesForce de click AQUÍ
+Si requiere consultar la oferta en SalesForce de click AQUÍ</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

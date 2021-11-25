@@ -1,0 +1,58 @@
+{
+    "%vlocity_namespace%__Active__c": true,
+    "%vlocity_namespace%__OmniScriptId__c": {
+        "Name": "QuoteTransportApproval",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__OmniScript__c/OSFMX/QuoteTransportApproval/Spanish",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OmniScript__c"
+    },
+    "%vlocity_namespace%__ParentElementId__c": {
+        "%vlocity_namespace%__OmniScriptId__c": {
+            "Name": "QuoteTransportApproval",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__OmniScript__c/OSFMX/QuoteTransportApproval/Spanish",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__OmniScript__c"
+        },
+        "Name": "StepComments",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__Element__c/%vlocity_namespace%__OmniScript__c/OSFMX/QuoteTransportApproval/Spanish/StepComments",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__Element__c"
+    },
+    "%vlocity_namespace%__ParentElementName__c": "StepComments",
+    "%vlocity_namespace%__ParentElementType__c": "Step",
+    "%vlocity_namespace%__PropertySet__c": {
+        "HTMLTemplateId": "",
+        "accessibleInFutureSteps": false,
+        "allowNegative": false,
+        "conditionType": "Hide if False",
+        "controlWidth": 6,
+        "debounceValue": 0,
+        "defaultValue": null,
+        "disOnTplt": false,
+        "displayCurrencyCode": false,
+        "help": false,
+        "helpText": "",
+        "hide": false,
+        "hideGroupSep": false,
+        "inputWidth": 12,
+        "label": "Precio estimado transporte de gas",
+        "mask": 4,
+        "max": null,
+        "min": null,
+        "placeholder": "",
+        "readOnly": false,
+        "repeat": false,
+        "repeatClone": false,
+        "repeatLimit": null,
+        "required": true,
+        "show": null,
+        "showInputWidth": false
+    },
+    "%vlocity_namespace%__ReusableOmniScript__c": false,
+    "%vlocity_namespace%__Type__c": "Currency",
+    "CurrencyIsoCode": "MXN",
+    "Name": "OSFMX_GasTransportPrice__c",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__Element__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__Element__c/%vlocity_namespace%__OmniScript__c/OSFMX/QuoteTransportApproval/Spanish/OSFMX_GasTransportPrice__c"
+}

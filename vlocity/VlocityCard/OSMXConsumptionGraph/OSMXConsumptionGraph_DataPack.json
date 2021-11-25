@@ -1,0 +1,39 @@
+{
+    "%vlocity_namespace%__Author__c": "Globant",
+    "%vlocity_namespace%__CardType__c": "flex",
+    "%vlocity_namespace%__Datasource__c": {
+        "contextVariables": [
+            {
+                "id": 2,
+                "name": "recordId",
+                "val": "0011900000xiwldAAA"
+            }
+        ],
+        "orderBy": {
+            "isReverse": false,
+            "name": ""
+        },
+        "type": "IntegrationProcedures",
+        "value": {
+            "inputMap": {
+                "AccountId": "{recordId}"
+            },
+            "ipMethod": "OSFMX_CheckGasConsumptionIP",
+            "resultVar": "[\"consumos\"]",
+            "vlocityAsync": false
+        }
+    },
+    "%vlocity_namespace%__Definition__c": "OSMXConsumptionGraph.json",
+    "%vlocity_namespace%__Description__c": "",
+    "%vlocity_namespace%__GlobalKey__c": "OSMXConsumptionGraph/Globant/1/1615828689803",
+    "%vlocity_namespace%__IsChildCard__c": false,
+    "%vlocity_namespace%__ParentID__c": "",
+    "%vlocity_namespace%__SampleData__c": "{\"consumos\":[{\"tipo_solucion\":\"Gas\",\"nombre_cliente\":\"MONDELEZ MÉXICO, S. DE R.L. DE C.V.\",\"b_partner\":\"0600001333\",\"tipo_cliente_desc\":\"Comercializadora\",\"tipo_cliente_clave\":\"COME\",\"sociedad_desc\":\"GDF Suez México Comercial\",\"sociedad_clave\":\"MX25\",\"estado_desc\":\"Puebla\",\"estado_clave\":\"PUE\",\"contrato_gas\":\"005000875856\",\"nombre_suministro\":\"PUEBLA, PARQUE INDUSTRIAL PUEBLA 2000\",\"instal_suministro\":\"0600601256\",\"contrato_suministro\":\"0000521556\",\"mes\":\"Marzo\",\"fecha_consumo_hasta\":\"03/31/2020\",\"fecha_consumo_desde\":\"03/01/2020\",\"consumo_facturado_gj\":25596.389,\"anio\":2020},{\"tipo_solucion\":\"Gas\",\"nombre_cliente\":\"MONDELEZ MÉXICO, S. DE R.L. DE C.V.\",\"b_partner\":\"0600001333\",\"tipo_cliente_desc\":\"Comercializadora\",\"tipo_cliente_clave\":\"COME\",\"sociedad_desc\":\"GDF Suez México Comercial\",\"sociedad_clave\":\"MX25\",\"estado_desc\":\"Puebla\",\"estado_clave\":\"PUE\",\"contrato_gas\":\"005000875856\",\"nombre_suministro\":\"PUEBLA, PARQUE INDUSTRIAL PUEBLA 2000\",\"instal_suministro\":\"0600601256\",\"contrato_suministro\":\"0000521556\",\"mes\":\"Abril\",\"fecha_consumo_hasta\":\"04/30/2020\",\"fecha_consumo_desde\":\"04/01/2020\",\"consumo_facturado_gj\":13247.589,\"anio\":2020},{\"tipo_solucion\":\"Gas\",\"nombre_cliente\":\"MONDELEZ MÉXICO, S. DE R.L. DE C.V.\",\"b_partner\":\"0600001333\",\"tipo_cliente_desc\":\"Comercializadora\",\"tipo_cliente_clave\":\"COME\",\"sociedad_desc\":\"GDF Suez México Comercial\",\"sociedad_clave\":\"MX25\",\"estado_desc\":\"Puebla\",\"estado_clave\":\"PUE\",\"contrato_gas\":\"005000875856\",\"nombre_suministro\":\"PUEBLA, PARQUE INDUSTRIAL PUEBLA 2000\",\"instal_suministro\":\"0600601256\",\"contrato_suministro\":\"0000521556\",\"mes\":\"Mayo\",\"fecha_consumo_hasta\":\"05/31/2020\",\"fecha_consumo_desde\":\"05/01/2020\",\"consumo_facturado_gj\":10360.628,\"anio\":2020},{\"tipo_solucion\":\"Gas\",\"nombre_cliente\":\"MONDELEZ MÉXICO, S. DE R.L. DE C.V.\",\"b_partner\":\"0600001333\",\"tipo_cliente_desc\":\"Comercializadora\",\"tipo_cliente_clave\":\"COME\",\"sociedad_desc\":\"GDF Suez México Comercial\",\"sociedad_clave\":\"MX25\",\"estado_desc\":\"Puebla\",\"estado_clave\":\"PUE\",\"contrato_gas\":\"005000875856\",\"nombre_suministro\":\"PUEBLA, PARQUE INDUSTRIAL PUEBLA 2000\",\"instal_suministro\":\"0600601256\",\"contrato_suministro\":\"0000521556\",\"mes\":\"Junio\",\"fecha_consumo_hasta\":\"06/30/2020\",\"fecha_consumo_desde\":\"06/01/2020\",\"consumo_facturado_gj\":14187.192,\"anio\":2020},{\"tipo_solucion\":\"Gas\",\"nombre_cliente\":\"MONDELEZ MÉXICO, S. DE R.L. DE C.V.\",\"b_partner\":\"0600001333\",\"tipo_cliente_desc\":\"Comercializadora\",\"tipo_cliente_clave\":\"COME\",\"sociedad_desc\":\"GDF Suez México Comercial\",\"sociedad_clave\":\"MX25\",\"estado_desc\":\"Puebla\",\"estado_clave\":\"PUE\",\"contrato_gas\":\"005000875856\",\"nombre_suministro\":\"PUEBLA, PARQUE INDUSTRIAL PUEBLA 2000\",\"instal_suministro\":\"0600601256\",\"contrato_suministro\":\"0000521556\",\"mes\":\"Julio\",\"fecha_consumo_hasta\":\"07/31/2020\",\"fecha_consumo_desde\":\"07/01/2020\",\"consumo_facturado_gj\":13246.016,\"anio\":2020},{\"tipo_solucion\":\"Gas\",\"nombre_cliente\":\"MONDELEZ MÉXICO, S. DE R.L. DE C.V.\",\"b_partner\":\"0600001333\",\"tipo_cliente_desc\":\"Comercializadora\",\"tipo_cliente_clave\":\"COME\",\"sociedad_desc\":\"GDF Suez México Comercial\",\"sociedad_clave\":\"MX25\",\"estado_desc\":\"Puebla\",\"estado_clave\":\"PUE\",\"contrato_gas\":\"005000875856\",\"nombre_suministro\":\"PUEBLA, PARQUE INDUSTRIAL PUEBLA 2000\",\"instal_suministro\":\"0600601256\",\"contrato_suministro\":\"0000521556\",\"mes\":\"Agosto\",\"fecha_consumo_hasta\":\"08/31/2020\",\"fecha_consumo_desde\":\"08/01/2020\",\"consumo_facturado_gj\":18417.072,\"anio\":2020},{\"tipo_solucion\":\"Gas\",\"nombre_cliente\":\"MONDELEZ MÉXICO, S. DE R.L. DE C.V.\",\"b_partner\":\"0600001333\",\"tipo_cliente_desc\":\"Comercializadora\",\"tipo_cliente_clave\":\"COME\",\"sociedad_desc\":\"GDF Suez México Comercial\",\"sociedad_clave\":\"MX25\",\"estado_desc\":\"Puebla\",\"estado_clave\":\"PUE\",\"contrato_gas\":\"005000875856\",\"nombre_suministro\":\"PUEBLA, PARQUE INDUSTRIAL PUEBLA 2000\",\"instal_suministro\":\"0600601256\",\"contrato_suministro\":\"0000521556\",\"mes\":\"Septiembre\",\"fecha_consumo_hasta\":\"09/30/2020\",\"fecha_consumo_desde\":\"09/01/2020\",\"consumo_facturado_gj\":15193.623,\"anio\":2020}]}",
+    "%vlocity_namespace%__Styles__c": "",
+    "%vlocity_namespace%__Type__c": "",
+    "%vlocity_namespace%__Version__c": 1,
+    "Name": "OSMXConsumptionGraph",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__VlocityCard__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__VlocityCard__c/OSMXConsumptionGraph"
+}

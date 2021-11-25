@@ -1,0 +1,22 @@
+<div><img style="max-width: 1122.5338928222657px;" title="Engie jpg" src="https://engielatam--devmexico--c.documentforce.com/file-asset-public/Engie_jpg1?oid=00Dc0000003wiic" alt="Engie jpg" /></div>
+<div style="text-align: center;"><br />&nbsp;</div>
+<div>
+<p>Estimad@ <strong>{!Competidor__c.OSFMX_CompetitorOwnerName__c}</strong></p>
+<p><br />Estamos a 4 meses de la fecha de terminaci&oacute;n de contrato de <strong>{!Competidor__c.OSFMX_CompetitorRZ__c}</strong> con su suministrador actual <strong>{!Competidor__c.Name}</strong>.<br />Ponte en contacto con tu cliente para hacerle una oferta.</p>
+<ul>
+<li><strong>Razon Social:</strong> {!Competidor__c.OSFMX_CompetitorRZ__c}</li>
+<li><strong>Nombre de la Oportunidad:</strong> {!Competidor__c.OSFMX_Opportunity__c}</li>
+<li><strong>Solucion:</strong> {!Competidor__c.OSFMX_CompetitorSolution__c}</li>
+<li><strong>Nombre de competidor:</strong> {!Competidor__c.Name}</li>
+<li><strong>Fecha de terminacion de contrato:</strong> {!Competidor__c.OSFMX_EndDateContract__c}</li>
+</ul>
+<p>&nbsp;</p>
+</div>
+<div>
+<p>Para m&aacute;s informaci&oacute;n puedes revisar la oportunidad en SalesForce: <a href="{!Competidor__c.Link}">Aqu&iacute;</a></p>
+</div>
+<div><img style="max-width: 1122.5338928222657px;" title="Engie jpg" src="https://engielatam--devmexico--c.documentforce.com/file-asset-public/Engie_jpg1?oid=00Dc0000003wiic" alt="Engie jpg" /></div>
+<div id="" style="left: 588.182px; top: 693.153px;"><span style="font-family: arial;">&nbsp;</span></div>
+<div id="" style="left: 588.182px; top: 693.153px;"><span style="font-family: arial;">&nbsp;</span></div>
+<div id="" style="left: 127.778px; top: 422.378px;"><span style="font-family: arial;">&nbsp;</span></div>
+<div id="" style="left: 127.778px; top: 422.378px;"><span style="font-family: arial;">&nbsp;</span></div>

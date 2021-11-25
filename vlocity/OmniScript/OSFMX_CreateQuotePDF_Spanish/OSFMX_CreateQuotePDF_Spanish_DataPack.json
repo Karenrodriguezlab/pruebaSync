@@ -1,0 +1,27 @@
+{
+    "%vlocity_namespace%__DisableMetadataCache__c": false,
+    "%vlocity_namespace%__ElementTypeToHTMLTemplateList__c": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "%vlocity_namespace%__Element__c": [
+        "OSFMX_CreateQuotePDF_Spanish_Element_SVData.json",
+        "OSFMX_CreateQuotePDF_Spanish_Element_DRGetDocumentTemplate.json",
+        "OSFMX_CreateQuotePDF_Spanish_Element_SVDocumentOptions.json",
+        "OSFMX_CreateQuotePDF_Spanish_Element_StepViewQuote.json",
+        "OSFMX_CreateQuotePDF_Spanish_Element_GenerateDocument.json",
+        "OSFMX_CreateQuotePDF_Spanish_Element_StepSignQuote.json",
+        "OSFMX_CreateQuotePDF_Spanish_Element_SignQuoteImage.json",
+        "OSFMX_CreateQuotePDF_Spanish_Element_NavigateAction1.json"
+    ],
+    "%vlocity_namespace%__IsLwcEnabled__c": true,
+    "%vlocity_namespace%__IsProcedure__c": false,
+    "%vlocity_namespace%__IsReusable__c": false,
+    "%vlocity_namespace%__IsTest__c": false,
+    "%vlocity_namespace%__Language__c": "Spanish",
+    "%vlocity_namespace%__PropertySet__c": "OSFMX_CreateQuotePDF_Spanish_PropertySet.json",
+    "%vlocity_namespace%__SubType__c": "CreateQuotePDF",
+    "%vlocity_namespace%__TestHTMLTemplates__c": "OSFMX_CreateQuotePDF_Spanish_HTMLTemplates.html",
+    "%vlocity_namespace%__Type__c": "OSFMX",
+    "Name": "GenerateQuotePDF",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__OmniScript__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__OmniScript__c/OSFMX/CreateQuotePDF/Spanish"
+}

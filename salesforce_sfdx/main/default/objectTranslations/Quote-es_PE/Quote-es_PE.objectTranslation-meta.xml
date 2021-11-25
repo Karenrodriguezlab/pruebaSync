@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Oferta</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Ofertas</value>
+    </caseValues>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>OSFPE_pl_Oferta</layout>
+        <sections>
+            <label></label>
+            <section>Información General</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Otros</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Precios de la Oferta</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Tipo de Oferta</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label></label>
+        <name>OSFPE_rt_Oferta_Energia_Peru</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>OSFPE_rt_Oferta_Soluciones_Peru</name>
+    </recordTypes>
+</CustomObjectTranslation>

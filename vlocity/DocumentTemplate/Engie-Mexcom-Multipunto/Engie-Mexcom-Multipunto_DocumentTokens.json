@@ -1,0 +1,954 @@
+[
+    {
+        "%vlocity_namespace%__Description__c": "",
+        "%vlocity_namespace%__DocumentTemplateId__c": {
+            "%vlocity_namespace%__ExternalID__c": "Test15/1/Engie_Latam_HQ/1635205563242",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__DocumentTemplate__c/Engie Mexcom Multipunto",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__DocumentTemplate__c"
+        },
+        "%vlocity_namespace%__TokenDataType__c": "Text",
+        "%vlocity_namespace%__TokenPath__c": "",
+        "%vlocity_namespace%__TokenSymbol__c": "19c1350e-cb8e-1cf5-8fb8-28a5b76eded4",
+        "CurrencyIsoCode": "MXN",
+        "Name": "fechaOferta",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DocumentToken__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__DocumentToken__c/19c1350e-cb8e-1cf5-8fb8-28a5b76eded4"
+    },
+    {
+        "%vlocity_namespace%__Description__c": "",
+        "%vlocity_namespace%__DocumentTemplateId__c": {
+            "%vlocity_namespace%__ExternalID__c": "Test15/1/Engie_Latam_HQ/1635205563242",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__DocumentTemplate__c/Engie Mexcom Multipunto",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__DocumentTemplate__c"
+        },
+        "%vlocity_namespace%__TokenDataType__c": "Text",
+        "%vlocity_namespace%__TokenPath__c": "",
+        "%vlocity_namespace%__TokenSymbol__c": "30883f58-8168-b926-3079-ac2e8f52cf45",
+        "CurrencyIsoCode": "MXN",
+        "Name": "contactoCargo",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DocumentToken__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__DocumentToken__c/30883f58-8168-b926-3079-ac2e8f52cf45"
+    },
+    {
+        "%vlocity_namespace%__Description__c": "",
+        "%vlocity_namespace%__DocumentTemplateId__c": {
+            "%vlocity_namespace%__ExternalID__c": "Test15/1/Engie_Latam_HQ/1635205563242",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__DocumentTemplate__c/Engie Mexcom Multipunto",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__DocumentTemplate__c"
+        },
+        "%vlocity_namespace%__TokenDataType__c": "Text",
+        "%vlocity_namespace%__TokenPath__c": "",
+        "%vlocity_namespace%__TokenSymbol__c": "426c253c-df01-df1e-db97-8fd18b9a8237",
+        "CurrencyIsoCode": "MXN",
+        "Name": "ofertaValidez",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DocumentToken__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__DocumentToken__c/426c253c-df01-df1e-db97-8fd18b9a8237"
+    },
+    {
+        "%vlocity_namespace%__Description__c": "",
+        "%vlocity_namespace%__DocumentTemplateId__c": {
+            "%vlocity_namespace%__ExternalID__c": "Test15/1/Engie_Latam_HQ/1635205563242",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__DocumentTemplate__c/Engie Mexcom Multipunto",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__DocumentTemplate__c"
+        },
+        "%vlocity_namespace%__TokenDataType__c": "Text",
+        "%vlocity_namespace%__TokenPath__c": "",
+        "%vlocity_namespace%__TokenSymbol__c": "6241b719-3d97-c3de-4a2e-0776d4710914",
+        "CurrencyIsoCode": "MXN",
+        "Name": "plazoSuministro",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DocumentToken__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__DocumentToken__c/6241b719-3d97-c3de-4a2e-0776d4710914"
+    },
+    {
+        "%vlocity_namespace%__Description__c": "",
+        "%vlocity_namespace%__DocumentTemplateId__c": {
+            "%vlocity_namespace%__ExternalID__c": "Test15/1/Engie_Latam_HQ/1635205563242",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__DocumentTemplate__c/Engie Mexcom Multipunto",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__DocumentTemplate__c"
+        },
+        "%vlocity_namespace%__TokenDataType__c": "Text",
+        "%vlocity_namespace%__TokenPath__c": "",
+        "%vlocity_namespace%__TokenSymbol__c": "74a98ab7-7d1c-88fe-b5b8-1e174ef015b5",
+        "CurrencyIsoCode": "MXN",
+        "Name": "IF_anexoB",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DocumentToken__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__DocumentToken__c/74a98ab7-7d1c-88fe-b5b8-1e174ef015b5"
+    },
+    {
+        "%vlocity_namespace%__Description__c": "",
+        "%vlocity_namespace%__DocumentTemplateId__c": {
+            "%vlocity_namespace%__ExternalID__c": "Test15/1/Engie_Latam_HQ/1635205563242",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__DocumentTemplate__c/Engie Mexcom Multipunto",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__DocumentTemplate__c"
+        },
+        "%vlocity_namespace%__TokenDataType__c": "Text",
+        "%vlocity_namespace%__TokenPath__c": "",
+        "%vlocity_namespace%__TokenSymbol__c": "8f8d523b-5d43-5e68-5615-2d5b7c9c81c2",
+        "CurrencyIsoCode": "MXN",
+        "Name": "IF_anexoA",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DocumentToken__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__DocumentToken__c/8f8d523b-5d43-5e68-5615-2d5b7c9c81c2"
+    },
+    {
+        "%vlocity_namespace%__Description__c": "",
+        "%vlocity_namespace%__DocumentTemplateId__c": {
+            "%vlocity_namespace%__ExternalID__c": "Test15/1/Engie_Latam_HQ/1635205563242",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__DocumentTemplate__c/Engie Mexcom Multipunto",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__DocumentTemplate__c"
+        },
+        "%vlocity_namespace%__TokenDataType__c": "Text",
+        "%vlocity_namespace%__TokenPath__c": "",
+        "%vlocity_namespace%__TokenSymbol__c": "931c764b-2757-c1b4-48e3-44157ccde009",
+        "CurrencyIsoCode": "MXN",
+        "Name": "IF_vinculante",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DocumentToken__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__DocumentToken__c/931c764b-2757-c1b4-48e3-44157ccde009"
+    },
+    {
+        "%vlocity_namespace%__Description__c": "",
+        "%vlocity_namespace%__DocumentTemplateId__c": {
+            "%vlocity_namespace%__ExternalID__c": "Test15/1/Engie_Latam_HQ/1635205563242",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__DocumentTemplate__c/Engie Mexcom Multipunto",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__DocumentTemplate__c"
+        },
+        "%vlocity_namespace%__TokenDataType__c": "Text",
+        "%vlocity_namespace%__TokenPath__c": "",
+        "%vlocity_namespace%__TokenSymbol__c": "bbd403ab-a237-b041-98db-44c44bf1f40b",
+        "CurrencyIsoCode": "MXN",
+        "Name": "tipoOferta",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DocumentToken__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__DocumentToken__c/bbd403ab-a237-b041-98db-44c44bf1f40b"
+    },
+    {
+        "%vlocity_namespace%__Description__c": "",
+        "%vlocity_namespace%__DocumentTemplateId__c": {
+            "%vlocity_namespace%__ExternalID__c": "Test15/1/Engie_Latam_HQ/1635205563242",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__DocumentTemplate__c/Engie Mexcom Multipunto",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__DocumentTemplate__c"
+        },
+        "%vlocity_namespace%__TokenDataType__c": "Text",
+        "%vlocity_namespace%__TokenPath__c": "",
+        "%vlocity_namespace%__TokenSymbol__c": "c6b71c1f-1522-190f-2326-1e3652c0caf4",
+        "CurrencyIsoCode": "MXN",
+        "Name": "contactoNombreOportunidad",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DocumentToken__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__DocumentToken__c/c6b71c1f-1522-190f-2326-1e3652c0caf4"
+    },
+    {
+        "%vlocity_namespace%__Description__c": "",
+        "%vlocity_namespace%__DocumentTemplateId__c": {
+            "%vlocity_namespace%__ExternalID__c": "Test15/1/Engie_Latam_HQ/1635205563242",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__DocumentTemplate__c/Engie Mexcom Multipunto",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__DocumentTemplate__c"
+        },
+        "%vlocity_namespace%__TokenDataType__c": "Text",
+        "%vlocity_namespace%__TokenPath__c": "",
+        "%vlocity_namespace%__TokenSymbol__c": "e28f6cb2-6adf-49e0-edb2-6b7088dc75c3",
+        "CurrencyIsoCode": "MXN",
+        "Name": "nombreCliente",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DocumentToken__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__DocumentToken__c/e28f6cb2-6adf-49e0-edb2-6b7088dc75c3"
+    },
+    {
+        "%vlocity_namespace%__Description__c": "",
+        "%vlocity_namespace%__DocumentTemplateId__c": {
+            "%vlocity_namespace%__ExternalID__c": "Test15/1/Engie_Latam_HQ/1635205563242",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__DocumentTemplate__c/Engie Mexcom Multipunto",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__DocumentTemplate__c"
+        },
+        "%vlocity_namespace%__TokenDataType__c": "Text",
+        "%vlocity_namespace%__TokenPath__c": "",
+        "%vlocity_namespace%__TokenSymbol__c": "fc582f6d-b285-0db1-b68d-a93ca6640805",
+        "CurrencyIsoCode": "MXN",
+        "Name": "contactoNombre",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DocumentToken__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__DocumentToken__c/fc582f6d-b285-0db1-b68d-a93ca6640805"
+    },
+    {
+        "%vlocity_namespace%__Description__c": "",
+        "%vlocity_namespace%__DocumentTemplateId__c": {
+            "%vlocity_namespace%__ExternalID__c": "Test15/1/Engie_Latam_HQ/1635205563242",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__DocumentTemplate__c/Engie Mexcom Multipunto",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__DocumentTemplate__c"
+        },
+        "%vlocity_namespace%__TokenDataType__c": "Text",
+        "%vlocity_namespace%__TokenPath__c": "listaBaseCompromiso",
+        "%vlocity_namespace%__TokenSymbol__c": "2f6c79dd-b5d2-0228-a7f1-e1cee8e589e4",
+        "CurrencyIsoCode": "MXN",
+        "Name": "bcexcedente",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DocumentToken__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__DocumentToken__c/2f6c79dd-b5d2-0228-a7f1-e1cee8e589e4"
+    },
+    {
+        "%vlocity_namespace%__Description__c": "",
+        "%vlocity_namespace%__DocumentTemplateId__c": {
+            "%vlocity_namespace%__ExternalID__c": "Test15/1/Engie_Latam_HQ/1635205563242",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__DocumentTemplate__c/Engie Mexcom Multipunto",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__DocumentTemplate__c"
+        },
+        "%vlocity_namespace%__TokenDataType__c": "Text",
+        "%vlocity_namespace%__TokenPath__c": "listaBaseCompromiso",
+        "%vlocity_namespace%__TokenSymbol__c": "fb79e302-fda2-a16f-12ea-57043617f1b8",
+        "CurrencyIsoCode": "MXN",
+        "Name": "cuadroPrecioVolumetrico",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DocumentToken__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__DocumentToken__c/fb79e302-fda2-a16f-12ea-57043617f1b8"
+    },
+    {
+        "%vlocity_namespace%__Description__c": "",
+        "%vlocity_namespace%__DocumentTemplateId__c": {
+            "%vlocity_namespace%__ExternalID__c": "Test15/1/Engie_Latam_HQ/1635205563242",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__DocumentTemplate__c/Engie Mexcom Multipunto",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__DocumentTemplate__c"
+        },
+        "%vlocity_namespace%__TokenDataType__c": "Text",
+        "%vlocity_namespace%__TokenPath__c": "listaBaseFirme",
+        "%vlocity_namespace%__TokenSymbol__c": "b759435f-9fcc-b402-4840-7aedf2099f60",
+        "CurrencyIsoCode": "MXN",
+        "Name": "baseFirme",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DocumentToken__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__DocumentToken__c/b759435f-9fcc-b402-4840-7aedf2099f60"
+    },
+    {
+        "%vlocity_namespace%__Description__c": "",
+        "%vlocity_namespace%__DocumentTemplateId__c": {
+            "%vlocity_namespace%__ExternalID__c": "Test15/1/Engie_Latam_HQ/1635205563242",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__DocumentTemplate__c/Engie Mexcom Multipunto",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__DocumentTemplate__c"
+        },
+        "%vlocity_namespace%__TokenDataType__c": "Text",
+        "%vlocity_namespace%__TokenPath__c": "listaBaseFirme",
+        "%vlocity_namespace%__TokenSymbol__c": "bf1abfb9-13ef-5f8f-2db6-cccd9999f962",
+        "CurrencyIsoCode": "MXN",
+        "Name": "cuadroPrecioVolumetrico",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DocumentToken__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__DocumentToken__c/bf1abfb9-13ef-5f8f-2db6-cccd9999f962"
+    },
+    {
+        "%vlocity_namespace%__Description__c": "",
+        "%vlocity_namespace%__DocumentTemplateId__c": {
+            "%vlocity_namespace%__ExternalID__c": "Test15/1/Engie_Latam_HQ/1635205563242",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__DocumentTemplate__c/Engie Mexcom Multipunto",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__DocumentTemplate__c"
+        },
+        "%vlocity_namespace%__TokenDataType__c": "Text",
+        "%vlocity_namespace%__TokenPath__c": "listaGarantiaA",
+        "%vlocity_namespace%__TokenSymbol__c": "284d11b6-d0c8-01b5-ec8b-1712aa8a9422",
+        "CurrencyIsoCode": "MXN",
+        "Name": "subtotalConexion",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DocumentToken__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__DocumentToken__c/284d11b6-d0c8-01b5-ec8b-1712aa8a9422"
+    },
+    {
+        "%vlocity_namespace%__Description__c": "",
+        "%vlocity_namespace%__DocumentTemplateId__c": {
+            "%vlocity_namespace%__ExternalID__c": "Test15/1/Engie_Latam_HQ/1635205563242",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__DocumentTemplate__c/Engie Mexcom Multipunto",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__DocumentTemplate__c"
+        },
+        "%vlocity_namespace%__TokenDataType__c": "Text",
+        "%vlocity_namespace%__TokenPath__c": "listaGarantiaA",
+        "%vlocity_namespace%__TokenSymbol__c": "2ea21343-f250-b140-baa9-c1117d8b0f5b",
+        "CurrencyIsoCode": "MXN",
+        "Name": "importeCostoConexion",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DocumentToken__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__DocumentToken__c/2ea21343-f250-b140-baa9-c1117d8b0f5b"
+    },
+    {
+        "%vlocity_namespace%__Description__c": "",
+        "%vlocity_namespace%__DocumentTemplateId__c": {
+            "%vlocity_namespace%__ExternalID__c": "Test15/1/Engie_Latam_HQ/1635205563242",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__DocumentTemplate__c/Engie Mexcom Multipunto",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__DocumentTemplate__c"
+        },
+        "%vlocity_namespace%__TokenDataType__c": "Text",
+        "%vlocity_namespace%__TokenPath__c": "listaGarantiaA",
+        "%vlocity_namespace%__TokenSymbol__c": "3cdc322b-97b9-a510-a052-30da76962695",
+        "CurrencyIsoCode": "MXN",
+        "Name": "totalConexion",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DocumentToken__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__DocumentToken__c/3cdc322b-97b9-a510-a052-30da76962695"
+    },
+    {
+        "%vlocity_namespace%__Description__c": "",
+        "%vlocity_namespace%__DocumentTemplateId__c": {
+            "%vlocity_namespace%__ExternalID__c": "Test15/1/Engie_Latam_HQ/1635205563242",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__DocumentTemplate__c/Engie Mexcom Multipunto",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__DocumentTemplate__c"
+        },
+        "%vlocity_namespace%__TokenDataType__c": "Text",
+        "%vlocity_namespace%__TokenPath__c": "listaGarantiaA",
+        "%vlocity_namespace%__TokenSymbol__c": "60f3609f-c492-9984-e070-967e790e2bec",
+        "CurrencyIsoCode": "MXN",
+        "Name": "importeGarantia",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DocumentToken__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__DocumentToken__c/60f3609f-c492-9984-e070-967e790e2bec"
+    },
+    {
+        "%vlocity_namespace%__Description__c": "",
+        "%vlocity_namespace%__DocumentTemplateId__c": {
+            "%vlocity_namespace%__ExternalID__c": "Test15/1/Engie_Latam_HQ/1635205563242",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__DocumentTemplate__c/Engie Mexcom Multipunto",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__DocumentTemplate__c"
+        },
+        "%vlocity_namespace%__TokenDataType__c": "Text",
+        "%vlocity_namespace%__TokenPath__c": "listaGarantiaA",
+        "%vlocity_namespace%__TokenSymbol__c": "60ff2974-f658-7dca-90d8-4011346207c7",
+        "CurrencyIsoCode": "MXN",
+        "Name": "mesesMayorConsumo",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DocumentToken__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__DocumentToken__c/60ff2974-f658-7dca-90d8-4011346207c7"
+    },
+    {
+        "%vlocity_namespace%__Description__c": "",
+        "%vlocity_namespace%__DocumentTemplateId__c": {
+            "%vlocity_namespace%__ExternalID__c": "Test15/1/Engie_Latam_HQ/1635205563242",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__DocumentTemplate__c/Engie Mexcom Multipunto",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__DocumentTemplate__c"
+        },
+        "%vlocity_namespace%__TokenDataType__c": "Text",
+        "%vlocity_namespace%__TokenPath__c": "listaGarantiaA",
+        "%vlocity_namespace%__TokenSymbol__c": "7b889171-be1f-86b1-453c-e9890e1327b5",
+        "CurrencyIsoCode": "MXN",
+        "Name": "ivaConexion",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DocumentToken__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__DocumentToken__c/7b889171-be1f-86b1-453c-e9890e1327b5"
+    },
+    {
+        "%vlocity_namespace%__Description__c": "",
+        "%vlocity_namespace%__DocumentTemplateId__c": {
+            "%vlocity_namespace%__ExternalID__c": "Test15/1/Engie_Latam_HQ/1635205563242",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__DocumentTemplate__c/Engie Mexcom Multipunto",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__DocumentTemplate__c"
+        },
+        "%vlocity_namespace%__TokenDataType__c": "Text",
+        "%vlocity_namespace%__TokenPath__c": "listaGarantiaA",
+        "%vlocity_namespace%__TokenSymbol__c": "7d1baa0a-9ed1-ee40-809b-b06fb1266cdf",
+        "CurrencyIsoCode": "MXN",
+        "Name": "subtotalConsumo",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DocumentToken__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__DocumentToken__c/7d1baa0a-9ed1-ee40-809b-b06fb1266cdf"
+    },
+    {
+        "%vlocity_namespace%__Description__c": "",
+        "%vlocity_namespace%__DocumentTemplateId__c": {
+            "%vlocity_namespace%__ExternalID__c": "Test15/1/Engie_Latam_HQ/1635205563242",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__DocumentTemplate__c/Engie Mexcom Multipunto",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__DocumentTemplate__c"
+        },
+        "%vlocity_namespace%__TokenDataType__c": "Text",
+        "%vlocity_namespace%__TokenPath__c": "listaGarantiaA",
+        "%vlocity_namespace%__TokenSymbol__c": "c214e5af-882b-4b94-fdd5-e74a7e527670",
+        "CurrencyIsoCode": "MXN",
+        "Name": "consumoMensualPrevisto",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DocumentToken__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__DocumentToken__c/c214e5af-882b-4b94-fdd5-e74a7e527670"
+    },
+    {
+        "%vlocity_namespace%__Description__c": "",
+        "%vlocity_namespace%__DocumentTemplateId__c": {
+            "%vlocity_namespace%__ExternalID__c": "Test15/1/Engie_Latam_HQ/1635205563242",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__DocumentTemplate__c/Engie Mexcom Multipunto",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__DocumentTemplate__c"
+        },
+        "%vlocity_namespace%__TokenDataType__c": "Text",
+        "%vlocity_namespace%__TokenPath__c": "listaGarantiaA",
+        "%vlocity_namespace%__TokenSymbol__c": "c3577a6d-e643-f9a8-ec84-fd9e9379006a",
+        "CurrencyIsoCode": "MXN",
+        "Name": "costoMoleculaEstimado",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DocumentToken__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__DocumentToken__c/c3577a6d-e643-f9a8-ec84-fd9e9379006a"
+    },
+    {
+        "%vlocity_namespace%__Description__c": "",
+        "%vlocity_namespace%__DocumentTemplateId__c": {
+            "%vlocity_namespace%__ExternalID__c": "Test15/1/Engie_Latam_HQ/1635205563242",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__DocumentTemplate__c/Engie Mexcom Multipunto",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__DocumentTemplate__c"
+        },
+        "%vlocity_namespace%__TokenDataType__c": "Text",
+        "%vlocity_namespace%__TokenPath__c": "listaGarantiaA",
+        "%vlocity_namespace%__TokenSymbol__c": "c98f890d-f1a8-fc7f-e80b-87c1bbb65d74",
+        "CurrencyIsoCode": "MXN",
+        "Name": "puntosuministro",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DocumentToken__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__DocumentToken__c/c98f890d-f1a8-fc7f-e80b-87c1bbb65d74"
+    },
+    {
+        "%vlocity_namespace%__Description__c": "",
+        "%vlocity_namespace%__DocumentTemplateId__c": {
+            "%vlocity_namespace%__ExternalID__c": "Test15/1/Engie_Latam_HQ/1635205563242",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__DocumentTemplate__c/Engie Mexcom Multipunto",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__DocumentTemplate__c"
+        },
+        "%vlocity_namespace%__TokenDataType__c": "Text",
+        "%vlocity_namespace%__TokenPath__c": "listaGarantiaA",
+        "%vlocity_namespace%__TokenSymbol__c": "cb413b46-55b3-3baf-aec7-f73cc4f8ee1e",
+        "CurrencyIsoCode": "MXN",
+        "Name": "ivaConsumo",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DocumentToken__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__DocumentToken__c/cb413b46-55b3-3baf-aec7-f73cc4f8ee1e"
+    },
+    {
+        "%vlocity_namespace%__Description__c": "",
+        "%vlocity_namespace%__DocumentTemplateId__c": {
+            "%vlocity_namespace%__ExternalID__c": "Test15/1/Engie_Latam_HQ/1635205563242",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__DocumentTemplate__c/Engie Mexcom Multipunto",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__DocumentTemplate__c"
+        },
+        "%vlocity_namespace%__TokenDataType__c": "Text",
+        "%vlocity_namespace%__TokenPath__c": "listaGarantiaA",
+        "%vlocity_namespace%__TokenSymbol__c": "d60a2283-fdcc-2750-afb3-19e291c54e3f",
+        "CurrencyIsoCode": "MXN",
+        "Name": "totalConsumo",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DocumentToken__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__DocumentToken__c/d60a2283-fdcc-2750-afb3-19e291c54e3f"
+    },
+    {
+        "%vlocity_namespace%__Description__c": "",
+        "%vlocity_namespace%__DocumentTemplateId__c": {
+            "%vlocity_namespace%__ExternalID__c": "Test15/1/Engie_Latam_HQ/1635205563242",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__DocumentTemplate__c/Engie Mexcom Multipunto",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__DocumentTemplate__c"
+        },
+        "%vlocity_namespace%__TokenDataType__c": "Text",
+        "%vlocity_namespace%__TokenPath__c": "listaGarantiaA",
+        "%vlocity_namespace%__TokenSymbol__c": "fbb82e7f-ed89-bc8e-7f25-32e480707009",
+        "CurrencyIsoCode": "MXN",
+        "Name": "cargoPorComercializacion",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DocumentToken__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__DocumentToken__c/fbb82e7f-ed89-bc8e-7f25-32e480707009"
+    },
+    {
+        "%vlocity_namespace%__Description__c": "",
+        "%vlocity_namespace%__DocumentTemplateId__c": {
+            "%vlocity_namespace%__ExternalID__c": "Test15/1/Engie_Latam_HQ/1635205563242",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__DocumentTemplate__c/Engie Mexcom Multipunto",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__DocumentTemplate__c"
+        },
+        "%vlocity_namespace%__TokenDataType__c": "Text",
+        "%vlocity_namespace%__TokenPath__c": "listaGarantiaA",
+        "%vlocity_namespace%__TokenSymbol__c": "ffb34c5a-92eb-44ca-6a3d-af977be0a8b7",
+        "CurrencyIsoCode": "MXN",
+        "Name": "costoTransporteEstimado",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DocumentToken__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__DocumentToken__c/ffb34c5a-92eb-44ca-6a3d-af977be0a8b7"
+    },
+    {
+        "%vlocity_namespace%__Description__c": "",
+        "%vlocity_namespace%__DocumentTemplateId__c": {
+            "%vlocity_namespace%__ExternalID__c": "Test15/1/Engie_Latam_HQ/1635205563242",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__DocumentTemplate__c/Engie Mexcom Multipunto",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__DocumentTemplate__c"
+        },
+        "%vlocity_namespace%__TokenDataType__c": "Text",
+        "%vlocity_namespace%__TokenPath__c": "listaGarantiaB",
+        "%vlocity_namespace%__TokenSymbol__c": "07dc04ff-2b1f-4cea-3617-28363b84e34b",
+        "CurrencyIsoCode": "MXN",
+        "Name": "subtotalConexion",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DocumentToken__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__DocumentToken__c/07dc04ff-2b1f-4cea-3617-28363b84e34b"
+    },
+    {
+        "%vlocity_namespace%__Description__c": "",
+        "%vlocity_namespace%__DocumentTemplateId__c": {
+            "%vlocity_namespace%__ExternalID__c": "Test15/1/Engie_Latam_HQ/1635205563242",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__DocumentTemplate__c/Engie Mexcom Multipunto",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__DocumentTemplate__c"
+        },
+        "%vlocity_namespace%__TokenDataType__c": "Text",
+        "%vlocity_namespace%__TokenPath__c": "listaGarantiaB",
+        "%vlocity_namespace%__TokenSymbol__c": "0b59c9c9-2c30-0d37-c410-f5b6274ba63a",
+        "CurrencyIsoCode": "MXN",
+        "Name": "ivaConexion",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DocumentToken__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__DocumentToken__c/0b59c9c9-2c30-0d37-c410-f5b6274ba63a"
+    },
+    {
+        "%vlocity_namespace%__Description__c": "",
+        "%vlocity_namespace%__DocumentTemplateId__c": {
+            "%vlocity_namespace%__ExternalID__c": "Test15/1/Engie_Latam_HQ/1635205563242",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__DocumentTemplate__c/Engie Mexcom Multipunto",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__DocumentTemplate__c"
+        },
+        "%vlocity_namespace%__TokenDataType__c": "Text",
+        "%vlocity_namespace%__TokenPath__c": "listaGarantiaB",
+        "%vlocity_namespace%__TokenSymbol__c": "1d63abc6-0d34-3bbb-49e6-80e30f25a371",
+        "CurrencyIsoCode": "MXN",
+        "Name": "puntosuministro",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DocumentToken__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__DocumentToken__c/1d63abc6-0d34-3bbb-49e6-80e30f25a371"
+    },
+    {
+        "%vlocity_namespace%__Description__c": "",
+        "%vlocity_namespace%__DocumentTemplateId__c": {
+            "%vlocity_namespace%__ExternalID__c": "Test15/1/Engie_Latam_HQ/1635205563242",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__DocumentTemplate__c/Engie Mexcom Multipunto",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__DocumentTemplate__c"
+        },
+        "%vlocity_namespace%__TokenDataType__c": "Text",
+        "%vlocity_namespace%__TokenPath__c": "listaGarantiaB",
+        "%vlocity_namespace%__TokenSymbol__c": "366d14ce-f2b6-04a3-0985-56614f6ddde6",
+        "CurrencyIsoCode": "MXN",
+        "Name": "consumoMensualPrevisto",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DocumentToken__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__DocumentToken__c/366d14ce-f2b6-04a3-0985-56614f6ddde6"
+    },
+    {
+        "%vlocity_namespace%__Description__c": "",
+        "%vlocity_namespace%__DocumentTemplateId__c": {
+            "%vlocity_namespace%__ExternalID__c": "Test15/1/Engie_Latam_HQ/1635205563242",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__DocumentTemplate__c/Engie Mexcom Multipunto",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__DocumentTemplate__c"
+        },
+        "%vlocity_namespace%__TokenDataType__c": "Text",
+        "%vlocity_namespace%__TokenPath__c": "listaGarantiaB",
+        "%vlocity_namespace%__TokenSymbol__c": "4e37812d-3189-a47c-233c-a80651ba6619",
+        "CurrencyIsoCode": "MXN",
+        "Name": "cargoPorComercializacion",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DocumentToken__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__DocumentToken__c/4e37812d-3189-a47c-233c-a80651ba6619"
+    },
+    {
+        "%vlocity_namespace%__Description__c": "",
+        "%vlocity_namespace%__DocumentTemplateId__c": {
+            "%vlocity_namespace%__ExternalID__c": "Test15/1/Engie_Latam_HQ/1635205563242",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__DocumentTemplate__c/Engie Mexcom Multipunto",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__DocumentTemplate__c"
+        },
+        "%vlocity_namespace%__TokenDataType__c": "Text",
+        "%vlocity_namespace%__TokenPath__c": "listaGarantiaB",
+        "%vlocity_namespace%__TokenSymbol__c": "57866b41-ca05-4b9c-a089-05d4dfd94063",
+        "CurrencyIsoCode": "MXN",
+        "Name": "consumoAnual2",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DocumentToken__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__DocumentToken__c/57866b41-ca05-4b9c-a089-05d4dfd94063"
+    },
+    {
+        "%vlocity_namespace%__Description__c": "",
+        "%vlocity_namespace%__DocumentTemplateId__c": {
+            "%vlocity_namespace%__ExternalID__c": "Test15/1/Engie_Latam_HQ/1635205563242",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__DocumentTemplate__c/Engie Mexcom Multipunto",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__DocumentTemplate__c"
+        },
+        "%vlocity_namespace%__TokenDataType__c": "Text",
+        "%vlocity_namespace%__TokenPath__c": "listaGarantiaB",
+        "%vlocity_namespace%__TokenSymbol__c": "71ae3608-00f3-279d-25b7-4f044643f321",
+        "CurrencyIsoCode": "MXN",
+        "Name": "importeCostoConexion",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DocumentToken__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__DocumentToken__c/71ae3608-00f3-279d-25b7-4f044643f321"
+    },
+    {
+        "%vlocity_namespace%__Description__c": "",
+        "%vlocity_namespace%__DocumentTemplateId__c": {
+            "%vlocity_namespace%__ExternalID__c": "Test15/1/Engie_Latam_HQ/1635205563242",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__DocumentTemplate__c/Engie Mexcom Multipunto",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__DocumentTemplate__c"
+        },
+        "%vlocity_namespace%__TokenDataType__c": "Text",
+        "%vlocity_namespace%__TokenPath__c": "listaGarantiaB",
+        "%vlocity_namespace%__TokenSymbol__c": "760281a2-5fac-e8d4-8583-33971b11500b",
+        "CurrencyIsoCode": "MXN",
+        "Name": "subtotalConsumo",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DocumentToken__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__DocumentToken__c/760281a2-5fac-e8d4-8583-33971b11500b"
+    },
+    {
+        "%vlocity_namespace%__Description__c": "",
+        "%vlocity_namespace%__DocumentTemplateId__c": {
+            "%vlocity_namespace%__ExternalID__c": "Test15/1/Engie_Latam_HQ/1635205563242",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__DocumentTemplate__c/Engie Mexcom Multipunto",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__DocumentTemplate__c"
+        },
+        "%vlocity_namespace%__TokenDataType__c": "Text",
+        "%vlocity_namespace%__TokenPath__c": "listaGarantiaB",
+        "%vlocity_namespace%__TokenSymbol__c": "7f97edea-be42-1a02-df8a-0d593af5a529",
+        "CurrencyIsoCode": "MXN",
+        "Name": "ivaConsumo",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DocumentToken__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__DocumentToken__c/7f97edea-be42-1a02-df8a-0d593af5a529"
+    },
+    {
+        "%vlocity_namespace%__Description__c": "",
+        "%vlocity_namespace%__DocumentTemplateId__c": {
+            "%vlocity_namespace%__ExternalID__c": "Test15/1/Engie_Latam_HQ/1635205563242",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__DocumentTemplate__c/Engie Mexcom Multipunto",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__DocumentTemplate__c"
+        },
+        "%vlocity_namespace%__TokenDataType__c": "Text",
+        "%vlocity_namespace%__TokenPath__c": "listaGarantiaB",
+        "%vlocity_namespace%__TokenSymbol__c": "9cd72bb3-8875-dc79-ee4f-554183425dec",
+        "CurrencyIsoCode": "MXN",
+        "Name": "mesesMayorConsumo",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DocumentToken__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__DocumentToken__c/9cd72bb3-8875-dc79-ee4f-554183425dec"
+    },
+    {
+        "%vlocity_namespace%__Description__c": "",
+        "%vlocity_namespace%__DocumentTemplateId__c": {
+            "%vlocity_namespace%__ExternalID__c": "Test15/1/Engie_Latam_HQ/1635205563242",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__DocumentTemplate__c/Engie Mexcom Multipunto",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__DocumentTemplate__c"
+        },
+        "%vlocity_namespace%__TokenDataType__c": "Text",
+        "%vlocity_namespace%__TokenPath__c": "listaGarantiaB",
+        "%vlocity_namespace%__TokenSymbol__c": "9d9fdf2b-d927-0e33-e07c-495486dd269e",
+        "CurrencyIsoCode": "MXN",
+        "Name": "clasificacionTarifaria",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DocumentToken__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__DocumentToken__c/9d9fdf2b-d927-0e33-e07c-495486dd269e"
+    },
+    {
+        "%vlocity_namespace%__Description__c": "",
+        "%vlocity_namespace%__DocumentTemplateId__c": {
+            "%vlocity_namespace%__ExternalID__c": "Test15/1/Engie_Latam_HQ/1635205563242",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__DocumentTemplate__c/Engie Mexcom Multipunto",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__DocumentTemplate__c"
+        },
+        "%vlocity_namespace%__TokenDataType__c": "Text",
+        "%vlocity_namespace%__TokenPath__c": "listaGarantiaB",
+        "%vlocity_namespace%__TokenSymbol__c": "b14d39f6-84f9-21bf-ecc8-2b70e203bd9d",
+        "CurrencyIsoCode": "MXN",
+        "Name": "cargoPorUso",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DocumentToken__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__DocumentToken__c/b14d39f6-84f9-21bf-ecc8-2b70e203bd9d"
+    },
+    {
+        "%vlocity_namespace%__Description__c": "",
+        "%vlocity_namespace%__DocumentTemplateId__c": {
+            "%vlocity_namespace%__ExternalID__c": "Test15/1/Engie_Latam_HQ/1635205563242",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__DocumentTemplate__c/Engie Mexcom Multipunto",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__DocumentTemplate__c"
+        },
+        "%vlocity_namespace%__TokenDataType__c": "Text",
+        "%vlocity_namespace%__TokenPath__c": "listaGarantiaB",
+        "%vlocity_namespace%__TokenSymbol__c": "b8615fa1-5656-ac01-eda1-82661cda1ec6",
+        "CurrencyIsoCode": "MXN",
+        "Name": "totalConexion",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DocumentToken__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__DocumentToken__c/b8615fa1-5656-ac01-eda1-82661cda1ec6"
+    },
+    {
+        "%vlocity_namespace%__Description__c": "",
+        "%vlocity_namespace%__DocumentTemplateId__c": {
+            "%vlocity_namespace%__ExternalID__c": "Test15/1/Engie_Latam_HQ/1635205563242",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__DocumentTemplate__c/Engie Mexcom Multipunto",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__DocumentTemplate__c"
+        },
+        "%vlocity_namespace%__TokenDataType__c": "Text",
+        "%vlocity_namespace%__TokenPath__c": "listaGarantiaB",
+        "%vlocity_namespace%__TokenSymbol__c": "c07eff7d-f4cd-6186-a49a-f3b8fe593944",
+        "CurrencyIsoCode": "MXN",
+        "Name": "costoMoleculaEstimado",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DocumentToken__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__DocumentToken__c/c07eff7d-f4cd-6186-a49a-f3b8fe593944"
+    },
+    {
+        "%vlocity_namespace%__Description__c": "",
+        "%vlocity_namespace%__DocumentTemplateId__c": {
+            "%vlocity_namespace%__ExternalID__c": "Test15/1/Engie_Latam_HQ/1635205563242",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__DocumentTemplate__c/Engie Mexcom Multipunto",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__DocumentTemplate__c"
+        },
+        "%vlocity_namespace%__TokenDataType__c": "Text",
+        "%vlocity_namespace%__TokenPath__c": "listaGarantiaB",
+        "%vlocity_namespace%__TokenSymbol__c": "c3d0dd2c-e175-165d-a2e8-bccc443a53c8",
+        "CurrencyIsoCode": "MXN",
+        "Name": "cargoPorCapacidad",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DocumentToken__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__DocumentToken__c/c3d0dd2c-e175-165d-a2e8-bccc443a53c8"
+    },
+    {
+        "%vlocity_namespace%__Description__c": "",
+        "%vlocity_namespace%__DocumentTemplateId__c": {
+            "%vlocity_namespace%__ExternalID__c": "Test15/1/Engie_Latam_HQ/1635205563242",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__DocumentTemplate__c/Engie Mexcom Multipunto",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__DocumentTemplate__c"
+        },
+        "%vlocity_namespace%__TokenDataType__c": "Text",
+        "%vlocity_namespace%__TokenPath__c": "listaGarantiaB",
+        "%vlocity_namespace%__TokenSymbol__c": "d296fca6-f03e-e14f-b8fc-b69e20768e70",
+        "CurrencyIsoCode": "MXN",
+        "Name": "costoTransporteEstimado",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DocumentToken__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__DocumentToken__c/d296fca6-f03e-e14f-b8fc-b69e20768e70"
+    },
+    {
+        "%vlocity_namespace%__Description__c": "",
+        "%vlocity_namespace%__DocumentTemplateId__c": {
+            "%vlocity_namespace%__ExternalID__c": "Test15/1/Engie_Latam_HQ/1635205563242",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__DocumentTemplate__c/Engie Mexcom Multipunto",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__DocumentTemplate__c"
+        },
+        "%vlocity_namespace%__TokenDataType__c": "Text",
+        "%vlocity_namespace%__TokenPath__c": "listaGarantiaB",
+        "%vlocity_namespace%__TokenSymbol__c": "f26194a7-b9f3-a7f9-3619-b0042ec6ae75",
+        "CurrencyIsoCode": "MXN",
+        "Name": "cargoPorServicio",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DocumentToken__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__DocumentToken__c/f26194a7-b9f3-a7f9-3619-b0042ec6ae75"
+    },
+    {
+        "%vlocity_namespace%__Description__c": "",
+        "%vlocity_namespace%__DocumentTemplateId__c": {
+            "%vlocity_namespace%__ExternalID__c": "Test15/1/Engie_Latam_HQ/1635205563242",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__DocumentTemplate__c/Engie Mexcom Multipunto",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__DocumentTemplate__c"
+        },
+        "%vlocity_namespace%__TokenDataType__c": "Text",
+        "%vlocity_namespace%__TokenPath__c": "listaGarantiaB",
+        "%vlocity_namespace%__TokenSymbol__c": "f3c2fa10-e592-cc3c-78a5-51afee6b98da",
+        "CurrencyIsoCode": "MXN",
+        "Name": "importeGarantia",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DocumentToken__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__DocumentToken__c/f3c2fa10-e592-cc3c-78a5-51afee6b98da"
+    },
+    {
+        "%vlocity_namespace%__Description__c": "",
+        "%vlocity_namespace%__DocumentTemplateId__c": {
+            "%vlocity_namespace%__ExternalID__c": "Test15/1/Engie_Latam_HQ/1635205563242",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__DocumentTemplate__c/Engie Mexcom Multipunto",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__DocumentTemplate__c"
+        },
+        "%vlocity_namespace%__TokenDataType__c": "Text",
+        "%vlocity_namespace%__TokenPath__c": "listaGarantiaB",
+        "%vlocity_namespace%__TokenSymbol__c": "fe46ce53-7c20-a8e2-7c53-e130e1bf3cef",
+        "CurrencyIsoCode": "MXN",
+        "Name": "totalConsumo",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DocumentToken__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__DocumentToken__c/fe46ce53-7c20-a8e2-7c53-e130e1bf3cef"
+    },
+    {
+        "%vlocity_namespace%__Description__c": "",
+        "%vlocity_namespace%__DocumentTemplateId__c": {
+            "%vlocity_namespace%__ExternalID__c": "Test15/1/Engie_Latam_HQ/1635205563242",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__DocumentTemplate__c/Engie Mexcom Multipunto",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__DocumentTemplate__c"
+        },
+        "%vlocity_namespace%__TokenDataType__c": "Text",
+        "%vlocity_namespace%__TokenPath__c": "listaObservaciones",
+        "%vlocity_namespace%__TokenSymbol__c": "7d89d921-1b75-0165-e51d-a8c623040af6",
+        "CurrencyIsoCode": "MXN",
+        "Name": "observacionesTransporte",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DocumentToken__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__DocumentToken__c/7d89d921-1b75-0165-e51d-a8c623040af6"
+    },
+    {
+        "%vlocity_namespace%__Description__c": "",
+        "%vlocity_namespace%__DocumentTemplateId__c": {
+            "%vlocity_namespace%__ExternalID__c": "Test15/1/Engie_Latam_HQ/1635205563242",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__DocumentTemplate__c/Engie Mexcom Multipunto",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__DocumentTemplate__c"
+        },
+        "%vlocity_namespace%__TokenDataType__c": "Text",
+        "%vlocity_namespace%__TokenPath__c": "listaVolumetrico",
+        "%vlocity_namespace%__TokenSymbol__c": "4a0e8417-6d71-3d6f-92ce-5f2259132ccb",
+        "CurrencyIsoCode": "MXN",
+        "Name": "cuadroPrecioVolumetrico",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DocumentToken__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__DocumentToken__c/4a0e8417-6d71-3d6f-92ce-5f2259132ccb"
+    },
+    {
+        "%vlocity_namespace%__Description__c": "",
+        "%vlocity_namespace%__DocumentTemplateId__c": {
+            "%vlocity_namespace%__ExternalID__c": "Test15/1/Engie_Latam_HQ/1635205563242",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__DocumentTemplate__c/Engie Mexcom Multipunto",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__DocumentTemplate__c"
+        },
+        "%vlocity_namespace%__TokenDataType__c": "Text",
+        "%vlocity_namespace%__TokenPath__c": "listadoPlantas",
+        "%vlocity_namespace%__TokenSymbol__c": "5ccbe2f3-5ca4-590f-3b0f-7b2cf6ba01b8",
+        "CurrencyIsoCode": "MXN",
+        "Name": "nombreCuentaServicio",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DocumentToken__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__DocumentToken__c/5ccbe2f3-5ca4-590f-3b0f-7b2cf6ba01b8"
+    },
+    {
+        "%vlocity_namespace%__Description__c": "",
+        "%vlocity_namespace%__DocumentTemplateId__c": {
+            "%vlocity_namespace%__ExternalID__c": "Test15/1/Engie_Latam_HQ/1635205563242",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__DocumentTemplate__c/Engie Mexcom Multipunto",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__DocumentTemplate__c"
+        },
+        "%vlocity_namespace%__TokenDataType__c": "Text",
+        "%vlocity_namespace%__TokenPath__c": "listadoPlantas",
+        "%vlocity_namespace%__TokenSymbol__c": "85301549-fa7a-160d-b702-22c521203d9a",
+        "CurrencyIsoCode": "MXN",
+        "Name": "molecula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DocumentToken__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__DocumentToken__c/85301549-fa7a-160d-b702-22c521203d9a"
+    },
+    {
+        "%vlocity_namespace%__Description__c": "",
+        "%vlocity_namespace%__DocumentTemplateId__c": {
+            "%vlocity_namespace%__ExternalID__c": "Test15/1/Engie_Latam_HQ/1635205563242",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__DocumentTemplate__c/Engie Mexcom Multipunto",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__DocumentTemplate__c"
+        },
+        "%vlocity_namespace%__TokenDataType__c": "Text",
+        "%vlocity_namespace%__TokenPath__c": "listadoPlantas",
+        "%vlocity_namespace%__TokenSymbol__c": "90a39251-b633-6dbb-010e-aabbc33de03e",
+        "CurrencyIsoCode": "MXN",
+        "Name": "transporteEstimado",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DocumentToken__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__DocumentToken__c/90a39251-b633-6dbb-010e-aabbc33de03e"
+    },
+    {
+        "%vlocity_namespace%__Description__c": "",
+        "%vlocity_namespace%__DocumentTemplateId__c": {
+            "%vlocity_namespace%__ExternalID__c": "Test15/1/Engie_Latam_HQ/1635205563242",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__DocumentTemplate__c/Engie Mexcom Multipunto",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__DocumentTemplate__c"
+        },
+        "%vlocity_namespace%__TokenDataType__c": "Text",
+        "%vlocity_namespace%__TokenPath__c": "listadoPlantas",
+        "%vlocity_namespace%__TokenSymbol__c": "c6986104-60b5-78c7-e819-0b5262608f3f",
+        "CurrencyIsoCode": "MXN",
+        "Name": "distribucion",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DocumentToken__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__DocumentToken__c/c6986104-60b5-78c7-e819-0b5262608f3f"
+    },
+    {
+        "%vlocity_namespace%__Description__c": "",
+        "%vlocity_namespace%__DocumentTemplateId__c": {
+            "%vlocity_namespace%__ExternalID__c": "Test15/1/Engie_Latam_HQ/1635205563242",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__DocumentTemplate__c/Engie Mexcom Multipunto",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__DocumentTemplate__c"
+        },
+        "%vlocity_namespace%__TokenDataType__c": "Text",
+        "%vlocity_namespace%__TokenPath__c": "listadoPlantas",
+        "%vlocity_namespace%__TokenSymbol__c": "df9b74f2-f95b-a013-7015-54664075e15b",
+        "CurrencyIsoCode": "MXN",
+        "Name": "consumoAnual",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DocumentToken__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__DocumentToken__c/df9b74f2-f95b-a013-7015-54664075e15b"
+    },
+    {
+        "%vlocity_namespace%__Description__c": "",
+        "%vlocity_namespace%__DocumentTemplateId__c": {
+            "%vlocity_namespace%__ExternalID__c": "Test15/1/Engie_Latam_HQ/1635205563242",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__DocumentTemplate__c/Engie Mexcom Multipunto",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__DocumentTemplate__c"
+        },
+        "%vlocity_namespace%__TokenDataType__c": "Text",
+        "%vlocity_namespace%__TokenPath__c": "listadoPlantas",
+        "%vlocity_namespace%__TokenSymbol__c": "e8aac17a-7fa1-5351-0ba6-29920c368be9",
+        "CurrencyIsoCode": "MXN",
+        "Name": "comercializacion",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DocumentToken__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__DocumentToken__c/e8aac17a-7fa1-5351-0ba6-29920c368be9"
+    }
+]

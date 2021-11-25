@@ -1,0 +1,6 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<font face="arial" style="font-size: 12pt;"><span style="font-size: 12pt;">Estimado<b>&nbsp;</b></span>{!User.Name}<span style="font-size: 12pt;">,</span></font><div><div style="font-size: 12pt;">La oferta:&nbsp;<b>{!Quote.Name}</b>&nbsp;lleva 3 días sin ser revisada.</div><div style="font-size: 12pt;"><br></div><div style="font-size: 12pt;">Detalles de la oferta por revisar:</div><div style="font-size: 12pt;"><ul><li>Número: {!Quote.QuoteNumber}</li><li>Estado:&nbsp;{!Quote.Status}</li><li>Sub estado:&nbsp;{!Quote.OSFMX_SubEstatus__c}</li><li><span style="font-size: 12pt; background-color: rgb(255, 255, 255);">Enlace directo:&nbsp;<u>{!Quote.Link}</u></span></li></ul></div><div style="font-size: 12pt;"><div style="font-size: 12pt;">Saludos.</div></div></div>]]></td>
+</tr>
+</table>

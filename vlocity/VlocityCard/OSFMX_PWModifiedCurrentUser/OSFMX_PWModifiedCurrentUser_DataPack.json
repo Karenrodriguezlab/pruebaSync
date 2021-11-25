@@ -1,0 +1,39 @@
+{
+    "%vlocity_namespace%__Author__c": "Engie_Latam_HQ",
+    "%vlocity_namespace%__CardType__c": "flex",
+    "%vlocity_namespace%__Datasource__c": {
+        "contextVariables": [
+            {
+                "id": 2,
+                "name": "recordId",
+                "val": "005c0000007UGoR"
+            }
+        ],
+        "orderBy": {
+            "isReverse": false,
+            "name": ""
+        },
+        "type": "DataRaptor",
+        "value": {
+            "bundle": "DRGetCurrentUserInfo",
+            "inputMap": {
+                "userId": "{recordId}"
+            },
+            "resultVar": ""
+        }
+    },
+    "%vlocity_namespace%__Definition__c": "OSFMX_PWModifiedCurrentUser.json",
+    "%vlocity_namespace%__Description__c": "",
+    "%vlocity_namespace%__GlobalKey__c": "OSFMX_PWModifiedCurrentUser/Engie_Latam_HQ/2/1626233710270",
+    "%vlocity_namespace%__IsChildCard__c": false,
+    "%vlocity_namespace%__ParentID__c": "",
+    "%vlocity_namespace%__SampleData__c": "[{\"Title\":\"VP Servicesss2\",\"Country\":\"México\",\"State\":\"CDMX\",\"City\":\"CDMX\",\"PostalCode\":\"07800\",\"Street\":\"Tuxpango 43\",\"BusinessName\":\"MONDELEZ MÉXICO, S. DE R.L. DE C.V.\",\"Movil\":\"3014646546\",\"Extencion\":\"1234\",\"Telephone\":\"1231321232\",\"Email\":\"omatamx@gmail.com\",\"LastName\":\"Rodriguez Contreraz\",\"Name\":\"Luz\"}]",
+    "%vlocity_namespace%__Styles__c": "",
+    "%vlocity_namespace%__Type__c": "",
+    "%vlocity_namespace%__Version__c": 2,
+    "CurrencyIsoCode": "MXN",
+    "Name": "OSFMX_PWModifiedCurrentUser",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__VlocityCard__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__VlocityCard__c/OSFMX_PWModifiedCurrentUser"
+}

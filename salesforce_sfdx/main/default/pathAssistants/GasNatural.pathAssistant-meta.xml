@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Lead</entityName>
+    <fieldName>Status</fieldName>
+    <masterLabel>Gas Natural</masterLabel>
+    <pathAssistantSteps>
+        <fieldNames>OSFMX_SolutionType__c</fieldNames>
+        <info>&lt;p&gt;&lt;b&gt;Si su Prospecto no tiene el interés ni la autoridad para comprarlo, marque el Prospecto como no calificado.&lt;/b&gt;&lt;/p&gt;&lt;p&gt;No pierda tiempo con Prospectos no calificados.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Infórmese sobre la fuente de ventas antes de dedicar tiempo a venderles un producto para el que no están preparados.&lt;/li&gt;&lt;li&gt;Comprender el nivel de autoridad de toma de decisiones y los requisitos de solución de su líder.&lt;/li&gt;&lt;li&gt;Determine si es probable que su Prospecto le compre.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</info>
+        <picklistValueName>Descartado</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>OSFMX_SolutionType__c</fieldNames>
+        <info>&lt;p&gt;&lt;b&gt;Obtenga más información y póngase en contacto con su Prospecto.&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Utilice Prospectos para separarlos de los contactos a los que ya ha vendido.&lt;/li&gt;&lt;li&gt;Responda a su prospecto en cinco minutos para aumentar sus posibilidades de convertirlo en una oportunidad.&lt;/li&gt;&lt;li&gt;Visite el sitio web de su prospecto para obtener más información sobre el negocio.&lt;/li&gt;&lt;li&gt;Busque su prospecto en redes sociales para interactuar y conectarse con él.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</info>
+        <picklistValueName>Nuevo</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>OSFMX_SolutionType__c</fieldNames>
+        <info>&lt;p&gt;Es momento de generar la oportunidad en la cuenta de negocio del cliente. &lt;/p&gt;</info>
+        <picklistValueName>Oportunidad</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>OSFMX_SolutionType__c</fieldNames>
+        <info>&lt;p&gt;&lt;b&gt;Verifique la información de contacto y califique a su Prospecto&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Recopile toda la información de contacto que pueda. Obtenga consejos de los profesionales sobre la importancia de calificar su prospecto&lt;/li&gt;&lt;li&gt;Obtenga la dirección de correo electrónico, el número de teléfono y el cargo de su prospecto para que pueda incluirlo en futuras campañas.&lt;/li&gt;&lt;li&gt;Primero envíe un correo electrónico a su prospecto e inmediatamente realice una llamada telefónica.&lt;/li&gt;&lt;li&gt;Ensaya los guiones de llamada para que suene seguro y el flujo de la conversación sea más natural.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</info>
+        <picklistValueName>Trabajando</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>GasNatural</recordTypeName>
+</PathAssistant>

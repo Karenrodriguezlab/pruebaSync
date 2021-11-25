@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Nueva Solicitud de Oferta</name>
+    <style>none</style>
+    <subject>Revisión Solicitud de Oferta - {!Quote.QuoteNumber}</subject>
+    <textOnly>Revisión de Solicitud
+Estimada: {!Quote.OSFMX_Assignedto__c}
+Le notificamos que tiene un registro de solicitud para revisión con las siguientes características:
+Nombre de la oferta: {!Quote.Name}
+
+Número de la oferta: {!Quote.QuoteNumber}
+
+Propietario: {!Quote.OwnerFullName}
+Razón Social: {!Quote.OSFMX_BusinessName__c}
+RFC: {!Quote.OSFMX_AccountRFC__c}
+Tipo de oferta: {!Quote.OSFMX_OfferType__c}
+Sector: {!Quote.OSFMX_AccountSector__c}
+Especificaciones: {!Quote.OSFMX_ParticularSpecifications__c}
+Para ir directamente al registro haga clic:
+{!Quote.Link}
+
+
+Engie México</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

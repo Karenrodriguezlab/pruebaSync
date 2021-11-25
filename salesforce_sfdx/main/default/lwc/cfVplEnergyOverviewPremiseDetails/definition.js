@@ -1,0 +1,3 @@
+let definition = 
+                {"GlobalKey__c":"vplEnergyOverviewPremiseDetails/Accenture India/1/1592579923521","dataSource":{"type":null},"enableLwc":true,"filter":{},"states":[{"conditions":{"group":[{"field":"$scope.data.status","operator":"===","type":"system","value":"'active'"}]},"definedActions":{"actions":[]},"fields":[],"isSmartAction":false,"lwc":{"DeveloperName":"veeEnergyOverviewPremiseDetails","Id":"0Rb3h000000Y5xdCAC","MasterLabel":"veeEnergyOverviewPremiseDetailsLWC","name":"veeEnergyOverviewPremiseDetails"},"name":"Active","smartAction":{}}],"title":"Premise Details"}; 
+            export default definition

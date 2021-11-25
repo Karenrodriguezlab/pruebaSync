@@ -1,0 +1,17 @@
+<div><img style="max-width: 1122.5338928222657px;" title="Engie jpg" src="https://engielatam--devmexico--c.documentforce.com/file-asset-public/Engie_jpg1?oid=00Dc0000003wiic" alt="Engie jpg" />&nbsp;</div>
+<div>
+<p>Estimado(a)</p>
+<p><br />Le notificamos que se ha creado un nuevo negocio desde el portal del cliente por parte de <strong>{!NewBusiness__c.OwnerFullName}</strong> de tipo <strong>{!NewBusiness__c.RecordType}</strong> de la compa&ntilde;&iacute;a</p>
+<p><br />Le pedimos generar la oportunidad pertinente para dar seguimiento.</p>
+<p>Detalles del nuevo negocio:</p>
+<p><br />Fecha de creaci&oacute;n: {!NewBusiness__c.CreatedDate}</p>
+<p>&iquest;Tiene demanda energ&eacute;tica mayor a 1 MW?: {!NewBusiness__c.OSFMX_EnergyDemand__c}</p>
+<p>&iquest;Est&aacute; buscando energ&iacute;a renovable?: {!NewBusiness__c.OSFMX_SearchingRenewableEnergy__c}</p>
+<p>&iquest;Es usuario calificado de electricidad?: {!NewBusiness__c.OSFMX_UserQualifiedPower__c}</p>
+<p>Enlace directo: <a href="{!NewBusiness__c.Link}">Aqu&iacute;</a></p>
+</div>
+<div><img style="max-width: 1122.5338928222657px;" title="Engie jpg" src="https://engielatam--devmexico--c.documentforce.com/file-asset-public/Engie_jpg1?oid=00Dc0000003wiic" alt="Engie jpg" /></div>
+<div id="" style="left: 588.182px; top: 693.153px;"><span style="font-family: arial;">&nbsp;</span></div>
+<div id="" style="left: 588.182px; top: 693.153px;"><span style="font-family: arial;">&nbsp;</span></div>
+<div id="" style="left: 127.778px; top: 422.378px;"><span style="font-family: arial;">&nbsp;</span></div>
+<div id="" style="left: 127.778px; top: 422.378px;"><span style="font-family: arial;">&nbsp;</span></div>

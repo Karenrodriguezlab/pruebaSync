@@ -1,0 +1,131 @@
+{
+    "GlobalKey__c": "vplEnergyNotificationsCard/Accenture India/1/1594891657697",
+    "dataSource": {
+        "type": null
+    },
+    "enableLwc": true,
+    "filter": {
+    },
+    "states": [
+        {
+            "actionCtxId": "",
+            "conditions": {
+                "group": [
+                    {
+                        "field": "$scope.data.status",
+                        "operator": "===",
+                        "type": "system",
+                        "value": "'active'"
+                    }
+                ]
+            },
+            "definedActions": {
+                "actions": [
+                    {
+                        "collapse": true,
+                        "conditions": {
+                            "group": [
+                            ]
+                        },
+                        "displayName": "Manage Notification Preferences",
+                        "extraParams": {
+                            "c__ContextId": "['AccountId']",
+                            "c__tabLabel": "Manage Notification Preferences"
+                        },
+                        "hasExtraParams": true,
+                        "id": "ManageNotification",
+                        "isCustomAction": true,
+                        "isLwcOS": true,
+                        "layoutType": "lightning",
+                        "omniLang": "",
+                        "omniSubType": "",
+                        "omniType": {
+                            "Id": "a2j3h000000Tk7sAAC",
+                            "Language": "English",
+                            "Name": "vplEnergy/ManageNotificationPreferences/English",
+                            "SubType": "ManageNotificationPreferences",
+                            "Type": "vplEnergy",
+                            "isLwc": true
+                        },
+                        "openUrlIn": "New Tab / Window",
+                        "type": "OmniScript"
+                    }
+                ]
+            },
+            "fields": [
+                {
+                    "collapse": true,
+                    "displayLabel": "['Bill Notification']",
+                    "editing": false,
+                    "fieldType": "standard",
+                    "group": "Custom Properties",
+                    "label": "Bill Notifications",
+                    "name": "['Bill Notification']",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "['Payment Reminders and Notifications']",
+                    "editing": false,
+                    "fieldType": "standard",
+                    "group": "Custom Properties",
+                    "label": "Payment Reminders and Notifications",
+                    "name": "['Payment Reminders and Notifications']",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "['Outage Notifications']",
+                    "fieldType": "standard",
+                    "group": "Custom Properties",
+                    "label": "Outage Notifications",
+                    "name": "['Outage Notifications']",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "['Offers and Promotions']",
+                    "fieldType": "standard",
+                    "group": "Custom Properties",
+                    "label": "Offers and Promotions",
+                    "name": "['Offers and Promotions']",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "['Work Order Notifications']",
+                    "fieldType": "standard",
+                    "group": "Custom Properties",
+                    "label": "Work Order Notifications",
+                    "name": "['Work Order Notifications']",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "['DNDTime']",
+                    "editing": false,
+                    "fieldType": "standard",
+                    "group": "Custom Properties",
+                    "label": "Do Not Contact Time",
+                    "name": "['DNDTime']",
+                    "type": "string"
+                }
+            ],
+            "flyout": {
+                "lwc": ""
+            },
+            "isSmartAction": false,
+            "lwc": {
+                "DeveloperName": "veeEnergyNotifications",
+                "Id": "0Rb3h000000YikqCAC",
+                "MasterLabel": "veeEnergyNotificationsLWC",
+                "name": "veeEnergyNotifications"
+            },
+            "name": "Active",
+            "sObjectType": "",
+            "smartAction": {
+            }
+        }
+    ],
+    "title": "Notifications"
+}

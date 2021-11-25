@@ -1,0 +1,36 @@
+{
+    "Quote": {
+        "%vlocity_namespace%__DefaultServiceAccountId__c": "",
+        "AccountId": "001c0000038mVzCAAU",
+        "Description": "",
+        "Id": "",
+        "OSFMX_Amount__c": 60000,
+        "OSFMX_CoveredEnergy__c": 1,
+        "OSFMX_CoveredPower__c": 4,
+        "OSFMX_EndDateSupply__c": "2022-05-07T05:00:00.000Z",
+        "OSFMX_EnergyMEM__c": 2,
+        "OSFMX_OfferValidity__c": 45,
+        "OSFMX_PowerMEM__c": 5,
+        "OSFMX_PriceEnergy__c": 21,
+        "OSFMX_PricePower__c": 6,
+        "OSFMX_SolutionType__c": "Corporate PPA",
+        "OSFMX_Solution__c": "Corporate PPA Renovable",
+        "OSFMX_SubEstatus__c": null,
+        "OSFMX_SupplyStartDate__c": "2021-05-07",
+        "OSFMX_TimeLimitSupply__c": 12,
+        "OSFMX_TotalEnergy__c": 12,
+        "OSFMX_TotalPower__c": 3,
+        "OpportunityId": "006c000000UcedBAAR",
+        "QuoteName": "test preview oferta electricidad 1",
+        "Status": "Borrador"
+    },
+    "UpdateOpportunity": {
+        "CloseDate": "2021-06-01",
+        "CurrentStatus": "test",
+        "CurrentStatusDate": "2021-05-07T20:27:00.000Z",
+        "Id": "006c000000UcedBAAR",
+        "NextActivity": "test",
+        "NextActivityDate": "2021-05-07",
+        "Stage": "En proceso"
+    }
+}

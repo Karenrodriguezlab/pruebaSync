@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OSFMX_ConnectionPipeline__c</fullName>
+    <externalId>false</externalId>
+    <label>Ducto de conexión</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>OSFMX_SolutionType__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Distribución Regulada</fullName>
+                <default>false</default>
+                <label>Distribución Regulada</label>
+            </value>
+            <value>
+                <fullName>GNC</fullName>
+                <default>false</default>
+                <label>GNC</label>
+            </value>
+            <value>
+                <fullName>Directo al ducto de Transportista</fullName>
+                <default>false</default>
+                <label>Directo al ducto de Transportista</label>
+            </value>
+            <value>
+                <fullName>Autotransportista</fullName>
+                <default>false</default>
+                <label>Autotransportista</label>
+            </value>
+            <value>
+                <fullName>Usos propios</fullName>
+                <default>false</default>
+                <label>Usos propios</label>
+            </value>
+            <value>
+                <fullName>Distribución convencional</fullName>
+                <default>false</default>
+                <label>Distribución convencional</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Comercialización de Gas Natural</controllingFieldValue>
+            <controllingFieldValue>Distribución de Gas Natural</controllingFieldValue>
+            <valueName>Distribución Regulada</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Comercialización de Gas Natural</controllingFieldValue>
+            <valueName>GNC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Comercialización de Gas Natural</controllingFieldValue>
+            <valueName>Directo al ducto de Transportista</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Comercialización de Gas Natural</controllingFieldValue>
+            <valueName>Autotransportista</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Comercialización de Gas Natural</controllingFieldValue>
+            <valueName>Usos propios</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Comercialización de Gas Natural</controllingFieldValue>
+            <valueName>Distribución convencional</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

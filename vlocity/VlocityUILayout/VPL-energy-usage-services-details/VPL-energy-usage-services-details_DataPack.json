@@ -1,0 +1,26 @@
+{
+    "%vlocity_namespace%__Author__c": "VPL",
+    "%vlocity_namespace%__Datasource__c": {
+        "type": "Query",
+        "value": {
+            "body": "{\n  \"data\": [\n{\n  \"Date\": \"12/1/2018\",\n  \"kWh\": 11.8,\n  \"kwhcost\": 9.92,\n  \"therms\": 5,\n  \"thermsCost\": 7,\n  \"temp\": 65\n}, {\n  \"Date\": \"12/2/2018\",\n  \"kWh\": 2.4,\n  \"kwhcost\": 5.69,\n  \"therms\": 1,\n  \"thermsCost\": 6,\n  \"temp\": 65\n}, {\n  \"Date\": \"12/3/2018\",\n  \"kWh\": 1.4,\n  \"kwhcost\": 11.8,\n  \"therms\": 7,\n  \"thermsCost\": 8,\n  \"temp\": 69\n}, {\n  \"Date\": \"12/4/2018\",\n  \"kWh\": 11.9,\n  \"kwhcost\": 8.95,\n  \"therms\": 9,\n  \"thermsCost\": 5,\n  \"temp\": 61\n}, {\n  \"Date\": \"12/5/2018\",\n  \"kWh\": 3.5,\n  \"kwhcost\": 8.83,\n  \"therms\": 5,\n  \"thermsCost\": 6,\n  \"temp\": 63\n}, {\n  \"Date\": \"12/6/2018\",\n  \"kWh\": 1.9,\n  \"kwhcost\": 10.06,\n  \"therms\": 11,\n  \"thermsCost\": 5,\n  \"temp\": 50\n}, {\n  \"Date\": \"12/7/2018\",\n  \"kWh\": 3.1,\n  \"kwhcost\": 6.84,\n  \"therms\": 11,\n  \"thermsCost\": 11,\n  \"temp\": 54\n}, {\n  \"Date\": \"12/8/2018\",\n  \"kWh\": 9.0,\n  \"kwhcost\": 4.08,\n  \"therms\": 8,\n  \"thermsCost\": 6,\n  \"temp\": 66\n}, {\n  \"Date\": \"12/9/2018\",\n  \"kWh\": 11.3,\n  \"kwhcost\": 9.0,\n  \"therms\": 9,\n  \"thermsCost\": 1,\n  \"temp\": 67\n}, {\n  \"Date\": \"12/10/2018\",\n  \"kWh\": 10.5,\n  \"kwhcost\": 7.88,\n  \"therms\": 4,\n  \"thermsCost\": 12,\n  \"temp\": 62\n}, {\n  \"Date\": \"12/11/2018\",\n  \"kWh\": 1.3,\n  \"kwhcost\": 7.92,\n  \"therms\": 2,\n  \"thermsCost\": 4,\n  \"temp\": 54\n}, {\n  \"Date\": \"12/12/2018\",\n  \"kWh\": 6.3,\n  \"kwhcost\": 8.64,\n  \"therms\": 11,\n  \"thermsCost\": 4,\n  \"temp\": 53\n}, {\n  \"Date\": \"12/13/2018\",\n  \"kWh\": 4.8,\n  \"kwhcost\": 3.36,\n  \"therms\": 5,\n  \"thermsCost\": 4,\n  \"temp\": 54\n}, {\n  \"Date\": \"12/14/2018\",\n  \"kWh\": 10.4,\n  \"kwhcost\": 1.68,\n  \"therms\": 6,\n  \"thermsCost\": 3,\n  \"temp\": 64\n}, {\n  \"Date\": \"12/15/2018\",\n  \"kWh\": 6.2,\n  \"kwhcost\": 5.47,\n  \"therms\": 11,\n  \"thermsCost\": 3,\n  \"temp\": 61\n}, {\n  \"Date\": \"12/16/2018\",\n  \"kWh\": 6.6,\n  \"kwhcost\": 1.1,\n  \"therms\": 1,\n  \"thermsCost\": 3,\n  \"temp\": 58\n}, {\n  \"Date\": \"12/17/2018\",\n  \"kWh\": 3.4,\n  \"kwhcost\": 2.76,\n  \"therms\": 10,\n  \"thermsCost\": 1,\n  \"temp\": 66\n}, {\n  \"Date\": \"12/18/2018\",\n  \"kWh\": 1.8,\n  \"kwhcost\": 7.97,\n  \"therms\": 8,\n  \"thermsCost\": 2,\n  \"temp\": 61\n}, {\n  \"Date\": \"12/19/2018\",\n  \"kWh\": 2.0,\n  \"kwhcost\": 8.19,\n  \"therms\": 11,\n  \"thermsCost\": 5,\n  \"temp\": 60\n}, {\n  \"Date\": \"12/20/2018\",\n  \"kWh\": 2.8,\n  \"kwhcost\": 11.5,\n  \"therms\": 5,\n  \"thermsCost\": 4,\n  \"temp\": 51\n}, {\n  \"Date\": \"12/21/2018\",\n  \"kWh\": 8.6,\n  \"kwhcost\": 10.31,\n  \"therms\": 7,\n  \"thermsCost\": 12,\n  \"temp\": 52\n}, {\n  \"Date\": \"12/22/2018\",\n  \"kWh\": 4.5,\n  \"kwhcost\": 6.59,\n  \"therms\": 2,\n  \"thermsCost\": 9,\n  \"temp\": 66\n}, {\n  \"Date\": \"12/23/2018\",\n  \"kWh\": 4.6,\n  \"kwhcost\": 4.72,\n  \"therms\": 7,\n  \"thermsCost\": 7,\n  \"temp\": 70\n}, {\n  \"Date\": \"12/24/2018\",\n  \"kWh\": 7.6,\n  \"kwhcost\": 3.31,\n  \"therms\": 5,\n  \"thermsCost\": 2,\n  \"temp\": 64\n}, {\n  \"Date\": \"12/25/2018\",\n  \"kWh\": 5.5,\n  \"kwhcost\": 9.8,\n  \"therms\": 8,\n  \"thermsCost\": 5,\n  \"temp\": 60\n}, {\n  \"Date\": \"12/26/2018\",\n  \"kWh\": 7.7,\n  \"kwhcost\": 3.5,\n  \"therms\": 1,\n  \"thermsCost\": 6,\n  \"temp\": 62\n}, {\n  \"Date\": \"12/27/2018\",\n  \"kWh\": 4.1,\n  \"kwhcost\": 4.81,\n  \"therms\": 12,\n  \"thermsCost\": 2,\n  \"temp\": 68\n}, {\n  \"Date\": \"12/28/2018\",\n  \"kWh\": 6.4,\n  \"kwhcost\": 1.82,\n  \"therms\": 7,\n  \"thermsCost\": 6,\n  \"temp\": 66\n}, {\n  \"Date\": \"12/29/2018\",\n  \"kWh\": 3.3,\n  \"kwhcost\": 4.69,\n  \"therms\": 3,\n  \"thermsCost\": 2,\n  \"temp\": 70\n}, {\n  \"Date\": \"12/30/2018\",\n  \"kWh\": 4.1,\n  \"kwhcost\": 8.79,\n  \"therms\": 6,\n  \"thermsCost\": 10,\n  \"temp\": 66\n}\n  ]\n}",
+            "ipMethod": "VPL_GetEnergyUsage",
+            "optionsMap": {
+                "vlcClass": "%vlocity_namespace%.IntegrationProcedureService"
+            },
+            "query": "SELECT %vlocity_namespace%__AccountId__r.Id, %vlocity_namespace%__AccountId__r.Name FROM %vlocity_namespace%__CustomerInteraction__c Where Id = '{{params.id}}'",
+            "resultVar": ""
+        }
+    },
+    "%vlocity_namespace%__Definition__c": "VPL-energy-usage-services-details.json",
+    "%vlocity_namespace%__Description__c": "",
+    "%vlocity_namespace%__GlobalKey__c": "VPL/energy-usage--services-details/3/VPL/1613607235111",
+    "%vlocity_namespace%__ParentID__c": "",
+    "%vlocity_namespace%__RequiredPermission__c": "",
+    "%vlocity_namespace%__Type__c": "Layout",
+    "%vlocity_namespace%__Version__c": 3,
+    "Name": "VPL/energy-usage--services-details",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__VlocityUILayout__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__VlocityUILayout__c/VPL/energy-usage--services-details"
+}

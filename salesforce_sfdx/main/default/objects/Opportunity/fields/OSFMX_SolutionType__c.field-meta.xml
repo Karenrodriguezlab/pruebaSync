@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OSFMX_SolutionType__c</fullName>
+    <externalId>false</externalId>
+    <label>Tipo de solución</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>OSFMX_OpportunityType__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Comercialización de Gas Natural</fullName>
+                <default>false</default>
+                <label>Comercialización de Gas Natural</label>
+            </value>
+            <value>
+                <fullName>Corporate PPA</fullName>
+                <default>false</default>
+                <label>Corporativa PPA</label>
+            </value>
+            <value>
+                <fullName>Distribución de Gas Natural</fullName>
+                <default>false</default>
+                <label>Distribución de Gas Natural</label>
+            </value>
+            <value>
+                <fullName>Ducto Dedicado</fullName>
+                <default>false</default>
+                <label>Ducto Dedicado</label>
+            </value>
+            <value>
+                <fullName>Eficiencia Energética</fullName>
+                <default>false</default>
+                <label>Eficiencia Energética</label>
+            </value>
+            <value>
+                <fullName>Generación Onsite</fullName>
+                <default>false</default>
+                <label>Generación en sitio</label>
+            </value>
+            <value>
+                <fullName>GNC</fullName>
+                <default>false</default>
+                <label>GNC</label>
+            </value>
+            <value>
+                <fullName>GNV</fullName>
+                <default>false</default>
+                <label>GNV</label>
+            </value>
+            <value>
+                <fullName>Instalación</fullName>
+                <default>false</default>
+                <label>Instalación</label>
+            </value>
+            <value>
+                <fullName>Mantenimiento</fullName>
+                <default>false</default>
+                <label>Mantenimiento</label>
+            </value>
+            <value>
+                <fullName>Movilidad Eléctrica</fullName>
+                <default>false</default>
+                <label>Movilidad Eléctrica</label>
+            </value>
+            <value>
+                <fullName>Suministro Eléctrico MX</fullName>
+                <default>false</default>
+                <label>Suministro Eléctrico MX</label>
+            </value>
+            <value>
+                <fullName>Suministro Eléctrico Latam</fullName>
+                <default>false</default>
+                <label>Suministro Eléctrico Latam</label>
+            </value>
+            <value>
+                <fullName>Soluciones</fullName>
+                <default>false</default>
+                <label>Soluciones</label>
+            </value>
+            <value>
+                <fullName>Transmisión</fullName>
+                <default>false</default>
+                <label>Transmisión</label>
+            </value>
+            <value>
+                <fullName>Gas Chile</fullName>
+                <default>false</default>
+                <label>Gas Chile</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>OSFMX_Gas</controllingFieldValue>
+            <valueName>Comercialización de Gas Natural</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OSFMX_Gas</controllingFieldValue>
+            <valueName>Distribución de Gas Natural</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OSFMX_Gas</controllingFieldValue>
+            <valueName>Ducto Dedicado</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OSFMX_Gas</controllingFieldValue>
+            <valueName>Gas Chile</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OSFMX_Electricidad</controllingFieldValue>
+            <valueName>Corporate PPA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OSFMX_Electricidad</controllingFieldValue>
+            <valueName>Suministro Eléctrico MX</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OSFMX_Electricidad</controllingFieldValue>
+            <valueName>Suministro Eléctrico Latam</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OSFMX_Electricidad</controllingFieldValue>
+            <valueName>Transmisión</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Otras_Soluciones</controllingFieldValue>
+            <valueName>Eficiencia Energética</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Otras_Soluciones</controllingFieldValue>
+            <valueName>Generación Onsite</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Otras_Soluciones</controllingFieldValue>
+            <valueName>GNC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Otras_Soluciones</controllingFieldValue>
+            <valueName>GNV</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Otras_Soluciones</controllingFieldValue>
+            <valueName>Instalación</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Otras_Soluciones</controllingFieldValue>
+            <valueName>Mantenimiento</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Otras_Soluciones</controllingFieldValue>
+            <valueName>Movilidad Eléctrica</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Otras_Soluciones</controllingFieldValue>
+            <valueName>Soluciones</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

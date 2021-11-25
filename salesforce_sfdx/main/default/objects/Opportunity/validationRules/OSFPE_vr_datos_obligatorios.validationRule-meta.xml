@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OSFPE_vr_datos_obligatorios</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISPICKVAL(StageName, &quot;Cerrada perdida&quot;) &amp;&amp;
+ISPICKVAL(OSFCL_Opciones_cierre_no_ganado__c, &quot;No adjudicado&quot;) &amp;&amp;
+ISBLANK(TEXT(OSFCL_Motivo_no_adjudicacion__c)) &amp;&amp;
+(
+    RecordType.DeveloperName == &apos;OSFPE_rt_Oportunidad_Energia_Peru&apos; ||
+				RecordType.DeveloperName == &apos;OSFPE_rt_Oportunidad_Soluciones_Peru&apos;
+)</errorConditionFormula>
+    <errorMessage>Para cerrar la oportunidad usted debe completar los campos en la sección: &quot;Información Adicional&quot;, el motivo de No adjudicación.</errorMessage>
+</ValidationRule>

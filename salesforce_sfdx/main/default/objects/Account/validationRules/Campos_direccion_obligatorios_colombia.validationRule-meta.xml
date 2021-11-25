@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Campos_direccion_obligatorios_colombia</fullName>
+    <active>true</active>
+    <description>Impide grabar la cuenta sin datos de dirección</description>
+    <errorConditionFormula>$Profile.Name &lt;&gt; &quot;System Administrator&quot;&amp;&amp;
+((RecordType.DeveloperName=&apos;Cuenta_de_Negocios_Colombia&apos;) || (RecordType.DeveloperName=&apos;Grupo_Economico_Colombia&apos;))
+&amp;&amp;
+ISBLANK(BillingAddress)</errorConditionFormula>
+    <errorDisplayField>BillingStreet</errorDisplayField>
+    <errorMessage>Debe ingresar la dirección de la cuenta</errorMessage>
+</ValidationRule>

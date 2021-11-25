@@ -1,0 +1,46 @@
+.THIS .slds-template_default{
+    padding: 0;
+}
+
+.THIS .tabs__content {
+    padding-top: 0rem!important;
+}
+
+.THIS .slds-no-flex {
+    background: #ffffff;
+}
+
+.THIS .slds-tabs_card, .THIS .slds-tabs_card.slds-tabs_card {
+    border-radius: 0;
+    box-shadow: none;
+    border: none;
+}
+
+.THIS .sidebarLayout {
+	width: 350px;
+    min-width: 350px;
+}
+
+.THIS .mainLayout {
+    width: 100%;
+}
+
+.THIS .leftPanel { 
+    border-right: 1px solid #dddbda;
+}
+
+.THIS .rightPanel {
+    border-left: 1px solid #dddbda;
+}
+.THIS .slds-chevron {
+    padding:0.1rem;
+    background-color:#ffffff;
+    position: relative; 
+    top: 28rem;
+}
+
+.THIS .slds-tabs_card {
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 1.75rem;
+}

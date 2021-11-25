@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>51.0</apiVersion>
+    <assignments>
+        <description>Asigna el sector obtenido desde Account.</description>
+        <name>SET_Name_To_Record</name>
+        <label>SET Name To Record</label>
+        <locationX>50</locationX>
+        <locationY>431</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Name</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>UnitTestMODX</stringValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <description>Asigna el sector obtenido desde Account.</description>
+        <name>SET_Sector_To_Record</name>
+        <label>SET Sector To Record</label>
+        <locationX>314</locationX>
+        <locationY>551</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Sector__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>GET_Sector.Industry</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <decisions>
+        <name>IsTestRecord</name>
+        <label>IsTestRecord</label>
+        <locationX>182</locationX>
+        <locationY>311</locationY>
+        <defaultConnector>
+            <targetReference>GET_Sector</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>NotTest</defaultConnectorLabel>
+        <rules>
+            <name>IsTest</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>UnitTest</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Id_Business_Partner__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>1234567890</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>SET_Name_To_Record</targetReference>
+            </connector>
+            <label>IsTest</label>
+        </rules>
+    </decisions>
+    <description>Busca el sector correspondiente dentro de Account para nuevos registros de OSMX_Consumos_Clientes en base al campo &quot;Id_Business_Partner__c&quot;.</description>
+    <interviewLabel>Asignar Sector A OSMX_Consumos_Clientes {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Asignar Sector A OSMX_Consumos_Clientes</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <description>Obtiene el sector del registro en base a su campo &quot;ID_Instalacion__c&quot; desde Account asociandolo con el campo &quot;OSFMX_AccountContractID__c&quot;.</description>
+        <name>GET_Sector</name>
+        <label>GET Sector From Account</label>
+        <locationX>314</locationX>
+        <locationY>431</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>SET_Sector_To_Record</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>OSFMX_AccountContractID__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Id_Business_Partner__c</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Account</object>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>Industry</queriedFields>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>IsTestRecord</targetReference>
+        </connector>
+        <object>OSMX_Consumos_Clientes__c</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

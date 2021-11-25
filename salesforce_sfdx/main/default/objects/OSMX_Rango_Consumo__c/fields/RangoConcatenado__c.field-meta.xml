@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RangoConcatenado__c</fullName>
+    <externalId>false</externalId>
+    <formula>If(Valor_Gj__c = 161.8278,("PS $" &amp; TEXT(Valor_Gj__c)),If(Valor_Gj__c = 0,("$"&amp; TEXT(Valor_Gj__c)),("Rango " &amp; TEXT(Rango_consumo__c) &amp;" $"&amp; TEXT(Valor_Gj__c))
+))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>RangoConcatenado</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

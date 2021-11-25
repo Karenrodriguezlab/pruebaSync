@@ -1,0 +1,77 @@
+<template>
+  <!-- Spinner -->
+  <template if:true={isPageLoading}>
+    <lightning-spinner variant="brand"
+               alternative-text="Loading..."
+               theme={_theme}
+               size="medium">
+    </lightning-spinner>
+  </template>
+  <div class="nds-file-custom-selector nds-form-container">
+    <div class="nds-file-selector__dropzone">
+      <div class="nds-form-element nds-p-around--small">
+        <slot>
+          <div class={_containerClasses}>
+            <div>
+              <label class="nds-form-element__label omni-input-label"
+                     aria-label={_propSetMap.label}>
+                <abbr if:true={_propSetMap.required}
+                      class="nds-required"
+                      title="required">*</abbr>
+                <span>{_propSetMap.label}</span>
+              </label>
+              <lightning-helptext if:true={_propSetMap.help}
+                         class="nds-tooltip_container"
+                         content={_propSetMap.helpText}>
+              </lightning-helptext>
+            </div>
+            <div class="nds-grid omni-file-input">
+              <lightning-file-upload label=""
+                                     name={jsonDef.lwcId}
+                                     record-id={scriptHeaderDef.sOmniScriptId}
+                                     onuploadfinished={handleUploadFinished}
+                                     disabled={_habilitar}
+                                     class="nds-has-dividers_around-space omni-file nds-m-bottom_xx-small nds-size_12-of-12 nds-medium-size_12-of-12">
+              </lightning-file-upload>
+            </div>
+          </div>
+        </slot>
+        <slot name="files">
+          <div class="nds-grid">
+            <ul class="nds-has-dividers_around-space omni-file nds-file-list nds-file-list-lwc nds-m-bottom_xx-small nds-size_12-of-12 nds-medium-size_12-of-12">
+              <template for:each={_value}
+                        for:item="item"
+                        for:index="index">
+                <li key={item.data}
+                    class="nds-item">
+                  <div class="nds-grid">
+                    <span class="nds-m-bottom_xx-small nds-size_11-of-12 nds-medium-size_11-of-12 slds-truncate">
+                      {item.filename}
+                    </span>
+                    <span class="remove-file-icon nds-m-bottom_xx-small nds-size_1-of-12 nds-medium-size_1-of-12 nds-text-align_right">
+                      <vlocity_cmt-icon theme={_theme}
+                              iconposition="left"
+                              onclick={deleteFile}
+                              icon-name="action:delete"
+                              color="brand"
+                              alternative-text="Delete"
+                              data-index={index}
+                              data-id={item.data}
+                              size="x-small"></vlocity_cmt-icon>
+                    </span>
+                  </div>
+                </li>
+              </template>
+            </ul>
+          </div>
+        </slot>
+      </div>
+    </div>
+    <div if:true={_showValidation}
+         class="nds-has-error">
+      <span class="nds-form-element__help omni-file-required">
+        Requerido
+      </span>
+    </div>
+  </div>
+</template>

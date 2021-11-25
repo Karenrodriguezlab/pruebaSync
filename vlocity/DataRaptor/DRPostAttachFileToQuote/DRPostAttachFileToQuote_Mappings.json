@@ -1,0 +1,55 @@
+[
+    {
+        "%vlocity_namespace%__DomainObjectAPIName__c": "ContentDocumentLink",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 1,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "ContentDocumentId",
+        "%vlocity_namespace%__InterfaceFieldAPIName__c": "ContentDocumentId",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "DRPostAttachFileToQuoteCustom6810",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "DRPostAttachFileToQuote",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    },
+    {
+        "%vlocity_namespace%__ConfigurationValue__c": "FAKEMAPPING",
+        "%vlocity_namespace%__DomainObjectAPIName__c": "ContentDocumentLink",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 1,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "Id",
+        "%vlocity_namespace%__FilterOperator__c": "=",
+        "%vlocity_namespace%__IsDisabled__c": true,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "DRPostAttachFileToQuoteCustom4111",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "DRPostAttachFileToQuote",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    },
+    {
+        "%vlocity_namespace%__DomainObjectAPIName__c": "ContentDocumentLink",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 1,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "LinkedEntityId",
+        "%vlocity_namespace%__InterfaceFieldAPIName__c": "LinkedEntityId",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "DRPostAttachFileToQuoteCustom1030",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "DRPostAttachFileToQuote",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    },
+    {
+        "%vlocity_namespace%__DomainObjectAPIName__c": "ContentDocumentLink",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 1,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "ShareType",
+        "%vlocity_namespace%__InterfaceFieldAPIName__c": "ShareType",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "DRPostAttachFileToQuoteCustom3659",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "DRPostAttachFileToQuote",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    }
+]

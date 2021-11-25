@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OSFPE_cly_miembroCampana</fullName>
+    <fields>CampaignId</fields>
+    <fields>LastName</fields>
+    <fields>FirstName</fields>
+    <fields>Status</fields>
+    <fields>CompanyOrAccount</fields>
+    <fields>Email</fields>
+    <fields>MobilePhone</fields>
+    <fields>Phone</fields>
+    <label>Miembro de campaña</label>
+</CompactLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>OSFMX_PortalLetterhead</letterhead>
+    <name>Oferta por Expirar</name>
+    <style>freeForm</style>
+    <subject>Oferta por expirar</subject>
+    <textOnly>Estimado(a)
+
+
+La oferta: {!Quote.Name} fue Aprobada:
+
+{!ApprovalRequest.Comments}
+
+Detalles de la oferta:
+
+Razón social: {!Quote.OSFMX_BusinessName__c}
+RFC: {!Quote.OSFMX_AccountRFC__c}
+KAM: {!Quote.OSFMX_OwnerQuote__c}
+Distribuidor/Transportista: {!Quote.OSFMX_DistributorOrCarrier__c}
+Estructura de precio: {!Quote.OSFMX_PriceStructure__c}
+Cuadrante: {!Quote.OSFMX_Quadrant__c}
+Spread piso por cuadrante: {!Quote.OSFMX_Spread_piso_por_cuadrante__c}
+Oferta spread (USD / Gj): {!Quote.OSFMX_Spread_ofertado_USD_Gj__c}
+Oferta spread (USD/Gj): {!Quote.OSFMX_Spread_ofertado_USD_Gj__c}
+Margen estimado de molécula: {!Quote.OSFMX_Margen_estimado_molecula_usd__c}
+Rango de comercialización: {!Quote.OSFMX_Rango_comercializaci_n__c}
+Margen estimado comercialización USD: {!Quote.OSFMX_Margen_comercializacion_usd__c}
+
+Enlace directo: {!Quote.Link}
+
+Engie México</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

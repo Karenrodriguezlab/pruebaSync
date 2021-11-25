@@ -1,0 +1,35 @@
+[
+    {
+        "%vlocity_namespace%__DomainObjectAPIName__c": "json",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 0,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "costo",
+        "%vlocity_namespace%__FilterGroup__c": 0,
+        "%vlocity_namespace%__FilterOperator__c": ">",
+        "%vlocity_namespace%__FilterValue__c": "'0'",
+        "%vlocity_namespace%__InterfaceFieldAPIName__c": "OSFMX_CostMol__c",
+        "%vlocity_namespace%__InterfaceObjectLookupOrder__c": 1,
+        "%vlocity_namespace%__InterfaceObjectName__c": "OSFMX_Guarrantie__c",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "DRGetCostGuarrantieCustom2323",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "CurrencyIsoCode": "MXN",
+        "Name": "DRGetCostGuarrantie",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    },
+    {
+        "%vlocity_namespace%__DomainObjectAPIName__c": "json",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 1,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "CostMol",
+        "%vlocity_namespace%__InterfaceFieldAPIName__c": "costo:OSFMX_CostMol__c",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "DRGetCostGuarrantieCustom4699",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "CurrencyIsoCode": "MXN",
+        "Name": "DRGetCostGuarrantie",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    }
+]

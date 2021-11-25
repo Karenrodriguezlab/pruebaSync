@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>OSFMX_SharingGEM</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Colaboración con GEM</label>
+        <sharedTo>
+            <group>OSFMX_GEMTeam</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>OSFMX_SolutionType__c</field>
+            <operation>equals</operation>
+            <value>Comercialización de Gas Natural</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Electricidad,Otras Soluciones</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>OSFMX_SharingNetworks</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Colabora distribuidoras</label>
+        <sharedTo>
+            <group>OSFMX_NetworksTeam</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>OSFMX_SolutionType__c</field>
+            <operation>equals</operation>
+            <value>Distribución de Gas Natural</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Electricidad,Otras Soluciones</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingOwnerRules>
+        <fullName>OSFMX_ApprovalSharing</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Colabora con Aprobadores</label>
+        <sharedTo>
+            <group>OSFMX_ApprovalsMexcom</group>
+        </sharedTo>
+        <sharedFrom>
+            <group>OSFMX_GEMTeam</group>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>OSFMX_SharingFact</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Colabora con Factibilidad</label>
+        <sharedTo>
+            <group>OSFMX_Factibilidad</group>
+        </sharedTo>
+        <sharedFrom>
+            <group>OSFMX_GEMTeam</group>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>OSFMX_SharingGasUser</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Colabora con Usuario Oferta Gas</label>
+        <sharedTo>
+            <group>OSFMX_GasTeam</group>
+        </sharedTo>
+        <sharedFrom>
+            <group>OSFMX_GEMTeam</group>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

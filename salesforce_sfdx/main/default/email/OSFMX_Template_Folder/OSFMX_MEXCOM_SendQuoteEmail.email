@@ -1,0 +1,15 @@
+<p>&nbsp;</p>
+<div style="text-align: center;"><img style="max-width: 481.597px; width: 178.993px; height: 90px;" title="Engie jpg" src="https://engielatam--devmexico--c.documentforce.com/file-asset-public/Engie_jpg1?oid=00Dc0000003wiic" alt="Engie jpg" /></div>
+<div style="text-align: center;">&nbsp;</div>
+<div>
+<ul>
+<span style="font-size: 11pt;"><span style="line-height: 106%;"><span style="font-family: Calibri,sans-serif;"><span lang="ES" style="color: #4472c4;">Estimad@ <strong>{!Contact.Name}</strong></span></span></span></span><br/><br/>
+<span style="font-size: 11pt;"><span style="line-height: 106%;"><span style="font-family: Calibri,sans-serif;"><span lang="ES" style="color: #4472c4;">Ha sido para nosotros muy satisfactorio estar en contacto con ustedes a fin de analizar la posibilidad de ofrecerle el servicio de suministro de gas natural. De acuerdo con los datos proporcionados por ustedes, nos permitimos presentarle nuestra propuesta comercial.</span></span></span></span><br/><br/>
+<span style="font-size: 11pt;"><span style="line-height: 107%;"><span style="font-family: Calibri,sans-serif;"><span lang="ES" style="color: #4472c4;">Estamos convencidos de las ventajas que ofrece el gas natural y de los beneficios que puede traer a su empresa. Esperamos que nuestra propuesta le sea de utilidad. </span></span></span></span><br/><br/>
+<span style="font-size: 11pt;"><span style="line-height: 107%;"><span style="font-family: Calibri,sans-serif;"><span lang="ES" style="color: #4472c4;">Quedo a sus &oacute;rdenes para comentar cualquier duda y aprovecho la oportunidad para enviarle un cordial saludo.</span></span></span></span>
+</ul>
+<div style="list-style-type: none;">&nbsp;</div>
+<ul>
+<span style="font-size: 11pt;"><span style="line-height: 106%;"><span style="font-family: Calibri,sans-serif;"><span lang="ES" style="color: #4472c4;">Saludos,<br />{!Quote.OwnerFullName}<br />{!Quote.OwnerTitle}</span></span></span></span>
+</ul>
+</div>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OSFPE_fld_Plazo_de_suministro_anos__c</fullName>
+    <externalId>false</externalId>
+    <formula>ROUND((OSFPE_fld_Fecha_de_fin_del_suministro__c - OSFMX_SupplyStartDate__c)/365,0)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Plazo de suministro (años)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

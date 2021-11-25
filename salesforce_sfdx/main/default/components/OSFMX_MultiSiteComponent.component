@@ -1,0 +1,221 @@
+<apex:component controller="OSFMX_MultiSiteComponentCtrl" access="global" >
+
+<apex:attribute name="tempMasterQuoteId" assignTo="{!masterQuoteId}"  type="Id" description="Id master quote"/>
+
+  <div style="background-color:{!titleMaster};text-align:center;display:inline-block;width:99.6%">
+    <p>OFERTA GRUPAL {!quote.Account.Name} {!childQuotes.size} PUNTOS DE SUMINISTRO RFC: {!quote.Account.OSFMX_RFC__c}</p>
+  </div>
+
+<div style="height:100%">
+  <div style="background-color:{!titleMaster};text-align:center;display:inline-block;width:50%;">
+      <p>NIVEL DE APROBACIÓN</p>
+  </div>
+  <div style="background-color:{!detailMaster};text-align:center;display:inline-block;width:49%;">
+    <p><apex:outputField value="{!quote.OSFMX_MasterNivelApro__c}"/></p>   
+  </div>
+</div>
+
+<div style="height:100%">
+  <div style="background-color:{!titleMaster};text-align:center;display:inline-block;width:50%;height:inherit;">
+      <p>TIPO DE OFERTA</p>
+  </div>
+  <div style="background-color:{!detailMaster};text-align:center;display:inline-block;width:49%;height:inherit;">
+    <p><apex:outputField value="{!quote.OSFMX_OfferType__c}"/></p>
+    
+  </div>
+</div>
+
+<div style="height:100%">
+  <div style="background-color:{!titleMaster};text-align:center;display:inline-block;width:50%;height:inherit%;">
+      <p>SUMA DE LOS VOLUMENES SOLICITADOS (Gj/Plazo suministro)</p>
+  </div>
+  <div style="background-color:{!detailMaster};text-align:center;display:inline-block;width:49%;height:inherit%;">
+    <p><apex:outputField value="{!quote.OSFMX_MasterConsumoPlazoSTR__c}"/></p>
+     
+  </div>
+</div>
+
+<div style="height:100%">
+  <div  style="background-color:{!titleMaster};text-align:center;display:inline-block;width:50%;height:inherit%;">
+      <p>SUMA DEL VOLUMEN POR DÍA (Gj/DÍA)</p>
+  </div>
+  <div  style="background-color:{!detailMaster};text-align:center;display:inline-block;width:49%;height:inherit%;">
+    <p><apex:outputField value="{!quote.OSFMX_MasterDailyVolume__c}"/></p>
+      
+  </div>
+</div>
+
+<div style="height:100%" >
+  <div  style="background-color:{!titleMaster};text-align:center;display:inline-block;width:50%;height:inherit%;">
+      <p>SUMA GWh/Plazo suministro</p>
+  </div>
+  <div  style="background-color:{!detailMaster};text-align:center;display:inline-block;width:49%;height:inherit%;">
+    <p><apex:outputField value="{!quote.OSFMX_MasterGwhYear__c}"/></p>
+      
+  </div>
+</div>
+
+<div style="height:100%" >
+  <div  style="background-color:{!titleMaster};text-align:center;display:inline-block;width:50%;height:inherit%;">
+      <p>PLAZO DE SUMINISTRO (MESES)</p>
+  </div>
+  <div  style="background-color:{!detailMaster};text-align:center;display:inline-block;width:49%;height:inherit%;">
+    <p><apex:outputField value="{!quote.OSFMX_Plazo_suministro_Gas__c}"/></p>
+      
+  </div>
+</div>
+
+<div style="height:100%" >
+  <div  style="background-color:{!titleMaster};text-align:center;display:inline-block;width:50%;height:inherit%;">
+      <p>CUADRANTE</p>
+  </div>
+  <div  style="background-color:{!detailMaster};text-align:center;display:inline-block;width:49%;height:inherit%;">
+    <p><apex:outputField value="{!quote.OSFMX_MasterCuadrante__c}"/></p>
+      
+  </div>
+</div>
+
+<div style="height:100%" >
+  <div  style="background-color:{!titleMaster};text-align:center;display:inline-block;width:50%;height:inherit%;">
+      <p>MARGEN ESTIMADO MOLECULA USD (Por encima del precio medio de compra)</p>
+  </div>
+  <div  style="background-color:{!detailMaster};text-align:center;display:inline-block;width:49%;height:inherit%;">
+    <p><apex:outputField value="{!quote.OSFMX_Master_MargenEstimadoMoleculaUSD__c}"/></p>
+   
+  </div>
+</div>
+
+<div style="height:100%" >
+  <div  style="background-color:{!titleMaster};text-align:center;display:inline-block;width:50%;height:inherit%;">
+      <p>COMERCIALIZACIÓN</p>
+  </div>
+  <div  style="background-color:{!detailMaster};text-align:center;display:inline-block;width:49%;height:inherit%;">
+    <p><apex:outputField value="{!quote.OSFMX_Rango_comercializaci_n__c}"/></p>
+     
+  </div>
+</div>
+
+<div style="height:100%" >
+  <div  style="background-color:{!titleMaster};text-align:center;display:inline-block;width:50%;height:inherit%;">
+      <p>MARGEN DE COMERCIALIZACIÓN (USD)</p>
+  </div>
+  <div  style="background-color:{!detailMaster};text-align:center;display:inline-block;width:49%;height:inherit%;">
+    <p><apex:outputField value="{!quote.OSFMX_Margen_comercializacion_usd__c}"/></p>
+      
+  </div>
+</div>
+<apex:variable value="{!0}" var="rowNum"/>
+<apex:repeat var="qt" value="{!childQuotes}">
+
+
+
+      <div style="background-color:{!titleChild[rowNum]};width:99.6%;text-align:center;display:inline-block">
+        <p>{!qt.vlocity_cmt__DefaultServicePointId__r.Name}</p>
+      </div>
+
+
+
+  <div >
+
+      <div  style="background-color:{!titleChild[rowNum]};text-align:center;display:inline-block;width:50%">
+          <p>GJ/Plazo suministro</p>
+      </div>
+      <div  style="background-color:{!detailChild[rowNum]};text-align:center;display:inline-block;width:49%">
+        <p><apex:outputField value="{!qt.OSMXConsumo_Plazo__c}"/></p>          
+      </div>
+
+  </div>
+
+  <div >
+
+      <div  style="background-color:{!titleChild[rowNum]};text-align:center;display:inline-block;width:50%">
+          <p>¿ES CLIENTE ACTUAL?</p>
+      </div>
+      <div  style="background-color:{!detailChild[rowNum]};text-align:center;display:inline-block;width:49%">
+        <p><apex:outputField value="{!qt.OSFMX_ParticularSpecifications__c}"/></p>          
+      </div>
+
+  </div>
+
+  <div >
+
+      <div  style="background-color:{!titleChild[rowNum]};text-align:center;display:inline-block;width:50%">
+          <p>DISTRIBUIDOR/TRANSPORTISTA</p>
+      </div>
+      <div  style="background-color:{!detailChild[rowNum]};text-align:center;display:inline-block;width:49%">
+        <p><apex:outputField value="{!qt.OSFMX_DistributorOrCarrier__c}"/></p>         
+      </div>
+
+  </div>
+
+  <div >
+
+      <div  style="background-color:{!titleChild[rowNum]};text-align:center;display:inline-block;width:50%">
+          <p>PRECIO ACTUAL (USD)</p>
+      </div>
+      <div  style="background-color:{!detailChild[rowNum]};text-align:center;display:inline-block;width:49%">
+        <p><apex:outputField value="{!qt.OSFMX_ActualPrice__c}"/></p>          
+      </div>
+
+  </div>
+
+  <div >
+
+      <div  style="background-color:{!titleChild[rowNum]};text-align:center;display:inline-block;width:50%">
+          <p>ESTRUCTURA DE PRECIO</p>
+      </div>
+      <div  style="background-color:{!detailChild[rowNum]};text-align:center;display:inline-block;width:49%">
+        <p><apex:outputField value="{!qt.OSFMX_PriceStructure__c}"/></p>         
+      </div>
+
+  </div>
+
+  <div >
+
+      <div  style="background-color:{!titleChild[rowNum]};text-align:center;display:inline-block;width:50%">
+          <p>SPREAD PISO</p>
+      </div>
+      <div  style="background-color:{!detailChild[rowNum]};text-align:center;display:inline-block;width:49%">
+        <p><apex:outputField value="{!qt.OSFMX_Spread_piso_por_cuadrante__c}"/></p>        
+      </div>
+
+  </div>
+
+  <div >
+
+      <div  style="background-color:{!titleChild[rowNum]};text-align:center;display:inline-block;width:50%">
+          <p>OFERTA SPREAD (USD/Gj)</p>
+      </div>
+      <div  style="background-color:{!detailChild[rowNum]};text-align:center;display:inline-block;width:49%">
+          <p>{!qt.OSFMX_IndexReference__c} + {!qt.OSFMXSpreadAvoidCurrenSymbol__c} / {!qt.OSFMX_Spread_BC_excedente_USD_Gj__c}</p>
+      </div>
+
+  </div>
+
+  <div >
+
+      <div  style="background-color:{!titleChild[rowNum]};text-align:center;display:inline-block;width:50%">
+          <p>MARGEN ESTIMADO USD (Por encima del precio medio de compra)</p>
+      </div>
+      <div  style="background-color:{!detailChild[rowNum]};text-align:center;display:inline-block;width:49%">
+        <p><apex:outputField value="{!qt.OSFMX_Margen_estimado_molecula_usd__c}"/></p>          
+      </div>
+
+  </div>
+
+  <div >
+
+      <div  style="background-color:{!titleChild[rowNum]};text-align:center;display:inline-block;width:50%">
+          <p>TARIFA TRANSPORTE APLICABLE {!qt.vlocity_cmt__DefaultServicePointId__r.Name}</p>
+      </div>
+      <div  style="background-color:{!detailChild[rowNum]};text-align:center;display:inline-block;width:49%">
+        <p><apex:outputField value="{!qt.OSFMX_GasTransportPrice__c}"/></p>         
+      </div>
+
+  </div>
+
+  <apex:variable value="{!IF(rowNum==0,1,0)}" var="rowNum"/>
+
+</apex:repeat>
+
+</apex:component>

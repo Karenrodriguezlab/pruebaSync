@@ -1,0 +1,60 @@
+{
+    "%vlocity_namespace%__Active__c": true,
+    "%vlocity_namespace%__OmniScriptId__c": {
+        "Name": "VPL/GetAccountOverview",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__OmniScript__c/VPL/GetAccountOverview/Procedure",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OmniScript__c"
+    },
+    "%vlocity_namespace%__ParentElementId__c": {
+        "%vlocity_namespace%__OmniScriptId__c": {
+            "Name": "VPL/GetAccountOverview",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__OmniScript__c/VPL/GetAccountOverview/Procedure",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__OmniScript__c"
+        },
+        "Name": "ServicesBlock",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__Element__c/%vlocity_namespace%__OmniScript__c/VPL/GetAccountOverview/Procedure/ServicesBlock",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__Element__c"
+    },
+    "%vlocity_namespace%__ParentElementName__c": "ServicesBlock",
+    "%vlocity_namespace%__ParentElementType__c": "Conditional Block",
+    "%vlocity_namespace%__PropertySet__c": {
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "label": "LoopBlock2",
+        "loopList": "DRGetAccountAsset:AssetDetail",
+        "loopOutput": {
+            "Active": "%DRTransformServices:Active%",
+            "BillingAccountName": "%DRTransformServices:BillingAccountName%",
+            "BillingHold": "%DRTransformServices:BillingHold%",
+            "ContactName": "%DRTransformServices:ContactName%",
+            "ContractName": "%DRTransformServices:ContractName%",
+            "ContractNumber": "%DRTransformServices:ContractNumber%",
+            "CurrentUsage": "%DRTransformServices:CurrentUsage%",
+            "DeRegulationStatus": "%DRTransformServices:DeRegulationStatus%",
+            "Description": "%DRTransformServices:Description%",
+            "DisconnectDate": "%DRTransformServices:DisconnectDate%",
+            "InstalledDate": "%DRTransformServices:InstalledDate%",
+            "InventoryItem": "%DRTransformServices:InventoryItem%",
+            "Market Identifier": "%DRTransformServices:Market Identifier%",
+            "Name": "%DRTransformServices:Name%",
+            "OrderNumber": "%DRTransformServices:OrderNumber%",
+            "PremiseName": "%DRTransformServices:PremiseName%",
+            "ProductFamily": "%DRTransformServices:ProductFamily%",
+            "ProductName": "%DRTransformServices:ProductName%",
+            "SerialNumber": "%DRTransformServices:SerialNumber%",
+            "ServiceAccountName": "%DRTransformServices:ServiceAccountName%",
+            "ServicePoint": "%DRTransformServices:ServicePoint%",
+            "Status": "%DRTransformServices:Status%"
+        },
+        "show": null
+    },
+    "%vlocity_namespace%__ReusableOmniScript__c": false,
+    "%vlocity_namespace%__Type__c": "Loop Block",
+    "Name": "GetServices",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__Element__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__Element__c/%vlocity_namespace%__OmniScript__c/VPL/GetAccountOverview/Procedure/GetServices"
+}

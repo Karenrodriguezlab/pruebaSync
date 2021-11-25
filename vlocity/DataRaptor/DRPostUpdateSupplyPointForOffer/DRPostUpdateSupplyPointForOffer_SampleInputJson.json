@@ -1,0 +1,20 @@
+{
+    "ContextId": null,
+    "Step1": {
+        "CustomLWC1": null
+    },
+    "timeStamp": null,
+    "userId": null,
+    "userName": null,
+    "userProfile": null,
+    "userTimeZone": null,
+    "vlcPersistentComponent": {
+    },
+    "vlcTimeTracking": {
+        "DRGetServicePointWithOutQuoteByMasterQuote": null,
+        "DRPostUpdateSupplyPointForOffer": null,
+        "NavigateAction1": null,
+        "SVMasterQuoteId": null,
+        "Step1": null
+    }
+}

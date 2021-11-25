@@ -1,0 +1,5 @@
+[
+    "DataRaptor/DRPostUpdateCloseOpportunity",
+    "DataRaptor/DRTGetCloseOpportunityById",
+    "DataRaptor/DRTRGetCloseOpportunityById"
+]

@@ -1,0 +1,95 @@
+<template>
+    <form style="display: none;" target="_self" id="formaHtmlMultipagos" method="post" action="https://prepro.adquiracloud.mx/clb/endpoint/gdfSuez">
+        ID Cliente:
+        <input style='width:100%' id="mp_account" name="mp_account" value="">
+        <br> Referencia:
+        <input id="mp_reference" name="mp_reference" value="">
+        <br> Orden:
+        <input name="mp_order" id="mp_order" value="">
+        <br> ID Producto:
+        <input id="mp_product" name="mp_product" value="1" readonly>
+        <br> División organizacional (Nivel):
+        <input style='width:100%' name="mp_node" id="mp_node" value="">
+        <br> Concepto:
+        <input style='width:100%' id="mp_concept" name="mp_concept" value="716">
+        <br> Importe:
+        <input name="mp_amount" id="mp_amount" value="" readonly>
+        <br> Moneda:
+        <input name="mp_currency" id="mp_currency" value="1" readonly>
+        <br> URL Pago exitoso:
+        <input style='width:100%' name="mp_urlsuccess" id="mp_urlsuccess" value="">
+        <br> URL Pago no exitoso:
+        <input style='width:100%' id="mp_urlfailure" name="mp_urlfailure" value="">
+        <br> mp_signature:
+        <input style='width:100%' name="mp_signature" id="mp_signature" value="" />
+        <br> mp_customername:
+        <input name="mp_customername" id="mp_customername" value="" />
+        <br> mp_autosubmit_time:
+        <input style='width:100%' name="mp_autosubmit_time" id="mp_autosubmit_time" value="120000" />
+        <br>
+        <button type="submit" id="submitMultipago">Submit</button>
+    </form>
+      <div>
+        <div class="slds-grid slds-gutters">
+            <div class="slds-col slds-size_4-of-12">
+                <div class="slds-form-element">
+                    <label class="slds-form-element__label" for="tipoDocumento">Tipo De Documento: </label>
+                    <div class="slds-form-element__control">
+                        <div class="slds-select_container">
+                            <select id="selectTipoDocumento" class="slds-select" name="valueTipoDoc" onchange={cambiarFiltro}>
+                                <option value="Todos">Todos</option>
+                                <template for:each={tiposDocumento} for:item="tipoDoc">
+                                    <option key={tipoDoc}>
+                                        {tipoDoc}
+                                    </option>
+                                </template>                   
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slds-grid slds-gutters">
+            <div class="slds-col slds-size_4-of-12">
+                <div class="slds-form-element">
+                    <div class="slds-var-p-around_medium lgc-bg-inverse">
+                        <p>
+                            <lightning-button icon-name="utility:download" 
+                                        label="Exportar Tabla" 
+                                        onclick={downloadCSVFileJS} variant="brand">
+                            </lightning-button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </br>
+        <h1>Estimado Cliente, el sistema de pagos del Portal Mi Cuenta Empresa de ENGIE, permite pagar el 100% del saldo de las facturas en estatus No Pagado y/o Vencido. No permite liquidar facturas en estatus Parcialmente Pagadas</h1>
+        </br>
+        <lightning-datatable
+                key-field="id"
+                column-widths-mode="fixed"
+                data={facturasFiltradas}
+                columns={columns}
+                hide-checkbox-column
+                onrowaction={handleRowAction}>
+        </lightning-datatable>
+    </div>
+        <lightning-record-edit-form object-api-name="OSFMX_TransactionRecordMultipagos__c" 
+        style="display: none;" record-id={OSFMX_Referencia_Factura__c}>
+        <lightning-input-field field-name="OSFMX_CuentaContrato__c" value={transactionRecCuentaContrato}>
+        </lightning-input-field>
+        <lightning-input-field field-name="OSFMX_Referencia_Factura__c" value={transactionRecRefFactura}>
+        </lightning-input-field>
+        <lightning-input-field field-name="OSFMX_LastEvent__c" value="Botón Pagar Presionado" 
+            disabled=true>
+        </lightning-input-field>
+        <lightning-button
+            class="slds-m-top_small"
+            variant="brand"
+            type="submit"
+            name="update"
+            label="Update">
+        </lightning-button>
+    </lightning-record-edit-form>
+</template>

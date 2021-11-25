@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OSFPE_cly_Cuenta_Peru</fullName>
+    <fields>Name</fields>
+    <fields>OSFPE_fld_RUC__c</fields>
+    <fields>OSFPE_fld_Venta_EEP__c</fields>
+    <fields>OSFPE_fld_FOSS_EEP__c</fields>
+    <fields>OSFMX_CustomerSegment__c</fields>
+    <label>Cuenta Perú</label>
+</CompactLayout>

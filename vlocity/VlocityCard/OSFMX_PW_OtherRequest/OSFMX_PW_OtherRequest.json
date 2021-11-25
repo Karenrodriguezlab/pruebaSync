@@ -1,0 +1,148 @@
+{
+    "dataSource": {
+        "contextVariables": [
+        ],
+        "orderBy": {
+            "isReverse": false,
+            "name": ""
+        },
+        "type": "IntegrationProcedures",
+        "value": {
+            "ipMethod": "OSFMX_GetUrlRequestSolutionsPortal",
+            "resultVar": "",
+            "vlocityAsync": false
+        }
+    },
+    "enableLwc": true,
+    "isFlex": true,
+    "lwc": {
+        "DeveloperName": "cfOSFMX_PW_OtherRequest_1_Globant",
+        "Id": "0Rbc0000000DFdTCAW",
+        "MasterLabel": "cfOSFMX_PW_OtherRequest_1_Globant",
+        "NamespacePrefix": "c"
+    },
+    "states": [
+        {
+            "actions": [
+            ],
+            "childCards": [
+            ],
+            "components": {
+                "layer-0": {
+                    "children": [
+                        {
+                            "class": "nds-col ",
+                            "element": "outputField",
+                            "elementLabel": "Text-2",
+                            "name": "Text",
+                            "property": {
+                                "card": "{card}",
+                                "mergeField": "%3Cdiv%20class=%22nds-text-heading_medium%22%3E&nbsp;%3C/div%3E%0A%3Cdiv%20class=%22nds-text-heading_medium%22%3EENGIE%20es%20el%20Primer%20Proveedor%20de%20Servicios%20de%20Eficiencia%20Energ&eacute;tica%20en%20el%20Mundo.%20Ayudamos%20a%20nuestros%20clientes%20para%20alcanzar%20sus%20objetivos%20ambientales%20y%20ahorrar%20energ&iacute;a.%20ENGIE%20posee%20s&oacute;lidas%20credenciales,%20probadas%20por%20d&eacute;cadas,%20tanto%20en%20el%20financiamiento,%20dise&ntilde;o%20y%20gesti&oacute;n%20de%20infraestructura.%3Cbr%20/%3E%3Cbr%20/%3EPonemos%20al%20servicio%20de%20nuestros%20clientes,%20un%20expertise%20global%20obtenido%20a%20lo%20largo%20del%20tiempo%20en%20los%20diversos%20sectores%20para%20los%20que%20hemos%20desarrollado%20proyectos%20que%20incluyen%20la%20ingenier&iacute;a%20el&eacute;ctrica,%20las%20redes%20de%20climatizaci&oacute;n,%20gesti&oacute;n%20de%20instalaciones,%20la%20operaci&oacute;n%20y%20el%20mantenimiento,%20la%20eficiencia%20energ&eacute;tica.%3C/div%3E%0A%3Cdiv%20class=%22nds-text-heading_medium%22%3E&nbsp;%3C/div%3E",
+                                "record": "{record}"
+                            },
+                            "size": {
+                                "default": "12",
+                                "isResponsive": false
+                            },
+                            "stateIndex": 0,
+                            "styleObject": {
+                                "sizeClass": "nds-size_12-of-12"
+                            },
+                            "type": "text"
+                        },
+                        {
+                            "class": "nds-col ",
+                            "element": "action",
+                            "elementLabel": "Action-3",
+                            "name": "Action",
+                            "property": {
+                                "card": "{card}",
+                                "displayAsButton": true,
+                                "hideActionIcon": true,
+                                "record": "{record}",
+                                "stateAction": {
+                                    "Web Page": {
+                                        "targetName": "{URLSolucionOtrasSoluciones}"
+                                    },
+                                    "displayName": "¿Te gustaría conocer mas de esta solución? da clic aquí",
+                                    "id": "flex-action-1625784951622",
+                                    "openUrlIn": "New Tab/Window",
+                                    "targetType": "Web Page",
+                                    "type": "Custom",
+                                    "vlocityIcon": "standard-default"
+                                },
+                                "stateObj": "{record}"
+                            },
+                            "size": {
+                                "default": "12",
+                                "isResponsive": false
+                            },
+                            "stateIndex": 0,
+                            "styleObject": {
+                                "sizeClass": "nds-size_12-of-12"
+                            },
+                            "type": "element"
+                        }
+                    ]
+                }
+            },
+            "conditions": {
+                "group": [
+                ],
+                "id": "state-condition-object",
+                "isParent": true
+            },
+            "definedActions": {
+                "actions": [
+                ]
+            },
+            "fields": [
+            ],
+            "isSmartAction": false,
+            "name": "Active",
+            "omniscripts": [
+            ],
+            "smartAction": {
+            },
+            "styleObject": {
+                "background": {
+                    "color": "",
+                    "image": "",
+                    "position": "",
+                    "repeat": "",
+                    "size": ""
+                },
+                "border": {
+                    "color": "",
+                    "radius": "",
+                    "style": "",
+                    "type": "",
+                    "width": ""
+                },
+                "class": "nds-text-align_center ",
+                "container": {
+                    "class": ""
+                },
+                "elementStyleProperties": {
+                },
+                "inlineStyle": "",
+                "margin": [
+                ],
+                "padding": [
+                ],
+                "size": {
+                    "default": "12",
+                    "isResponsive": false
+                },
+                "sizeClass": "nds-size_12-of-12 ",
+                "style": "             ",
+                "text": {
+                    "align": "center",
+                    "color": ""
+                }
+            }
+        }
+    ],
+    "theme": "nds",
+    "title": "OSFMX_PW_OtherRequest"
+}

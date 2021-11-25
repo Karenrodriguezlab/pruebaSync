@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Se utiliza para notificar que la solicitud de oferta fue aprobada.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>OSFMX_Membrete_Engie_Mx</letterhead>
+    <name>OSFMX Notificación de Oferta aprobada a KAM</name>
+    <style>freeForm</style>
+    <subject>La oferta fue aprobada de manera exitosa.</subject>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

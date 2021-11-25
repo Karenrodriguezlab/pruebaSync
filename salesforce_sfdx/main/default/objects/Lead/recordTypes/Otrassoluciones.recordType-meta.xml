@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Otrassoluciones</fullName>
+    <active>true</active>
+    <businessProcess>Otras soluciones</businessProcess>
+    <label>Otras soluciones</label>
+    <picklistValues>
+        <picklist>Industry</picklist>
+        <values>
+            <fullName>Aeropuertos y puertos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Agricultura</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Alimentos y bebidas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Automotriz y autopartes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bancos e instituciones financieras</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bienes de consumo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cemento</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Centros Comerciales %2F Usos Mixtos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cerámicos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Constructora %2F Ingeniería</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Data Center</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Educación privada</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Educación pública</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Empresas de Telecomunicación</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Entretenimientos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Generación eléctrica</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gestión inmobiliaria</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gobiernos %28Defensa%2C etc%2E%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hoteles</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Materiales y herramientas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Metalurgia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Minería</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Municipalidades</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Parques Industriales</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Petróleo y gas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Planta %2F Distribución de agua</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pulpa y papel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Química farmacéutica</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Química y Petroquímica</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail %28tiendas%2C etc%2E%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Salud privada</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Salud pública</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Servicios</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Textil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transporte %28Tren%2C Metro%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transporte %2F Distribución de electricidad</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transporte %2F Distribución de gas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vidrios</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LeadSource</picklist>
+        <values>
+            <fullName>Advertisement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Event</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Employee Referral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Google AdWords</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PortalB2B</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Purchased List</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trade Show</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Webinar</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Name</picklist>
+        <values>
+            <fullName>Cp%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dr%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ing%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lic%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mr%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mrs%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ms%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mtro%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prof%2E</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OSFMX_CurrentlyFuel__c</picklist>
+        <values>
+            <fullName>Aceite reciclado</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Combusteco</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Combustoleo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coque</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Diesel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gas LP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Heavy Oil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Zuavit</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OSFMX_EnergyDemand__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Si</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OSFMX_FuelUse__c</picklist>
+        <values>
+            <fullName>Calderas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Calefacción</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Generación eléctrica</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hornos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quemadores</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Secado</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vapor</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OSFMX_InterestedSolution__c</picklist>
+        <values>
+            <fullName>Climatización</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Eficiencia Energética</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GNC%2FGNV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Generación en sitio</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OSFMX_SearchingRenewableEnergy__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Si</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OSFMX_SolutionType__c</picklist>
+        <values>
+            <fullName>Electricidad</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gas Natural</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Otras soluciones</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OSFMX_UserQualifiedPower__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Si</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Rating</picklist>
+        <values>
+            <fullName>Cold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hot</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Warm</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OSFCL_Zona_geografica__c</fullName>
+    <description>Introduzca la zona geográfica a la cual pertenece la cuenta</description>
+    <externalId>false</externalId>
+    <inlineHelpText>debe ingresar la zona en la cual está ubicada la cuenta</inlineHelpText>
+    <label>Zona geográfica</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>SUR</fullName>
+                <default>false</default>
+                <label>SUR</label>
+            </value>
+            <value>
+                <fullName>CENTRO</fullName>
+                <default>false</default>
+                <label>CENTRO</label>
+            </value>
+            <value>
+                <fullName>NORTE CHICO</fullName>
+                <default>false</default>
+                <label>NORTE CHICO</label>
+            </value>
+            <value>
+                <fullName>NORTE GRANDE</fullName>
+                <default>false</default>
+                <label>NORTE GRANDE</label>
+            </value>
+            <value>
+                <fullName>INTERNACIONAL</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>INTERNACIONAL</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help></help>
+    <label></label>
+    <name>OSFMX_BusinessModel__c</name>
+    <picklistValues>
+        <masterLabel>Asset Based</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Asset Light</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>M&amp;A</masterLabel>
+        <translation></translation>
+    </picklistValues>
+</CustomFieldTranslation>

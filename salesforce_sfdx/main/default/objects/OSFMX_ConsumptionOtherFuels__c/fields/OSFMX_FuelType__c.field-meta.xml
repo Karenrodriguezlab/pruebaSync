@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OSFMX_FuelType__c</fullName>
+    <externalId>false</externalId>
+    <label>Tipo de combustible</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Aceite reciclado</fullName>
+                <default>false</default>
+                <label>Aceite reciclado</label>
+            </value>
+            <value>
+                <fullName>Combusteco</fullName>
+                <default>false</default>
+                <label>Combusteco</label>
+            </value>
+            <value>
+                <fullName>Combustoleo</fullName>
+                <default>false</default>
+                <label>Combustoleo</label>
+            </value>
+            <value>
+                <fullName>Coque</fullName>
+                <default>false</default>
+                <label>Coque</label>
+            </value>
+            <value>
+                <fullName>Diesel</fullName>
+                <default>false</default>
+                <label>Diesel</label>
+            </value>
+            <value>
+                <fullName>Gas Lp</fullName>
+                <default>false</default>
+                <label>Gas Lp</label>
+            </value>
+            <value>
+                <fullName>Heavy oil</fullName>
+                <default>false</default>
+                <label>Heavy oil</label>
+            </value>
+            <value>
+                <fullName>Zuavit</fullName>
+                <default>false</default>
+                <label>Zuavit</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,7 @@
+La siguiente oportunidad ha sido cerrada (No Adjudicada):
+
+Nombre: {!Opportunity.Name}
+Empresa: {!Opportunity.Account}
+Tipo: {!Opportunity.Type}
+Fecha de cierre: {!Opportunity.CloseDate}
+Propietario de la oportunidad: {!Opportunity.OwnerFullName}

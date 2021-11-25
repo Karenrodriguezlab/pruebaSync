@@ -1,0 +1,169 @@
+{
+    "dataSource": {
+        "contextVariables": [
+            {
+                "id": 0,
+                "name": "Parent.cuentaContrato",
+                "val": "005100152643"
+            }
+        ],
+        "orderBy": {
+            "isReverse": false,
+            "name": ""
+        },
+        "type": "Query",
+        "value": {
+            "dsDelay": 0,
+            "jsonMap": "{\"Parent.cuentaContrato\":\"{Parent.cuentaContrato}\"}",
+            "query": "SELECT OSFMX_FechaEmision__c, OSFMX_FechaEnvio__c, OSFMX_PeriodoConsumo__c,\n\tOSFMX_NumFactura__c,\n\tOSFMX_UrlZip__c, OSFMX_UrlPdf__c, OSFMX_EstadoFactura__c, SUM(OSFMX_ImporteConcepto__c)monto, \n\tOSFMX_MonedaCfdi__c,OSFMX_FechaFinPeriodoConsumo__c, OSFMX_FechaInicioPeriodoConsumo__c, \n\tOSFMX_FechaVencimiento__c, OSFMX_TipoDocumento__c, AVG(OSFMX_MontoFactura__c)montoTotal, \n\tOSFMX_MpSignature__c,OSFMX_MpAccountMultipagos__c,OSFMX_MpUrlSuccessMultipagos__c,\n\tOSFMX_MpUrlFailureMultipagos__c, OSFMX_MpReferenceMultipagos__c, OSFMX_ReferenciaFactura__c, OSFMX_MpCustomernameMultipagos__c, OSFMX_InfoMultipagos__c, OSFMX_MpNodeMultipagos__c, OSFMX_MpAuthMultipagos__c\nFROM OSFMX_360ViewInvoice__c \nWHERE OSFMX_ContractAccountForBilling__r.OSFMX_CuentaContrato__c = '{Parent.cuentaContrato}' \nGROUP BY OSFMX_FechaEmision__c, OSFMX_FechaEnvio__c, OSFMX_EstadoFactura__c, \n\tOSFMX_FechaFinPeriodoConsumo__c, OSFMX_FechaInicioPeriodoConsumo__c, \n\tOSFMX_MonedaCfdi__c,OSFMX_FechaVencimiento__c, OSFMX_TipoDocumento__c,\n\tOSFMX_UrlZip__c, OSFMX_UrlPdf__c,OSFMX_NumFactura__c, OSFMX_PeriodoConsumo__c,\n\tOSFMX_MpSignature__c,OSFMX_MpAccountMultipagos__c,OSFMX_MpUrlSuccessMultipagos__c,\n\tOSFMX_MpUrlFailureMultipagos__c, OSFMX_MpReferenceMultipagos__c, OSFMX_ReferenciaFactura__c, OSFMX_MpCustomernameMultipagos__c, OSFMX_InfoMultipagos__c, OSFMX_MpNodeMultipagos__c, OSFMX_MpAuthMultipagos__c",
+            "resultVar": ""
+        }
+    },
+    "enableLwc": true,
+    "isFlex": true,
+    "isRepeatable": false,
+    "lwc": {
+        "DeveloperName": "cfOSMX_PW_BillingDataTable_2_Globant",
+        "Id": "0Rbc0000000DVD2CAO",
+        "ManageableState": "unmanaged",
+        "MasterLabel": "cfOSMX_PW_BillingDataTable_2_Globant",
+        "NamespacePrefix": "c"
+    },
+    "states": [
+        {
+            "actions": [
+            ],
+            "childCards": [
+            ],
+            "components": {
+                "layer-0": {
+                    "children": [
+                        {
+                            "class": "slds-col ",
+                            "element": "customLwc",
+                            "elementLabel": "Custom LWC-0",
+                            "name": "Custom LWC",
+                            "property": {
+                                "consumos": "{records}",
+                                "customlwcname": "billingDataTablePW"
+                            },
+                            "size": {
+                                "default": "12",
+                                "isResponsive": false
+                            },
+                            "stateIndex": 0,
+                            "styleObject": {
+                                "background": {
+                                    "color": "",
+                                    "image": "",
+                                    "position": "",
+                                    "repeat": "",
+                                    "size": ""
+                                },
+                                "border": {
+                                    "color": "",
+                                    "radius": "",
+                                    "style": "",
+                                    "type": "",
+                                    "width": ""
+                                },
+                                "class": "",
+                                "container": {
+                                    "class": ""
+                                },
+                                "elementStyleProperties": {
+                                },
+                                "inlineStyle": "",
+                                "margin": [
+                                ],
+                                "padding": [
+                                ],
+                                "size": {
+                                    "default": "12",
+                                    "isResponsive": false
+                                },
+                                "sizeClass": "slds-size_12-of-12 ",
+                                "style": "             ",
+                                "text": {
+                                    "align": "",
+                                    "color": ""
+                                }
+                            },
+                            "type": "element"
+                        }
+                    ]
+                }
+            },
+            "conditions": {
+                "group": [
+                ],
+                "id": "state-condition-object",
+                "isParent": true
+            },
+            "definedActions": {
+                "actions": [
+                ]
+            },
+            "fields": [
+            ],
+            "isSmartAction": false,
+            "name": "Active",
+            "omniscripts": [
+            ],
+            "smartAction": {
+            },
+            "styleObject": {
+                "background": {
+                    "color": "",
+                    "image": "",
+                    "position": "",
+                    "repeat": "",
+                    "size": ""
+                },
+                "border": {
+                    "color": "",
+                    "radius": "",
+                    "style": "",
+                    "type": "",
+                    "width": ""
+                },
+                "class": "nds-card slds-p-around_x-small slds-m-around_none ",
+                "container": {
+                    "class": "nds-card"
+                },
+                "elementStyleProperties": {
+                },
+                "inlineStyle": "",
+                "margin": [
+                    {
+                        "label": "around:none",
+                        "size": "none",
+                        "type": "around"
+                    }
+                ],
+                "padding": [
+                    {
+                        "label": "around:x-small",
+                        "size": "x-small",
+                        "type": "around"
+                    }
+                ],
+                "size": {
+                    "default": "12",
+                    "isResponsive": true,
+                    "large": "12",
+                    "medium": "12",
+                    "small": "12"
+                },
+                "sizeClass": "slds-large-size_12-of-12 slds-medium-size_12-of-12 slds-small-size_12-of-12 slds-size_12-of-12 ",
+                "style": "             ",
+                "text": {
+                    "align": "",
+                    "color": ""
+                }
+            }
+        }
+    ],
+    "theme": "slds",
+    "title": "OSMX_PW_BillingDataTable"
+}

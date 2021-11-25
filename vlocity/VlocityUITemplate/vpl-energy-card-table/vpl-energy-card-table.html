@@ -1,0 +1,10 @@
+<td class="slds-truncate slds-p-vertical--medium" ng-if="data" data-label="{{field.label}}" ng-repeat="field in data.fields" ng-show="key != 'attributes'">{{obj | getter: field | picker: field.type}}</td>
+
+<td class="slds-truncate slds-p-vertical--medium" ng-if="data.actions.length">
+    <div class="slds-col--padded">
+      <div class="slds-truncate" ng-repeat="action in data.actions | limitTo: (data.limitActionLinksTo?data.limitActionLinksTo:5)">
+          <button class="slds-button slds-button_neutral" ng-disabled="action.%vlocity_namespace%__LinkType__c && !action.%vlocity_namespace%__URL__c" ng-click="performAction(action)">{{action.displayName}}</button>            
+          </a> 
+      </div>
+  </div>
+</td>

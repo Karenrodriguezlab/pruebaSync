@@ -1,0 +1,7 @@
+Se ha creado la siguiente Oportunidad:
+
+Nombre: {!Opportunity.Name}
+Empresa: {!Opportunity.Account}
+Tipo: {!Opportunity.Type}
+Fecha de cierre: {!Opportunity.CloseDate}
+Propietario de la oportunidad: {!Opportunity.OwnerFullName}

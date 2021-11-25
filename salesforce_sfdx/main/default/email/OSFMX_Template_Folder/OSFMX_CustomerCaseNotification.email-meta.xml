@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>OSFMX_PortalLetterhead</letterhead>
+    <name>Notifica a cliente caso de portal</name>
+    <style>formalLetter</style>
+    <subject>Engie - Su número de caso es el siguiente {!Case.CaseNumber}</subject>
+    <textOnly>Estimad@ {!Contact.Name}
+
+
+¡Gracias por tus comentarios!
+
+
+En breve un Ejecutivo de Cuenta se pondrá en contacto contigo. Conoce los detalles de tu caso:
+
+
+Número de caso: {!Case.CaseNumber}
+
+Motivo de contacto: {!Case.Reason}
+
+Mensaje: {!Case.Description}
+
+Tu Ejecutivo de Cuenta es: {!Account.OwnerFullName}
+
+Correo electrónico: {!Case.OwnerEmail}
+
+Celular: {!Case.OSFMX_CaseOwnerPhone__c}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,8 @@
+<section ng-controller="vlocityAssistantActionsCtrl">
+    <div class="slds-grid slds-grid_vertical" ng-if="showCard">
+        <div class="slds-text-body_regular">Estas son las opciones disponibles:</div>
+        <div class="slds-col slds-p-top--xx-small slds-p-bottom--xx-small" ng-repeat="action in data.actions">
+            <button class="slds-button slds-button_neutral slds-size_1-of-1" ng-disabled="action.%vlocity_namespace%__LinkType__c && !action.%vlocity_namespace%__URL__c" ng-click="performAction(action)">{{action.displayName}}</button>
+        </div>
+    </div>
+</section>

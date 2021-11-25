@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Fecha_cierre_vencida_Chile</fullName>
+    <active>true</active>
+    <errorConditionFormula>(ISPICKVAL(StageName,&quot;Prospección&quot;) || 
+ISPICKVAL(StageName,&quot;Análisis&quot;) || 
+ISPICKVAL(StageName,&quot;Preparación&quot;) || 
+ISPICKVAL(StageName,&quot;Negociación&quot;))  &amp;&amp; $Profile.Name &lt;&gt; &quot;System Administrator&quot;&amp;&amp;
+((RecordType.DeveloperName=&apos;Oportunidad_Energia_Chile&apos;) || (RecordType.DeveloperName=&apos;Oportunidad_Gas_Chile&apos;) ||
+(RecordType.DeveloperName=&apos;Oportunidad_Soluciones_Chile&apos;))  &amp;&amp; 
+(CloseDate  &lt;  TODAY())</errorConditionFormula>
+    <errorDisplayField>CloseDate</errorDisplayField>
+    <errorMessage>DEBE ACTUALIZAR LA FECHA DE CIERRE POR UNA FECHA EN EL FUTURO.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,78 @@
+<template>
+            <div class="nds-grid nds-wrap nds-is-relative">
+            <div if:false={cardLoaded} class="nds-is-absolute vloc-loader_override" style="height: 100%; width: 100%; min-height:50px; background: white; z-index: 99;">
+  <div>
+   <vlocity_cmt-spinner
+      variant="brand"
+      alternative-text="Loading content..."
+      size="small"
+      theme="nds"
+      ></vlocity_cmt-spinner>
+  </div>
+</div>
+            <template if:false={hasPermission}>
+              You don't have required permissions to view this card.
+            </template>
+            <template if:true={hasPermission}>
+              <template if:true={hasRecords}>
+                        <template for:each={_records} for:item="record" for:index="rindex">
+                            <vlocity_cmt-flex-card-state key={record.uniqueKey} data-recordid={record.Id} record={record} data-statue="true"  data-index="0" data-rindex={rindex} class="cf-vlocity-state-0 cf-vlocity-state nds-size_12-of-12 "  tracking-obj={_childCardTrackingObj} >
+      <div if:true={cardLoaded} class="nds-grid nds-wrap nds-card nds-p-around_x-small nds-m-around_none " style="             ">
+          <div class="nds-col   nds-size_3-of-12  " style=""><vlocity_cmt-output-field  record={record}  merge-field="%3Cdiv%3E%3Cstrong%3E%3Cspan%20style=%22font-size:%2014pt;%22%3ESaldo%20Total:%3C/span%3E%3C/strong%3E%3C/div%3E"  card={card}  theme="nds" ></vlocity_cmt-output-field>
+      </div><div class="nds-col   nds-size_3-of-12  " style=""><vlocity_cmt-output-field  placeholder="output"  record={record}  field-name="SaldoCliente"  label=""  card={card}  type="currency"  format="D/M/YYYY"  locale="en"  currency=""  styles='\{"value":{"textAlign":"","fontSize":"14pt"}}'  theme="nds" ></vlocity_cmt-output-field>
+      </div><div class="nds-col   nds-size_3-of-12  " style=""><vlocity_cmt-output-field  record={record}  merge-field="%3Cdiv%3E%3Cstrong%3E%3Cspan%20style=%22font-size:%2014pt;%22%3ESociedad:%3C/span%3E%3C/strong%3E%3C/div%3E"  card={card}  theme="nds" ></vlocity_cmt-output-field>
+      </div><div class="nds-col   nds-size_3-of-12  " style="             "><vlocity_cmt-output-field  placeholder="output"  record={record}  field-name="Sociedad"  label=""  card={card}  type="text"  styles='\{"label":{"fontSize":""},"value":{"fontSize":"12pt"}}'  theme="nds" ></vlocity_cmt-output-field>
+      </div><div class="nds-col  nds-border_top  nds-size_12-of-12  " style="     border-color:#020000; border-width:2px;       "><vlocity_cmt-output-field  record={record}  merge-field="%3Cdiv%20class=%22nds-text-align_left%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3EFactura%20Actual%3C/strong%3E%3C/span%3E%3C/div%3E"  card={card}  theme="nds" ></vlocity_cmt-output-field>
+      </div><div class="nds-col   nds-size_3-of-12  " style=""><vlocity_cmt-output-field  record={record}  merge-field="%3Cdiv%3E%3Cstrong%3E%3Cspan%20style=%22font-size:%2012pt;%22%3EFecha%20de%20emision:%3C/span%3E%3C/strong%3E%3C/div%3E"  card={card}  theme="nds" ></vlocity_cmt-output-field>
+      </div><div class="nds-col   nds-size_3-of-12  " style=""><vlocity_cmt-output-field  placeholder="output"  record={record}  type="date"  card={card}  field-name="FechaEmision"  format="D/M/YYYY"  styles='\{"value":{"fontSize":"12pt"}}'  theme="nds" ></vlocity_cmt-output-field>
+      </div><div class="nds-col   nds-size_3-of-12  " style=""><vlocity_cmt-output-field  record={record}  merge-field="%3Cdiv%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3EFecha%20de%20vencimiento:%3C/strong%3E%3C/span%3E%3C/div%3E"  card={card}  theme="nds" ></vlocity_cmt-output-field>
+      </div><div class="nds-col   nds-size_3-of-12  " style=""><vlocity_cmt-output-field  placeholder="output"  record={record}  type="date"  card={card}  field-name="FechaVencimiento"  format="D/M/YYYY"  styles='\{"label":{"fontSize":"12px"},"value":{"fontSize":"12pt"}}'  theme="nds" ></vlocity_cmt-output-field>
+      </div><div class="nds-col   nds-size_3-of-12  " style=""><vlocity_cmt-output-field  record={record}  merge-field="%3Cdiv%3E%3Cstrong%3E%3Cspan%20style=%22font-size:%2012pt;%22%3EMonto:%3C/span%3E%3C/strong%3E%3C/div%3E"  card={card}  theme="nds" ></vlocity_cmt-output-field>
+      </div><div class="nds-col   nds-size_3-of-12  " style=""><vlocity_cmt-output-field  placeholder="output"  record={record}  type="currency"  card={card}  field-name="Monto"  locale="en"  currency=""  styles='\{"label":{"fontSize":"12px"},"value":{"fontSize":"12pt"}}'  theme="nds" ></vlocity_cmt-output-field>
+      </div><div class="nds-col   nds-size_3-of-12  " style=""><vlocity_cmt-output-field  record={record}  merge-field="%3Cdiv%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3ETipo%20de%20servicio:%3C/strong%3E%3C/span%3E%3C/div%3E"  card={card}  theme="nds" ></vlocity_cmt-output-field>
+      </div><div class="nds-col   nds-size_3-of-12  " style=""><vlocity_cmt-output-field  record={record}  merge-field="%3Cdiv%3E%3Cspan%20style=%22font-size:%2012pt;%22%3EGas%3C/span%3E%3C/div%3E"  card={card}  theme="nds" ></vlocity_cmt-output-field>
+      </div><div class="nds-col   nds-size_3-of-12  " style=""><vlocity_cmt-output-field  record={record}  merge-field="%3Cdiv%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3EEstado:%3C/strong%3E%3C/span%3E%3C/div%3E"  card={card}  theme="nds" ></vlocity_cmt-output-field>
+      </div><div class="nds-col   nds-size_3-of-12  " style=""><vlocity_cmt-output-field  placeholder="output"  record={record}  type="text"  card={card}  field-name="Estado"  styles='\{"label":{"fontSize":"12pt"},"value":{"fontSize":"12pt"}}'  theme="nds" ></vlocity_cmt-output-field>
+      </div><div class="nds-col  nds-border_top  nds-size_12-of-12  " style="     border-color:#020000; border-width:2px;       "><vlocity_cmt-output-field  record={record}  merge-field=""  card={card}  theme="nds" ></vlocity_cmt-output-field>
+      </div>
+        </div>
+      </vlocity_cmt-flex-card-state>
+                        </template>
+                      </template>
+                      <template if:false={hasRecords}>
+                            <vlocity_cmt-flex-card-state  record={record} data-statue="false"  data-index="0" data-rindex={rindex} class="cf-vlocity-state-0 cf-vlocity-state nds-size_12-of-12 "  tracking-obj={_childCardTrackingObj} >
+      <div if:true={cardLoaded} class="nds-grid nds-wrap nds-card nds-p-around_x-small nds-m-around_none " style="             ">
+          <div class="nds-col   nds-size_3-of-12  " style=""><vlocity_cmt-output-field  record={record}  merge-field="%3Cdiv%3E%3Cstrong%3E%3Cspan%20style=%22font-size:%2014pt;%22%3ESaldo%20Total:%3C/span%3E%3C/strong%3E%3C/div%3E"  card={card}  theme="nds" ></vlocity_cmt-output-field>
+      </div><div class="nds-col   nds-size_3-of-12  " style=""><vlocity_cmt-output-field  placeholder="output"  record={record}  field-name="SaldoCliente"  label=""  card={card}  type="currency"  format="D/M/YYYY"  locale="en"  currency=""  styles='\{"value":{"textAlign":"","fontSize":"14pt"}}'  theme="nds" ></vlocity_cmt-output-field>
+      </div><div class="nds-col   nds-size_3-of-12  " style=""><vlocity_cmt-output-field  record={record}  merge-field="%3Cdiv%3E%3Cstrong%3E%3Cspan%20style=%22font-size:%2014pt;%22%3ESociedad:%3C/span%3E%3C/strong%3E%3C/div%3E"  card={card}  theme="nds" ></vlocity_cmt-output-field>
+      </div><div class="nds-col   nds-size_3-of-12  " style="             "><vlocity_cmt-output-field  placeholder="output"  record={record}  field-name="Sociedad"  label=""  card={card}  type="text"  styles='\{"label":{"fontSize":""},"value":{"fontSize":"12pt"}}'  theme="nds" ></vlocity_cmt-output-field>
+      </div><div class="nds-col  nds-border_top  nds-size_12-of-12  " style="     border-color:#020000; border-width:2px;       "><vlocity_cmt-output-field  record={record}  merge-field="%3Cdiv%20class=%22nds-text-align_left%22%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3EFactura%20Actual%3C/strong%3E%3C/span%3E%3C/div%3E"  card={card}  theme="nds" ></vlocity_cmt-output-field>
+      </div><div class="nds-col   nds-size_3-of-12  " style=""><vlocity_cmt-output-field  record={record}  merge-field="%3Cdiv%3E%3Cstrong%3E%3Cspan%20style=%22font-size:%2012pt;%22%3EFecha%20de%20emision:%3C/span%3E%3C/strong%3E%3C/div%3E"  card={card}  theme="nds" ></vlocity_cmt-output-field>
+      </div><div class="nds-col   nds-size_3-of-12  " style=""><vlocity_cmt-output-field  placeholder="output"  record={record}  type="date"  card={card}  field-name="FechaEmision"  format="D/M/YYYY"  styles='\{"value":{"fontSize":"12pt"}}'  theme="nds" ></vlocity_cmt-output-field>
+      </div><div class="nds-col   nds-size_3-of-12  " style=""><vlocity_cmt-output-field  record={record}  merge-field="%3Cdiv%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3EFecha%20de%20vencimiento:%3C/strong%3E%3C/span%3E%3C/div%3E"  card={card}  theme="nds" ></vlocity_cmt-output-field>
+      </div><div class="nds-col   nds-size_3-of-12  " style=""><vlocity_cmt-output-field  placeholder="output"  record={record}  type="date"  card={card}  field-name="FechaVencimiento"  format="D/M/YYYY"  styles='\{"label":{"fontSize":"12px"},"value":{"fontSize":"12pt"}}'  theme="nds" ></vlocity_cmt-output-field>
+      </div><div class="nds-col   nds-size_3-of-12  " style=""><vlocity_cmt-output-field  record={record}  merge-field="%3Cdiv%3E%3Cstrong%3E%3Cspan%20style=%22font-size:%2012pt;%22%3EMonto:%3C/span%3E%3C/strong%3E%3C/div%3E"  card={card}  theme="nds" ></vlocity_cmt-output-field>
+      </div><div class="nds-col   nds-size_3-of-12  " style=""><vlocity_cmt-output-field  placeholder="output"  record={record}  type="currency"  card={card}  field-name="Monto"  locale="en"  currency=""  styles='\{"label":{"fontSize":"12px"},"value":{"fontSize":"12pt"}}'  theme="nds" ></vlocity_cmt-output-field>
+      </div><div class="nds-col   nds-size_3-of-12  " style=""><vlocity_cmt-output-field  record={record}  merge-field="%3Cdiv%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3ETipo%20de%20servicio:%3C/strong%3E%3C/span%3E%3C/div%3E"  card={card}  theme="nds" ></vlocity_cmt-output-field>
+      </div><div class="nds-col   nds-size_3-of-12  " style=""><vlocity_cmt-output-field  record={record}  merge-field="%3Cdiv%3E%3Cspan%20style=%22font-size:%2012pt;%22%3EGas%3C/span%3E%3C/div%3E"  card={card}  theme="nds" ></vlocity_cmt-output-field>
+      </div><div class="nds-col   nds-size_3-of-12  " style=""><vlocity_cmt-output-field  record={record}  merge-field="%3Cdiv%3E%3Cspan%20style=%22font-size:%2012pt;%22%3E%3Cstrong%3EEstado:%3C/strong%3E%3C/span%3E%3C/div%3E"  card={card}  theme="nds" ></vlocity_cmt-output-field>
+      </div><div class="nds-col   nds-size_3-of-12  " style=""><vlocity_cmt-output-field  placeholder="output"  record={record}  type="text"  card={card}  field-name="Estado"  styles='\{"label":{"fontSize":"12pt"},"value":{"fontSize":"12pt"}}'  theme="nds" ></vlocity_cmt-output-field>
+      </div><div class="nds-col  nds-border_top  nds-size_12-of-12  " style="     border-color:#020000; border-width:2px;       "><vlocity_cmt-output-field  record={record}  merge-field=""  card={card}  theme="nds" ></vlocity_cmt-output-field>
+      </div>
+        </div>
+      </vlocity_cmt-flex-card-state>
+                      </template>
+            </template>
+            <template if:true={hasError}>
+            {error}
+            </template>
+            
+      <vlocity_cmt-action action-wrapperclass="slds-hide" re-render-flyout class="action-trigger slds-col" onupdateos={updateOmniscript} onsetvalue={updateAction}>
+      
+      </vlocity_cmt-action>
+  
+            <vlocity_cmt-action class="execute-action" re-render-flyout action-wrapperclass="slds-hide" onupdateos={updateOmniscript} onsetvalue={updateAction}>
+            
+            </vlocity_cmt-action>
+            </div>
+          </template>

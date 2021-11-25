@@ -1,0 +1,12 @@
+{
+    "Distribuidora": "Text",
+    "RangoInferior": 0,
+    "RangoSuperior": 0,
+    "cargoPorCapacidad": 0,
+    "cargoPorServicio": 0,
+    "cargoPorUso": 0,
+    "cargoVolumetrico": "Text",
+    "clasificacionTarifaria": "Text",
+    "conexionEstandar": "Text",
+    "conexionNoEstandar": "Text"
+}

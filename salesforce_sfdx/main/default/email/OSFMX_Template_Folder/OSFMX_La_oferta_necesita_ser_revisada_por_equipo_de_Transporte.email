@@ -1,0 +1,14 @@
+<table border="0" cellpadding="5" width="600" cellspacing="5" height="400" >
+<tr valign="top" height="50" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[]]></td>
+</tr>
+<tr valign="top" height="300" >
+<td tEditID="c1r2" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r2" locked="0" >
+<![CDATA[<font face="arial" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><span style="font-size: 12pt;">Estimado KAM<b>,</b></span></font><div style=""><div style=""><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;">La oferta: <b>{!Quote.Name}</b> está en proceso de revisión por parte del equipo de transporte.</div><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><br></div><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;">Detalles de la oferta por revisar:</div><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><ul><li><font style="">Número: {!Quote.QuoteNumber}</font></li><li><font style="">Estado:&nbsp;{!Quote.Status}</font></li><li><font style="">Sub estado:&nbsp;{!Quote.OSFMX_SubEstatus__c}</font></li><li><span style="font-size: 12pt; background-color: rgb(255, 255, 255);">Enlace directo:&nbsp;<u style="">{!Quote.Link}</u></span></li></ul></div><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><div style="color: rgb(0, 0, 0);"><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;">Saludos.</div></div></div></div></div>]]></td>
+</tr>
+<tr valign="top" height="50" >
+<td tEditID="c1r3" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r3" locked="0" >
+<![CDATA[]]></td>
+</tr>
+</table>

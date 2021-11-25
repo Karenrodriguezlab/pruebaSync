@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OSFMX_CustomerSegment__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+ISPICKVAL(Industry, &quot;Gobiernos (Defensa, etc.)&quot;) ||
+ISPICKVAL(Industry, &quot;Municipalidades&quot;) ||
+ISPICKVAL(Industry, &quot;Transporte / Distribución de electricidad&quot;) ||
+ISPICKVAL(Industry, &quot;Transporte / Distribución de gas&quot;) ||
+ISPICKVAL(Industry, &quot;Planta / Distribución de agua&quot;) ||
+ISPICKVAL(Industry, &quot;Salud pública&quot;) ||
+ISPICKVAL(Industry, &quot;Salud privada&quot;) ||
+ISPICKVAL(Industry, &quot;Educación pública&quot;) ||
+ISPICKVAL(Industry, &quot;Educación privada&quot;) ||
+ISPICKVAL(Industry, &quot;Aeropuertos y puertos&quot;) ||
+ISPICKVAL(Industry, &quot;Transporte (Tren, Metro)&quot;),
+&quot;Cities &amp; Communities&quot;,
+IF(
+ISPICKVAL(Industry, &quot;Minería&quot;) ||
+ISPICKVAL(Industry, &quot;Generación eléctrica&quot;) ||
+ISPICKVAL(Industry, &quot;Petróleo y gas&quot;) ||
+ISPICKVAL(Industry, &quot;Química farmacéutica&quot;) ||
+ISPICKVAL(Industry, &quot;Química y Petroquímica&quot;) ||
+ISPICKVAL(Industry, &quot;Metalurgia&quot;) ||
+ISPICKVAL(Industry, &quot;Pulpa y papel&quot;) ||
+ISPICKVAL(Industry, &quot;Cemento&quot;) ||
+ISPICKVAL(Industry, &quot;Automotriz y autopartes&quot;) ||
+ISPICKVAL(Industry, &quot;Alimentos y bebidas&quot;) ||
+ISPICKVAL(Industry, &quot;Agricultura&quot;) ||
+ISPICKVAL(Industry, &quot;Materiales y herramientas&quot;) ||
+ISPICKVAL(Industry, &quot;Vidrios&quot;) ||
+ISPICKVAL(Industry, &quot;Cerámicos&quot;) ||
+ISPICKVAL(Industry, &quot;Textil&quot;) ||
+ISPICKVAL(Industry, &quot;Bienes y Servicios&quot;) ||
+ISPICKVAL(Industry, &quot;Bienes de consumo&quot;),
+&quot;Industries&quot;,
+IF(
+ISPICKVAL(Industry, &quot;&quot;),
+&quot;&quot;,
+&quot;Properties&quot;)))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Segmento Cliente</label>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

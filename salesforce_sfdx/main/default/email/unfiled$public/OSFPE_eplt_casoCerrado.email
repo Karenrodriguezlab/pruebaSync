@@ -1,0 +1,9 @@
+Se ha cerrado el caso: {!Case.Subject}
+
+Empresa: {!Case.Account}
+
+Propietario del caso: {!Case.OwnerFullName}
+
+Cerrado por: {!Case.LastModifiedBy}
+
+Detalle de solución: {!Case.OSFPE_fld_detalle_solucion_caso__c}

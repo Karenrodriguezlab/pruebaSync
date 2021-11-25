@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OSFPE_fld_Aprobaciones_Politica_Comerc__c</fullName>
+    <externalId>false</externalId>
+    <label>Aprobaciones (Política Comercial)</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Directorio de EEP y Grupo Engie</fullName>
+                <default>false</default>
+                <label>Directorio de EEP y Grupo Engie</label>
+            </value>
+            <value>
+                <fullName>Directorio de EEP y a decisión del Director Ejecutivo la BU CC</fullName>
+                <default>false</default>
+                <label>Directorio de EEP y a decisión del Director Ejecutivo la BU CC</label>
+            </value>
+            <value>
+                <fullName>Director Ejecutivo más un (1) Apoderado Clase A o dos (2) Apoderados Clase A</fullName>
+                <default>false</default>
+                <label>Director Ejecutivo más un (1) Apoderado Clase A o dos (2) Apoderados Clase A</label>
+            </value>
+            <value>
+                <fullName>Vicepresidente Comercial y Gerente de Ventas y Gestión de Clientes</fullName>
+                <default>false</default>
+                <label>Vicepresidente Comercial y Gerente de Ventas y Gestión de Clientes</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,39 @@
+{
+    "%vlocity_namespace%__Author__c": "GlobantRRA",
+    "%vlocity_namespace%__CardType__c": "flex",
+    "%vlocity_namespace%__Datasource__c": {
+        "contextVariables": [
+            {
+                "id": 1,
+                "name": "recordId",
+                "val": "001c0000038mVzCAAU"
+            }
+        ],
+        "orderBy": {
+            "isReverse": false,
+            "name": ""
+        },
+        "type": "DataRaptor",
+        "value": {
+            "bundle": "DRGetAccountInfo360VW",
+            "inputMap": {
+                "AccountId": "{recordId}"
+            },
+            "resultVar": ""
+        }
+    },
+    "%vlocity_namespace%__Definition__c": "OSFMXDetailAccount360VW.json",
+    "%vlocity_namespace%__Description__c": "",
+    "%vlocity_namespace%__GlobalKey__c": "OSFMXDetailAccount360VW/GlobantRRA/1/1619238357974",
+    "%vlocity_namespace%__IsChildCard__c": false,
+    "%vlocity_namespace%__ParentID__c": "",
+    "%vlocity_namespace%__SampleData__c": "[{\"IDInstalacionSuministroSAP\":\"\",\"CuentaContratoIdSAP\":\"\",\"Descripcion\":\"\",\"WebSite\":\"\",\"ContactPrincipalName\":\"Johanna Rodas\",\"UltimaModificacionPor\":\"Roberto Rodriguez Anaya\",\"PersonaContactoEngie\":\"Jonathan López\",\"CreadoPor\":\"Adrian Bohorquez\",\"Propietario\":\"Omar Mata\",\"ParentAccName\":\"GRUPO MONDELEZ MÉXICO OSMX\",\"TipoCuenta\":\"Cuenta de Negocio\",\"BusinessPartnerSAP\":\"0600001333\",\"Telefono\":\"3104441054\",\"SegmentoCliente\":\"Industries\",\"CuantaGlobal\":false,\"CuantaClave\":false,\"Latitud\":4.31582,\"Longitud\":-74.18088,\"PrioridadCliente\":\"Cuenta Premium\",\"CodigoPostal\":\"110111\",\"Pais\":\"Colombia\",\"Estado/Provincia\":\"Cundinamarca\",\"Calle\":\"AV CLL 57R 73i 35\",\"Sector\":\"Agricultura\",\"Estatus\":\"Inactivo\",\"Ciudad\":\"Bogota\",\"RFC\":\"KFM920615PS9\",\"RazonSocial\":\"MONDELEZ MÉXICO, S. DE R.L. DE C.V.\",\"Name\":\"CN MONDELEZ MÉXICO, S. DE R.L. DE C.V. OSMX\"}]",
+    "%vlocity_namespace%__Styles__c": "",
+    "%vlocity_namespace%__Type__c": "",
+    "%vlocity_namespace%__Version__c": 1,
+    "CurrencyIsoCode": "MXN",
+    "Name": "OSFMXDetailAccount360VW",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__VlocityCard__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__VlocityCard__c/OSFMXDetailAccount360VW"
+}

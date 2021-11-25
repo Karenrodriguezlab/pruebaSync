@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OSFMX_CompetitorSolution__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(OSFMX_Opportunity__r.OSFMX_Solution__c, 
+'All in: Compresión, transporte y descompresión', 'All in: Compresión, transporte y descompresión', 
+'Auditoría de Eficiencia Energética', 'Auditoría de Eficiencia Energética',
+'Cogeneración (on site)', 'Cogeneración (on site)',
+'Comercialización + Conducción', 'Comercialización + Conducción',
+'Comercialización a través de un tercero', 'Comercialización a través de un tercero',
+'Compresión molécula', 'Compresión molécula',
+'Conducción', 'Conducción',
+'Conexiones Gas Natural', 'Conexiones Gas Natural',
+'Corporate PPA Renovable', 'Corporate PPA Renovable',
+'Corporate PPA Térmico', 'Corporate PPA Térmico',
+'Distribución + Comercialización', 'Distribución + Comercialización',
+'Distribución Simple', 'Distribución Simple',
+'Ducto Dedicado', 'Ducto Dedicado',
+'ESCO', 'ESCO',
+'EV Chargers', 'EV Chargers',
+'EV Chargers + Flotas', 'EV Chargers + Flotas',
+'Excedentes', 'Excedentes',
+'Flotas de Vehículos Eléctricos', 'Flotas de Vehículos Eléctricos',
+'Flotas de Vehículos GNV', 'Flotas de Vehículos GNV',
+'Hard Facility Management', 'Hard Facility Management',
+'HVAC Retrofit', 'HVAC Retrofit',
+'Instalación estación GNV onsite', 'Instalación estación GNV onsite',
+'Integrated Facility Management', 'Integrated Facility Management',
+'MEM', 'MEM',
+'Molécula pura', 'Molécula pura',
+'O&amp;M Industrial', 'O&amp;M Industrial',
+'O&amp;M Plantas Fotovoltaicas', 'O&amp;M Plantas Fotovoltaicas',
+'PPA Renovable', 'PPA Renovable',
+'PPA Térmico', 'PPA Térmico',
+'Rooftop PV (on site)', 'Rooftop PV (on site)',
+'Soft Facility Management', 'Soft Facility Management',
+'Subastas')</formula>
+    <label>Solucion de la Oportunidad</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

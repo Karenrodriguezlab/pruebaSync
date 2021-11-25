@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Factibilidad</fullName>
+    <columns>QUOTE.NAME</columns>
+    <columns>OSFMX_BusinessName__c</columns>
+    <columns>OSFMX_Quadrant__c</columns>
+    <columns>vlocity_cmt__ValidationDate__c</columns>
+    <columns>OSFMX_ProbableServiceStartDate__c</columns>
+    <columns>OSFMX_DatetimeSendtoMolecule__c</columns>
+    <columns>OSFMX_DatetimeSendtoTranposrt__c</columns>
+    <columns>OSFMX_IndexReference__c</columns>
+    <columns>OSFMX_Spread_ofertado_USD_Gj__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>QUOTE.STATUS</field>
+        <operation>equals</operation>
+        <value>Proceso</value>
+    </filters>
+    <filters>
+        <field>OSFMX_SubEstatus__c</field>
+        <operation>equals</operation>
+        <value>Factibilidad Mexcom</value>
+    </filters>
+    <filters>
+        <field>QUOTE.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Quote.OSFMX_OfertaGas</value>
+    </filters>
+    <label>Factibilidad</label>
+    <sharedTo>
+        <role>OSFMX_Administracion</role>
+        <role>OSFMX_Administrador</role>
+        <role>OSFMX_B2BProjects</role>
+    </sharedTo>
+</ListView>

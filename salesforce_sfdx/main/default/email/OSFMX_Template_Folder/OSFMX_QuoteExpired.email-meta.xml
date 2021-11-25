@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Sprint 6</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Oferta por Expirar html</name>
+    <style>none</style>
+    <subject>{!Quote.OSFMX_BusinessName__c} | Oferta por Expirar</subject>
+    <textOnly>Oferta con observaciones
+Estimad@ {!Quote.OwnerFullName}, su oferta {!Quote.Name} se encuentra con observaciones. Por favor revise los comentarios para continuar con el proceso”
+
+Comentarios: {!Quote.OSFMX_GasUserObservation__c}
+
+Para revisar la oferta haga click AQUÍ
+
+Razón Social: {!Quote.OSFMX_BusinessName__c}
+
+Nombre de la Oferta: {!Quote.Name}
+
+Número de la Oferta: {!Quote.QuoteNumber}
+
+Tipo de Oferta: {!Quote.OSFMX_OfferType__c}
+Engie México</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

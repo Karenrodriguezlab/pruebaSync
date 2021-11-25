@@ -1,0 +1,10 @@
+{
+  "packageDirectories": [
+    {
+      "path": "salesforce_sfdx",
+      "default": true
+    }
+  ],
+  "namespace": "",
+  "sourceApiVersion": "51.0"
+}

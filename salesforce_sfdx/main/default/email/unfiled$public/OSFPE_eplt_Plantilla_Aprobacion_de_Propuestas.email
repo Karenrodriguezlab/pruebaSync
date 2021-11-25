@@ -1,0 +1,8 @@
+Estimado Aprobador:
+
+La siguiente propuesta requiere de su revisión y aprobación para continuar con el flujo.
+
+Nombre de la propuesta: {!Quote.Name}
+Cliente: {!Account.Name}
+Responsable de la propuesta: {!Quote.OwnerFullName}
+Fecha de la propuesta: {!Quote.Fecha_de_propuesta__c}

@@ -1,0 +1,64 @@
+{
+    "dataSource": {
+        "type": null,
+        "value": {
+        }
+    },
+    "filter": {
+    },
+    "states": [
+        {
+            "conditions": {
+                "group": [
+                    {
+                        "field": "$scope.data.status",
+                        "operator": "===",
+                        "type": "system",
+                        "value": "'active'"
+                    }
+                ]
+            },
+            "definedActions": {
+                "actions": [
+                ]
+            },
+            "fields": [
+                {
+                    "collapse": true,
+                    "displayLabel": "['%vlocity_namespace%__CalculatedAddress__c']",
+                    "editing": false,
+                    "fieldType": "standard",
+                    "group": "Custom Properties",
+                    "label": "Address",
+                    "name": "['%vlocity_namespace%__CalculatedAddress__c']",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "['Phone']",
+                    "fieldType": "standard",
+                    "group": "Custom Properties",
+                    "label": "Phone",
+                    "name": "['Phone']",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "['OSFMX_ECR__c']",
+                    "editing": false,
+                    "fieldType": "standard",
+                    "group": "Custom Properties",
+                    "label": "ECRValue",
+                    "name": "['OSFMX_ECR__c']",
+                    "type": "string"
+                }
+            ],
+            "isSmartAction": false,
+            "name": "Active",
+            "smartAction": {
+            },
+            "templateUrl": "vpl-energy-card--sidebar-account-info"
+        }
+    ],
+    "title": "Account Info"
+}

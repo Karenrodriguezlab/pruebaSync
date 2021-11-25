@@ -1,0 +1,10 @@
+[
+    "DataRaptor/VPL-GetAccountOverviewAssets",
+    "DataRaptor/VPL-GetAccountOverviewDetails",
+    "DataRaptor/VPL-GetAccountOverviewLastStatement",
+    "DataRaptor/VPL-GetContractList",
+    "DataRaptor/VPL-GetServiceAccountDetails",
+    "DataRaptor/VPL-GetServicePoints",
+    "DataRaptor/VPL-TransformServices",
+    "IntegrationProcedure/VPL_GetCustomerAccount_Contact"
+]

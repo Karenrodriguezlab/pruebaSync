@@ -1,0 +1,29 @@
+{
+    "ContextId": "0Q0c0000000iOGkCA",
+    "StepError": null,
+    "StepSync": {
+        "RadioOption": null
+    },
+    "activeUnsync": false,
+    "opportunityId": "006c000000V5WuyAA",
+    "quoteAmount": 59972.76,
+    "quoteConnectionPipeline": "Distribución Regulada",
+    "quoteConnectionType": "Conexion Estandar + No Estandar",
+    "quoteConsumptionExpected": 4500,
+    "quoteDefaultServiceAccount": "001c000003FQrT4AAL",
+    "quoteDistributorCarrier": "Distribución NG",
+    "quoteId": "0Q0c0000000iOGkCA",
+    "quoteMaximumDailuCapacity": 50,
+    "quoteName": "TEST CPQ3",
+    "quoteSupplyStartDate": "2021-09-01",
+    "quoteTimeLimitSupply": 12,
+    "syncActive": false,
+    "syncFalse": false,
+    "syncTrue": true,
+    "timeStamp": "2021-08-05T19:33:00.852Z",
+    "userCurrencyCode": "MXN",
+    "userId": "005c0000007TAbFAAW",
+    "userName": "nasser.abdala@globant.com.latam.devmexico",
+    "userProfile": "Administrador del sistema",
+    "userTimeZone": "-300"
+}

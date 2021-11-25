@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Plantilla para el envío de correos de aprobación de propuestas</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Plantilla - Aprobación de Propuestas</name>
+    <style>none</style>
+    <subject>Aprobación de Propuesta - {!Quote.Name}</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

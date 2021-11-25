@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <apiVersion>51.0</apiVersion>
+    <decisions>
+        <name>AVANZA_CASO</name>
+        <label>AVANZA CASO</label>
+        <locationX>316</locationX>
+        <locationY>456</locationY>
+        <defaultConnector>
+            <targetReference>ACTUALIZA_CASO_0</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>NO AVANZA</defaultConnectorLabel>
+        <rules>
+            <name>SI_AVANZA</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>CONFIRMACION_DE_KAM_PARA_AVANZAR_A_VALIDACI_N_DE_COBRANZA</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>ACTUALIZA_CASO</targetReference>
+            </connector>
+            <label>SI AVANZA</label>
+        </rules>
+    </decisions>
+    <dynamicChoiceSets>
+        <name>MESCONSUMOOK</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>OSFMX_MonthConsumptionPeriod__c</picklistField>
+        <picklistObject>Case</picklistObject>
+    </dynamicChoiceSets>
+    <interviewLabel>COBRANZA KAM VALIDA SI AVANZA A VALIDACIÓN DE COBRANZA {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>COBRANZA KAM VALIDA SI AVANZA A VALIDACIÓN DE COBRANZA</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <recordLookups>
+        <name>BUSCA_CAMPOS_DEL_CASO</name>
+        <label>BUSCA CAMPOS DEL CASO</label>
+        <locationX>176</locationX>
+        <locationY>222</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>COBRANZA_INC_1_Pendiente_complemento_de_pago</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>CASE_ID</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Case</object>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>CaseNumber</queriedFields>
+        <queriedFields>OSFMX_InvoiceNumber__c</queriedFields>
+        <queriedFields>OSFMX_IncidenceType__c</queriedFields>
+        <queriedFields>AccountId</queriedFields>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <name>ACTUALIZA_CASO</name>
+        <label>ACTUALIZA CASO</label>
+        <locationX>566</locationX>
+        <locationY>303</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>CASE_ID</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>OSFMX_KAMCreditRegistrationValidate__c</field>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>Validación por Cobranza</stringValue>
+            </value>
+        </inputAssignments>
+        <object>Case</object>
+    </recordUpdates>
+    <recordUpdates>
+        <name>ACTUALIZA_CASO_0</name>
+        <label>ACTUALIZA CASO</label>
+        <locationX>563</locationX>
+        <locationY>472</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>CASE_ID</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>Validación Alta de caso por KAM</stringValue>
+            </value>
+        </inputAssignments>
+        <object>Case</object>
+    </recordUpdates>
+    <screens>
+        <name>COBRANZA_INC_1_Pendiente_complemento_de_pago</name>
+        <label>COBRANZA INC#1 Pendiente complemento de pago</label>
+        <locationX>362</locationX>
+        <locationY>222</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <connector>
+            <targetReference>AVANZA_CASO</targetReference>
+        </connector>
+        <fields>
+            <name>PENDIENTECOMPLEMENTODEPAGO</name>
+            <fieldText>&lt;p&gt;&lt;b style=&quot;color: rgb(32, 118, 16); font-size: 14px; background-color: rgb(255, 255, 255);&quot;&gt;Al marcar esta casilla el caso pasa a &quot;Validación de COBRANZA&quot;, luego seleccione SIGUIENTE O FINALIZAR.&lt;/b&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>CONFIRMACION_DE_KAM_PARA_AVANZAR_A_VALIDACI_N_DE_COBRANZA</name>
+            <dataType>Boolean</dataType>
+            <fieldText>CONFIRMACIÓN DE KAM PARA AVANZAR A VALIDACIÓN DE COBRANZA</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <start>
+        <locationX>50</locationX>
+        <locationY>50</locationY>
+        <connector>
+            <targetReference>BUSCA_CAMPOS_DEL_CASO</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>CASE_ID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <name>MESCONSUMO</name>
+        <dataType>Picklist</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+</Flow>

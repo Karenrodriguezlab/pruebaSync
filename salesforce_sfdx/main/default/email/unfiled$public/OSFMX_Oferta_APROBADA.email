@@ -1,0 +1,14 @@
+<table border="0" cellpadding="5" width="600" cellspacing="5" height="400" >
+<tr valign="top" height="50" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[]]></td>
+</tr>
+<tr valign="top" height="300" >
+<td tEditID="c1r2" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r2" locked="0" >
+<![CDATA[<font face="arial" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><span style="font-size: 12pt;">Estimado Usuario,&nbsp;</span></font><div style=""><div style=""><div style=""><font face="arial" style=""><span style="font-size: 12pt;">Le informamos que su </span>solicitud<span style="font-size: 12pt;">&nbsp;fue APROBADA.</span></font></div><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><br></div><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;">Consumo Plazo Forzoso (Gas natural):&nbsp;<b>{!Quote.OSFMX_ConsumptionNaturalGas__c} GWh</b><br><div style="font-family: arial; font-size: 12pt;"><div style=""><font style="">Oferta: {!Quote.QuoteNumber} |&nbsp;</font><b style="font-size: 12pt; background-color: rgb(255, 255, 255);"><u style="">{!Quote.Link}</u></b></div></div><div style="color: rgb(0, 0, 0);"><font face="arial" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;" color="#ff6600"><span style="font-size: 12pt;">Propietario oferta:&nbsp;{!Quote.OwnerFullName}</span></font><br><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><br></div><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><br></div><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;">Saludos.</div></div></div></div></div>]]></td>
+</tr>
+<tr valign="top" height="50" >
+<td tEditID="c1r3" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r3" locked="0" >
+<![CDATA[]]></td>
+</tr>
+</table>

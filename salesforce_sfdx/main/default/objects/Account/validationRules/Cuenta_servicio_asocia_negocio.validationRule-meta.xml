@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cuenta_servicio_asocia_negocio</fullName>
+    <active>false</active>
+    <description>Cuenta_servicio_asocia_negocio / Cuenta_servicio_asocia_facturacion</description>
+    <errorConditionFormula>OR( AND( RecordType.Name = "Service", Parent.RecordType.Name =  " Billing "), AND ( RecordType.Name = " Billing", Parent.RecordType.Name &lt;> " Business "))</errorConditionFormula>
+    <errorDisplayField>ParentId</errorDisplayField>
+    <errorMessage>No puedes asociar una cuenta de servicio a un grupo económico.</errorMessage>
+</ValidationRule>

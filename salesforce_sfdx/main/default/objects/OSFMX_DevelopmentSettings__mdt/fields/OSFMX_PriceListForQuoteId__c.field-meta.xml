@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OSFMX_PriceListForQuoteId__c</fullName>
+    <description>Identificador de la lista de precios utilizada para la creación automática de QuoteLineItems.</description>
+    <externalId>false</externalId>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <inlineHelpText>Identificador de la lista de precios utilizada para la creación automática de QuoteLineItems.</inlineHelpText>
+    <label>Lista De Precios Quote</label>
+    <length>18</length>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,208 @@
+<template>
+            <div class="nds-grid nds-wrap nds-is-relative">
+            <div if:false={cardLoaded} class="nds-is-absolute vloc-loader_override" style="height: 100%; width: 100%; min-height:50px; background: white; z-index: 99;">
+  <div>
+   <vlocity_cmt-spinner
+      variant="brand"
+      alternative-text="Loading content..."
+      size="small"
+      theme="nds"
+      ></vlocity_cmt-spinner>
+  </div>
+</div>
+            <template if:false={hasPermission}>
+              You don't have required permissions to view this card.
+            </template>
+            <template if:true={hasPermission}>
+              <template if:true={hasRecords}>
+                        <template for:each={_records} for:item="record" for:index="rindex">
+                            <vlocity_cmt-flex-card-state key={record.uniqueKey} data-recordid={record.Id} record={record} data-statue="true"  data-index="0" data-rindex={rindex} class="cf-vlocity-state-0 cf-vlocity-state nds-size_12-of-12 "  tracking-obj={_childCardTrackingObj} >
+      <div if:true={cardLoaded} class="nds-grid nds-wrap nds-card nds-p-around_x-small nds-m-bottom_x-small " style="background-color:#fff;             ">
+          <div class="nds-col   nds-p-around_x-small  nds-size_12-of-12  " style="background-color:#fff;             ">
+    <vlocity_cmt-block  label="Datos de la oferta"  collapsible="true"  record={record}  collapsed-by-default="false"  card={card}  theme="nds" ><div class="nds-grid nds-wrap">
+          <div class="nds-col   nds-p-around_x-small nds-size_6-of-12  " style="">
+    <vlocity_cmt-block  label="Block"  collapsible="false"  record={record}  collapsed-by-default="false"  card={card}  theme="nds" ><div class="nds-grid nds-wrap">
+          <div class="nds-col   nds-size_12-of-12 " style=""><vlocity_cmt-output-field  placeholder=""  record={record}  type="text"  card={card}  styles='\{"label":{"fontSize":"12pt"},"value":{"fontSize":"12pt"}}'  label="Nombre de la oferta"  field-name="Name"  theme="nds" ></vlocity_cmt-output-field>
+      </div><div class="nds-col   nds-size_12-of-12 " style=""><vlocity_cmt-output-field  placeholder=""  record={record}  type="text"  card={card}  styles='\{"label":{"fontSize":"12pt"},"value":{"fontSize":"12pt"}}'  label="Vigencia de la oferta (días)"  field-name="OSFMX_OfferValidity__c"  theme="nds" ></vlocity_cmt-output-field>
+      </div>
+        </div></vlocity_cmt-block>
+    </div><div class="nds-col   nds-p-around_x-small nds-size_6-of-12 " style="">
+    <vlocity_cmt-block  label="Block"  collapsible="false"  record={record}  collapsed-by-default="false"  card={card}  theme="nds" ><div class="nds-grid nds-wrap">
+          <div class="nds-col   nds-size_12-of-12 " style=""><vlocity_cmt-output-field  placeholder=""  record={record}  type="text"  card={card}  styles='\{"label":{"fontSize":"12pt"},"value":{"fontSize":"12pt"}}'  label="Tipo de solución"  field-name="OSFMX_SolutionType__c"  theme="nds" ></vlocity_cmt-output-field>
+      </div><div class="nds-col   nds-size_12-of-12 " style=""><vlocity_cmt-output-field  placeholder=""  record={record}  type="text"  card={card}  styles='\{"label":{"fontSize":"12pt"},"value":{"fontSize":"12pt"}}'  label="Solución"  field-name="OSFMX_Solution__c"  theme="nds" ></vlocity_cmt-output-field>
+      </div><div class="nds-col   nds-size_12-of-12 " style=""><vlocity_cmt-output-field  placeholder=""  record={record}  type="text"  card={card}  styles='\{"label":{"fontSize":"12pt"},"value":{"fontSize":"12pt"}}'  label="Descripción"  field-name="Description"  theme="nds" ></vlocity_cmt-output-field>
+      </div>
+        </div></vlocity_cmt-block>
+    </div>
+        </div></vlocity_cmt-block>
+    </div><div class="nds-col   nds-p-around_x-small  nds-size_12-of-12  " style="background-color:#fff;             ">
+    <vlocity_cmt-block  label="General"  collapsible="true"  record={record}  collapsed-by-default="false"  card={card}  theme="nds" ><div class="nds-grid nds-wrap">
+          <div class="nds-col   nds-p-around_x-small nds-size_6-of-12  " style="">
+    <vlocity_cmt-block  label="Block"  collapsible="false"  record={record}  collapsed-by-default="false"  card={card}  theme="nds" ><div class="nds-grid nds-wrap">
+          <div class="nds-col   nds-size_12-of-12 " style=""><vlocity_cmt-output-field  placeholder=""  record={record}  type="text"  card={card}  styles='\{"label":{"fontSize":"12pt"},"value":{"fontSize":"12pt"}}'  label="Razón social"  field-name="Account.OSFMX_BusinessName__c"  theme="nds" ></vlocity_cmt-output-field>
+      </div><div class="nds-col   nds-size_12-of-12 " style=""><vlocity_cmt-output-field  placeholder=""  record={record}  type="text"  card={card}  styles='\{"label":{"fontSize":"12pt"},"value":{"fontSize":"12pt"}}'  label="Nombre de la cuenta de negocio"  field-name="Account.Name"  theme="nds" ></vlocity_cmt-output-field>
+      </div><div class="nds-col   nds-size_12-of-12 " style=""><vlocity_cmt-output-field  placeholder=""  record={record}  type="text"  card={card}  styles='\{"label":{"fontSize":"12pt"},"value":{"fontSize":"12pt"}}'  label="Sector"  field-name="Account.Industry"  theme="nds" ></vlocity_cmt-output-field>
+      </div><div class="nds-col   nds-size_12-of-12 " style=""><vlocity_cmt-output-field  placeholder=""  record={record}  type="text"  card={card}  styles='\{"label":{"fontSize":"12pt"},"value":{"fontSize":"12pt"}}'  label="Vigencia de la oferta (días)"  field-name="OSFMX_OfferValidity__c"  theme="nds" ></vlocity_cmt-output-field>
+      </div>
+        </div></vlocity_cmt-block>
+    </div><div class="nds-col   nds-p-around_x-small nds-size_6-of-12 " style="">
+    <vlocity_cmt-block  label="Block"  collapsible="false"  record={record}  collapsed-by-default="false"  card={card}  theme="nds" ><div class="nds-grid nds-wrap">
+          <div class="nds-col   nds-size_12-of-12 " style=""><vlocity_cmt-output-field  placeholder=""  record={record}  type="text"  card={card}  styles='\{"label":{"fontSize":"12pt"},"value":{"fontSize":"12pt"}}'  label="Nombre de la Cuenta de Servicio"  field-name="vlocity_cmt__DefaultServiceAccountId__r.Name"  theme="nds" ></vlocity_cmt-output-field>
+      </div><div class="nds-col   nds-size_12-of-12 " style=""><vlocity_cmt-output-field  placeholder=""  record={record}  type="text"  card={card}  label="Coordenadas"  styles='\{"label":{"fontSize":"12pt"},"value":{"fontSize":"12pt"}}'  field-name="OSFMX_Coordinates__c"  theme="nds" ></vlocity_cmt-output-field>
+      </div>
+        </div></vlocity_cmt-block>
+    </div>
+        </div></vlocity_cmt-block>
+    </div><div class="nds-col   nds-p-around_x-small  nds-size_12-of-12  " style="background-color:#fff;             ">
+    <vlocity_cmt-block  label="Comercial"  collapsible="true"  record={record}  collapsed-by-default="false"  card={card}  theme="nds" ><div class="nds-grid nds-wrap">
+          <div class="nds-col   nds-p-around_x-small nds-size_6-of-12  " style="">
+    <vlocity_cmt-block  label="Block"  collapsible="false"  record={record}  collapsed-by-default="false"  card={card}  theme="nds" ><div class="nds-grid nds-wrap">
+          <div class="nds-col   nds-size_12-of-12 " style=""><vlocity_cmt-output-field  placeholder=""  record={record}  type="text"  card={card}  styles='\{"label":{"fontSize":"12pt"},"value":{"fontSize":"12pt"}}'  label="Consumo anual esperado en (Gj/Año)"  field-name="OSFMX_GJ__c"  theme="nds" ></vlocity_cmt-output-field>
+      </div><div class="nds-col   nds-size_12-of-12 " style=""><vlocity_cmt-output-field  placeholder=""  record={record}  type="text"  card={card}  styles='\{"label":{"fontSize":"12pt"},"value":{"fontSize":"12pt"}}'  label="Capacidad máxima diaria (Gj/Dia)"  field-name="OSFMX_Maximumdailycapacity__c"  theme="nds" ></vlocity_cmt-output-field>
+      </div>
+        </div></vlocity_cmt-block>
+    </div><div class="nds-col   nds-p-around_x-small nds-size_6-of-12 " style="">
+    <vlocity_cmt-block  label="Block"  collapsible="false"  record={record}  collapsed-by-default="false"  card={card}  theme="nds" ><div class="nds-grid nds-wrap">
+          <div class="nds-col   nds-size_12-of-12 " style=""><vlocity_cmt-output-field  placeholder=""  record={record}  type="date"  card={card}  styles='\{"label":{"fontSize":"12pt"},"value":{"fontSize":"12pt"}}'  label="Fecha de inicio del suministro"  field-name="OSFMX_SupplyStartDate__c"  format="DD/MM/YYYY"  theme="nds" ></vlocity_cmt-output-field>
+      </div><div class="nds-col   nds-size_12-of-12 " style=""><vlocity_cmt-output-field  placeholder=""  record={record}  type="text"  card={card}  styles='\{"label":{"fontSize":"12pt"},"value":{"fontSize":"12pt"}}'  label="Plazo del suministro (meses)"  field-name="OSFMX_TimeLimitSupply__c"  theme="nds" ></vlocity_cmt-output-field>
+      </div><div class="nds-col   nds-size_12-of-12 " style=""><vlocity_cmt-output-field  placeholder=""  record={record}  type="date"  card={card}  styles='\{"label":{"fontSize":"12pt"},"value":{"fontSize":"12pt"}}'  label="Fecha termino del suministro"  field-name="OSFMX_EndDateSupply__c"  format="DD/MM/YYYY"  theme="nds" ></vlocity_cmt-output-field>
+      </div><div class="nds-col   nds-size_12-of-12 " style=""><vlocity_cmt-output-field  placeholder=""  record={record}  type="date"  card={card}  styles='\{"label":{"fontSize":"12pt"},"value":{"fontSize":"12pt"}}'  label="Fecha de envío de la oferta"  field-name="OSFMX_OfferDeliveryDate__c"  format="DD/MM/YYYY"  theme="nds" ></vlocity_cmt-output-field>
+      </div><div class="nds-col   nds-size_12-of-12 " style=""><vlocity_cmt-output-field  placeholder=""  record={record}  type="date"  card={card}  label="Fecha vencimiento de la oferta"  format="DD/MM/YYYY"  field-name="vlocity_cmt__ValidationDate__c"  styles='\{"label":{"fontSize":"12pt"},"value":{"fontSize":"12pt"}}'  theme="nds" ></vlocity_cmt-output-field>
+      </div>
+        </div></vlocity_cmt-block>
+    </div>
+        </div></vlocity_cmt-block>
+    </div><div class="nds-col   nds-p-around_x-small  nds-size_12-of-12  " style="background-color:#fff;             ">
+    <vlocity_cmt-block  label="Valores de la oferta"  collapsible="true"  record={record}  collapsed-by-default="false"  card={card}  theme="nds" ><div class="nds-grid nds-wrap">
+          <div class="nds-col   nds-p-around_x-small nds-size_6-of-12  " style="">
+    <vlocity_cmt-block  label="Block"  collapsible="false"  record={record}  collapsed-by-default="false"  card={card}  theme="nds" ><div class="nds-grid nds-wrap">
+          <div class="nds-col   nds-size_12-of-12 " style=""><vlocity_cmt-output-field  placeholder=""  record={record}  type="currency"  card={card}  styles='\{"label":{"fontSize":"12pt"},"value":{"fontSize":"12pt"}}'  label="Importe (MXN)"  field-name="OSFMX_Amount__c"  locale="en"  currency=""  theme="nds" ></vlocity_cmt-output-field>
+      </div>
+        </div></vlocity_cmt-block>
+    </div><div class="nds-col   nds-p-around_x-small nds-size_6-of-12 " style="">
+    <vlocity_cmt-block  label="Block"  collapsible="false"  record={record}  collapsed-by-default="false"  card={card}  theme="nds" ><div class="nds-grid nds-wrap">
+          
+        </div></vlocity_cmt-block>
+    </div>
+        </div></vlocity_cmt-block>
+    </div><div class="nds-col   nds-p-around_x-small  nds-size_12-of-12  " style="background-color:#fff;             ">
+    <vlocity_cmt-block  label="Comentarios"  collapsible="true"  record={record}  collapsed-by-default="false"  card={card}  theme="nds" ><div class="nds-grid nds-wrap">
+          <div class="nds-col   nds-p-around_x-small nds-size_6-of-12  " style="">
+    <vlocity_cmt-block  label="Block"  collapsible="false"  record={record}  collapsed-by-default="false"  card={card}  theme="nds" ><div class="nds-grid nds-wrap">
+          <div class="nds-col   nds-size_12-of-12 " style=""><vlocity_cmt-output-field  placeholder=""  record={record}  type="text"  card={card}  styles='\{"label":{"fontSize":"12pt"},"value":{"fontSize":"12pt"}}'  label="Comentario de cierre ganado"  field-name="OSFMX_ClosedWonComments__c"  theme="nds" ></vlocity_cmt-output-field>
+      </div>
+        </div></vlocity_cmt-block>
+    </div><div class="nds-col   nds-p-around_x-small nds-size_6-of-12 " style="">
+    <vlocity_cmt-block  label="Block"  collapsible="false"  record={record}  collapsed-by-default="false"  card={card}  theme="nds" ><div class="nds-grid nds-wrap">
+          <div class="nds-col   nds-size_12-of-12 " style=""><vlocity_cmt-output-field  placeholder=""  record={record}  type="text"  card={card}  styles='\{"label":{"fontSize":"12pt"},"value":{"fontSize":"12pt"}}'  label="Comentario de cierre perdido"  field-name="OSFMX_ClosedComments__c"  theme="nds" ></vlocity_cmt-output-field>
+      </div>
+        </div></vlocity_cmt-block>
+    </div>
+        </div></vlocity_cmt-block>
+    </div>
+        </div>
+      </vlocity_cmt-flex-card-state>
+                        </template>
+                      </template>
+                      <template if:false={hasRecords}>
+                            <vlocity_cmt-flex-card-state  record={record} data-statue="false"  data-index="0" data-rindex={rindex} class="cf-vlocity-state-0 cf-vlocity-state nds-size_12-of-12 "  tracking-obj={_childCardTrackingObj} >
+      <div if:true={cardLoaded} class="nds-grid nds-wrap nds-card nds-p-around_x-small nds-m-bottom_x-small " style="background-color:#fff;             ">
+          <div class="nds-col   nds-p-around_x-small  nds-size_12-of-12  " style="background-color:#fff;             ">
+    <vlocity_cmt-block  label="Datos de la oferta"  collapsible="true"  record={record}  collapsed-by-default="false"  card={card}  theme="nds" ><div class="nds-grid nds-wrap">
+          <div class="nds-col   nds-p-around_x-small nds-size_6-of-12  " style="">
+    <vlocity_cmt-block  label="Block"  collapsible="false"  record={record}  collapsed-by-default="false"  card={card}  theme="nds" ><div class="nds-grid nds-wrap">
+          <div class="nds-col   nds-size_12-of-12 " style=""><vlocity_cmt-output-field  placeholder=""  record={record}  type="text"  card={card}  styles='\{"label":{"fontSize":"12pt"},"value":{"fontSize":"12pt"}}'  label="Nombre de la oferta"  field-name="Name"  theme="nds" ></vlocity_cmt-output-field>
+      </div><div class="nds-col   nds-size_12-of-12 " style=""><vlocity_cmt-output-field  placeholder=""  record={record}  type="text"  card={card}  styles='\{"label":{"fontSize":"12pt"},"value":{"fontSize":"12pt"}}'  label="Vigencia de la oferta (días)"  field-name="OSFMX_OfferValidity__c"  theme="nds" ></vlocity_cmt-output-field>
+      </div>
+        </div></vlocity_cmt-block>
+    </div><div class="nds-col   nds-p-around_x-small nds-size_6-of-12 " style="">
+    <vlocity_cmt-block  label="Block"  collapsible="false"  record={record}  collapsed-by-default="false"  card={card}  theme="nds" ><div class="nds-grid nds-wrap">
+          <div class="nds-col   nds-size_12-of-12 " style=""><vlocity_cmt-output-field  placeholder=""  record={record}  type="text"  card={card}  styles='\{"label":{"fontSize":"12pt"},"value":{"fontSize":"12pt"}}'  label="Tipo de solución"  field-name="OSFMX_SolutionType__c"  theme="nds" ></vlocity_cmt-output-field>
+      </div><div class="nds-col   nds-size_12-of-12 " style=""><vlocity_cmt-output-field  placeholder=""  record={record}  type="text"  card={card}  styles='\{"label":{"fontSize":"12pt"},"value":{"fontSize":"12pt"}}'  label="Solución"  field-name="OSFMX_Solution__c"  theme="nds" ></vlocity_cmt-output-field>
+      </div><div class="nds-col   nds-size_12-of-12 " style=""><vlocity_cmt-output-field  placeholder=""  record={record}  type="text"  card={card}  styles='\{"label":{"fontSize":"12pt"},"value":{"fontSize":"12pt"}}'  label="Descripción"  field-name="Description"  theme="nds" ></vlocity_cmt-output-field>
+      </div>
+        </div></vlocity_cmt-block>
+    </div>
+        </div></vlocity_cmt-block>
+    </div><div class="nds-col   nds-p-around_x-small  nds-size_12-of-12  " style="background-color:#fff;             ">
+    <vlocity_cmt-block  label="General"  collapsible="true"  record={record}  collapsed-by-default="false"  card={card}  theme="nds" ><div class="nds-grid nds-wrap">
+          <div class="nds-col   nds-p-around_x-small nds-size_6-of-12  " style="">
+    <vlocity_cmt-block  label="Block"  collapsible="false"  record={record}  collapsed-by-default="false"  card={card}  theme="nds" ><div class="nds-grid nds-wrap">
+          <div class="nds-col   nds-size_12-of-12 " style=""><vlocity_cmt-output-field  placeholder=""  record={record}  type="text"  card={card}  styles='\{"label":{"fontSize":"12pt"},"value":{"fontSize":"12pt"}}'  label="Razón social"  field-name="Account.OSFMX_BusinessName__c"  theme="nds" ></vlocity_cmt-output-field>
+      </div><div class="nds-col   nds-size_12-of-12 " style=""><vlocity_cmt-output-field  placeholder=""  record={record}  type="text"  card={card}  styles='\{"label":{"fontSize":"12pt"},"value":{"fontSize":"12pt"}}'  label="Nombre de la cuenta de negocio"  field-name="Account.Name"  theme="nds" ></vlocity_cmt-output-field>
+      </div><div class="nds-col   nds-size_12-of-12 " style=""><vlocity_cmt-output-field  placeholder=""  record={record}  type="text"  card={card}  styles='\{"label":{"fontSize":"12pt"},"value":{"fontSize":"12pt"}}'  label="Sector"  field-name="Account.Industry"  theme="nds" ></vlocity_cmt-output-field>
+      </div><div class="nds-col   nds-size_12-of-12 " style=""><vlocity_cmt-output-field  placeholder=""  record={record}  type="text"  card={card}  styles='\{"label":{"fontSize":"12pt"},"value":{"fontSize":"12pt"}}'  label="Vigencia de la oferta (días)"  field-name="OSFMX_OfferValidity__c"  theme="nds" ></vlocity_cmt-output-field>
+      </div>
+        </div></vlocity_cmt-block>
+    </div><div class="nds-col   nds-p-around_x-small nds-size_6-of-12 " style="">
+    <vlocity_cmt-block  label="Block"  collapsible="false"  record={record}  collapsed-by-default="false"  card={card}  theme="nds" ><div class="nds-grid nds-wrap">
+          <div class="nds-col   nds-size_12-of-12 " style=""><vlocity_cmt-output-field  placeholder=""  record={record}  type="text"  card={card}  styles='\{"label":{"fontSize":"12pt"},"value":{"fontSize":"12pt"}}'  label="Nombre de la Cuenta de Servicio"  field-name="vlocity_cmt__DefaultServiceAccountId__r.Name"  theme="nds" ></vlocity_cmt-output-field>
+      </div><div class="nds-col   nds-size_12-of-12 " style=""><vlocity_cmt-output-field  placeholder=""  record={record}  type="text"  card={card}  label="Coordenadas"  styles='\{"label":{"fontSize":"12pt"},"value":{"fontSize":"12pt"}}'  field-name="OSFMX_Coordinates__c"  theme="nds" ></vlocity_cmt-output-field>
+      </div>
+        </div></vlocity_cmt-block>
+    </div>
+        </div></vlocity_cmt-block>
+    </div><div class="nds-col   nds-p-around_x-small  nds-size_12-of-12  " style="background-color:#fff;             ">
+    <vlocity_cmt-block  label="Comercial"  collapsible="true"  record={record}  collapsed-by-default="false"  card={card}  theme="nds" ><div class="nds-grid nds-wrap">
+          <div class="nds-col   nds-p-around_x-small nds-size_6-of-12  " style="">
+    <vlocity_cmt-block  label="Block"  collapsible="false"  record={record}  collapsed-by-default="false"  card={card}  theme="nds" ><div class="nds-grid nds-wrap">
+          <div class="nds-col   nds-size_12-of-12 " style=""><vlocity_cmt-output-field  placeholder=""  record={record}  type="text"  card={card}  styles='\{"label":{"fontSize":"12pt"},"value":{"fontSize":"12pt"}}'  label="Consumo anual esperado en (Gj/Año)"  field-name="OSFMX_GJ__c"  theme="nds" ></vlocity_cmt-output-field>
+      </div><div class="nds-col   nds-size_12-of-12 " style=""><vlocity_cmt-output-field  placeholder=""  record={record}  type="text"  card={card}  styles='\{"label":{"fontSize":"12pt"},"value":{"fontSize":"12pt"}}'  label="Capacidad máxima diaria (Gj/Dia)"  field-name="OSFMX_Maximumdailycapacity__c"  theme="nds" ></vlocity_cmt-output-field>
+      </div>
+        </div></vlocity_cmt-block>
+    </div><div class="nds-col   nds-p-around_x-small nds-size_6-of-12 " style="">
+    <vlocity_cmt-block  label="Block"  collapsible="false"  record={record}  collapsed-by-default="false"  card={card}  theme="nds" ><div class="nds-grid nds-wrap">
+          <div class="nds-col   nds-size_12-of-12 " style=""><vlocity_cmt-output-field  placeholder=""  record={record}  type="date"  card={card}  styles='\{"label":{"fontSize":"12pt"},"value":{"fontSize":"12pt"}}'  label="Fecha de inicio del suministro"  field-name="OSFMX_SupplyStartDate__c"  format="DD/MM/YYYY"  theme="nds" ></vlocity_cmt-output-field>
+      </div><div class="nds-col   nds-size_12-of-12 " style=""><vlocity_cmt-output-field  placeholder=""  record={record}  type="text"  card={card}  styles='\{"label":{"fontSize":"12pt"},"value":{"fontSize":"12pt"}}'  label="Plazo del suministro (meses)"  field-name="OSFMX_TimeLimitSupply__c"  theme="nds" ></vlocity_cmt-output-field>
+      </div><div class="nds-col   nds-size_12-of-12 " style=""><vlocity_cmt-output-field  placeholder=""  record={record}  type="date"  card={card}  styles='\{"label":{"fontSize":"12pt"},"value":{"fontSize":"12pt"}}'  label="Fecha termino del suministro"  field-name="OSFMX_EndDateSupply__c"  format="DD/MM/YYYY"  theme="nds" ></vlocity_cmt-output-field>
+      </div><div class="nds-col   nds-size_12-of-12 " style=""><vlocity_cmt-output-field  placeholder=""  record={record}  type="date"  card={card}  styles='\{"label":{"fontSize":"12pt"},"value":{"fontSize":"12pt"}}'  label="Fecha de envío de la oferta"  field-name="OSFMX_OfferDeliveryDate__c"  format="DD/MM/YYYY"  theme="nds" ></vlocity_cmt-output-field>
+      </div><div class="nds-col   nds-size_12-of-12 " style=""><vlocity_cmt-output-field  placeholder=""  record={record}  type="date"  card={card}  label="Fecha vencimiento de la oferta"  format="DD/MM/YYYY"  field-name="vlocity_cmt__ValidationDate__c"  styles='\{"label":{"fontSize":"12pt"},"value":{"fontSize":"12pt"}}'  theme="nds" ></vlocity_cmt-output-field>
+      </div>
+        </div></vlocity_cmt-block>
+    </div>
+        </div></vlocity_cmt-block>
+    </div><div class="nds-col   nds-p-around_x-small  nds-size_12-of-12  " style="background-color:#fff;             ">
+    <vlocity_cmt-block  label="Valores de la oferta"  collapsible="true"  record={record}  collapsed-by-default="false"  card={card}  theme="nds" ><div class="nds-grid nds-wrap">
+          <div class="nds-col   nds-p-around_x-small nds-size_6-of-12  " style="">
+    <vlocity_cmt-block  label="Block"  collapsible="false"  record={record}  collapsed-by-default="false"  card={card}  theme="nds" ><div class="nds-grid nds-wrap">
+          <div class="nds-col   nds-size_12-of-12 " style=""><vlocity_cmt-output-field  placeholder=""  record={record}  type="currency"  card={card}  styles='\{"label":{"fontSize":"12pt"},"value":{"fontSize":"12pt"}}'  label="Importe (MXN)"  field-name="OSFMX_Amount__c"  locale="en"  currency=""  theme="nds" ></vlocity_cmt-output-field>
+      </div>
+        </div></vlocity_cmt-block>
+    </div><div class="nds-col   nds-p-around_x-small nds-size_6-of-12 " style="">
+    <vlocity_cmt-block  label="Block"  collapsible="false"  record={record}  collapsed-by-default="false"  card={card}  theme="nds" ><div class="nds-grid nds-wrap">
+          
+        </div></vlocity_cmt-block>
+    </div>
+        </div></vlocity_cmt-block>
+    </div><div class="nds-col   nds-p-around_x-small  nds-size_12-of-12  " style="background-color:#fff;             ">
+    <vlocity_cmt-block  label="Comentarios"  collapsible="true"  record={record}  collapsed-by-default="false"  card={card}  theme="nds" ><div class="nds-grid nds-wrap">
+          <div class="nds-col   nds-p-around_x-small nds-size_6-of-12  " style="">
+    <vlocity_cmt-block  label="Block"  collapsible="false"  record={record}  collapsed-by-default="false"  card={card}  theme="nds" ><div class="nds-grid nds-wrap">
+          <div class="nds-col   nds-size_12-of-12 " style=""><vlocity_cmt-output-field  placeholder=""  record={record}  type="text"  card={card}  styles='\{"label":{"fontSize":"12pt"},"value":{"fontSize":"12pt"}}'  label="Comentario de cierre ganado"  field-name="OSFMX_ClosedWonComments__c"  theme="nds" ></vlocity_cmt-output-field>
+      </div>
+        </div></vlocity_cmt-block>
+    </div><div class="nds-col   nds-p-around_x-small nds-size_6-of-12 " style="">
+    <vlocity_cmt-block  label="Block"  collapsible="false"  record={record}  collapsed-by-default="false"  card={card}  theme="nds" ><div class="nds-grid nds-wrap">
+          <div class="nds-col   nds-size_12-of-12 " style=""><vlocity_cmt-output-field  placeholder=""  record={record}  type="text"  card={card}  styles='\{"label":{"fontSize":"12pt"},"value":{"fontSize":"12pt"}}'  label="Comentario de cierre perdido"  field-name="OSFMX_ClosedComments__c"  theme="nds" ></vlocity_cmt-output-field>
+      </div>
+        </div></vlocity_cmt-block>
+    </div>
+        </div></vlocity_cmt-block>
+    </div>
+        </div>
+      </vlocity_cmt-flex-card-state>
+                      </template>
+            </template>
+            <template if:true={hasError}>
+            {error}
+            </template>
+            
+      <vlocity_cmt-action action-wrapperclass="slds-hide" re-render-flyout class="action-trigger slds-col" onupdateos={updateOmniscript} onsetvalue={updateAction}>
+      
+      </vlocity_cmt-action>
+  
+            <vlocity_cmt-action class="execute-action" re-render-flyout action-wrapperclass="slds-hide" onupdateos={updateOmniscript} onsetvalue={updateAction}>
+            
+            </vlocity_cmt-action>
+            </div>
+          </template>

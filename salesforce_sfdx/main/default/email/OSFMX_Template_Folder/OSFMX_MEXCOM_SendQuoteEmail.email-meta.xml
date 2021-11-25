@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Sprint 6</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>MEXCOM Oferta Presentada al Cliente</name>
+    <style>none</style>
+    <subject>ENGIE - Oferta Gas Natural {!Quote.OSFMX_Solution__c} - {!Quote.QuoteNumber}</subject>
+    <textOnly>Estimad@ {!Contact.Name}
+Ha sido para nosotros muy satisfactorio estar en contacto con ustedes a fin de analizar la posibilidad de ofrecerle el servicio de suministro de gas natural. De acuerdo con los datos proporcionados por ustedes, nos permitimos presentarle nuestra propuesta comercial.
+Estamos convencidos de las ventajas que ofrece el gas natural y de los beneficios que puede traer a su empresa. Esperamos que nuestra propuesta le sea de utilidad.
+Quedo a sus órdenes para comentar cualquier duda y aprovecho la oportunidad para enviarle un cordial saludo.
+
+Saludos,
+{!Quote.OwnerFullName}
+KAM</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

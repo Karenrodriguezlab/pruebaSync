@@ -1,0 +1,6 @@
+[
+    "DataRaptor/DRTGetAccountByQuoteId",
+    "DataRaptor/DRTGetContentVersionFile",
+    "IntegrationProcedure/OSFMX_SendOtherSolutionQuoteToContacts",
+    "IntegrationProcedure/OSFMX_UpdateDataQuoteOpportunity"
+]

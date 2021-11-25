@@ -1,0 +1,40 @@
+{
+    "%vlocity_namespace%__Author__c": "Globant",
+    "%vlocity_namespace%__CardType__c": "flex",
+    "%vlocity_namespace%__Datasource__c": {
+        "contextVariables": [
+            {
+                "id": 2,
+                "name": "recordId",
+                "val": "0Q0c0000000iOMnCAM"
+            }
+        ],
+        "orderBy": {
+            "isReverse": false,
+            "name": ""
+        },
+        "type": "DataRaptor",
+        "value": {
+            "bundle": "DrGetTurboQuoteAllInformationById",
+            "dsDelay": 0,
+            "inputMap": {
+                "id": "{recordId}"
+            },
+            "resultVar": "[0][quote]"
+        }
+    },
+    "%vlocity_namespace%__Definition__c": "OSMXQuoteLayoutV2.json",
+    "%vlocity_namespace%__Description__c": "",
+    "%vlocity_namespace%__GlobalKey__c": "OSMXQuoteLayoutV2/Globant/1/1619530765188",
+    "%vlocity_namespace%__IsChildCard__c": false,
+    "%vlocity_namespace%__ParentID__c": "",
+    "%vlocity_namespace%__SampleData__c": "[{\"quote\":[{\"Opportunity\":{\"attributes\":{\"type\":\"Opportunity\",\"url\":\"/services/data/v52.0/sobjects/Opportunity/006c000000V5jADAAZ\"},\"OSFMX_Contact__c\":\"003c000001YaIkeAAF\",\"Id\":\"006c000000V5jADAAZ\"},\"%vlocity_namespace%__DefaultServiceAccountId__r\":{\"attributes\":{\"type\":\"Account\",\"url\":\"/services/data/v52.0/sobjects/Account/001c000003FQrT4AAL\"},\"OSFMX_BusinessName__c\":\"CN TEST NKA V3\",\"Name\":\"CS TEST NKA V3\",\"Id\":\"001c000003FQrT4AAL\"},\"Account\":{\"attributes\":{\"type\":\"Account\",\"url\":\"/services/data/v52.0/sobjects/Account/001c000003FQrSpAAL\"},\"OSFMX_BusinessName__c\":\"CN TEST NKA V3\",\"OSFMX_RFC__c\":\"4564465465\",\"Name\":\"CN TEST NKA V3\",\"Industry\":\"Agricultura\",\"Id\":\"001c000003FQrSpAAL\"},\"OSFMX_Contact__c\":\"LUPIN  ABDALA\",\"OpportunityId\":\"006c000000V5jADAAZ\",\"Status\":\"Borrador\",\"OSFMX_OpportunityType__c\":\"OSFMX_Gas\",\"OSFMX_TaxRate__c\":1,\"OSFMX_ConnectionType__c\":\"Conexion Estandar + No Estandar\",\"Clasificacion_Tarifaria__c\":\"GCG 0\",\"OSFMX_PressureMinAssured__c\":20,\"OSFMX_PresssureMaxOutput__c\":10,\"OSFMX_MaxComsuption__c\":30,\"Cargo_por_Capacidad__c\":5.81,\"Cargo_por_Uso__c\":5.2,\"Cargo_por_Servicio__c\":377.73,\"Cargo_Volumetrico__c\":12.32,\"OSFMX_TransportValidation__c\":false,\"OSFMX_MoleculeValidation__c\":false,\"OSFMX_ConnectionPipeline__c\":\"Distribución Regulada\",\"OSFMX_VoluntaryContribution__c\":6000,\"OSFMX_Solution__c\":\"Distribución + Comercialización\",\"OSFMX_SolutionType__c\":\"Distribución de Gas Natural\",\"OSFMX_QuoteType__c\":\"OSFMX_OfertaGas\",\"OSFMX_ObservationsReviewByGasTransport__c\":false,\"OSFMX_NumberFees__c\":1,\"OSFMX_MeterNotStandarConnection__c\":100,\"OSFMX_DistributorOrCarrier__c\":\"Distribución NGM\",\"OSFMX_CostStandardConnection__c\":52490.75,\"OSFMX_CostNoStandardConnection__c\":198883,\"OSFMX_Coordinates__c\":\"75°33'48.96\\\"O 6°14'55.61\\\"N\",\"OSFMX_BoxNumber__c\":\"numero2\",\"OSFMX_BoxType__c\":\"tipo1\",\"Name\":\"oferta distribucion\",\"QuoteNumber\":\"00001823\",\"OSFMX_Amount__c\":426272.76,\"OSFMX_EndDateSupply__c\":\"2022-08-31\",\"OSFMX_PressureMaxIncome__c\":50,\"OSFMX_TimeLimitSupply__c\":12,\"OSFMX_SupplyStartDate__c\":\"2021-09-01\",\"OSFMX_Maximumdailycapacity__c\":120,\"OSFMX_GJ__c\":4500,\"OSFMX_OfferValidity__c\":45,\"%vlocity_namespace%__DefaultServiceAccountId__c\":\"001c000003FQrT4AAL\",\"AccountId\":\"001c000003FQrSpAAL\",\"Id\":\"0Q0c0000000iOMnCAM\"}]}]",
+    "%vlocity_namespace%__Styles__c": "",
+    "%vlocity_namespace%__Type__c": "",
+    "%vlocity_namespace%__Version__c": 1,
+    "CurrencyIsoCode": "MXN",
+    "Name": "OSMXQuoteLayoutV2",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__VlocityCard__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__VlocityCard__c/OSMXQuoteLayoutV2"
+}

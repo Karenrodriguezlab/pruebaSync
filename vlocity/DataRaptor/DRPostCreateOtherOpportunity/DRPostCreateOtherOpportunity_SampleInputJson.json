@@ -1,0 +1,22 @@
+{
+    "AccountId": "001c0000032iXKgAAM",
+    "OtherAmount": 3456,
+    "OtherBusinessModel": "Asset Based",
+    "OtherCloseDate": "2021-01-22",
+    "OtherContractMode": "Consultor",
+    "OtherContractTerm": 456,
+    "OtherCurrentStatus": "test otras soluciones",
+    "OtherCurrentStatusDate": "2021-01-22",
+    "OtherCustomerType": "Cliente Final",
+    "OtherEngieeSupplier": "ENLIGHT",
+    "OtherNextActivity": "test otras soluciones",
+    "OtherNextActivityDate": "2021-01-22",
+    "OtherOpportunityName": "test otras soluciones",
+    "OtherProbability": 23,
+    "OtherServiceStartDate": "2021-01-06",
+    "OtherSolution": "All in: Compresión, transporte y descompresión",
+    "OtherSolutionType": "Comercialización de Gas Natural",
+    "OtherStageName": "Abierta",
+    "OtherType": "Existing Business",
+    "RecordTypeId": "012c0000000E94kAAC"
+}

@@ -1,0 +1,14 @@
+<table border="0" cellpadding="5" width="600" cellspacing="5" height="400" >
+<tr valign="top" height="50" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[]]></td>
+</tr>
+<tr valign="top" height="300" >
+<td tEditID="c1r2" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r2" locked="0" >
+<![CDATA[<div style="text-align: center; font-size: 12pt;"><span style="font-size: 12pt;">Estimad@&nbsp;</span><b style="font-size: 12pt;">{!User.OSFMX_AccountOwnername__c}&nbsp;{!User.OSFMX_Accountownerlastname__c}</b></div><div style="text-align: center; "><font face="arial"><br></font></div><div style="text-align: center; "><br></div><font face="arial"><div style="text-align: center;"><span style="font-size: 12pt;">Le informamos que su contacto</span><b style="font-size: 12pt;">&nbsp;{!User.Name}</b><span style="font-size: 12pt;">&nbsp; de la cuenta&nbsp;</span><b style="font-size: 12pt;">{!User.OSFMX_AccountBussinesName__c}</b><span style="font-size: 12pt;">&nbsp;ha modificado su información de contacto desde el Portal Mi Cuenta Empresa.</span></div></font><div style="text-align: center;"><br></div><div style="text-align: center;"><br></div><div style="font-size: 12pt; text-align: center;"><span style="font-size: 12pt;"><a href=" https://engielatam--devmexico.lightning.force.com/lightning/r/Report/00Oc0000000uLEEEA2/view?queryScope=userFolders">Para consultar la información modificada haga click AQUÍ</a></span></div>]]></td>
+</tr>
+<tr valign="top" height="50" >
+<td tEditID="c1r3" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r3" locked="0" >
+<![CDATA[]]></td>
+</tr>
+</table>

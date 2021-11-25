@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OSFPE_vr_Codigo_postal_numerico</fullName>
+    <active>true</active>
+    <errorConditionFormula>RecordType.DeveloperName = &apos;OSFPE_rt_Cuenta_de_Negocio&apos; &amp;&amp;
+NOT(ISNUMBER(BillingPostalCode))</errorConditionFormula>
+    <errorMessage>El código postal debe ser un valor numérico.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OSFMX_IdAutoNumber__c</fullName>
+    <displayFormat>C-{0}</displayFormat>
+    <externalId>true</externalId>
+    <label>Identificador</label>
+    <trackTrending>false</trackTrending>
+    <type>AutoNumber</type>
+</CustomField>
